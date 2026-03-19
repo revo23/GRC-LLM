@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     chroma_dir: Path = Field(default=Path("data/chroma_db"), env="CHROMA_DIR")
     max_upload_size_mb: int = Field(default=50, env="MAX_UPLOAD_SIZE_MB")
     log_level: str = Field(default="INFO", env="LOG_LEVEL")
-    claude_model: str = "claude-sonnet-4-6"
+    claude_model: str = "claude-opus-4-6"
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 
