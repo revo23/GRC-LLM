@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRC Compliance Assessment Tool</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>GRC Compliance Assessment</h1>
+  <span class="badge">RAG-Grounded</span>
+</header>
+
+<nav class="tabs">
+  <button class="active" data-tab="upload">Upload</button>
+  <button data-tab="assess">Assess</button>
+  <button data-tab="results">Results</button>
+</nav>
+
+<main>
+
+  <!-- TAB 1: UPLOAD -->
+  <div id="tab-upload" class="tab-content active">
+    <div id="upload-alerts"></div>
+
+    <div class="card">
+      <div class="card-title">Upload Policy Document</div>
+      <div class="upload-zone" id="upload-zone">
+        <span class="icon">📄</span>
+        <p><strong>Drag and drop a PDF here</strong></p>
+        <p class="hint">or click to browse — max 50MB</p>
+        <input type="file" id="file-input" accept=".pdf" style="display:none" />
+      </div>
+      <div id="upload-progress" style="display:none; margin-top:12px;">
+        <div class="progress-bar-wrap"><div class="progress-bar" id="upload-progress-bar" style="width:0%"></div></div>
+        <div class="progress-label" id="upload-progress-label">Uploading...</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-header">
+        <div class="card-title">Uploaded Documents</div>
+        <button class="btn btn-secondary" onclick="loadDocuments()">↻ Refresh</button>
+      </div>
+      <div id="doc-list" class="doc-list">
+        <div class="empty-state">
+          <span class="empty-icon">📂</span>
+          <p>No documents uploaded yet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: ASSESS -->
+  <div id="tab-assess" class="tab-content">
+    <div id="assess-alerts"></div>
+
+    <div class="card">
+      <div class="card-title">Configure Assessment</div>
+
+      <div class="form-group">
+        <label>Select Document</label>
+        <select id="assess-doc-select">
+          <option value="">— choose a document —</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Select Frameworks</label>
+        <div class="framework-grid" id="framework-grid">
+          <div style="color:var(--text-muted); font-size:13px;">Loading frameworks...</div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:8px; align-items:center; margin-top:8px;">
+        <button class="btn btn-primary" id="run-btn" onclick="runAssessment()">
+          ▶ Run Assessment
+        </button>
+        <button class="btn btn-secondary" onclick="selectAllFrameworks()">Select All</button>
+        <button class="btn btn-secondary" onclick="clearFrameworks()">Clear</button>
+      </div>
+    </div>
+
+    <div class="card" id="assess-status-card" style="display:none">
+      <div class="card-title">Assessment Progress</div>
+      <div id="assess-status-content"></div>
+    </div>
+  </div>
+
+  <!-- TAB 3: RESULTS -->
+  <div id="tab-results" class="tab-content">
+    <div id="results-alerts"></div>
+
+    <div class="assessment-selector">
+      <select id="results-assessment-select" onchange="loadAssessmentResult()">
+        <option value="">— select an assessment —</option>
+      </select>
+      <button class="btn btn-secondary" onclick="loadAssessmentList()">↻ Refresh</button>
+    </div>
+
+    <div id="results-content">
+      <div class="empty-state">
+        <span class="empty-icon">📊</span>
+        <p>Select an assessment above to view results</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
