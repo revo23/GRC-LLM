@@ -1,0 +1,743 @@
+{
+  "assessment_id": "5442a64d-2f69-4f92-bcbc-2c611bf45b95",
+  "document_id": "0389e74ca279406eb39599c6b1a77670",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "iso_27001"
+  ],
+  "overall_posture_score": 2.55,
+  "framework_results": [
+    {
+      "framework_id": "iso_27001",
+      "framework_name": "ISO/IEC 27001",
+      "overall_score": 2.55,
+      "family_scores": [
+        {
+          "family": "Information Security Policies",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.2
+        },
+        {
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.48,
+          "control_count": 2,
+          "weight": 1.1
+        },
+        {
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.33,
+          "control_count": 3,
+          "weight": 1.0
+        },
+        {
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "average_score": 2.0,
+          "control_count": 3,
+          "weight": 1.2
+        },
+        {
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 3,
+          "weight": 1.5
+        },
+        {
+          "family": "Cryptography",
+          "framework_id": "iso_27001",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Supplier Relationships",
+          "framework_id": "iso_27001",
+          "average_score": 1.0,
+          "control_count": 1,
+          "weight": 1.0
+        },
+        {
+          "family": "Information Security Incident Management",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Business Continuity Management",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.2
+        },
+        {
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 2,
+          "weight": 1.1
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "A.5.1",
+          "control_name": "Policies for Information Security",
+          "family": "Information Security Policies",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents that information security policies are defined, approved, and aligned with legal requirements. There is evidence of defined processes for communication and assignment of responsibility, but there is insufficient detail on formal publication and specific mechanisms for communicating policies to relevant external parties.",
+          "evidence": [
+            "Provider established an Information Security Program (the \u201cProgram\u201d) to assure compliance with applicable laws. As required by law, the Program provides for the security and confidentiality of personal identifying information or sensitive personal information...",
+            "It is the policy of Provider to comply, and to require its employees to comply, with all applicable federal, state, and local laws and regulations, as well as Provider\u2019s policies and procedures, governing information security...",
+            "The Program is universally applicable to all services offered by Provider...",
+            "The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information."
+          ],
+          "gaps": [
+            "No explicit mention of formal management approval process for the policies.",
+            "Lack of details on how policies are published and communicated to all employees.",
+            "No evidence of communication of policies to relevant external parties.",
+            "No reference to regular review and update frequency for the policies."
+          ],
+          "recommendations": [
+            "Document a formal process for management approval of all information security policies.",
+            "Clearly state and implement procedures for publishing policies (e.g., company intranet, distribution upon onboarding).",
+            "Define and document processes for communicating applicable security policies to external parties (vendors, partners) as relevant.",
+            "Include requirements and procedures for periodic review and updates of all information security policies."
+          ]
+        },
+        {
+          "control_id": "A.6.1",
+          "control_name": "Internal Organization",
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy assigns broad information security responsibilities, particularly to a Coordinator, and addresses access management and workforce security at a high level, but lacks specificity regarding segregation of duties and ongoing contact with authorities or special interest groups.",
+          "evidence": [
+            "\"The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information... The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards...\" (Excerpt 1)",
+            "\"Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access... Procedures for the authorization and/or supervision of company employees who work with electronic Information... Procedures to determine that the access of a company employee to electronic Information is appropriate.\" (Excerpt 2)",
+            "\"Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.\" (Excerpt 3)"
+          ],
+          "gaps": [
+            "No explicit mention or process for segregation of duties.",
+            "No details or requirements about maintaining contact with authorities or special interest groups.",
+            "Allocation of security responsibilities is centralized to the Coordinator without clearly defined roles for other positions.",
+            "No accountability framework or metrics for monitoring the effectiveness of these responsibilities."
+          ],
+          "recommendations": [
+            "Explicitly define and document information security responsibilities across all relevant roles and departments, not just the Coordinator.",
+            "Implement and formalize procedures for segregation of duties, specifying which functions must not be performed by the same individual.",
+            "Establish processes for maintaining contact with relevant authorities and special interest groups, including responsible personnel and frequency of contact.",
+            "Include mechanisms for measuring and monitoring the effectiveness and compliance with defined responsibilities, such as metrics or periodic audits."
+          ]
+        },
+        {
+          "control_id": "A.6.2",
+          "control_name": "Mobile Devices and Teleworking",
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes documented requirements for securing mobile devices and teleworking, including authentication, access controls, encryption, and risk assessment. However, it lacks evidence of ongoing measurement, monitoring, or structured integration with risk management beyond periodic assessments.",
+          "evidence": [
+            "Individuals who wish to opt-in to BYOD must be authorized by management and must explicitly accept the requirements laid out in this policy.",
+            "PODs must use appropriate forms of device authentication approved by Provider\u2019s IT department, such as digital certificates created for each specific device.",
+            "Remote access should be strictly controlled, using one-time password authentication.",
+            "All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.",
+            "All hosts used by the employee that are connected to the Provider Internet/Intranet/Extranet, whether owned by the employee or Provider, shall be continually executing approved virus-scanning software with a current virus database..."
+          ],
+          "gaps": [
+            "No mention of specific monitoring or review mechanisms for mobile device and teleworking controls.",
+            "No details on how compliance with mobile or remote work policies is verified or enforced.",
+            "No explicit requirements for regular re-evaluation of remote work or mobile devices security in light of new risks.",
+            "Lack of user awareness/training initiatives specifically tailored for mobile/remote working.",
+            "No reference to metrics or KPIs to assess the effectiveness of mobile and teleworking controls."
+          ],
+          "recommendations": [
+            "Implement and document regular reviews or audits of mobile device and teleworking arrangements to ensure ongoing compliance.",
+            "Establish formal metrics or KPIs to monitor the effectiveness of mobile/teleworking security measures.",
+            "Mandate recurring training for users on mobile device and teleworking risks and security practices.",
+            "Define enforcement mechanisms, such as periodic compliance checks for BYOD devices.",
+            "Integrate mobile and teleworking risks more explicitly into the organization's overall risk management processes."
+          ]
+        },
+        {
+          "control_id": "A.7.1",
+          "control_name": "Prior to Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions compliance with applicable laws and general workforce security, but it does not explicitly require background verification checks for candidates, nor does it provide processes for such checks prior to employment.",
+          "evidence": [
+            "It is the policy of Provider to comply, and to require its employees to comply, with all applicable federal, state, and local laws and regulations, as well as Provider\u2019s policies and procedures, governing information security, confidentiality, and privacy.",
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;"
+          ],
+          "gaps": [
+            "No explicit mention of background verification checks for all candidates for employment.",
+            "No description of the process, responsibilities, or requirements for conducting background checks.",
+            "No reference to carrying out checks 'in accordance with relevant laws, regulations and ethics.'"
+          ],
+          "recommendations": [
+            "Add a policy statement requiring background verification checks for all employment candidates.",
+            "Outline the types of background checks to be performed and ensure alignment with relevant local, state, and federal laws.",
+            "Specify roles and responsibilities for carrying out background checks and any applicable ethical considerations.",
+            "Document procedures for recording, reviewing, and updating results of such checks."
+          ]
+        },
+        {
+          "control_id": "A.7.2",
+          "control_name": "During Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal, documented expectations for employee and contractor compliance with information security policies, provides supporting processes for training, access management, sanctions, and monitoring, but lacks explicit, organization-wide definitions for performance metrics, ongoing monitoring, or detailed role-based accountabilities.",
+          "evidence": [
+            "Appropriate sanctions against workforce members who fail to comply with security policies and procedures.",
+            "Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "Security awareness and training. A security awareness and training program for all company employees (including management).",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information ... The assessment, at a minimum, must include employee training and management..."
+          ],
+          "gaps": [
+            "No defined metrics or mechanisms for monitoring employee compliance with information security during employment.",
+            "Accountability for ongoing adherence (beyond initial training and oversight by the Coordinator) is not detailed.",
+            "Contractor obligations are implied but not clearly or consistently addressed.",
+            "Continuous improvement or integration with risk management activities during the period of employment is not explicitly included."
+          ],
+          "recommendations": [
+            "Establish and document ongoing monitoring processes, with defined metrics, to assess employee and contractor compliance with information security policies and procedures.",
+            "Explicitly outline role-based accountability for management, employees, and contractors during employment.",
+            "Include clear requirements and processes for contractors applying organizational security procedures, equivalent to those for employees.",
+            "Integrate periodic effectiveness reviews of the control into the organization\u2019s risk management or continuous improvement processes."
+          ]
+        },
+        {
+          "control_id": "A.7.3",
+          "control_name": "Termination and Change of Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses termination of access to electronic information when employment ends and assigns responsibility for oversight, but does not clearly define, communicate, or enforce post-employment information security responsibilities and duties.",
+          "evidence": [
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Provider will designate an Information Security Program Coordinator (\u201cCoordinator\u201d) who will be primarily responsible for coordinating and overseeing the Program.",
+            "Provider will routinely monitor its operations related to the handling of the Information."
+          ],
+          "gaps": [
+            "No explicit definition or documentation of post-employment information security responsibilities (e.g., ongoing confidentiality obligations).",
+            "No outlined process to communicate or reinforce such responsibilities at or after termination or change of employment.",
+            "No mechanism described to enforce compliance with post-employment duties (e.g., reminders, signed acknowledgements, sanctions for breaches after employment ends)."
+          ],
+          "recommendations": [
+            "Define in writing the continuing information security responsibilities that persist beyond employment, such as confidentiality and non-disclosure obligations.",
+            "Establish a formal process to communicate these ongoing responsibilities to individuals upon termination or change of employment (e.g., exit interviews, signed acknowledgements).",
+            "Implement enforcement mechanisms for post-employment obligations, and document actions to be taken in case of violations.",
+            "Periodically review and update related procedures and provide refresher notifications to former employees where appropriate."
+          ]
+        },
+        {
+          "control_id": "A.8.1",
+          "control_name": "Responsibility for Assets",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy discusses general safeguards, risk assessment, and access controls, but lacks explicit statements about identifying assets and maintaining a formal asset inventory as required by the control.",
+          "evidence": [
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information...",
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations...",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment..."
+          ],
+          "gaps": [
+            "No explicit requirement to identify assets associated with information and information processing facilities.",
+            "No formal process described for drawing up and maintaining an inventory of these assets.",
+            "No mention of regularly updating or reviewing an asset inventory."
+          ],
+          "recommendations": [
+            "Add a policy statement that requires identification of all assets (hardware, software, data, etc.) related to information and information processing facilities.",
+            "Define a formal process for creating, maintaining, and periodically reviewing an asset inventory.",
+            "Ensure accountability for asset inventory management and specify roles responsible for maintaining it."
+          ]
+        },
+        {
+          "control_id": "A.8.2",
+          "control_name": "Information Classification",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy frequently refers to access, confidentiality, and criticality, but it does not establish a formal process for the classification of information by value, sensitivity, legal requirements, or risk of disclosure/modification. Elements of classification are implied but not defined or managed programmatically.",
+          "evidence": [
+            "assessment of the relative criticality of specific applications and data in support of other contingency plan components",
+            "confidentiality of business records containing personal identifying information or sensitive personal information as those terms may be defined by applicable law",
+            "information access management. Policies and procedures for authorizing access ... consistent with applicable law and best practices",
+            "security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level"
+          ],
+          "gaps": [
+            "No mention of a formal information classification scheme or process.",
+            "No clear assignment of classification levels (e.g., Public, Internal, Confidential, Restricted) based on value, criticality, sensitivity, or legal requirements.",
+            "No requirements for labeling, handling, or marking information based on its classification.",
+            "No guidelines or policy for periodic review or reclassification of information."
+          ],
+          "recommendations": [
+            "Establish and document a formal information classification policy with defined levels based on legal, business, and sensitivity criteria.",
+            "Assign responsibilities for classifying information and ensure periodic review and updates as business and regulatory requirements evolve.",
+            "Develop procedures for labeling, handling, storing, and transmitting classified information.",
+            "Train employees on the classification scheme and their responsibilities for protecting information at the appropriate level."
+          ]
+        },
+        {
+          "control_id": "A.8.3",
+          "control_name": "Media Handling",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy outlines several high-level procedures for device and media controls, including the removal, re-use, and disposal of media, but lacks specificity and clear linkage to the organization's information classification scheme.",
+          "evidence": [
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility.",
+            "Policies and procedures to address the final disposition of electronic Information, and/or the hardware or electronic media on which it is stored.",
+            "Procedures for removal of electronic Information from electronic media before the media are made available for re-use.",
+            "A record of the movements of hardware and electronic media and any person responsible therefor."
+          ],
+          "gaps": [
+            "No explicit reference to procedures being implemented according to an adopted classification scheme.",
+            "Does not define roles and responsibilities specific to media handling based on classification.",
+            "Lacks details on secure storage, labeling, transport, and accountability processes tied to classification levels.",
+            "No mention of regular review or monitoring of media handling procedures."
+          ],
+          "recommendations": [
+            "Explicitly reference the organization\u2019s classification scheme within the media handling procedures, ensuring different classes of information have appropriate protection.",
+            "Define and document specific security requirements for handling, storage, transport, and disposal of removable media by classification level.",
+            "Establish clear roles and responsibilities for staff managing media based on its classification.",
+            "Develop mechanisms for regular review, monitoring, and enforcement of compliance with media handling procedures.",
+            "Provide targeted training on media handling requirements based on classification levels as part of the security awareness program."
+          ]
+        },
+        {
+          "control_id": "A.9.1",
+          "control_name": "Business Requirements of Access Control",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a documented access control policy, describes authorization, reviewing, and revocation procedures, and is linked to business and security requirements. However, explicit review frequency, metrics, or continuous improvement are not addressed.",
+          "evidence": [
+            "Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Information access management. Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security."
+          ],
+          "gaps": [
+            "No explicit requirement or schedule for periodic review of the access control policy.",
+            "No reference to metrics or monitoring of effectiveness in access control implementation.",
+            "No mention of integration with broader risk management processes or formal mechanisms for continuous improvement."
+          ],
+          "recommendations": [
+            "Define and document a periodic access control policy review schedule (e.g., annually, or after significant business or IT changes).",
+            "Introduce monitoring, metrics or audit logs to ensure effectiveness and compliance with the policy.",
+            "Formally integrate access control decisions and improvements with organizational risk management processes.",
+            "Document a process for continuous improvement of the access control policy based on lessons learned and evolving threats."
+          ]
+        },
+        {
+          "control_id": "A.9.2",
+          "control_name": "User Access Management",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy contains documented, department-driven processes for user registration and de-registration, with some attention to privilege control and termination of access but lacks evidence of centralized, formal process ownership, measurement, or ongoing improvement.",
+          "evidence": [
+            "Account activity should be monitored, and if a remote access account is not used for a period of six months the account should be eliminated and no longer function. If remote access is subsequently required, the individual must request a new account as described above.",
+            "Each department shall confirm that employee tasks require access to Information before allowing access. Employees shall only have access to Information necessary to complete their job functions \u2013 no 'blanket' access will be given to all Information unless deemed necessary.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No explicit reference to a single, organization-wide formal user registration/de-registration workflow with defined ownership.",
+            "No clear mention of a process for periodic access reviews/audits for privileged accounts.",
+            "The policy does not specify metrics or processes for monitoring effectiveness or continuous improvement of access management.",
+            "Privileged access provisioning and monitoring are referenced only generally, not in detail."
+          ],
+          "recommendations": [
+            "Establish and document a formal, centralized user registration and de-registration process that includes specific roles and responsibilities.",
+            "Implement regular reviews and audits of user and privileged access rights, with documented procedures.",
+            "Define and track metrics for access management effectiveness, such as time to revoke access or frequency of privilege reviews.",
+            "Enhance policy language to describe additional controls for managing privileged access, including approval workflows and periodic revalidation."
+          ]
+        },
+        {
+          "control_id": "A.9.4",
+          "control_name": "System and Application Access Control",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines processes for secure log-on, password strength, failed login handling, and account identification/authorization, but lacks detailed metrics, ongoing monitoring, or explicit continuous improvement mechanisms.",
+          "evidence": [
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection.",
+            "Passwords must be unknown, unrecorded, and unrecoverable by system administrators or system support staff. ... All passwords must be at least 6 characters long and contain at least one letter and one number. Users will be required to change their password at least every 90 days.",
+            "There must be a limit to the number of repeated unsuccessful attempts to log into an application or server that deals with Information. For example, a system that 'locks' access from a particular account after 3 failed attempts would meet this criterion.",
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed."
+          ],
+          "gaps": [
+            "Policy does not specify interactive password management features, such as prohibiting reuse, complexity beyond minimum length/letter/number, or user self-service password resets beyond help desk intervention.",
+            "No explicit mention of secure log-on procedures' technical elements (e.g., masking password input, session security, or multi-factor authentication for higher-risk systems) beyond passwords and account lockout.",
+            "Lacks defined monitoring, metrics, or periodic review of access controls and password policies for effectiveness.",
+            "No reference to integration of access control mechanisms with organizational risk management or continuous improvement cycles."
+          ],
+          "recommendations": [
+            "Define more comprehensive password quality requirements (such as complexity, reuse prohibition, detection of common passwords, and minimum change intervals).",
+            "Specify interactive password management features, such as user self-service reset and automated checks for password strength.",
+            "Detail secure log-on technical requirements (e.g., password input masking, session timeouts, and consideration for multi-factor authentication).",
+            "Implement regular reviews and monitoring of access control effectiveness with defined metrics and assign accountability.",
+            "Integrate access control procedures with the organization's risk management and improvement processes to reach higher maturity."
+          ]
+        },
+        {
+          "control_id": "A.10.1",
+          "control_name": "Cryptographic Controls",
+          "family": "Cryptography",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions encryption and transmission security but lacks a dedicated, comprehensive policy specifying requirements for cryptographic controls or key management. There is no explicit coverage of key protection, key lifecycle management, or detailed guidelines for algorithm and key strength.",
+          "evidence": [
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network."
+          ],
+          "gaps": [
+            "No formal, separate policy on the use and management of cryptographic controls.",
+            "No policy statements expressly covering cryptographic key protection, storage, or lifecycle management.",
+            "No specification of cryptographic algorithms, key lengths, or requirements for selecting cryptographic controls.",
+            "No assignment of ownership, accountability, or monitoring regarding cryptographic processes."
+          ],
+          "recommendations": [
+            "Develop and document a formal cryptography policy that addresses requirements for the use, selection, and management of cryptographic controls.",
+            "Include explicit guidance for cryptographic key management, including protection, storage, distribution, rotation, and destruction.",
+            "Define roles and assign accountability for managing cryptographic controls and keys.",
+            "Implement regular reviews and monitoring of cryptographic usage and key management per risk and compliance requirements."
+          ]
+        },
+        {
+          "control_id": "A.11.1",
+          "control_name": "Secure Areas",
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy sets out formal, documented procedures for physical safeguards that include facility access controls, policies to prevent unauthorized access, role-based facility access, visitor control, and documentation of facility modifications. However, the policy lacks explicit definitions or mapping of security perimeters and does not directly address the structured use of zones or boundaries for sensitive areas.",
+          "evidence": [
+            "Policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.",
+            "Procedures to control and validate a person\u2019s access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.",
+            "Policies and procedures to limit physical access to electronic information systems and the facility or facilities in which they are housed, while ensuring that properly authorized access is allowed.",
+            "Procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks)."
+          ],
+          "gaps": [
+            "No explicit definition or designation of security perimeters/zones within facilities.",
+            "No mention of systematic separation or controlled boundaries for areas containing sensitive or critical information.",
+            "Lacks mapping or systematic approach to identify which areas require enhanced protection based on information sensitivity."
+          ],
+          "recommendations": [
+            "Define and document security perimeters/zones (e.g., restricted areas, secure rooms) within facilities that house sensitive or critical information.",
+            "Establish a formal process for identifying and reviewing which areas require enhanced security based on risk assessments and information sensitivity.",
+            "Implement procedures for periodic assessment of the adequacy of physical security perimeters and boundaries, and update them as needed."
+          ]
+        },
+        {
+          "control_id": "A.11.2",
+          "control_name": "Equipment Security",
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy has formal, documented procedures addressing equipment siting, physical access controls, environmental threats, and unauthorized access. While most requirements are covered, there is no explicit mention of ongoing monitoring, defined metrics, or continuous improvement processes.",
+          "evidence": [
+            "Policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.",
+            "Facility access controls. Policies and procedures to limit physical access to electronic information systems and the facility or facilities in which they are housed, while ensuring that properly authorized access is allowed.",
+            "Procedures to control and validate a person\u2019s access to facilities based on their role or function, including visitor control.",
+            "Workstation security. Physical safeguards for all workstations that access electronic Information, to restrict access to authorized users.",
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility."
+          ],
+          "gaps": [
+            "No detailed requirements for regular review or monitoring of physical security measures and equipment location.",
+            "Lack of explicit criteria for evaluating and mitigating specific environmental threats and hazards (e.g., fire, flood, electrical).",
+            "No mention of ongoing metrics, accountability assignments, or continuous improvement for equipment security.",
+            "Does not specify procedures for routine validation/testing of physical security controls."
+          ],
+          "recommendations": [
+            "Define and require periodic reviews and monitoring of equipment security controls, including assessment of location suitability relative to environmental threats.",
+            "Specify the types of environmental hazards (e.g., fire, flood, temperature) to be considered when siting equipment and require associated mitigation controls.",
+            "Establish clear roles and accountability for the management and monitoring of equipment security.",
+            "Implement regular testing, validation, and updating of physical security measures, documenting results and remediation actions.",
+            "Integrate metrics or KPIs for equipment security, and establish a process for continuous improvement based on monitoring/audit findings."
+          ]
+        },
+        {
+          "control_id": "A.12.1",
+          "control_name": "Operational Procedures and Responsibilities",
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy references the existence and development of documented procedures, access management, and contingency planning, but lacks explicit detail on operational procedure documentation, systematic availability to all users, and a controlled process for system changes.",
+          "evidence": [
+            "Procedures that allow facility access in support of restoration of lost data under any disaster recovery plan or emergency mode operations plan in the event of an emergency.",
+            "Policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.",
+            "Policies and procedures, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information."
+          ],
+          "gaps": [
+            "No explicit statement that all operating procedures are documented and regularly updated.",
+            "No clear evidence that procedures are made available to all users who need them.",
+            "There is no mention of a formal, controlled process for managing and documenting changes to information systems (change management)."
+          ],
+          "recommendations": [
+            "Develop and reference a formal operating procedures manual that is periodically reviewed and updated.",
+            "Establish a documented process for distributing procedures to all users who require them, with an audit trail confirming availability.",
+            "Implement and document a formal change management process covering the control, approval, and documentation of all system changes."
+          ]
+        },
+        {
+          "control_id": "A.12.6",
+          "control_name": "Technical Vulnerability Management",
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy demonstrates a formal, documented vulnerability and risk assessment process, includes periodic evaluations, and mandates technical safeguards such as timely software patching. However, there is a lack of detail on process consistency, defined metrics, and formal assignment of accountability for ongoing vulnerability monitoring and response.",
+          "evidence": [
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance...",
+            "Each department is responsible for maintaining an active risk assessment policy.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information...",
+            "Computers should have the most recently available and appropriate software security patches, commensurate with the identified level of acceptable risk.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit procedure for obtaining relevant vulnerability intelligence sources in a timely fashion.",
+            "No details on specific processes or tools for ongoing vulnerability scanning or monitoring.",
+            "Accountability and metrics for technical vulnerability management (e.g., patch timelines, tracking mitigations) are not defined.",
+            "No mention of integration with enterprise risk management or ongoing improvement cycles based on vulnerability findings."
+          ],
+          "recommendations": [
+            "Establish a documented process for continuously obtaining vulnerability information from relevant external sources (vendor bulletins, threat intelligence).",
+            "Define and mandate periodic vulnerability scanning, with documented procedures for timely identification and evaluation of technical vulnerabilities.",
+            "Assign clear accountability for tracking, mitigation, and reporting of identified vulnerabilities, and specify measurable timelines for remediation.",
+            "Integrate vulnerability management with overall risk management and establish metrics for assessing the effectiveness of controls, with regular reviews and improvements."
+          ]
+        },
+        {
+          "control_id": "A.13.1",
+          "control_name": "Network Security Management",
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal network security management processes, including technical and administrative safeguards, risk assessments, and periodic reviews, but lacks specific metrics, documented service levels, and detailed accountability structure.",
+          "evidence": [
+            "\"Safeguards are to include: Administrative Safeguards ... Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.\"",
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\"",
+            "\"Proposed Technical Safeguards: All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.\"",
+            "\"The Coordinator will prepare and maintain written safeguards and will provide guidance on implementation of safeguards to all affected company employees.\"",
+            "\"Restrict network administrative privileges. Computer networks rely on a hierarchical system of access levels to help protect critical parts of the network ...\""
+          ],
+          "gaps": [
+            "Lack of explicit definition of expected network security mechanisms (e.g., firewalls, IDS/IPS, segmentation).",
+            "No specific documentation of service levels (e.g., uptime, response time) for network management.",
+            "Absence of detailed metrics or accountability for ongoing monitoring and improvement.",
+            "Policy leaves discretion for safeguards up to departments/the Coordinator, leading to possible inconsistency."
+          ],
+          "recommendations": [
+            "Document specific baseline network security mechanisms required for all environments (e.g., firewalls, intrusion detection, segmentation).",
+            "Define and communicate service level requirements for network performance and security.",
+            "Develop and track metrics for network security management, such as incident response times and network uptime.",
+            "Assign clear roles and accountability for monitoring network controls, and ensure regular, formal review and improvement cycles."
+          ]
+        },
+        {
+          "control_id": "A.13.2",
+          "control_name": "Information Transfer",
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy excerpts mention transmission security and technical safeguards such as encryption for information transfer and controls for device and media movement. However, the policy lacks a formal, comprehensive process and dedicated procedures specifically addressing all types of information transfer and related communication facilities.",
+          "evidence": [
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network. This safeguard may be implemented by one or all of the following, as appropriate: Security measures to ensure that electronically transmitted electronic Information is not improperly modified without detection until disposed of. A mechanism to encrypt electronic Information whenever deemed appropriate.",
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility.",
+            "Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights."
+          ],
+          "gaps": [
+            "No explicit, formalized policy for all forms of information transfer (e.g., paper, removable media, courier, verbal).",
+            "No comprehensive description of roles, responsibilities, or approval workflows for information transfers.",
+            "Lacks detailed procedures and controls covering inbound and outbound information transfer via all communication facilities (email, fax, cloud services, etc.).",
+            "No mention of monitoring or record-keeping for all types of transfers.",
+            "Does not address regular review, measurement, or improvement of transfer controls."
+          ],
+          "recommendations": [
+            "Develop and document a formal policy dedicated to the secure transfer of information, covering all types of communication facilities (electronic, physical, verbal, removable media, etc.).",
+            "Define clear processes, roles, and responsibilities for authorizing and documenting information transfers.",
+            "Include requirements for secure methods appropriate to each type of transfer, such as encryption, tamper-evident packaging, and secure courier.",
+            "Establish procedures for monitoring, logging, and periodic review of all information transfers.",
+            "Implement metrics and regular reviews to assess and improve information transfer controls over time."
+          ]
+        },
+        {
+          "control_id": "A.15.1",
+          "control_name": "Information Security in Supplier Relationships",
+          "family": "Supplier Relationships",
+          "framework_id": "iso_27001",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains ad hoc references to risk assessments, safeguards, and access controls, but does not explicitly address information security requirements for suppliers, nor the documentation and agreement of such requirements with suppliers.",
+          "evidence": [
+            "\"Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise...\"",
+            "\"All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information...\"",
+            "\"Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.\""
+          ],
+          "gaps": [
+            "No requirement to define, agree on, or document information security requirements with suppliers.",
+            "No mention of supplier access management processes.",
+            "No explicit supplier risk assessment or controls for supplier relationships.",
+            "No requirement to include information security clauses in supplier contracts."
+          ],
+          "recommendations": [
+            "Implement a formal process to define, agree, and document information security requirements with suppliers prior to engagement.",
+            "Integrate explicit controls for managing supplier access to organizational assets within policy and contractual documents.",
+            "Require supplier risk assessments focusing on their access to and handling of organizational information.",
+            "Update policy to mandate information security clauses in all supplier agreements outlining the required controls and responsibilities."
+          ]
+        },
+        {
+          "control_id": "A.16.1",
+          "control_name": "Management of Information Security Incidents",
+          "family": "Information Security Incident Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes and documents responsibilities and procedures for incident management, including reporting, mitigation, documentation, and accountability. However, details on specific procedures, escalation, and continual improvement are limited.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "This Program will be reviewed and adjusted periodically."
+          ],
+          "gaps": [
+            "No detailed step-by-step incident response procedures (e.g., detection, reporting, escalation, recovery, post-incident analysis).",
+            "Roles and responsibilities during an incident are not delineated beyond general assignment to a Coordinator.",
+            "Lack of integration of lessons learned and continuous improvement specific to incident management.",
+            "No reference to metrics, regular reporting, or specific monitoring processes for incident response effectiveness."
+          ],
+          "recommendations": [
+            "Develop and document a specific incident response plan detailing detection, reporting, escalation, containment, eradication, recovery, and post-incident review processes.",
+            "Define and communicate roles and responsibilities for all personnel involved in incident response, including clear escalation paths.",
+            "Implement metrics and monitoring of incident response effectiveness, including time to detect, respond, and resolve incidents.",
+            "Integrate lessons learned from incidents into regular policy reviews to drive continuous improvement.",
+            "Provide regular training and simulations for all staff to ensure incident response procedures are practical and effective."
+          ]
+        },
+        {
+          "control_id": "A.17.1",
+          "control_name": "Information Security Continuity",
+          "family": "Business Continuity Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy includes formal, documented processes for information security continuity, including requirements for risk assessment, contingency planning, and continuity of critical business processes. However, it lacks specifics on metrics, monitoring methods, and integration with broader organizational risk management.",
+          "evidence": [
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations outlined above.",
+            "Procedures to enable continuation of critical business processes for protection of the security of electronic Information while operating in emergency mode;",
+            "Procedures for periodic testing and revision of contingency plans.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information."
+          ],
+          "gaps": [
+            "No explicit mention of defined metrics or ongoing measurement for information security continuity.",
+            "Lack of clear accountability, ownership, or integration with overall organizational risk management.",
+            "No reference to continuous improvement of continuity processes or lessons learned after incidents.",
+            "Specific requirements for communication and coordination during adverse situations are not described."
+          ],
+          "recommendations": [
+            "Define and implement key metrics and regular monitoring to evaluate the effectiveness of information security continuity measures.",
+            "Assign clear roles and responsibilities for information security continuity and align them with the organization's broader risk management strategy.",
+            "Establish structured post-incident review and continuous improvement processes for continuity plans.",
+            "Include specific procedures for communication and coordination during adverse situations."
+          ]
+        },
+        {
+          "control_id": "A.18.1",
+          "control_name": "Compliance with Legal and Contractual Requirements",
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy explicitly requires compliance with relevant laws and regulations, assigns responsibility, mandates risk assessment and monitoring, and ensures staff are trained on legal requirements. However, it lacks detailed procedures for systematically identifying, documenting, and updating legislative, regulatory, and contractual requirements, and does not describe mechanisms for keeping this documentation current.",
+          "evidence": [
+            "Provider established an Information Security Program (the \u201cProgram\u201d) to assure compliance with applicable laws. As required by law, the Program provides for the security and confidentiality of personal identifying information or sensitive personal information collected...",
+            "It is the policy of Provider to comply, and to require its employees to comply, with all applicable federal, state, and local laws and regulations, as well as Provider\u2019s policies and procedures, governing information security, confidentiality, and privacy.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "Provider will designate an Information Security Program Coordinator (\u201cCoordinator\u201d) who will be primarily responsible for coordinating and overseeing the Program.",
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information."
+          ],
+          "gaps": [
+            "No formal process for identifying, documenting, and evaluating relevant legislative, regulatory, and contractual requirements.",
+            "Absence of procedures for keeping legislative, regulatory, and contractual requirements documentation up to date.",
+            "No explicit mention of a register or record of these requirements, or how contractual obligations are tracked."
+          ],
+          "recommendations": [
+            "Establish and document a formal process for identifying and cataloging all relevant legislative, regulatory, and contractual requirements impacting information security.",
+            "Implement procedures to regularly review and update the documentation of these requirements, including maintaining a compliance register.",
+            "Define accountability for monitoring changes in legal and regulatory requirements and updating the compliance records accordingly.",
+            "Include a mechanism for tracking contractual obligations related to information security and ensuring ongoing compliance."
+          ]
+        },
+        {
+          "control_id": "A.18.2",
+          "control_name": "Information Security Reviews",
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines periodic independent reviews of the information security program, assigns responsibility to a Coordinator, and requires regular monitoring and reporting, but does not detail the independence of reviewers or the specific metrics/monitoring mechanisms, nor does it explicitly tie the process to risk management or continuous improvement.",
+          "evidence": [
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "Some areas of the company may require more frequent review than others, such as IT, records management, or any other area that comes in contact with a high volume of Information or is especially vulnerable to technological or procedural risks and threats.",
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations outlined above.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit mention of the reviews being performed independently (by a party not responsible for implementation).",
+            "Lacks details on monitoring/measuring the effectiveness of the review program (metrics, KPIs, etc.).",
+            "Does not describe how results of reviews are integrated into risk management or used for continuous improvement.",
+            "No mention of formal accountability or ownership for review findings beyond the Coordinator."
+          ],
+          "recommendations": [
+            "Specify that security reviews should be conducted by an independent party, either internal (not responsible for implementation) or external.",
+            "Define clear metrics and measurement criteria to evaluate the effectiveness of the information security program and its controls.",
+            "Establish accountability processes for addressing findings from reviews, assigning action owners and timelines.",
+            "Explicitly integrate review outcomes into the organization's structured risk management and continuous improvement processes."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T20:33:05.603425",
+  "status": "completed"
+}

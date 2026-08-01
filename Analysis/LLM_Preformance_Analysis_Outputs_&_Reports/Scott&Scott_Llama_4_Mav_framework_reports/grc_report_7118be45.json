@@ -1,0 +1,611 @@
+{
+  "assessment_id": "7118be45-ea43-4650-8184-f44f16aaf42d",
+  "document_id": "0389e74ca279406eb39599c6b1a77670",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "cmmc"
+  ],
+  "overall_posture_score": 2.38,
+  "framework_results": [
+    {
+      "framework_id": "cmmc",
+      "framework_name": "Cybersecurity Maturity Model Certification",
+      "overall_score": 2.38,
+      "family_scores": [
+        {
+          "family": "Access Control",
+          "framework_id": "cmmc",
+          "average_score": 2.53,
+          "control_count": 4,
+          "weight": 1.5
+        },
+        {
+          "family": "Audit and Accountability",
+          "framework_id": "cmmc",
+          "average_score": 2.5,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Configuration Management",
+          "framework_id": "cmmc",
+          "average_score": 2.0,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Identification and Authentication",
+          "framework_id": "cmmc",
+          "average_score": 2.34,
+          "control_count": 3,
+          "weight": 1.5
+        },
+        {
+          "family": "Incident Response",
+          "framework_id": "cmmc",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Risk Assessment",
+          "framework_id": "cmmc",
+          "average_score": 2.48,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "System and Communications Protection",
+          "framework_id": "cmmc",
+          "average_score": 2.0,
+          "control_count": 2,
+          "weight": 1.4
+        },
+        {
+          "family": "System and Information Integrity",
+          "framework_id": "cmmc",
+          "average_score": 2.67,
+          "control_count": 3,
+          "weight": 1.4
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "AC.L1-3.1.1",
+          "control_name": "Authorized Access Control",
+          "family": "Access Control",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal process to limit access to authorized users, require authentication, restrict privileges to job functions, monitor activity, and manage accounts. While core elements are present, there is limited evidence of defined metrics, monitoring, or continuous improvement.",
+          "evidence": [
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed.",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Each department shall confirm that employee tasks require access to Information before allowing access. Employees shall only have access to Information necessary to complete their job functions \u2013 no 'blanket' access will be given to all Information unless deemed necessary.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No evidence of formal metrics to measure enforcement or effectiveness of access controls.",
+            "Limited detail on access review frequency, mechanisms for privilege management, or integration with risk management.",
+            "No explicit mention of processes for devices (including other information systems) or processes acting on behalf of users beyond user account controls."
+          ],
+          "recommendations": [
+            "Define and implement formal metrics for monitoring access control effectiveness (e.g., periodic access reviews, audit log evaluation rates).",
+            "Establish regular review cycles and documented processes for privilege management and user/device access certification.",
+            "Expand policy to explicitly address access by devices and processes acting on behalf of users, not just user accounts.",
+            "Integrate access control management with the broader risk management framework and document accountability for enforcement."
+          ]
+        },
+        {
+          "control_id": "AC.L2-3.1.3",
+          "control_name": "Control CUI Flow",
+          "family": "Access Control",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses access management, authentication, encryption, and incident response, but does not specifically mention controlling CUI flow or enforcing information flow control using policy filters or protected processing domains. Procedures are present, but coverage and specificity for CUI flow controls are insufficient.",
+          "evidence": [
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Safeguards are to include: Administrative Safeguards: Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Access to Information may be restricted through the use of login and password protection.",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network."
+          ],
+          "gaps": [
+            "No explicit mention of controlling CUI flow in accordance with approved authorizations.",
+            "No evidence of information flow control mechanisms such as security policy filters or protected processing domains.",
+            "Lacks detailed procedures to monitor and enforce the flow of CUI specifically.",
+            "Does not address requirements for information flow enforcement beyond basic access control and encryption."
+          ],
+          "recommendations": [
+            "Define and document procedures specifically for controlling the flow of CUI, including mapping approved authorizations.",
+            "Implement and describe information flow control mechanisms, such as policy filters and protected processing domains, within policy.",
+            "Establish monitoring and enforcement processes for CUI information flow, with regular review and auditing responsibilities.",
+            "Include explicit requirements for technical solutions (e.g., firewalls, data loss prevention) to enforce CUI flow restrictions."
+          ]
+        },
+        {
+          "control_id": "AC.L2-3.1.5",
+          "control_name": "Least Privilege",
+          "family": "Access Control",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents formal processes for access authorization, reviewing user access rights, and role-based facility access, although explicit emphasis on least privilege for privileged accounts and security functions is limited.",
+          "evidence": [
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk.",
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed; Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Procedures to control and validate a person\u2019s access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision."
+          ],
+          "gaps": [
+            "No explicit requirement to minimize or restrict privileged account access to only essential functions.",
+            "Lack of specificity regarding the authorization and review process for privileged accounts and security functions.",
+            "No mention of periodic review or monitoring specific to privileged roles.",
+            "Absence of defined metrics or continuous improvement mechanisms for least privilege enforcement."
+          ],
+          "recommendations": [
+            "Add explicit policy language requiring the principle of least privilege to be applied to all privileged accounts and security functions.",
+            "Define detailed procedures for authorizing, reviewing, and revoking privileged account access.",
+            "Establish periodic reviews and audits of privileged accounts to ensure least privilege is maintained.",
+            "Integrate metrics to monitor least privilege violations and establish accountability for enforcement.",
+            "Document continuous improvement processes for least privilege controls based on risk assessments."
+          ]
+        },
+        {
+          "control_id": "AC.L2-3.1.12",
+          "control_name": "Control Remote Access",
+          "family": "Access Control",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references remote access control and use of encryption and audit controls, but does not provide specific, consistent requirements for monitoring, controlling, or logging of remote access sessions. Cryptographic protection is mentioned, but formal procedures and monitoring mechanisms are incomplete.",
+          "evidence": [
+            "Remote access should be strictly controlled, using one-time password authentication.",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.",
+            "Installations that allow unrestricted access to resources must be configured with extra care to minimize security risks.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "The policy does not specify dedicated monitoring of remote access sessions.",
+            "There is no established process for logging and reviewing remote access session activity.",
+            "Cryptographic mechanisms are mentioned generically and not specifically required for all remote access sessions.",
+            "No defined accountability or measurable metrics for enforcing remote access controls.",
+            "No continuous improvement or integration with a broader risk management framework is described."
+          ],
+          "recommendations": [
+            "Define formal procedures for monitoring remote access sessions, including real-time alerting and periodic review of session logs.",
+            "Mandate the use of strong, up-to-date cryptographic mechanisms (e.g., TLS 1.2 or higher, VPN encryption) for all remote access.",
+            "Establish accountability by assigning responsibility for remote access monitoring to specific personnel or teams.",
+            "Describe in detail how and how often audit logs of remote access are reviewed and acted upon.",
+            "Integrate remote access monitoring and protection with the organization\u2019s risk management process, and regularly evaluate the effectiveness of these controls."
+          ]
+        },
+        {
+          "control_id": "AU.L2-3.3.1",
+          "control_name": "System Auditing",
+          "family": "Audit and Accountability",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references audit controls and mechanisms to record and examine information system activity, but lacks details on log creation, retention, and systematic practices for monitoring, analysis, and reporting of unlawful or unauthorized activity.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Procedures for monitoring log-in attempts and reporting discrepancies."
+          ],
+          "gaps": [
+            "No explicit retention requirements or timelines for audit logs.",
+            "No detailed procedures for monitoring, log analysis, or investigation of events.",
+            "No specified process or responsibility for reporting unlawful or unauthorized activity detected in logs.",
+            "Lack of requirements for periodic review of audit logs."
+          ],
+          "recommendations": [
+            "Define specific procedures for creating, retaining (with retention period), and managing audit logs.",
+            "Document responsibilities for monitoring, analysis, investigation, and reporting of suspicious or unauthorized activities found via system audit logs.",
+            "Include requirements for periodic review and testing of audit log integrity and usability.",
+            "Establish metrics or accountability for monitoring audit logging effectiveness and responsiveness to detected incidents."
+          ]
+        },
+        {
+          "control_id": "AU.L2-3.3.2",
+          "control_name": "User Accountability",
+          "family": "Audit and Accountability",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes individual user identification, audit controls, monitoring, and accountability, but lacks detail on how user actions are specifically mapped, monitored, and reviewed. There\u2019s insufficient evidence of measurement, metric-driven oversight, or robust integration with risk management.",
+          "evidence": [
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Appropriate sanctions against workforce members who fail to comply with security policies and procedures.",
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security."
+          ],
+          "gaps": [
+            "No explicit requirement or process spelled out ensuring that all user actions (not just access) are mapped and routinely reviewed to ensure accountability.",
+            "No defined metrics or monitoring frequency for audit log or activity review.",
+            "No mention of integration with risk assessments or continuous improvement based on user action traceability findings."
+          ],
+          "recommendations": [
+            "Document and communicate a formal process for associating all significant system actions with specific user identities and reviewing these logs on a defined schedule.",
+            "Define clear accountability metrics (such as response times for inappropriate activity or frequency of audit log audits) and designate responsibility for oversight.",
+            "Ensure policy explicitly integrates findings from audit log reviews into ongoing risk management and continuous improvement activities."
+          ]
+        },
+        {
+          "control_id": "CM.L2-3.4.1",
+          "control_name": "System Baselining",
+          "family": "Configuration Management",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains partial elements relevant to system inventories and device/media controls, but it lacks explicit and comprehensive requirements for establishing and maintaining baseline configurations and inventories throughout the system development life cycle.",
+          "evidence": [
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility.",
+            "A record of the movements of hardware and electronic media and any person responsible therefor.",
+            "Procedures to create and maintain retrievable exact copies of electronic Information.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective."
+          ],
+          "gaps": [
+            "No explicit mention of baseline configurations standards for hardware, software, firmware, or documentation.",
+            "No documented process for establishing, updating, or maintaining system baselines during the system development life cycle.",
+            "No comprehensive inventory management procedures for all system components or integration with configuration management practices."
+          ],
+          "recommendations": [
+            "Define and formalize baseline configuration standards for hardware, software, firmware, and system documentation, including requirements for secure settings and approved software.",
+            "Establish a process for maintaining up-to-date inventories of all organizational systems and document how these inventories will be updated during changes or lifecycle events.",
+            "Integrate baseline configuration and inventory management processes with broader configuration and change management practices.",
+            "Assign responsibility for monitoring and periodically reviewing baselines and inventories to ensure continued compliance and effectiveness."
+          ]
+        },
+        {
+          "control_id": "CM.L2-3.4.2",
+          "control_name": "Security Configuration Enforcement",
+          "family": "Configuration Management",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references general safeguards, audits, and evaluations, but there is no direct evidence of formal security configuration setting establishment, enforcement, or documentation for IT products. Processes are incomplete and lack specificity.",
+          "evidence": [
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective.",
+            "Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information."
+          ],
+          "gaps": [
+            "No formal process is described for establishing and documenting security configuration settings for information technology products.",
+            "There is no mention of a baseline standard, enforcement mechanism, or periodic review of security configuration settings.",
+            "Policy does not specify how configuration settings are tailored or maintained across IT products.",
+            "No accountability or assignment of responsibility for configuration enforcement."
+          ],
+          "recommendations": [
+            "Establish and document formal security configuration baselines for all information technology products.",
+            "Define enforcement mechanisms for maintaining compliance with security configuration settings.",
+            "Assign responsibility for configuration management and enforcement.",
+            "Implement periodic reviews and update procedures for configuration settings.",
+            "Integrate configuration management into technical evaluations/auditing processes."
+          ]
+        },
+        {
+          "control_id": "IA.L1-3.5.1",
+          "control_name": "Identification",
+          "family": "Identification and Authentication",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal, documented processes for identifying users and managing access, including unique identifiers and access authorization, but lacks explicit details on maintaining identification information and explicit requirements for device/process identification.",
+          "evidence": [
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for obtaining necessary electronic Information during an emergency."
+          ],
+          "gaps": [
+            "The policy does not explicitly mention the maintenance of user identification information or the retention period for such records.",
+            "There is no specific mention of identifying processes acting on behalf of users or devices.",
+            "No details are provided about how user identification is linked or used in the authentication process.",
+            "Limited detail on how identification information is updated or audited."
+          ],
+          "recommendations": [
+            "Explicitly state the requirement to maintain user identification records and specify retention requirements.",
+            "Expand policy language to cover identification and management of devices and processes acting on behalf of users.",
+            "Document procedures for updating, auditing, and revoking user identification information.",
+            "Clarify how user identification data is leveraged during authentication events and system audits."
+          ]
+        },
+        {
+          "control_id": "IA.L2-3.5.3",
+          "control_name": "Multifactor Authentication",
+          "family": "Identification and Authentication",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references authentication (passwords, one-time passwords, access controls) and requires stricter controls for higher risks or remote access, but it lacks a clear, comprehensive mandate for multifactor authentication (MFA) for local/network privileged access and for network access by non-privileged accounts. MFA is mentioned as an option, not a requirement, and is limited in scope to some remote access cases.",
+          "evidence": [
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection. For higher levels of risk, additional safeguards such as use of encryption technologies may be employed.",
+            "Remote access should be strictly controlled, using one-time password authentication.",
+            "Passwords must be unknown, unrecorded, and unrecoverable by system administrators or system support staff.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed."
+          ],
+          "gaps": [
+            "No explicit requirement for multifactor authentication (MFA) for all privileged local and network access.",
+            "No requirement for MFA for network access to non-privileged accounts.",
+            "References to one-time passwords for remote access do not clearly cover all use cases or constitute MFA.",
+            "No details on factor types (something you know, have, are) or implementation standards.",
+            "No process for periodic review, enforcement, or monitoring of MFA adoption."
+          ],
+          "recommendations": [
+            "Explicitly require multifactor authentication for local and network access to all privileged accounts.",
+            "Require multifactor authentication for network access by all non-privileged accounts.",
+            "Define accepted authentication factors (e.g., password + token or biometric).",
+            "Supplement policy with technical standards and implementation guidance for MFA.",
+            "Establish periodic monitoring and reporting to ensure MFA is enforced for all applicable accounts."
+          ]
+        },
+        {
+          "control_id": "IA.L2-3.5.7",
+          "control_name": "Password Complexity",
+          "family": "Identification and Authentication",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy sets basic password length and composition requirements and documents procedures for password management, but complexity requirements are minimal, lack detail, and there is no mention of automated tools to enforce password strength or required character changes between new passwords.",
+          "evidence": [
+            "All passwords must be at least 6 characters long and contain at least one letter and one number.",
+            "Users will be required to change their password at least every 90 days.",
+            "procedures for creating, changing, and safeguarding passwords"
+          ],
+          "gaps": [
+            "Password complexity requirements are minimal; do not specify upper/lower case, special characters, or avoidance of common words.",
+            "No policy statement or requirement for automated tools to assess or enforce password strength.",
+            "No requirement for changed passwords to differ from previous ones.",
+            "No mention of password blacklist or protection against common/reused credentials."
+          ],
+          "recommendations": [
+            "Update password policy to require a mix of uppercase, lowercase, numeric, and special characters, with a minimum length of at least 8\u201312 characters.",
+            "Specify the need for automated tools or technical controls to enforce password complexity and strength.",
+            "Require that newly created passwords differ significantly from previously used passwords (e.g., restricting password reuse or similarity).",
+            "Implement and document a process for regular review and update of password complexity settings based on emerging threats and industry best practices."
+          ]
+        },
+        {
+          "control_id": "IR.L2-3.6.1",
+          "control_name": "Incident Handling",
+          "family": "Incident Response",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents incident handling with elements for detection, response, mitigation, and recovery, but does not provide detailed process steps or assign specific metrics and accountabilities for all phases. Coverage exists for preparation, reporting, and user response, but lacks specificity in analysis and containment procedures.",
+          "evidence": [
+            "Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit process steps for incident analysis, containment, and post-incident recovery.",
+            "No assignment of specific accountability or coordination roles, aside from a general reference to 'the Coordinator.'",
+            "No definition of metrics for incident handling performance or process improvement.",
+            "User response activities are referenced broadly but not described in detail.",
+            "No mention of continuous process improvement or integration with enterprise risk management."
+          ],
+          "recommendations": [
+            "Develop and document step-by-step procedures for preparation, detection, analysis, containment, recovery, and user response.",
+            "Define and assign clear roles and responsibilities for incident handling, including escalation and coordination with external parties as needed.",
+            "Establish metrics for incident response effectiveness (e.g., mean time to detect, time to containment, recovery time).",
+            "Implement regular testing and rehearsal of incident response procedures, and incorporate feedback into process improvements.",
+            "Integrate incident response activities with broader organizational risk management and continuous improvement programs."
+          ]
+        },
+        {
+          "control_id": "IR.L2-3.6.2",
+          "control_name": "Incident Reporting",
+          "family": "Incident Response",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions documentation of security incidents and reporting procedures generally, but lacks specifics on incident reporting channels, documentation requirements for each incident, and reporting to external authorities.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards."
+          ],
+          "gaps": [
+            "No explicit definition of what constitutes a reportable incident or the timeframes for reporting.",
+            "No designated internal or external incident reporting channels or points of contact.",
+            "No process described for reporting incidents to external authorities or regulators.",
+            "No specification of information that must be documented for each incident.",
+            "No mention of incident escalation procedures or post-incident review/reporting requirements."
+          ],
+          "recommendations": [
+            "Define what constitutes a security incident and establish clear criteria for reporting.",
+            "Specify designated officials or authorities (internal and external) to whom incidents must be reported, including contact details.",
+            "Outline specific procedures and timelines for reporting incidents both internally and externally.",
+            "Detail documentation requirements for each incident, including information to be recorded and maintained.",
+            "Include requirements for incident escalation, external notifications (such as to regulators, customers, or partners), and post-incident lessons learned reviews."
+          ]
+        },
+        {
+          "control_id": "RA.L2-3.11.1",
+          "control_name": "Risk Assessments",
+          "family": "Risk Assessment",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents a risk assessment process, assigns responsibility, and defines periodic reviews, but it lacks defined metrics, explicit integration with risk management activities, or details on continuous improvement. There is partial mention of risk related to CUI but lacks specificity.",
+          "evidence": [
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "Provider is legally required to safeguard its clients\u2019 Information. Each department is responsible for maintaining an active risk assessment policy.",
+            "The Risk Assessment Process identifies various events or threats within the department that could negatively affect the institution strategically or operationally.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations outlined above.",
+            "Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective."
+          ],
+          "gaps": [
+            "No explicit mention of risk assessments that specifically reference CUI or its handling.",
+            "No evidence of defined risk assessment metrics or measurement/monitoring of risk posture.",
+            "No description of how findings are tracked, reported, or integrated directly into overall risk management.",
+            "No mention of continuous improvement or feedback mechanism.",
+            "Unclear frequency of risk assessment beyond annual program review and undefined 'periodic' actions."
+          ],
+          "recommendations": [
+            "Explicitly reference CUI within the risk assessment scope to ensure coverage of all requirements.",
+            "Define measurable risk metrics and regularly monitor/report on risk posture.",
+            "Document how risk assessment results are fed into the organization's broader risk management activities and decision-making.",
+            "Establish a process for continuous improvement of the risk assessment program based on lessons learned and emerging threats.",
+            "Clarify and standardize the frequency of risk assessments for all relevant areas, especially those processing, storing, or transmitting CUI."
+          ]
+        },
+        {
+          "control_id": "RA.L2-3.11.2",
+          "control_name": "Vulnerability Scan",
+          "family": "Risk Assessment",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions periodic system audits and risk assessments but does not explicitly require or describe a vulnerability scanning process or address scanning upon the discovery of new vulnerabilities. There is no clear procedural detail or frequency specified for vulnerability scans.",
+          "evidence": [
+            "\"Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security.\" (Excerpt 5)",
+            "\"An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.\" (Excerpt 4)",
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\" (Excerpt 4)",
+            "\"The Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other... laws and regulations.\" (Excerpt 1)"
+          ],
+          "gaps": [
+            "No formal definition or requirement for regular, scheduled vulnerability scans of systems and applications.",
+            "No mention of vulnerability scans being triggered in response to the identification of new vulnerabilities affecting systems.",
+            "No assignment of responsibility or metrics for vulnerability scanning.",
+            "No process for addressing and remediating vulnerabilities discovered by scans.",
+            "No reference to specific tools, frequency, or scope for scans."
+          ],
+          "recommendations": [
+            "Explicitly require and define regular (e.g., monthly or quarterly) vulnerability scans of all organizational systems and applications.",
+            "Establish policy to conduct ad hoc scans when new, relevant vulnerabilities are disclosed or identified.",
+            "Assign responsibility for performing scans and require documentation and remediation of findings.",
+            "Include standards for scan frequency, scope, methods/tools, and reporting.",
+            "Link vulnerability scanning processes with risk assessment and change management procedures."
+          ]
+        },
+        {
+          "control_id": "SC.L1-3.13.1",
+          "control_name": "Boundary Protection",
+          "family": "System and Communications Protection",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references risk-based technical safeguards, monitoring of system activity, and transmission security, but does not specifically require explicit boundary protection mechanisms or defined monitoring at external and key internal boundaries. The approach is mostly general and left to discretion, lacking consistent and comprehensive requirements for boundary protection.",
+          "evidence": [
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\"",
+            "\"Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.\"",
+            "\"Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.\"",
+            "\"All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.\""
+          ],
+          "gaps": [
+            "No policy statements explicitly requiring the monitoring, control, and protection of communications specifically at external and internal system boundaries.",
+            "Lack of defined mechanisms such as firewalls, intrusion detection/prevention systems, network segmentation, or explicit mention of boundary defense technologies.",
+            "No articulated requirements for continuous monitoring or defined metrics/accountability related to boundary protection."
+          ],
+          "recommendations": [
+            "Explicitly require the use of boundary protection devices\u2014such as firewalls and intrusion detection/prevention\u2014at all external and key internal system boundaries.",
+            "Define specific processes for monitoring, controlling, and protecting communications at these boundaries, including logging, alerting, and periodic review.",
+            "Document roles and responsibilities for managing, reviewing, and improving boundary protections, as well as metrics for effectiveness.",
+            "Integrate boundary protection requirements into risk assessments and ensure that technical safeguards are not left solely to departmental discretion."
+          ]
+        },
+        {
+          "control_id": "SC.L2-3.13.10",
+          "control_name": "Cryptographic Key Management",
+          "family": "System and Communications Protection",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions encryption and general safeguards but lacks explicit, formal coverage of cryptographic key management processes, protection requirements, and accountability. Elements are present, but implementation details are missing.",
+          "evidence": [
+            "Provider recommends that any information that users consider sensitive or vulnerable be encrypted.",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Safeguards are to include: ... technical ... safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No documented procedures for cryptographic key generation, storage, rotation, destruction, or recovery.",
+            "No explicit requirements for protecting cryptographic keys at all times (e.g., access controls, audit trails).",
+            "No defined accountability or roles for key management.",
+            "No monitoring or metrics regarding key lifecycle or effectiveness."
+          ],
+          "recommendations": [
+            "Document a formal cryptographic key management policy that addresses key generation, storage, rotation, destruction, and recovery.",
+            "Define roles, responsibilities, and accountability for cryptographic key management.",
+            "Establish technical and administrative safeguards specifically for the protection of cryptographic keys, including access control and audit mechanisms.",
+            "Implement monitoring and periodic review for cryptographic key management processes to ensure ongoing effectiveness and compliance.",
+            "Integrate cryptographic key management into risk management and regularly update based on threat analyses."
+          ]
+        },
+        {
+          "control_id": "SI.L1-3.14.1",
+          "control_name": "Flaw Remediation",
+          "family": "System and Information Integrity",
+          "framework_id": "cmmc",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions risk assessments, response to security breaches, and the responsibility for mitigation safeguards, which touch on flaw identification and remediation, but it lacks clearly defined processes for timely flaw correction and does not require software/firmware update testing for effectiveness.",
+          "evidence": [
+            "Each department is responsible for maintaining an active risk assessment policy. The Risk Assessment Process identifies various events or threats within the department that could negatively affect the institution strategically or operationally.",
+            "Security breaches - Security breaches include external and internal security breaches, programming fraud, computer viruses, hacking, or denial of service attacks.",
+            "The department would then be responsible for implementing safeguards to mitigate the assessed risk. Installation of firewalls, restricted access, data encryption, or limited network/internet access are all possible safeguards in this example."
+          ],
+          "gaps": [
+            "No explicit requirement to identify, report, and correct known information system flaws in a timely manner.",
+            "Lacks a formalized process for flaw remediation (e.g., patch management lifecycle).",
+            "No requirements for testing software and firmware updates for effectiveness before deployment."
+          ],
+          "recommendations": [
+            "Define and document a formal, organization-wide flaw remediation process that includes identification, reporting, and timely correction of system/software flaws.",
+            "Establish clear timelines for applying patches/updates based on risk.",
+            "Require and document the testing of software and firmware updates for effectiveness and potential negative impact before deployment.",
+            "Assign personnel accountability for the tracking and management of flaw remediation activities."
+          ]
+        },
+        {
+          "control_id": "SI.L1-3.14.2",
+          "control_name": "Malicious Code Protection",
+          "family": "System and Information Integrity",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal processes for malicious code protection through technical safeguards, including scanning emails and files for viruses and maintaining current patches. However, it lacks specific detail on the locations for deployment, continuous updating procedures for anti-malware mechanisms, and explicit assignment of responsibility/accountability.",
+          "evidence": [
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "Computers should have the most recently available and appropriate software security patches, commensurate with the identified level of acceptable risk.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No clear definition of 'appropriate locations' within organizational information systems for deploying malicious code protection.",
+            "Lacks documented procedures for timely updating of anti-malware software beyond general reference to keeping patches current.",
+            "No explicit assignment of responsibility for updating and managing malicious code protection mechanisms.",
+            "No mention of defined metrics or monitoring to measure effectiveness of malicious code protection."
+          ],
+          "recommendations": [
+            "Specify the systems, endpoints, servers, and network boundaries where malicious code protection must be deployed.",
+            "Formalize and document a process for regular and prompt updates to all malicious code protection mechanisms, not limited to OS patches.",
+            "Establish and document accountability and ownership for ensuring updates and deployments are maintained.",
+            "Include monitoring and reporting procedures to measure the effectiveness of malicious code protection controls (e.g., statistics on threats detected, update status, incidents responded to)."
+          ]
+        },
+        {
+          "control_id": "SI.L2-3.14.6",
+          "control_name": "Security Alert Monitoring",
+          "family": "System and Information Integrity",
+          "framework_id": "cmmc",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes documented processes for monitoring system activity and detecting potential attacks, including regular review of audit logs and tracking security incidents, but lacks specifics on monitoring inbound and outbound communications and defined metrics or continuous improvement mechanisms.",
+          "evidence": [
+            "procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement for monitoring inbound and outbound communications traffic.",
+            "No defined metrics or processes for measuring and monitoring the effectiveness of alert monitoring.",
+            "No integration of alert monitoring with risk management or continuous improvement.",
+            "Lacks details on automated alerting or use of security tools for real-time detection."
+          ],
+          "recommendations": [
+            "Add policy language specifying continuous monitoring of inbound and outbound network traffic for signs of attack.",
+            "Define metrics to evaluate the effectiveness and responsiveness of alert monitoring processes.",
+            "Implement automated security alerting tools and document their usage.",
+            "Integrate alert monitoring with ongoing risk management activities and describe processes for periodic review and improvement based on monitoring outcomes."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T20:43:24.781953",
+  "status": "completed"
+}

@@ -1,0 +1,469 @@
+{
+  "assessment_id": "7694d220-c76a-4886-88ab-b93cf85fed79",
+  "document_id": "0389e74ca279406eb39599c6b1a77670",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "ftc_safeguards"
+  ],
+  "overall_posture_score": 2.44,
+  "framework_results": [
+    {
+      "framework_id": "ftc_safeguards",
+      "framework_name": "FTC Safeguards Rule",
+      "overall_score": 2.44,
+      "family_scores": [
+        {
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.77,
+          "control_count": 4,
+          "weight": 1.4
+        },
+        {
+          "family": "Risk Assessment",
+          "framework_id": "ftc_safeguards",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.34,
+          "control_count": 9,
+          "weight": 1.4
+        },
+        {
+          "family": "Vendor Oversight",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.1
+        },
+        {
+          "family": "Incident Response",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.3
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "FTC-1",
+          "control_name": "Qualified Individual",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy designates a responsible individual, outlines their authority in overseeing and implementing security program elements, and describes formal processes for risk assessment, safeguards, and enforcement. However, there is limited evidence regarding the Coordinator's specific qualifications, resources, and expertise, and no mention of ongoing measurement or continuous improvement.",
+          "evidence": [
+            "Provider will designate an Information Security Program Coordinator ('Coordinator') who will be primarily responsible for coordinating and overseeing the Program. The Coordinator will report to the Chief Executive Officer.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments."
+          ],
+          "gaps": [
+            "No explicit requirement or description of the Coordinator's qualifications, expertise, or the need for sufficient authority and resources.",
+            "No formal mechanism for measuring performance or continuous improvement of the role.",
+            "No integration with broader risk management strategy or evidence of ongoing evaluation."
+          ],
+          "recommendations": [
+            "Explicitly define required qualifications, expertise, and authority for the Coordinator role to ensure they are 'qualified.'",
+            "Document a process for ensuring the Coordinator is allocated sufficient resources and authority.",
+            "Establish metrics or accountability mechanisms (e.g., regular reviews, reporting to senior management) to monitor effectiveness.",
+            "Integrate the Coordinator's responsibilities with broader organizational risk management and ensure ongoing training and development."
+          ]
+        },
+        {
+          "control_id": "FTC-2",
+          "control_name": "Risk Assessment",
+          "family": "Risk Assessment",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal process for risk assessment and implementing safeguards, including employee training, system/physical safeguards, and incident response. However, scoring is limited by lack of detail on metrics, ongoing monitoring, and integration with continuous improvement or risk management feedback.",
+          "evidence": [
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Safeguards are to include: Administrative Safeguards... Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Each department is responsible for maintaining an active risk assessment policy.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks... The assessment, at a minimum, must include employee training and management, information systems (including network and software design, as well as information processing, storage, transmission and disposal), and detecting, preventing, and responding to attacks.",
+            "A security awareness and training program for all company employees (including management)... procedures for guarding against, detecting, and reporting malicious software...",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "The department would then be responsible for implementing safeguards to mitigate the assessed risk."
+          ],
+          "gaps": [
+            "No evidence of defined metrics or key performance indicators to monitor control effectiveness or risk reduction.",
+            "Lack of explicit accountability assignments and enforcement mechanisms beyond the Coordinator role.",
+            "No clear reference to continuous improvement cycles, lessons learned, or integration between risk assessment outcomes and organizational risk management frameworks.",
+            "Limited information on centralized monitoring of implementation effectiveness across departments."
+          ],
+          "recommendations": [
+            "Develop and document specific metrics for monitoring the effectiveness of implemented safeguards and risk mitigation over time.",
+            "Clearly define accountability for risk assessment outcomes and safeguard implementation at departmental and organizational levels.",
+            "Integrate risk assessment learnings into the organization's wider risk management and continuous improvement processes.",
+            "Implement centralized oversight to ensure consistency and follow-up on departmental safeguards.",
+            "Outline mechanisms for regular feedback and improvement cycles based on security incident response and risk assessment outcomes."
+          ]
+        },
+        {
+          "control_id": "FTC-3.1",
+          "control_name": "Access Controls",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal approach to access control including authorization, regular review, and termination of access, but it lacks explicit requirements for role-based controls and least-privilege, and monitoring/accountability are not defined in measurable terms.",
+          "evidence": [
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process."
+          ],
+          "gaps": [
+            "No explicit requirement for role-based access controls (RBAC).",
+            "No direct reference to least-privilege principle.",
+            "No description of physical access controls.",
+            "Lack of measurable monitoring and defined accountability for access control enforcement."
+          ],
+          "recommendations": [
+            "Explicitly require role-based access controls (RBAC) for assignment of access rights based on job functions.",
+            "Document and enforce the principle of least-privilege access to customer information.",
+            "Add technical and procedural requirements for physical access control to facilities containing customer data.",
+            "Define metrics for monitoring access control (e.g., regular access reviews, audit log monitoring) and assign specific accountability for access governance."
+          ]
+        },
+        {
+          "control_id": "FTC-3.2",
+          "control_name": "Inventory and Classification",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references risk assessment, sensitivity of information, and some protections based on data importance, but lacks a clear, formal process for maintaining a complete inventory of customer data or a standardized classification scheme.",
+          "evidence": [
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information...",
+            "Safeguards are to be designed and implemented in accordance with the nature and scope of company activities and the sensitivity of the Information at issue.",
+            "Assessment of the relative criticality of specific applications and data in support of other contingency plan components."
+          ],
+          "gaps": [
+            "No explicit requirement to create and maintain a complete and accurate inventory of where customer information is stored, transmitted, or processed.",
+            "No clear definition or process for formally classifying data based on sensitivity with clear categories.",
+            "No mention of ownership or accountability for the data inventory and classification process.",
+            "No reference to updating the inventory dynamically as environments change."
+          ],
+          "recommendations": [
+            "Establish and document a formal process to create and maintain an inventory of all systems, locations, and third parties where customer information is stored, processed, or transmitted.",
+            "Define and implement a data classification scheme with clear sensitivity levels and criteria.",
+            "Assign responsibilities for maintaining the inventory and classification to specific roles or departments.",
+            "Integrate inventory and classification updates into operational processes for system and data changes.",
+            "Consider automated discovery tools to ensure inventory completeness and accuracy."
+          ]
+        },
+        {
+          "control_id": "FTC-3.3",
+          "control_name": "Encryption",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references encryption as a potential safeguard for electronic information at rest and in transit, but stops short of mandating industry-standard encryption for all customer information or detailing an explicit and formal key management process.",
+          "evidence": [
+            "Excerpt 3: 'A mechanism to encrypt and decrypt electronic Information.'",
+            "Excerpt 3: 'Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.'",
+            "Excerpt 4: 'Encryption of data should be considered for instances involving the transportation of data across any network...should be used wherever large amounts of Information are involved.'"
+          ],
+          "gaps": [
+            "No explicit requirement to use industry-standard encryption for all customer information at rest and in transit.",
+            "Encryption is described as optional or to be considered, not required.",
+            "No mention of a formal, documented encryption key management process."
+          ],
+          "recommendations": [
+            "Revise the policy to explicitly require the use of industry-standard encryption (e.g., AES-256, TLS 1.2+) for all customer information both at rest and in transit.",
+            "Establish and document a comprehensive encryption key management process including key generation, storage, rotation, and destruction.",
+            "Mandate encryption for all sensitive transmissions, not just those involving large amounts of information or external connections.",
+            "Define roles and responsibilities for managing and monitoring encryption controls and key management processes."
+          ]
+        },
+        {
+          "control_id": "FTC-3.4",
+          "control_name": "Secure Development Practices",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references some technical safeguards, risk assessments, and general requirements for secure software and system management, but lacks specific, formalized secure development practices, requirements for vulnerability management in custom applications, or application security testing processes.",
+          "evidence": [
+            "The assessment, at a minimum, must include employee training and management, information systems (including network and software design, as well as information processing, storage, transmission and disposal), and detecting, preventing, and responding to attacks.",
+            "All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirements or process for secure software development lifecycle (SDLC) practices.",
+            "Lacks policy requirements for secure coding standards or developer training on secure development.",
+            "No defined process for addressing security vulnerabilities in in-house applications on an ongoing basis.",
+            "Does not mandate or describe application security testing (e.g., code reviews, penetration testing, automated scans) for custom-developed applications."
+          ],
+          "recommendations": [
+            "Define and formalize a secure development lifecycle (SDLC) policy, including secure coding standards and developer training.",
+            "Require and document ongoing vulnerability management for in-house developed applications, including patching and remediation timelines.",
+            "Mandate security testing for all applications prior to deployment, such as code reviews, penetration testing, or automated vulnerability scanning.",
+            "Assign accountability for secure development practices and incorporate metrics/monitoring to ensure adherence."
+          ]
+        },
+        {
+          "control_id": "FTC-3.5",
+          "control_name": "Multifactor Authentication",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy discusses authentication methods such as passwords and risk-based access controls but does not require multifactor authentication (MFA) for accessing systems with customer information, nor does it document an equivalent control exception process as specified by the requirement.",
+          "evidence": [
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection. For higher levels of risk, additional safeguards such as use of encryption technologies may be employed.",
+            "Passwords must be unknown, unrecorded, and unrecoverable by system administrators or system support staff. ... All passwords must be at least 6 characters long and contain at least one letter and one number. Users will be required to change their password at least every 90 days.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed."
+          ],
+          "gaps": [
+            "The policy does not mandate the use of multifactor authentication for access to information systems with customer data.",
+            "There is no documented process for the qualified individual to approve reasonably equivalent or stronger controls in writing if MFA is not used.",
+            "MFA is neither referenced nor required by the policy for any specific access conditions."
+          ],
+          "recommendations": [
+            "Explicitly require multifactor authentication for all individuals accessing any information system containing customer information.",
+            "Document a clear process whereby the qualified individual may approve reasonably equivalent or stronger controls as an exception, including written approval and records.",
+            "Update the password and access management sections to specify MFA technologies (e.g., something you know, have, or are) and their implementation scope."
+          ]
+        },
+        {
+          "control_id": "FTC-3.6",
+          "control_name": "Secure Disposal of Data",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal procedures for the secure disposition of electronic information and associated media, including removal and tracking, but lacks clear coverage for disposal of customer information in non-electronic formats and ongoing monitoring or continuous improvement elements.",
+          "evidence": [
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility. This safeguard will be implemented by: Policies and procedures to address the final disposition of electronic Information, and/or the hardware or electronic media on which it is stored.",
+            "Procedures for removal of electronic Information from electronic media before the media are made available for re-use.",
+            "A record of the movements of hardware and electronic media and any person responsible therefor."
+          ],
+          "gaps": [
+            "No explicit mention of procedures or requirements for secure disposal of customer information in paper or other non-electronic formats.",
+            "No defined metrics or auditing processes to ensure secure disposal is consistently performed and monitored.",
+            "No provisions for continuous improvement of disposal procedures based on risk or incidents."
+          ],
+          "recommendations": [
+            "Expand the policy to directly address secure disposal of customer information in non-electronic formats (e.g., paper, physical records).",
+            "Establish metrics, regular audits, and accountability for secure disposal procedures to enhance oversight.",
+            "Integrate processes for ongoing review and improvement of disposal practices based on risk assessments and evolving threats."
+          ]
+        },
+        {
+          "control_id": "FTC-3.7",
+          "control_name": "Change Management",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes general procedures for risk assessment and implementing safeguards, but it does not explicitly define a formal change management process for anticipating and evaluating system/network changes before implementation.",
+          "evidence": [
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "The Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "Each department is responsible for maintaining an active risk assessment policy... Management should evaluate the likelihood of various events and rank the possible impact.",
+            "System development and implementation problems include inadequate project management, cost/time overruns, internal or external programming errors, failure to integrate and/or migrate successfully from existing systems, or failure of the systems to meet business requirements."
+          ],
+          "gaps": [
+            "No explicit requirement to anticipate and evaluate risks before implementing changes to information systems or networks.",
+            "No formal, documented change management process covering initiation, risk assessment, approval, testing, communication, and post-implementation review.",
+            "Lacks specific guidance on how to document or review the impact of proposed changes on customer information security."
+          ],
+          "recommendations": [
+            "Implement a formal change management policy that requires evaluation of risks associated with proposed changes to information systems or networks prior to implementation.",
+            "Define clear steps for risk review, approval, documentation, and testing before deploying changes, with roles and responsibilities for accountability.",
+            "Require that change assessments specifically identify and address potential impacts on the security of customer information, and integrate this into the risk management process."
+          ]
+        },
+        {
+          "control_id": "FTC-3.8",
+          "control_name": "Monitoring and Testing",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references periodic reviews, monitoring of safeguards, and technical/non-technical evaluations, but does not specifically mandate annual penetration tests or biannual vulnerability assessments as required by the control. Continuous monitoring is not explicitly defined.",
+          "evidence": [
+            "\"This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance...\"",
+            "\"The Coordinator will design, implement, and maintain... safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\"",
+            "\"Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective.\""
+          ],
+          "gaps": [
+            "No explicit requirement for annual penetration testing.",
+            "No explicit requirement for biannual vulnerability assessments.",
+            "Lack of reference to continuous monitoring of safeguards' effectiveness.",
+            "No details on how monitoring outcomes are measured or reported."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require annual penetration testing and biannual vulnerability assessments.",
+            "Incorporate requirements for implementing continuous monitoring of security safeguards.",
+            "Define procedures, responsible parties, and metrics for monitoring safeguard effectiveness.",
+            "Ensure results of all monitoring, assessments, and tests are formally documented and reviewed."
+          ]
+        },
+        {
+          "control_id": "FTC-4",
+          "control_name": "Employee Training",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal security awareness and job-specific training requirements for all staff handling customer information, delegates accountability, and requires training to be adequate. However, it lacks explicit information on frequency (regular updates) and measurement of program effectiveness, thus maturity is 'Defined'.",
+          "evidence": [
+            "A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates...",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "\"Employee Training: All employees that have access to Information or work with systems that handle Information should receive adequate training for handling and disposal of such Information.\"",
+            "The Coordinator will prepare and maintain written safeguards and will provide guidance on implementation of safeguards to all affected company employees.",
+            "This Program will be reviewed and adjusted periodically."
+          ],
+          "gaps": [
+            "No explicit requirement or schedule for regular (e.g., annual or periodic) training updates.",
+            "No details about tracking completion of training or mechanisms to measure program effectiveness.",
+            "No mention of targeted or role-based training beyond general awareness.",
+            "No details on how frequently or through which mechanisms employees are retrained in response to changing threats."
+          ],
+          "recommendations": [
+            "Add a documented requirement for regular (e.g., annual) security awareness and role-based training updates.",
+            "Implement and document the use of training completion tracking and periodic tests or assessments to measure effectiveness.",
+            "Incorporate requirements for targeted and role-specific training modules for personnel handling customer information.",
+            "Specify the process for updating training content in response to changes in the threat environment or regulatory landscape."
+          ]
+        },
+        {
+          "control_id": "FTC-5",
+          "control_name": "Service Provider Oversight",
+          "family": "Vendor Oversight",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy outlines general information security requirements and safeguards, but lacks specific provisions for selecting service providers, contractual requirements for safeguards, and ongoing monitoring of service provider security practices.",
+          "evidence": [
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No mention of selection criteria or due diligence procedures specific to service providers.",
+            "No requirement that service providers are contractually obligated to maintain safeguards for customer information.",
+            "No defined process for periodically monitoring and assessing the security practices of service providers."
+          ],
+          "recommendations": [
+            "Develop and document a formal process for selecting service providers based on their ability to protect customer information.",
+            "Require all service provider contracts to explicitly mandate the implementation and maintenance of appropriate safeguards for customer information.",
+            "Establish and document procedures for ongoing, periodic monitoring of service providers' information security practices and compliance with contractual requirements."
+          ]
+        },
+        {
+          "control_id": "FTC-6",
+          "control_name": "Program Updates",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a formal, documented process for periodic evaluation and revision of the security program, including required triggers (e.g., operational/environmental changes and risk assessment outcomes). However, while roles and activities are defined, there is limited evidence of measurement, continuous monitoring, or integration with broader organizational risk management.",
+          "evidence": [
+            "\"This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.\"",
+            "\"The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.\"",
+            "\"Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective.\"",
+            "\"All risk assessments must identify reasonably foreseeable internal and external risks... The assessment must also address the sufficiency of any safeguards in place to control these risks.\""
+          ],
+          "gaps": [
+            "Policy does not specify defined metrics for measuring program effectiveness or formal requirements for monitoring.",
+            "No explicit requirement for documenting lessons learned from testing and monitoring or using them for continuous improvement.",
+            "Lacks integration with an organizational-wide risk management or governance framework."
+          ],
+          "recommendations": [
+            "Define specific metrics and a schedule to measure information security program effectiveness.",
+            "Formalize a requirement to document lessons learned from security incidents, testing, and monitoring, and use these to drive continuous improvement.",
+            "Integrate program updates and reviews with broader organizational risk management and governance processes for holistic oversight."
+          ]
+        },
+        {
+          "control_id": "FTC-7",
+          "control_name": "Incident Response Plan",
+          "family": "Incident Response",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains multiple mentions of incident response elements, including documentation and mitigation, but lacks sufficient detail on goals, roles and responsibilities, internal processes, and clear communication strategies, falling short of a fully formalized plan.",
+          "evidence": [
+            "\"Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.\"",
+            "\"Contingency plan. Policies and procedures for responding to an emergency or other occurrence...\"",
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\"",
+            "\"PERIODIC EVALUATION AND REVISION OF THE PLAN \u2013 This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance.\""
+          ],
+          "gaps": [
+            "No explicit statement of incident response plan goals.",
+            "Roles and responsibilities for incident response are not clearly assigned or described beyond reference to the 'Coordinator,' lacking operational specifics.",
+            "Internal processes and workflows for incident investigation, escalation, and resolution are not fully defined.",
+            "Communication strategies (internal/external notifications, escalation procedures, regulatory/law enforcement contact) are not addressed.",
+            "No detail on remediation procedures beyond general guidance, nor on post-incident review or continuous improvement.",
+            "No reference to periodic drills or tests of the incident response plan."
+          ],
+          "recommendations": [
+            "Develop and document a comprehensive written incident response plan that includes clear goals.",
+            "Define and document specific roles and responsibilities for all participants in the incident response process.",
+            "Detail step-by-step internal processes for incident detection, investigation, reporting, escalation, containment, eradication, recovery, and post-incident review.",
+            "Establish explicit communication strategies, including notification requirements for management, affected parties, regulators, and law enforcement.",
+            "Incorporate requirements for regular testing and drills of the incident response plan, and mandate reviews after significant incidents to drive continuous improvement."
+          ]
+        },
+        {
+          "control_id": "FTC-8",
+          "control_name": "Board Reporting",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy indicates that the Information Security Program Coordinator will review the program annually and provide periodic reports on its status, but it does not specify that these reports must be formally delivered to the board of directors or an equivalent governing body or that they include material matters as required.",
+          "evidence": [
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations. The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "Provider will designate an Information Security Program Coordinator ('Coordinator') who will be primarily responsible for coordinating and overseeing the Program. The Coordinator will report to the Chief Executive Officer."
+          ],
+          "gaps": [
+            "No explicit requirement that the Qualified Individual (Coordinator) reports to the board of directors or equivalent governing body.",
+            "No explicit requirement that the report covers all material matters related to the information security program.",
+            "No clear procedural details regarding report content, audience (board), or format.",
+            "No mention of frequency assurance for annual minimum reporting to the board."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require the Information Security Program Coordinator (or Qualified Individual) to report to the board of directors or equivalent governing body on the overall status of the information security program.",
+            "Specify that the report must include material matters regarding the effectiveness of the information security program, significant risks, and any corrective actions taken or planned.",
+            "Define the minimum frequency for board reporting (at least annually) and clarify reporting lines and expectations in the policy.",
+            "Establish a formal template or criteria for report content to ensure consistent board-level awareness of relevant information security concerns."
+          ]
+        },
+        {
+          "control_id": "FTC-9",
+          "control_name": "Customer Information Safeguards",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal, multi-layered safeguards for customer information, including risk assessments and processes covering collection, storage, use, transmission, and disposal. However, there is limited evidence of systematic measurement, monitoring, or ongoing process improvements.",
+          "evidence": [
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.\"",
+            "\"Policies and procedures to prevent, detect, contain, and correct security violations.\"",
+            "\"...technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.\"",
+            "\"All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information.\"",
+            "\"Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information...\"",
+            "\"Procedures for periodic testing and revision of contingency plans.\"",
+            "\"...employee training and management, information systems (including network and software design, as well as information processing, storage, transmission and disposal), and detecting, preventing, and responding to attacks.\""
+          ],
+          "gaps": [
+            "No explicit requirement for metrics to measure the effectiveness of safeguards.",
+            "No reference to integration with ongoing risk management or continuous improvement processes.",
+            "Limited detail on disposal procedures for customer information.",
+            "Lack of specifics on how safeguards are reviewed and updated in response to emerging threats.",
+            "No defined accountability framework or assignment of metrics for effectiveness monitoring."
+          ],
+          "recommendations": [
+            "Define and implement specific metrics for measuring the effectiveness of safeguards.",
+            "Detail procedures for secure information disposal, including permanent deletion and destruction methods.",
+            "Formalize processes for continuous improvement and integration with overall risk management.",
+            "Assign accountability for the monitoring and reporting of safeguard effectiveness.",
+            "Establish regular, documented reviews of the safeguards based on changes in the threat landscape or business operations."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T20:49:40.532411",
+  "status": "completed"
+}
