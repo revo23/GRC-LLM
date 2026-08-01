@@ -1,0 +1,192 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : Scott & Scott Written-Information-Security-Policy.pdf
+Assessment JSON: grc_report_55d9188d(1).json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-07-14 00:28 UTC
+Frameworks     : ftc_safeguards
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.807 / 1.000  (Good)
+================================================================================
+Controls evaluated: 16
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.836  [#################...]  Good
+  Evidence Relevance      0.676  [##############......]  Needs Improvement
+  Score Consistency       0.782  [################....]  Acceptable
+  Gap Completeness        0.749  [###############.....]  Acceptable
+  Recommendation Quality  0.816  [################....]  Good
+  Evidence Groundedness   0.984  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: FTC Safeguards Rule
+Quality Score: 0.807  [################....]  Good
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.836  [#################...]
+  Evidence Relevance      0.676  [##############......]
+  Score Consistency       0.782  [################....]
+  Gap Completeness        0.749  [###############.....]
+  Recommendation Quality  0.816  [################....]
+  Evidence Groundedness   0.984  [####################]
+
+  Family: Information Security Program  (4 controls)  Quality: 0.846  Good
+  --------------------------------------------------------------------------------
+  FTC-1  |  Qualified Individual  |  Maturity: 3 (Defined)  |  Quality: 0.870 (Good)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence states (designation, reporting line, duties) and the gaps correctly identify absent elements; however, the claim about 'authority outlined' is slightly overstated since the evidence only mentions reporting to the CEO without explicitly defining authority scope.
+    Evidence Relevance        0.900  All three quotes directly address the control requirement by describing the designation, responsibilities, and oversight duties of the Coordinator, making them highly relevant to the 'Qualified Individual' control.
+    Score Consistency         0.800  A score of 3 is reasonable given that the policy clearly designates a coordinator with defined duties and a reporting structure but lacks explicit qualifications, resource provisions, and accountability mechanisms, representing a functional but incomplete implementation.
+    Gap Completeness          0.850  The gaps correctly identify the missing qualifications/expertise requirements, resource provisions, and accountability mechanisms, though they could more precisely note the absence of any succession or backup plan for the Coordinator role and do not flag the lack of explicit authority delegation beyond CEO reporting.
+    Recommendation Quality    0.820  Recommendations are specific and directly tied to each identified gap (qualifications, resources, metrics, accountability, integration with risk management), though the last recommendation about integration with risk management is somewhat broader and less directly actionable than the others.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  FTC-4  |  Employee Training  |  Maturity: 3 (Defined)  |  Quality: 0.833 (Good)
+    Faithfulness              0.780  Most rationale claims are grounded in the evidence, but the assertion that the policy lacks 'explicit evidence of regular updates' is partially contradicted by Evidence [5] ('reviewed and adjusted periodically') and Evidence [1] ('periodic security updates'), making the gap about update frequency somewhat overstated.
+    Evidence Relevance        0.850  The majority of evidence quotes directly address employee training, security awareness, and program maintenance requirements relevant to the control, though Evidence [4] about the Coordinator preparing written safeguards is only tangentially related to staff training.
+    Score Consistency         0.800  A score of 3 is reasonably consistent with the evidence showing documented training requirements, designated responsibility, and periodic review, balanced against genuine gaps in specificity around frequency, metrics, and tailored training content.
+    Gap Completeness          0.720  The gaps capture meaningful deficiencies, but the claim that 'it is not clear if all personnel who handle customer information receive tailored training' is partially contradicted by Evidence [3], which explicitly states all employees with access to Information should receive adequate training; additionally, the gaps miss any mention of training recordkeeping or documentation of completion.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to the identified gaps, including concrete examples like annual schedules and post-training assessments, though they could be strengthened by referencing recordkeeping or documentation requirements to close the missing gap.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  FTC-6  |  Program Updates  |  Maturity: 3 (Defined)  |  Quality: 0.805 (Good)
+    Faithfulness              0.720  The rationale and gaps are mostly grounded in the evidence, but the gap claiming 'no clear process for immediate review and update in response to material changes' is partially contradicted by Evidence [4], which explicitly mentions evaluations 'in response to any environmental or operational changes affecting the security,' suggesting some responsiveness to material changes does exist in the policy.
+    Evidence Relevance        0.880  All four evidence quotes are directly relevant to the control requirement of evaluating and adjusting the information security program, covering periodic review, status reporting, risk-based frequency adjustments, and environmental/operational change evaluations.
+    Score Consistency         0.780  A score of 3 is reasonably consistent with the evidence, which shows a structured periodic review process with some responsiveness to change, but the evidence in [4] addressing operational changes is stronger than the rationale acknowledges, potentially warranting a slightly higher score.
+    Gap Completeness          0.650  The gap about no immediate review process for material changes is partially contradicted by Evidence [4], and the gaps miss control-specific requirements such as incorporating test results and monitoring findings explicitly into program adjustments; the identified gaps are somewhat valid but imprecise.
+    Recommendation Quality    0.800  The recommendations are specific and actionable, directly addressing the identified gaps around metrics, accountability, triggered reviews, and continuous improvement, though they could be more prescriptive by referencing concrete mechanisms like incident response thresholds or defined KPI frameworks.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  FTC-8  |  Board Reporting  |  Maturity: 2 (Developing)  |  Quality: 0.875 (Good)
+    Faithfulness              0.950  The rationale accurately reflects what the evidence states — that the Coordinator reports to the CEO and provides periodic status reports — without overstating or misrepresenting the evidence, and the gaps correctly identify what is absent rather than contradicting the evidence.
+    Evidence Relevance        0.800  Both quotes are relevant: Excerpt 3 directly addresses reporting frequency and content, and Excerpt 1 establishes the reporting chain (to CEO, not board), both of which are germane to evaluating the board-reporting control requirement.
+    Score Consistency         0.850  A score of 2 is reasonable given that the policy shows some reporting infrastructure (annual review, periodic status reports) but critically lacks the board-level reporting mandate, making a low-but-not-zero score appropriate.
+    Gap Completeness          0.800  The three identified gaps accurately capture the key missing elements (board as recipient, material matters content, annual minimum frequency), though they could additionally note the absence of a requirement for the report to be formally documented or acknowledged by the board.
+    Recommendation Quality    0.850  The recommendations are specific and directly tied to each identified gap — mandating board reporting, setting annual frequency, and defining material matters content — though they could be slightly more actionable by suggesting specific policy language or a governance amendment process.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+
+  Family: Risk Assessment  (1 controls)  Quality: 0.817  Good
+  --------------------------------------------------------------------------------
+  FTC-2  |  Risk Assessment  |  Maturity: 3 (Defined)  |  Quality: 0.817 (Good)
+    Faithfulness              0.820  Most rationale claims are grounded in the evidence quotes, but the assertion that the policy 'lacks details on measurement' is partially contradicted by Evidence [1] which explicitly states the Coordinator 'will regularly monitor the effectiveness of such safeguards,' making the gap about no effectiveness metrics somewhat overstated.
+    Evidence Relevance        0.900  The evidence quotes are highly relevant to the control requirement, directly addressing safeguard design, employee training, information systems, and incident response, with only Evidence [5] about software patches being somewhat peripheral to the core risk assessment-to-safeguard linkage.
+    Score Consistency         0.780  A score of 3 is reasonable given that the evidence demonstrates documented processes covering all major control areas, but the score may be slightly deflated given that Evidence [1] and [2] directly mirror the control's language almost verbatim, suggesting stronger maturity than mid-level would imply.
+    Gap Completeness          0.650  The gaps miss an obvious and significant requirement — the control explicitly requires that risk assessment results drive safeguard design, but the assessment does not identify any gap around documentation of the risk assessment itself (e.g., threat modeling, likelihood/impact ratings), and the 'no metrics' gap is partially contradicted by Evidence [1].
+    Recommendation Quality    0.750  Recommendations are specific and map directly to the identified gaps, but they remain somewhat generic (e.g., 'define and implement metrics') without suggesting concrete methods, frameworks, or timelines that would make them truly actionable in context.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Safeguards Implementation  (9 controls)  Quality: 0.792  Acceptable
+  --------------------------------------------------------------------------------
+  FTC-3.1  |  Access Controls  |  Maturity: 3 (Defined)  |  Quality: 0.780 (Acceptable)
+    Faithfulness              0.720  The rationale's claim that 'accountability, metrics, and continuous improvement are not described' is broadly supported by the absence of such terms in the evidence, and the RBAC/least-privilege gaps are legitimate inferences; however, the gap claiming 'No mention of physical access controls' is partially contradicted by Evidence [3], which references 'access to a workstation' and the general scope of the policy, though admittedly not explicitly physical facility controls, making this a minor overreach.
+    Evidence Relevance        0.780  Most evidence quotes are directly relevant to access control requirements (authorization, authentication, user access management), but they are fairly high-level and procedural in nature rather than demonstrating specific technical or physical control mechanisms, making them relevant but not precisely targeted to RBAC or least-privilege requirements central to this control.
+    Score Consistency         0.750  A score of 3 is reasonable given that formal documented processes for access authorization and authentication exist (supporting a mid-range score), while explicit RBAC, least-privilege, physical controls, and monitoring are absent; however, the evidence shows mostly policy intentions rather than implemented controls, which might argue for a score closer to 2.
+    Gap Completeness          0.650  The gaps correctly identify missing RBAC, least-privilege, and monitoring requirements, but miss other obvious control elements such as periodic access reviews/recertification processes, separation of duties, and procedures for revoking access upon termination or role change, which are standard least-privilege/access control expectations not evidenced in the quotes.
+    Recommendation Quality    0.780  Recommendations are specific and directly address each identified gap (RBAC, least-privilege, physical controls, monitoring, continuous improvement), though they remain somewhat generic in implementation detail — for example, they do not specify review frequencies, particular RBAC frameworks, or concrete metrics to track.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  FTC-3.2  |  Inventory and Classification  |  Maturity: 2 (Developing)  |  Quality: 0.775 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that evidence quotes show awareness of risk assessment and sensitivity considerations but lack explicit inventory and classification procedures; however, quote [3] about 'criticality of specific applications and data' is slightly overstated in how much it supports even awareness of inventory practices.
+    Evidence Relevance        0.450  Only quote [3] is tangentially relevant to inventory/classification; quotes [1], [2], and [4] address risk assessment, safeguard design, and access control respectively, which are not directly pertinent to maintaining a customer information inventory or formal data classification scheme.
+    Score Consistency         0.750  A score of 2 is reasonably consistent with the weak, indirect evidence — the policy shows general awareness of data sensitivity but no explicit inventory or classification mechanisms — though a score of 1 might also be defensible given how loosely the evidence relates to the control.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements (inventory process, classification scheme, periodic review, accountability), though they could further specify the absence of controls for data flows in transit and third-party/vendor data locations, which are implied by the control's 'transmitted or processed' scope.
+    Recommendation Quality    0.800  Recommendations are specific and directly tied to the identified gaps, including inventory procedures, classification scheme definition, responsibility assignment, and integration with risk processes, though they could be more actionable by suggesting concrete frameworks (e.g., NIST data classification tiers or specific tooling) rather than remaining at a procedural level.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  FTC-3.3  |  Encryption  |  Maturity: 2 (Developing)  |  Quality: 0.870 (Good)
+    Faithfulness              0.920  The rationale accurately characterizes the evidence as recommendatory rather than mandatory (e.g., 'should be considered,' 'should be used'), and the gaps correctly identify the absence of key management and at-rest encryption requirements without overstating or contradicting what the quotes say.
+    Evidence Relevance        0.780  Quotes [2], [3], and [4] are directly relevant to encryption in transit, and [1] is broadly relevant to encryption capability, but none of the quotes address data-at-rest encryption or key management, which are core control requirements, leaving significant portions of the control unaddressed by the evidence.
+    Score Consistency         0.800  A score of 2 is reasonable given that the policy mentions encryption concepts but only as recommendations without mandating industry standards, specifying scope, or including key management; the evidence supports partial, informal coverage consistent with an early/developing maturity level.
+    Gap Completeness          0.820  The gaps correctly identify the absence of mandatory at-rest encryption, mandatory in-transit encryption, and a key management process, but miss the lack of specificity around which industry standards are required and do not flag the absence of any mention of encryption for stored customer data as a distinct gap from the monitoring gap.
+    Recommendation Quality    0.900  Recommendations are specific and actionable, citing concrete standards (AES-256, TLS 1.2+) and enumerating key management lifecycle steps (generation, distribution, storage, rotation, destruction), each directly tied to an identified gap with no generic boilerplate.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  FTC-3.4  |  Secure Development Practices  |  Maturity: 2 (Developing)  |  Quality: 0.742 (Acceptable)
+    Faithfulness              0.850  The rationale and gaps accurately reflect the evidence, which only shows generic security management language with no specific secure development content; however, the claim about 'technical safeguards' and 'risk assessment' being present is faithfully represented without overreach, and the gaps do not contradict any evidence quotes.
+    Evidence Relevance        0.250  The cited evidence quotes are generic security management and risk assessment boilerplate with no specific relevance to secure development practices, vulnerability management for in-house applications, or application security testing — the core requirements of this control.
+    Score Consistency         0.750  A score of 2 is reasonable given that the evidence shows only tangential, generic security policies with no direct coverage of secure development, vulnerability management, or application security testing, though some might argue a score of 1 is more appropriate given the near-total absence of control-specific evidence.
+    Gap Completeness          0.800  The gaps comprehensively cover the main missing elements — SDLC, vulnerability remediation, security testing, and secure coding standards — but could also note the absence of supply chain/third-party component security considerations and explicit requirements for pre-deployment security gates.
+    Recommendation Quality    0.800  Recommendations are specific and directly tied to the identified gaps, covering SDLC documentation, vulnerability management, security testing requirements, and accountability metrics, though the suggestion to 'clarify accountability and metrics' is slightly generic compared to the others.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  FTC-3.5  |  Multifactor Authentication  |  Maturity: 2 (Developing)  |  Quality: 0.762 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence only shows password-based authentication and general safeguards without mandating MFA, and the gaps are consistent with what the evidence omits, though the claim about 'higher-risk scenarios' using encryption is a slight stretch of evidence quote [1].
+    Evidence Relevance        0.550  Quote [3] about verifying identity is marginally relevant, but quotes [1] and [2] are primarily about password policies and encryption rather than multifactor authentication specifically, making the evidence only loosely connected to the MFA control requirement.
+    Score Consistency         0.750  A score of 2 is reasonable given that the policy shows some access control awareness (passwords, identity verification) but entirely lacks MFA mandates, though a score of 1 could also be defensible since there is essentially no MFA-specific coverage.
+    Gap Completeness          0.700  The gaps correctly identify the missing MFA mandate and the written approval process for alternatives, but the third and fourth gaps (implementation procedures and MFA monitoring) go beyond what the control strictly requires, while missing a gap about whether existing single-factor controls have been formally evaluated as 'reasonably equivalent.'
+    Recommendation Quality    0.720  Recommendations are generally specific and address the identified gaps, but the suggestion to monitor MFA effectiveness is somewhat generic and not directly tied to the control's core requirement of written approval for equivalent alternatives, which could be articulated more precisely.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  FTC-3.6  |  Secure Disposal of Data  |  Maturity: 3 (Defined)  |  Quality: 0.807 (Good)
+    Faithfulness              0.820  The rationale's claims about electronic disposal procedures are well-supported by the evidence quotes, and the gap about physical formats is a reasonable inference from the absence of such language; however, the claims about lack of monitoring and continuous improvement go beyond what the evidence demonstrates or contradicts, as the evidence only addresses device/media controls and does not speak to monitoring at all—making those gap claims plausible but not strictly derivable from the quotes provided.
+    Evidence Relevance        0.720  The first two quotes are directly relevant to electronic media disposal requirements, and the third quote about improper disposal risks is tangentially relevant as context, but none of the quotes explicitly address 'customer information' disposal as required by the control, making the evidence only partially on-point.
+    Score Consistency         0.750  A score of 3 is reasonably consistent with the evidence showing defined but limited electronic disposal procedures with no coverage of physical formats or disposition triggers, though the evidence base is relatively thin for a score of 3 and a score of 2 could also be justified given the significant gaps in customer-information-specific language.
+    Gap Completeness          0.700  The gaps correctly identify the absence of physical format disposal and disposition triggers, but miss an important gap: the evidence does not explicitly tie any disposal procedures specifically to 'customer information' as required by the control, and the monitoring/continuous improvement gaps, while valid concerns, are less directly tied to the FTC control's core requirement.
+    Recommendation Quality    0.850  The recommendations are specific, actionable, and directly address each identified gap—including expanding to all formats, defining retention triggers, and establishing monitoring—making them well-targeted and practical rather than generic boilerplate.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  FTC-3.7  |  Change Management  |  Maturity: 2 (Developing)  |  Quality: 0.720 (Acceptable)
+    Faithfulness              0.820  The rationale and gaps are largely consistent with what the evidence shows — general risk assessment and periodic review rather than formal change management — though Evidence [3] about systems development problems is cited without a clear link to a policy requirement, making its inclusion slightly misleading as supporting evidence for change management coverage.
+    Evidence Relevance        0.450  Evidence [1] and [2] address periodic risk evaluation loosely related to the control, but Evidence [3] describes problems rather than a policy requirement and is largely off-topic, and Evidence [4] focuses narrowly on unauthorized computer access rather than pre-implementation change review, reducing overall relevance to the specific change management control.
+    Score Consistency         0.720  A score of 2 is reasonably consistent with the evidence — there is some tangential risk assessment language but no formal change management process — though one could argue a score of 1 is equally defensible given none of the evidence directly addresses anticipating and reviewing changes before implementation.
+    Gap Completeness          0.780  The gaps correctly identify the absence of pre-implementation review, formal process, roles, and rollback procedures, but miss other obvious control requirements such as the need to specifically identify and anticipate changes that may create new risks to customer information and any change categorization or prioritization mechanisms.
+    Recommendation Quality    0.800  Recommendations are specific, actionable, and directly tied to the identified gaps — covering formal process establishment, roles, documentation, and post-change review — though they could be further strengthened by referencing specific triggers for change management (e.g., changes affecting customer information systems specifically) to align more precisely with the FTC control's scope.
+    Evidence Groundedness     0.750  3/4 quotes located in PDF  [WARNING: possible hallucinated citations]
+
+  FTC-3.8  |  Monitoring and Testing  |  Maturity: 2 (Developing)  |  Quality: 0.855 (Good)
+    Faithfulness              0.900  The rationale accurately reflects what the evidence quotes state — they mention regular monitoring and periodic evaluations but not specific cadences — and the gaps do not contradict the evidence; however, the gap about 'no indication of continuous monitoring' is slightly overstated given evidence [1] explicitly says 'regularly monitor the effectiveness of such safeguards,' which is at least a partial indicator of ongoing monitoring.
+    Evidence Relevance        0.750  Evidence [1] and [3] are directly relevant to the monitoring and testing control, but evidence [2] is primarily about annual plan review and compliance rather than monitoring or testing of safeguards, making it only tangentially related to the specific control requirement.
+    Score Consistency         0.850  A score of 2 is reasonably consistent with the evidence — the policy demonstrates some monitoring intent and periodic evaluation language but lacks the specific cadences (annual pen testing, biannual vulnerability assessments) required by the control, placing it appropriately at a partial/developing level.
+    Gap Completeness          0.780  The gaps correctly identify the missing specifics around penetration testing, vulnerability assessments, and continuous monitoring, but the claim of 'no indication of continuous monitoring' partially contradicts evidence [1], and the gap about 'no metrics or accountability mechanisms' goes beyond what the control strictly requires, while no gap addresses the absence of documentation of testing results or remediation processes.
+    Recommendation Quality    0.850  The recommendations are specific and directly tied to the identified gaps — explicitly calling out annual penetration testing, biannual vulnerability assessments, continuous monitoring procedures, and metrics — though the last recommendation is somewhat redundant with the others and could be more targeted toward remediation tracking rather than general formalization.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  FTC-9  |  Customer Information Safeguards  |  Maturity: 3 (Defined)  |  Quality: 0.822 (Good)
+    Faithfulness              0.820  The rationale's claims about assigned responsibility, risk assessment, and lifecycle safeguards are well-supported by the evidence quotes, but the gap claiming lack of 'detailed monitoring or audit processes' is partially contradicted by Evidence [1] which explicitly states the Coordinator 'will regularly monitor the effectiveness of such safeguards.'
+    Evidence Relevance        0.880  The majority of evidence quotes directly address the control's requirement for comprehensive safeguards across the information lifecycle (collection, storage, transmission, disposal), with Evidence [7] explicitly enumerating lifecycle stages and Evidence [5] addressing transmission security, making the citations highly germane.
+    Score Consistency         0.780  A score of 3 is broadly reasonable given documented program elements across multiple lifecycle stages and assigned oversight, but the evidence demonstrates fairly substantive coverage that might warrant a slightly higher score, as the gaps identified (missing KPIs, continuous improvement) are common maturity differentiators rather than fundamental absences.
+    Gap Completeness          0.650  The gap about monitoring/audit processes is partially contradicted by Evidence [1]'s explicit mention of regular monitoring; additionally, the gaps miss notable control requirements such as explicit procedures for the collection stage, employee training requirements, and incident response procedures that are not evidenced in the quotes.
+    Recommendation Quality    0.800  Recommendations are specific and actionable, directly mapping to each identified gap (metrics, continuous improvement, disposal procedures, audits), though the suggestion to document audit processes partially overlaps with what Evidence [1] already describes, reducing its precision.
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+
+  Family: Vendor Oversight  (1 controls)  Quality: 0.722  Acceptable
+  --------------------------------------------------------------------------------
+  FTC-5  |  Service Provider Oversight  |  Maturity: 1 (Initial)  |  Quality: 0.722 (Acceptable)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as addressing internal safeguards rather than service provider oversight, and the gaps do not contradict anything in the evidence quotes; however, the rationale slightly overstates that the policy 'alludes to strong internal safeguards and oversight' when the evidence only shows a Coordinator role and workforce sanctions.
+    Evidence Relevance        0.150  All three evidence quotes relate to internal program coordination, internal safeguard implementation, and workforce sanctions — none directly address service provider selection, contracting, or monitoring as required by FTC-5, making them largely irrelevant to this specific control.
+    Score Consistency         0.800  A score of 1 is reasonably consistent with evidence that shows no direct coverage of service provider oversight; the minimal score reflects that while some foundational program elements exist, none address the control's specific requirements.
+    Gap Completeness          0.750  The three identified gaps accurately capture the core requirements of the control (selection criteria, contractual obligations, and periodic monitoring), but miss a potentially important nuance around defining what 'appropriate safeguards' means in the context of customer information and how to assess equivalency with third parties.
+    Recommendation Quality    0.780  The recommendations are specific and directly map to each identified gap, providing actionable guidance on due diligence, contractual clauses, and monitoring processes, though they lack concrete detail such as referencing specific contract language standards (e.g., NIST, ISO) or specifying monitoring frequencies.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Incident Response  (1 controls)  Quality: 0.858  Good
+  --------------------------------------------------------------------------------
+  FTC-7  |  Incident Response Plan  |  Maturity: 2 (Developing)  |  Quality: 0.858 (Good)
+    Faithfulness              0.850  The rationale and gaps are broadly consistent with the evidence quotes, which show only high-level references to incident response without detailed plans; however, evidence quote [1] does mention documentation of incidents and mitigation, so the gap claiming documentation practices are 'only generically referenced' is slightly overstated rather than contradicted.
+    Evidence Relevance        0.720  Quotes [1] and [2] are directly relevant to incident response, but quotes [3] and [4] are generic program management and review statements that do not specifically address the incident response plan requirements of this control.
+    Score Consistency         0.800  A score of 2 is reasonable given that the evidence shows awareness and high-level policy intent around incident response but lacks the detailed, structured plan elements required by the control, aligning with a 'policy exists but is incomplete' maturity level.
+    Gap Completeness          0.880  The gaps comprehensively cover the control's requirements—goals, roles, internal processes, communication strategies, and documentation—with appropriate specificity, though the gap about documentation being 'only generically referenced' is slightly overstated given evidence quote [1] explicitly mentions documentation of incidents and outcomes.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap, including details like step-by-step process definition, team structure, communication strategy documentation, and periodic testing and training, making them highly practical and targeted.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================

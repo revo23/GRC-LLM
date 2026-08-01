@@ -1,0 +1,542 @@
+{
+  "assessment_id": "57a409fa-6f7e-4a22-a5fc-3be919682e7c",
+  "document_id": "0389e74ca279406eb39599c6b1a77670",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "cis_csc"
+  ],
+  "overall_posture_score": 2.58,
+  "framework_results": [
+    {
+      "framework_id": "cis_csc",
+      "framework_name": "CIS Critical Security Controls",
+      "overall_score": 2.58,
+      "family_scores": [
+        {
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "average_score": 2.51,
+          "control_count": 6,
+          "weight": 1.5
+        },
+        {
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "average_score": 2.72,
+          "control_count": 10,
+          "weight": 1.3
+        },
+        {
+          "family": "Organizational Controls",
+          "framework_id": "cis_csc",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.1
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "CIS-1",
+          "control_name": "Inventory and Control of Enterprise Assets",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy includes general requirements for safeguarding information systems and monitoring environments, but lacks explicit, systematic procedures for inventory and active management of all enterprise assets across physical, virtual, remote, and cloud environments.",
+          "evidence": [
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Identify systems without which it would be difficult for the business to operate.",
+            "Policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft."
+          ],
+          "gaps": [
+            "No explicit requirement for maintaining a comprehensive, up-to-date inventory of all enterprise assets (including cloud and remote assets).",
+            "No defined process for tracking assets, correcting unauthorized assets, or integration with asset management solutions.",
+            "No mention of inventory reconciliation, automated asset discovery, or periodic asset reviews."
+          ],
+          "recommendations": [
+            "Establish and document procedures for maintaining a detailed, up-to-date inventory of all enterprise assets, including physical, virtual, remote, and cloud assets.",
+            "Implement asset tracking and reconciliation mechanisms, including automated tools where possible.",
+            "Define periodic review and correction processes for asset inventory to ensure completeness and accuracy.",
+            "Integrate asset management processes with risk assessment and security monitoring."
+          ]
+        },
+        {
+          "control_id": "CIS-2",
+          "control_name": "Inventory and Control of Software Assets",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains some relevant controls such as limiting access to software, audit mechanisms, and periodic audits, but lacks comprehensive, formal processes for maintaining an up-to-date inventory of software assets and does not specify mechanisms for detecting or blocking unauthorized/unmanaged software.",
+          "evidence": [
+            "authorized individuals within Provider may monitor equipment, systems and network traffic at any time",
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security",
+            "procedures to control and validate a person\u2019s access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision",
+            "Access control. Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information."
+          ],
+          "gaps": [
+            "No explicit requirement or process for maintaining a complete and up-to-date inventory of all software installed on the network.",
+            "No process defined for the review or approval of software installations.",
+            "No stated mechanism for detecting, blocking, or removing unauthorized or unmanaged software.",
+            "Does not identify responsible roles for software asset management or specify reporting and accountability.",
+            "No mention of periodic review of authorized software or removal of unauthorized software."
+          ],
+          "recommendations": [
+            "Implement and formally document a centralized process for maintaining an inventory of all software assets, including versioning and ownership.",
+            "Define and enforce a standardized software approval process ensuring only authorized software can be installed or executed.",
+            "Adopt technical controls for automated detection and blocking of unauthorized software on endpoints and servers.",
+            "Assign clear accountability and reporting responsibilities for software asset management.",
+            "Establish procedures for periodic review, verification, and removal of unauthorized or unmanaged software."
+          ]
+        },
+        {
+          "control_id": "CIS-3",
+          "control_name": "Data Protection",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy describes formal, documented processes for risk assessment, access controls, encryption, secure handling, and disposal of data. However, data classification and comprehensive data loss prevention (DLP) controls are only implicitly addressed and lack specific procedures or continuous improvement mechanisms.",
+          "evidence": [
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Procedures to create and maintain retrievable exact copies of electronic Information.",
+            "Procedures to restore any loss of data.",
+            "Improper Disposal Procedures \u2013 Improper disposal procedures may allow a third party to steal or access data, reconstruct data, or commit \u2018dumpster diving.\u2019",
+            "Installation of firewalls, restricted access, data encryption, or limited network/internet access are all possible safeguards in this example."
+          ],
+          "gaps": [
+            "No explicit policy on identifying and classifying data according to sensitivity or regulatory requirements.",
+            "Data loss prevention (DLP) tools and controls are not specifically mentioned or mandated.",
+            "Documented process for secure data retention and disposal is not sufficiently detailed.",
+            "No evidence of metrics or continuous improvement/cycle for data protection controls."
+          ],
+          "recommendations": [
+            "Develop and implement a formal process for data identification and classification, specifying categories based on sensitivity and regulatory requirements.",
+            "Document and mandate the use of data loss prevention (DLP) technologies and controls for both endpoint and network data protection.",
+            "Establish clear, detailed procedures for secure data retention and disposal, including requirements for shredding, wiping, or destruction based on data classification.",
+            "Define metrics to monitor effectiveness of data protection controls and require periodic review and update as part of risk management."
+          ]
+        },
+        {
+          "control_id": "CIS-4",
+          "control_name": "Secure Configuration of Enterprise Assets and Software",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains several elements related to risk assessment, system auditing, and technical safeguards, but it does not explicitly reference secure configuration baselines, hardening guides, or formal configuration management processes for assets and software as required by CIS-4.",
+          "evidence": [
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Software installs to reduce the risk of introducing a security risk via an installed program (such as an imbedded virus or Trojan)."
+          ],
+          "gaps": [
+            "No mention of using hardening guides (such as CIS Benchmarks or vendor best practices) for secure baseline configurations.",
+            "No requirement for establishing and documenting secure configuration standards for hardware and software.",
+            "No formal configuration management process described for maintaining or monitoring configurations over time.",
+            "No reference to remediation of non-compliant configurations or integration with vulnerability management."
+          ],
+          "recommendations": [
+            "Establish and document secure configuration baselines for all enterprise assets and critical software, referencing industry hardening guides (e.g., CIS Benchmarks, NIST, vendor recommendations).",
+            "Implement a formal configuration management process, including version control, monitoring for drift, and regular review of configuration settings.",
+            "Document procedures for applying, testing, and maintaining secure configurations, and integrate these with vulnerability management and asset inventory processes.",
+            "Define clear accountability for configuration management tasks and establish metrics for compliance with secure baselines."
+          ]
+        },
+        {
+          "control_id": "CIS-5",
+          "control_name": "Account Management",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy provides formal, documented processes for authorization, account management, and access review, covering most requirements for user, admin, and service accounts, but lacks explicit detail about tooling, periodic reviews, and metrics for accountability.",
+          "evidence": [
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Policies and procedures for granting access to electronic Information, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+            "Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No mention of specific tools used for account management or automation.",
+            "No explicit reference to managing service accounts or administrator accounts distinctly.",
+            "No evidence of periodic review or monitoring of account management effectiveness.",
+            "Lacks details on metrics and accountability for measuring access control effectiveness."
+          ],
+          "recommendations": [
+            "Explicitly document procedures for managing administrator and service accounts, including assignment, monitoring, and reviews.",
+            "Specify tools and automation used for account provisioning, deprovisioning, and access management.",
+            "Add requirements for periodic reviews of access rights and account management practices, including regular audits.",
+            "Define accountability and metrics for measuring the effectiveness of account management and access controls."
+          ]
+        },
+        {
+          "control_id": "CIS-6",
+          "control_name": "Access Control Management",
+          "family": "Basic Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines and documents formal processes for access authorization, modification, review, and revocation for user accounts, including administrators, workforce, and service contexts. However, it lacks explicit references to technical automation, in-depth metrics, and continuous measurement or improvement practices.",
+          "evidence": [
+            "Policies and procedures for granting access to electronic Information, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights."
+          ],
+          "gaps": [
+            "No explicit mention of tools or automation for provisioning, reviewing, or revoking access credentials.",
+            "No reference to measurement, monitoring, or accountability using defined metrics.",
+            "No articulation of continuous improvement processes.",
+            "Limited explicit coverage of service accounts and administrator privileges as opposed to general user accounts."
+          ],
+          "recommendations": [
+            "Incorporate explicit requirements for using automated tools to manage and audit access credentials, including for administrator and service accounts.",
+            "Define and implement metrics to routinely monitor access control processes and outcomes, assigning clear accountability.",
+            "Establish processes for periodic review and continuous improvement of access control practices.",
+            "Clearly distinguish requirements and procedures for user, administrator, and service account management throughout the policy."
+          ]
+        },
+        {
+          "control_id": "CIS-7",
+          "control_name": "Continuous Vulnerability Management",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy demonstrates defined, formal processes for periodic risk assessment and monitoring safeguards, and includes requirements for patch management and scanning, but lacks explicit language on continuous vulnerability tracking, centralized reporting, remediation prioritization, and metric-based evaluation.",
+          "evidence": [
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations. The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "Ensure that patches are current.",
+            "Upgrade any unsupported operating systems for desktops and servers.",
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information."
+          ],
+          "gaps": [
+            "No explicit mention of continuous vulnerability scanning or use of automated tools.",
+            "No formal process for tracking vulnerabilities across all enterprise assets on an ongoing basis.",
+            "No defined prioritization process for remediation activities based on risk or exposure.",
+            "No requirement for centralized vulnerability reporting or metrics to measure remediation or minimize attacker window.",
+            "Remediation plans and timeframes are not articulated; focus is on periodic review rather than continuous assessment."
+          ],
+          "recommendations": [
+            "Implement a formal, documented vulnerability management process that includes continuous or frequent automated scanning of all enterprise assets.",
+            "Establish centralized tracking of vulnerabilities, including assigned responsibility and remediation timeframes.",
+            "Adopt risk-based prioritization for vulnerability remediation based on asset criticality and threat intelligence.",
+            "Define metrics for vulnerability management efficiency (e.g., mean time to remediation, percentage of assets scanned, etc.) and monitor them regularly.",
+            "Integrate vulnerability management with risk assessment and incident response processes for end-to-end coverage."
+          ]
+        },
+        {
+          "control_id": "CIS-8",
+          "control_name": "Audit Log Management",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy includes documented processes for audit controls, periodic log review, and procedures to monitor and examine system activity, but lacks clear detail on alerting, log retention durations, defined metrics, and continuous improvement.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement to collect all relevant security events or specify which events must be logged.",
+            "No mention of real-time alerting on suspicious or critical events in audit logs.",
+            "No defined minimum or maximum retention periods for audit logs.",
+            "No evidence of log review frequency, metrics, or accountability.",
+            "No process for continual improvement or integration with wider risk management after periodic review."
+          ],
+          "recommendations": [
+            "Specify which types of events must be logged and ensure comprehensive collection across relevant systems.",
+            "Formally require real-time alerting on significant log events (e.g., potential intrusions, failures).",
+            "Define and document audit log retention periods consistent with regulatory and risk requirements.",
+            "Set clear responsibilities, accountability, and frequency for log reviews with metrics for effectiveness.",
+            "Integrate audit log management review with the organization's risk management and continual improvement processes."
+          ]
+        },
+        {
+          "control_id": "CIS-9",
+          "control_name": "Email and Web Browser Protections",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy demonstrates a formal, documented approach to email and web browser protections through several explicit safeguards and user requirements, but lacks details on metrics, consistent operational procedures, or continuous improvement mechanisms across all elements of the control.",
+          "evidence": [
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "erface for information contained on Internet / Intranet / Extranet-related systems should be classified as either confidential or not confidential...",
+            "All hosts ... shall be continually executing approved virus-scanning software with a current virus database.",
+            "Employees must use extreme caution when opening e-mail attachments received from unknown senders, which may contain viruses, e-mail bombs, or Trojan horse code.",
+            "Security awareness and training. A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software...",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations."
+          ],
+          "gaps": [
+            "No mention of web browser-specific security configurations or controls (e.g., restricting use of plugins, controlling active content, blocking malicious/reputation-based URLs).",
+            "Lacks specifics on automated detection and alerting of phishing or compromised web/email traffic.",
+            "No metrics or measures to assess effectiveness of email and web browser controls.",
+            "Continuous improvement processes are not documented.",
+            "Does not detail isolation or sandboxing for web/email content.",
+            "Does not address deployment of anti-malware software specific to web browsing threats (e.g., against drive-by downloads)."
+          ],
+          "recommendations": [
+            "Define and implement web browser security baseline configurations (e.g., prevent installation of unapproved plugins, block malicious URLs, manage scripting).",
+            "Establish and document processes for automated detection and alerting on email/web-based threats (phishing, malware).",
+            "Develop and monitor metrics for the effectiveness of email and web browser protections.",
+            "Specify regular reviews for control effectiveness and integrate with risk management/continuous improvement processes.",
+            "Document and implement the use of sandboxing or isolation techniques for email attachments and untrusted web content.",
+            "Explicitly require anti-malware/anti-phishing tools and controls for web browsers, not just general anti-virus."
+          ]
+        },
+        {
+          "control_id": "CIS-10",
+          "control_name": "Malware Defenses",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy includes several malware defense elements such as email/file scanning, patch management, user training, and periodic evaluations, indicating a formal and documented process. However, detail is lacking on the use of automated tools for malware prevention and measurement of effectiveness.",
+          "evidence": [
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "Ensure that patches are current.",
+            "Upgrade any unsupported operating systems for desktops and servers.",
+            "Security awareness and training program for all company employees ... including procedures for guarding against, detecting, and reporting malicious software.",
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement to deploy automated anti-malware tools on all enterprise assets.",
+            "Limited mention of controlling the spread and execution of malicious code (e.g., application whitelisting, execution restriction).",
+            "No defined metrics or measurement for monitoring malware defense effectiveness.",
+            "No reference to continuous improvement or integration with overall risk management."
+          ],
+          "recommendations": [
+            "Require and document the deployment of automated anti-malware solutions on all relevant enterprise assets.",
+            "Include process and policy details for application whitelisting, execution restriction, or other controls to prevent unauthorized code execution.",
+            "Establish key performance indicators (KPIs) to measure the effectiveness of malware defenses (e.g., infection rates, response times).",
+            "Integrate periodic malware defense reviews with the organization's overall risk management and continuous improvement processes."
+          ]
+        },
+        {
+          "control_id": "CIS-11",
+          "control_name": "Data Recovery",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally recognizes the need for backup, restoration, contingency planning, and includes periodic testing and evaluation, but lacks detail on established frequency, metrics, and systematic improvement processes.",
+          "evidence": [
+            "Procedures to create and maintain retrievable exact copies of electronic Information.",
+            "Procedures to restore any loss of data.",
+            "Procedures for periodic testing and revision of contingency plans.",
+            "Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information. This safeguard will be implemented by Procedures to create and maintain retrievable exact copies of electronic Information. Procedures to restore any loss of data."
+          ],
+          "gaps": [
+            "Does not specify backup frequency or retention requirements.",
+            "No clear assignment of accountability or metrics for testing recovery procedures.",
+            "Lacks explicit integration with organizational risk management or continuous improvement practices.",
+            "Does not detail recovery testing for all enterprise assets or include scenarios for validating restore to a trusted state."
+          ],
+          "recommendations": [
+            "Define and document backup frequency, retention, and scope for all in-scope enterprise assets.",
+            "Establish formal, scheduled testing of backup and recovery procedures, including documenting outcomes and lessons learned.",
+            "Assign clear accountability for performing and monitoring recovery tests, including defining measurable metrics.",
+            "Integrate data recovery practices with broader risk management and continuous improvement processes.",
+            "Explicitly require restoration testing that validates integrity and trusted state post-incident across enterprise assets."
+          ]
+        },
+        {
+          "control_id": "CIS-12",
+          "control_name": "Network Infrastructure Management",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy references general technical safeguards, restricting network privileges, and risk-based implementation but lacks explicit requirements for secure network configuration, documentation of diagrams, segmentation, or protocol hardening. No evidence of detailed network management procedures or configuration baselines is provided.",
+          "evidence": [
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment\u2026\" (Excerpt 1)",
+            "\"Restrict network administrative privileges. Computer networks rely on a hierarchical system of access levels to help protect critical parts of the network from both accidental and intentional alterations.\" (Excerpt 3)",
+            "\"Ensure that patches are current.\" (Excerpt 3)"
+          ],
+          "gaps": [
+            "No mention of maintaining or updating network diagrams or topologies.",
+            "No formal process for secure baseline configuration of network infrastructure assets.",
+            "No explicit reference to network segmentation practices.",
+            "Secure protocols (e.g., disabling insecure protocols, enforcing encryption) are not addressed.",
+            "No evidence of monitoring, metrics, or continuous improvement specific to network management."
+          ],
+          "recommendations": [
+            "Develop and mandate documented processes for configuring network infrastructure securely, including specifying configuration baselines.",
+            "Require and maintain up-to-date network diagrams to support management and incident response.",
+            "Implement and document network segmentation practices aligned to data sensitivity and business needs.",
+            "Define requirements for use of secure network protocols (e.g., SSH, TLS) and disallow insecure legacy protocols.",
+            "Establish regular reviews, monitoring, and audits of network configurations with defined accountability metrics."
+          ]
+        },
+        {
+          "control_id": "CIS-13",
+          "control_name": "Network Monitoring and Defense",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents network monitoring and defense activities, including assigning responsibility, conducting periodic reviews, and allowing network monitoring and audits. However, it lacks specifics on tooling, comprehensive monitoring processes, defined metrics, and continuous improvement mechanisms.",
+          "evidence": [
+            "\"authorized individuals within Provider may monitor equipment, systems and network traffic at any time\" (Excerpt 5)",
+            "\"Provider reserves the right to audit networks and systems on a periodic basis\" (Excerpt 5)",
+            "\"The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards...and will regularly monitor the effectiveness of such safeguards\" (Excerpt 4)",
+            "\"Policies and procedures to prevent, detect, contain, and correct security violations\" (Excerpt 4)",
+            "\"Detecting, preventing and responding to attacks, intrusions, or other system failures...\" (Excerpt 4)",
+            "\"periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards\" (Excerpt 2)"
+          ],
+          "gaps": [
+            "No description of specific network monitoring or intrusion detection/prevention tools in use.",
+            "Lacks details about how monitoring is conducted (e.g., 24/7 coverage, alerting, response procedures).",
+            "No discussion of defined metrics or key performance indicators for network defense effectiveness.",
+            "Continuous improvement and integration with broader risk management are only loosely referenced.",
+            "Does not specify how monitoring results are used to inform incident response or improvements."
+          ],
+          "recommendations": [
+            "Define and document the specific network monitoring and intrusion detection/prevention technologies and processes in use.",
+            "Establish procedures for alerting, escalation, and continuous monitoring, including coverage considerations (e.g., 24/7 monitoring).",
+            "Develop and track network defense metrics (such as incident response times, false positive rates, etc.) and assign accountability.",
+            "Explicitly integrate network monitoring program review and improvements with the risk assessment and management process.",
+            "Formalize how network monitoring data feeds into incident response and drives continuous improvement in defense capabilities."
+          ]
+        },
+        {
+          "control_id": "CIS-14",
+          "control_name": "Security Awareness and Skills Training",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a formal security awareness and training program, mandates periodic updates, and assigns responsibility, but lacks details on ongoing behavior measurement, specific metrics, continuous improvement, and integration with risk management processes.",
+          "evidence": [
+            "A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies, and/or procedures for creating, changing, and safeguarding passwords.",
+            "The Coordinator will prepare and maintain written safeguards and will provide guidance on implementation of safeguards to all affected company employees.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "Employee Training: All employees that have access to Information or work with systems that handle Information should receive adequate training for handling and disposal of such Information.",
+            "This Program will be reviewed and adjusted periodically."
+          ],
+          "gaps": [
+            "No evidence of clearly defined metrics or methods to measure effectiveness of training.",
+            "No mention of ongoing behavioral assessment or organization-wide accountability for security awareness.",
+            "No explicit connection of security awareness activities with broader enterprise risk management.",
+            "No details on role-based or specialized training beyond financial transactions.",
+            "No process for continuous improvement based on results or threat landscape changes."
+          ],
+          "recommendations": [
+            "Define specific metrics to measure security awareness program effectiveness, such as completion rates, phishing simulation results, or incident attribution.",
+            "Implement a process to assess and track workforce security behavior changes over time.",
+            "Integrate security awareness outcomes into risk management and incident response planning.",
+            "Expand the program to include targeted training for high-risk roles and more scenario-based exercises.",
+            "Establish a feedback loop for regular program updates based on incident trends, employee feedback, and changing threats."
+          ]
+        },
+        {
+          "control_id": "CIS-15",
+          "control_name": "Service Provider Management",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy documents refer to departmental risk assessments and periodic reviews, but lack a formal, documented process specifically for evaluating service providers' controls over sensitive data and critical platforms. Requirements such as third-party due diligence and ongoing monitoring of providers are not directly addressed.",
+          "evidence": [
+            "Some areas of the company may require more frequent review than others, such as IT, records management, or any other area that comes in contact with a high volume of Information or is especially vulnerable to technological or procedural risks and threats.",
+            "Provider is legally required to safeguard its clients\u2019 Information. Each department is responsible for maintaining an active risk assessment policy.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit process for evaluating service providers who have access to sensitive information or critical IT platforms.",
+            "No formal criteria or procedures for due diligence, onboarding, or ongoing monitoring of third-party service providers.",
+            "Lack of requirements for contractual security clauses or verification of provider safeguards."
+          ],
+          "recommendations": [
+            "Develop and document a formal vendor evaluation process that includes assessment of security controls for service providers with access to sensitive data or critical IT platforms.",
+            "Establish criteria for due diligence, onboarding, and continuous monitoring of third-party service providers.",
+            "Require written agreements with service providers to include security requirements and mechanisms for verification.",
+            "Assign accountability for service provider management and include metrics to track compliance and effectiveness."
+          ]
+        },
+        {
+          "control_id": "CIS-16",
+          "control_name": "Application Software Security",
+          "family": "Foundational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions general security practices (risk assessment, administrative safeguards, incident response) and some technical controls (access, audit, integrity), but lacks specificity for application software security activities like secure development, code review, and vulnerability management.",
+          "evidence": [
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Procedures for guarding against, detecting, and reporting malicious software",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems.",
+            "Policies and procedures to protect electronic Information from improper alteration or destruction.",
+            "software installs to reduce the risk of introducing a security risk via an installed program (such as an imbedded virus or Trojan)."
+          ],
+          "gaps": [
+            "No mention of secure software development lifecycle (SDLC) activities such as threat modeling, secure coding practices, code review, or security testing.",
+            "No explicit requirement for vulnerability scanning and remediation specific to application software.",
+            "No processes for patch management or tracking of software components for known vulnerabilities.",
+            "No delineation of roles and responsibilities for application security.",
+            "Absence of requirements for use of secure development frameworks, libraries, or third-party software vetting."
+          ],
+          "recommendations": [
+            "Develop and document a secure software development lifecycle (SDLC) policy addressing secure coding, code review, security testing, and developer training.",
+            "Require regular vulnerability assessments and penetration testing for all in-house or acquired applications, with documented remediation procedures.",
+            "Establish procedures for tracking, patching, and updating software components, including third-party libraries.",
+            "Assign clear roles and responsibilities for application security throughout the software lifecycle.",
+            "Incorporate application-level monitoring and logging for incident detection and response."
+          ]
+        },
+        {
+          "control_id": "CIS-17",
+          "control_name": "Incident Response Management",
+          "family": "Organizational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a documented incident response process with provisions for identification, response, mitigation, documentation, and periodic review, but lacks detailed guidance on metrics, monitoring, and continuous improvement.",
+          "evidence": [
+            "Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information."
+          ],
+          "gaps": [
+            "No explicit mention of performance metrics or mechanisms for monitoring and measuring incident response effectiveness.",
+            "Absent details on roles and responsibilities beyond the 'Coordinator', especially for response team structure.",
+            "Lacks procedures for post-incident analysis or integration of lessons learned into the overall risk management framework.",
+            "Does not address testing or exercising of the incident response plan apart from periodic reviews."
+          ],
+          "recommendations": [
+            "Define clear metrics for incident response effectiveness (e.g., response times, resolution rates) and require periodic reporting.",
+            "Expand policy to specify roles, responsibilities, and team structure for incident response, including escalation and communication procedures.",
+            "Formalize procedures for regular testing and exercises of the incident response plan (e.g., tabletop or simulation exercises).",
+            "Integrate lessons learned and post-incident review processes into the continuous improvement of the incident response capability."
+          ]
+        },
+        {
+          "control_id": "CIS-18",
+          "control_name": "Penetration Testing",
+          "family": "Organizational Controls",
+          "framework_id": "cis_csc",
+          "maturity_score": 2,
+          "score_rationale": "The policy includes periodic evaluation, risk assessment, and technical evaluations, but does not mention formal penetration testing or simulated attack scenarios. Control effectiveness is checked by review and risk management, not by active exploitation or attack simulation.",
+          "evidence": [
+            "Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective.",
+            "This Program will be reviewed and adjusted periodically.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information."
+          ],
+          "gaps": [
+            "No explicit mention of penetration testing or simulated attack scenarios.",
+            "No formal process for identifying and exploiting weaknesses in controls using simulated attacks.",
+            "No defined methodology for testing resiliency via active adversarial approaches."
+          ],
+          "recommendations": [
+            "Update the policy to formally require penetration testing on a regular basis (e.g., annually) for critical enterprise assets.",
+            "Include explicit language about simulated attack scenarios, such as red team exercises, and define their scope and frequency.",
+            "Establish formal procedures for remediation of vulnerabilities identified during penetration testing, including reporting and accountability.",
+            "Integrate penetration testing results into the overall risk management and continuous improvement process."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-05T21:45:00.510124",
+  "status": "completed"
+}

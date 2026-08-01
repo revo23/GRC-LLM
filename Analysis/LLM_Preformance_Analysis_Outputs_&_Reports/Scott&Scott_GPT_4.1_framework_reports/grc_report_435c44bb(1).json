@@ -1,0 +1,802 @@
+{
+  "assessment_id": "435c44bb-a076-46d1-893e-afb64685c8f8",
+  "document_id": "0389e74ca279406eb39599c6b1a77670",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "nist_800_53"
+  ],
+  "overall_posture_score": 2.27,
+  "framework_results": [
+    {
+      "framework_id": "nist_800_53",
+      "framework_name": "NIST SP 800-53",
+      "overall_score": 2.27,
+      "family_scores": [
+        {
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "average_score": 2.73,
+          "control_count": 4,
+          "weight": 1.5
+        },
+        {
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 3,
+          "weight": 1.0
+        },
+        {
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "average_score": 2.34,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "average_score": 1.37,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 3,
+          "weight": 1.5
+        },
+        {
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "average_score": 2.69,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "average_score": 2.5,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "average_score": 2.48,
+          "control_count": 2,
+          "weight": 1.4
+        },
+        {
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 2,
+          "weight": 1.4
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "AC-1",
+          "control_name": "Access Control Policy and Procedures",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy contains formal, documented processes addressing purpose, scope, roles, responsibilities, compliance, and specific procedures for access control, but lacks evidence of ongoing metrics, monitoring, and proactive improvement.",
+          "evidence": [
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "It is the policy of Provider to comply, and to require its employees to comply, with all applicable federal, state, and local laws and regulations, as well as Provider\u2019s policies and procedures, governing information security, confidentiality, and privacy."
+          ],
+          "gaps": [
+            "No mention of defined metrics or ongoing monitoring for access control effectiveness.",
+            "Lacks accountability structures or assignment of responsibility for access control oversight.",
+            "No evidence of regular policy review, update cadence, or integration with risk management processes.",
+            "Does not specify formal dissemination procedures for the access control policy to relevant stakeholders."
+          ],
+          "recommendations": [
+            "Establish and document defined metrics for monitoring access control policy effectiveness.",
+            "Assign clear accountability for access control management and oversight.",
+            "Incorporate regular review and update cycles for access control policy and related procedures.",
+            "Formalize and document dissemination and communication procedures for the policy to all stakeholders.",
+            "Integrate access control policy management into broader risk management and continuous improvement processes."
+          ]
+        },
+        {
+          "control_id": "AC-2",
+          "control_name": "Account Management",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several core elements of account management including account authorization, unique user identification, and access termination, but lacks explicit details on establishing account types, group membership conditions, and a formal process for periodic account reviews.",
+          "evidence": [
+            "Policies and procedures for granting access to electronic Information, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No mention of formal classification or establishment of different account types (e.g., privileged, service, temporary).",
+            "No documented conditions for group membership are provided.",
+            "No explicit requirement for periodic account reviews to validate appropriateness and compliance.",
+            "No mention of the process for account authorization documentation and approval workflow.",
+            "No references to management of third-party or service accounts."
+          ],
+          "recommendations": [
+            "Document and define different account types and their purposes, including conditions under which each may be created.",
+            "Establish and clearly outline conditions for group membership, including criteria for assignment and periodic recertification.",
+            "Implement and document procedures for periodic account reviews, ensuring active accounts remain appropriate and unauthorized accounts are removed.",
+            "Define and require a formalized approval process for account authorization, including tracking of requests and approvals.",
+            "Include requirements for the management of non-employee (third-party, contractor, service) accounts in the policy."
+          ]
+        },
+        {
+          "control_id": "AC-3",
+          "control_name": "Access Enforcement",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy excerpts demonstrate formal, documented processes for enforcing access controls and authorizations, including periodic review, termination of access, unique identification, and authentication mechanisms. However, there is limited evidence of monitoring effectiveness or continuous improvement and metrics-based enforcement.",
+          "evidence": [
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No evidence of defined metrics or measurement to monitor enforcement effectiveness.",
+            "No mention of continuous improvement or integration with risk management.",
+            "Limited details on how access authorization policies are enforced across all types of access and systems.",
+            "No explicit assignment of accountability for access enforcement."
+          ],
+          "recommendations": [
+            "Implement and document measurable metrics (such as access violation rates, review frequency, and audit results) to monitor enforcement effectiveness.",
+            "Assign clear accountability for enforcement of access control policies.",
+            "Establish continuous improvement processes for access control enforcement, integrated with risk management.",
+            "Expand policy language to explicitly cover enforcement mechanisms for all types of logical access and system resources."
+          ]
+        },
+        {
+          "control_id": "AC-17",
+          "control_name": "Remote Access",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines remote access authorization, usage restrictions (e.g., GSM-only, one-time password authentication), and provides implementation guidance for both users and IT personnel. However, it lacks explicit metrics for monitoring and formal mechanisms for continuous improvement.",
+          "evidence": [
+            "\"Remote access should be strictly controlled, using one-time password authentication.\"",
+            "\"Analog and non-GSM digital cellular phones cannot be used... Only GSM standard digital cellular phones are considered secure enough for connection to Provider's network.\"",
+            "\"Account activity should be monitored, and if a remote access account is not used for a period of six months the account should be eliminated and no longer function. If remote access is subsequently required, the individual must request a new account as described above.\"",
+            "\"Access Privileges: Each department shall confirm that employee tasks require access to Information before allowing access.\"",
+            "\"Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.\""
+          ],
+          "gaps": [
+            "No indication of formal metrics or regular monitoring/reporting of remote access usage beyond ad hoc account review.",
+            "No documented integration with organization-wide risk management or continuous improvement process.",
+            "No specific definition of accountability for overseeing or reviewing remote access activities."
+          ],
+          "recommendations": [
+            "Define and implement remote access metrics (e.g., number of connections, failed attempts, frequency of usage) to enable ongoing monitoring and reporting.",
+            "Document a process for regular review and continuous improvement of remote access controls based on risk assessments and incident trends.",
+            "Assign specific accountability for remote access authorization, monitoring, and periodic access recertification to appropriate roles."
+          ]
+        },
+        {
+          "control_id": "AT-1",
+          "control_name": "Security Awareness and Training Policy",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes that a security awareness and training program exists and assigns responsibility for ensuring staff are trained, but lacks detailed, formal documentation of the specific policy, dissemination method, and procedures required for comprehensive implementation.",
+          "evidence": [
+            "A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies, and/or procedures for creating, changing, and safeguarding passwords.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information. The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments."
+          ],
+          "gaps": [
+            "No formal, standalone security awareness and training policy document is described.",
+            "Procedures for how the policy is disseminated (e.g., how all users are informed) are not detailed.",
+            "Policy does not explicitly cover development, approval, update, and distribution processes.",
+            "Roles and responsibilities, beyond the Coordinator, are not fully described.",
+            "No mention of metrics, periodicity, or effectiveness review for the training program."
+          ],
+          "recommendations": [
+            "Develop and document a formal security awareness and training policy with clear scope, objectives, and designated roles and responsibilities.",
+            "Define and document procedures for disseminating the policy and ensuring all staff are aware.",
+            "Specify how and when the policy and procedures are reviewed, approved, and updated.",
+            "Include requirements for tracking completion of training and for monitoring effectiveness.",
+            "Integrate feedback and improvement processes to address new risks and lessons learned."
+          ]
+        },
+        {
+          "control_id": "AT-2",
+          "control_name": "Security Awareness Training",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references a security awareness and training program for employees and periodic updates, but lacks specificity on initial onboarding training, explicit triggers for retraining when changes occur, and annual content review requirements.",
+          "evidence": [
+            "A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates...",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "Employee Training: All employees that have access to Information or work with systems that handle Information should receive adequate training for handling and disposal of such Information.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance..."
+          ],
+          "gaps": [
+            "No explicit requirement that security awareness training be provided as part of initial training for new users.",
+            "No mention of retraining in response to significant changes in security posture, threats, or job functions.",
+            "Although periodic updates and an annual program review are mentioned, there is no clear mandate for annual updates to training content.",
+            "No detail on specific content areas or minimum standards for the training curriculum."
+          ],
+          "recommendations": [
+            "Add a formal requirement that all new users receive security awareness training as part of onboarding.",
+            "Include provisions requiring retraining whenever there are significant changes to organizational policy, threats, or user responsibilities.",
+            "Explicitly mandate that security awareness training content be reviewed and updated at least annually.",
+            "Define minimum content standards for the training program, such as topics to be covered, and establish mechanisms for ensuring completion and effectiveness (e.g., metrics, testing)."
+          ]
+        },
+        {
+          "control_id": "AT-3",
+          "control_name": "Role-Based Security Training",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions security awareness and training for all staff and assigns responsibility to a Coordinator to ensure staff are trained in relevant legal requirements, but there is no explicit mention of tailored, role-based security training or timing (e.g., before authorization or as roles change).",
+          "evidence": [
+            "A security awareness and training program for all company employees (including management).",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information."
+          ],
+          "gaps": [
+            "No explicit mention of role-based training tailored to security responsibilities.",
+            "No requirement to deliver training prior to authorization for personnel with security roles.",
+            "No specified process or policy for training upon change in job duties or at the time required (e.g., new roles or changing responsibilities).",
+            "No defined recurring or refresher training interval for role-based security training."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require and define role-based security training tailored to specific security roles and responsibilities.",
+            "Specify that personnel with assigned security roles receive training prior to gaining authorization for those roles and when responsibilities change.",
+            "Establish a process to identify individuals or roles requiring specialized training and ensure documented completion before assignment.",
+            "Define intervals for refresher or ongoing role-based security training as part of the broader training program."
+          ]
+        },
+        {
+          "control_id": "AU-2",
+          "control_name": "Audit Events",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references audit controls and review of audit logs, but lacks detail on coordination of the audit function and does not specify determination of auditable events or rationale for non-audited events.",
+          "evidence": [
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports. (Excerpt 4)",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information. (Excerpt 3)"
+          ],
+          "gaps": [
+            "No documentation of a process to determine which events are to be audited.",
+            "No rationale provided for events not deemed auditable.",
+            "No evidence of coordination of the audit function or clear accountability.",
+            "No mention of metrics or monitoring for audit coverage activities."
+          ],
+          "recommendations": [
+            "Formalize a documented process to determine and review which events are auditable in the information system.",
+            "Establish documentation and justification for events that are not audited.",
+            "Define roles and responsibilities for coordinating and overseeing the audit function.",
+            "Implement monitoring or periodic review to ensure audit coverage is complete and effective."
+          ]
+        },
+        {
+          "control_id": "AU-9",
+          "control_name": "Protection of Audit Information",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy includes formal, documented requirements for access controls, integrity, authentication, and regular review of audit information, but lacks explicit reference to audit tools, specific integrity verification mechanisms, or defined monitoring metrics.",
+          "evidence": [
+            "Procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Integrity. Policies and procedures to protect electronic Information from improper alteration or destruction. This safeguard may be implemented by electronic mechanisms to corroborate that electronic Information has not been altered or destroyed in an unauthorized manner.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use."
+          ],
+          "gaps": [
+            "No explicit mention of protection measures for audit tools themselves.",
+            "Lacks precise technical details and specific implementation for integrity verification of audit information.",
+            "No defined metrics, continuous monitoring, or processes for measuring the effectiveness of these controls.",
+            "No integration with risk management processes beyond risk assessment."
+          ],
+          "recommendations": [
+            "Add explicit requirements to protect audit tools from unauthorized access, modification, or deletion.",
+            "Define and implement specific integrity verification mechanisms for audit information, such as checksums, digital signatures, or write-once storage.",
+            "Establish regular testing and monitoring of access and integrity controls for audit information and tools.",
+            "Integrate audit log and tool protections with ongoing risk management and continuous improvement processes.",
+            "Define accountable roles for monitoring the protection of audit information and require regular metrics reporting."
+          ]
+        },
+        {
+          "control_id": "AU-12",
+          "control_name": "Audit Record Generation",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references audit controls and review of audit logs, but does not specify procedures for selecting auditable events, nor for generating audit records at defined locations. Requirements are mentioned at a high level without detailed process or assignment of accountability.",
+          "evidence": [
+            "Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "No mention of how authorized personnel can select auditable events.",
+            "No specification for generation of audit records at defined locations.",
+            "No detailed procedures for audit record generation or configuration.",
+            "No assignment of responsibility or metrics for audit controls."
+          ],
+          "recommendations": [
+            "Document a formal process for defining auditable events and allow authorized personnel to select them.",
+            "Specify procedures for generating audit records at required locations within the information system.",
+            "Assign accountability for audit record configuration and review.",
+            "Establish ongoing monitoring with metrics for audit log completeness and accuracy."
+          ]
+        },
+        {
+          "control_id": "CA-2",
+          "control_name": "Security Assessments",
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy describes periodic risk assessment, monitoring of safeguards, and reporting, but it does not establish a formal security assessment plan, assessment report production, defined assessment frequencies, or specify providing results to authorized officials. Key processes are present but incomplete.",
+          "evidence": [
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations. The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information. The assessment must also address the sufficiency of any safeguards in place to control these risks.",
+            "This Program will be reviewed and adjusted periodically."
+          ],
+          "gaps": [
+            "No formal, documented security assessment plan is referenced.",
+            "Assessment frequency is only generally referenced as 'annual' or 'periodic', not defined for controls.",
+            "Production of formal security assessment reports is not required.",
+            "No requirement to provide results to authorized officials beyond the Coordinator role."
+          ],
+          "recommendations": [
+            "Develop and document a formal security assessment plan outlining objectives, scope, methodology, and roles.",
+            "Specify defined assessment frequencies for all security controls (at least annually or as required by regulation).",
+            "Establish a requirement to produce formal assessment reports documenting the results, findings, and recommendations.",
+            "Mandate that assessment results are reviewed and formally accepted by authorized officials (e.g., executive management, relevant department heads).",
+            "Define metrics and responsibilities for tracking and improving assessment processes over time."
+          ]
+        },
+        {
+          "control_id": "CA-7",
+          "control_name": "Continuous Monitoring",
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines a formal process for periodic evaluation, monitoring, and adjustment of security controls and program effectiveness. While it covers most requirements, it lacks explicit detail on ongoing (as opposed to periodic) assessment, metrics, and an integrated configuration management process.",
+          "evidence": [
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations. The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company\u2019s security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective."
+          ],
+          "gaps": [
+            "No explicit mention of ongoing (real-time or near real-time) assessment of controls\u2014focus is on periodic reviews.",
+            "Security status reporting is described as periodic, not continuous.",
+            "No specific, formal configuration management strategy or process is documented.",
+            "Lacks discussion of metrics, automated tools, or integration with risk management for continuous monitoring."
+          ],
+          "recommendations": [
+            "Develop and document a continuous monitoring strategy specifying ongoing\u2014not just periodic\u2014assessment of security controls and automated monitoring where feasible.",
+            "Implement and document a configuration management process that supports continuous monitoring objectives.",
+            "Define metrics, accountability, and reporting mechanisms to measure and communicate security status in real time or at defined intervals.",
+            "Integrate the continuous monitoring program with enterprise risk management activities and ensure feedback loops for ongoing improvement."
+          ]
+        },
+        {
+          "control_id": "CM-2",
+          "control_name": "Baseline Configuration",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references periodic review, evaluation of safeguards, and risk assessments, but baseline configuration creation, maintenance, and specific configuration control processes are not directly or consistently addressed. Defined frequencies and formal process details are missing.",
+          "evidence": [
+            "Procedures to create and maintain retrievable exact copies of electronic Information.",
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information...",
+            "System / Security Updates: Computers should have the most recently available and appropriate software security patches, commensurate with the identified level of acceptable risk.",
+            "PERIODIC EVALUATION AND REVISION OF THE PLAN: This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations."
+          ],
+          "gaps": [
+            "No clear definition or documentation process for baseline configuration.",
+            "Lacks specific details on the configuration control mechanism.",
+            "Baseline configuration review/update frequency is not explicitly defined.",
+            "No process for maintaining baseline under configuration control.",
+            "No accountability or assignment of responsibility for baseline management."
+          ],
+          "recommendations": [
+            "Define and document what constitutes a baseline configuration for all information systems.",
+            "Establish and describe a formal process for maintaining baseline configurations under configuration control, including versioning and change tracking.",
+            "Set explicit intervals for reviewing and updating baseline configurations (e.g., annually, bi-annually, after major changes).",
+            "Assign responsibility for baseline configuration management and monitoring.",
+            "Integrate baseline configuration updates and reviews into the risk assessment and periodic technical evaluation processes."
+          ]
+        },
+        {
+          "control_id": "CM-6",
+          "control_name": "Configuration Settings",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 1,
+          "score_rationale": "The policy makes broad references to access limitations, workstation use, and safeguarding electronic information, but it does not require or define the establishment and documentation of system configuration settings reflecting the most restrictive mode consistent with operational requirements.",
+          "evidence": [
+            "Technical Safeguards: Access control. Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Workstation use. Policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed...",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level."
+          ],
+          "gaps": [
+            "No explicit requirement to establish and document configuration settings for IT products.",
+            "No reference to the most restrictive mode consistent with operational requirements.",
+            "No mention of configuration baselines, approved configuration standards, or periodic review of configuration settings."
+          ],
+          "recommendations": [
+            "Formally require the establishment and documentation of configuration settings for all IT products.",
+            "Specify that the configuration settings should be set to the most restrictive mode consistent with operational requirements.",
+            "Define a process for periodic review, approval, and documentation of configuration baselines and any exceptions.",
+            "Assign responsibility for management and monitoring of configuration settings compliance."
+          ]
+        },
+        {
+          "control_id": "CM-8",
+          "control_name": "Information System Component Inventory",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 1,
+          "score_rationale": "There is no direct reference to developing or maintaining a system component inventory. While the policy mentions access controls and procedures to monitor information systems, it does not describe a formal inventory process or requirements for documenting system components.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information."
+          ],
+          "gaps": [
+            "No requirement to develop, maintain, or document an inventory of information system components.",
+            "No definition of the types of components or information to be included in the inventory.",
+            "No mention of inventory consistency with the authorization boundary.",
+            "No assignment of accountability for inventory management."
+          ],
+          "recommendations": [
+            "Formally require that an inventory of information system components is maintained and kept up to date.",
+            "Specify the information that must be documented for each component (e.g., name, type, owner, location, and status).",
+            "Clarify that the inventory must be consistent with the system's authorization boundary.",
+            "Designate responsibility for the development and management of the inventory.",
+            "Include procedures for periodically verifying and updating the inventory."
+          ]
+        },
+        {
+          "control_id": "IA-2",
+          "control_name": "Identification and Authentication (Organizational Users)",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy describes unique user identification, authentication procedures, and hints at stronger safeguards for higher risk access, but does not explicitly require or define multi-factor authentication for network access to privileged accounts, nor does it mention authentication of processes acting on behalf of users.",
+          "evidence": [
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection. For higher levels of risk, additional safeguards such as use of encryption technologies may be employed."
+          ],
+          "gaps": [
+            "No explicit mention or requirement of multi-factor authentication for privileged account network access.",
+            "Does not address authentication of processes acting on behalf of users.",
+            "No formal process or definition for privileged accounts or their specific authentication requirements."
+          ],
+          "recommendations": [
+            "Document and require multi-factor authentication for all network access to privileged accounts.",
+            "Define privileged accounts in the policy and specify how their authentication differs from standard users.",
+            "Include procedures for identification and authentication of processes acting on behalf of users.",
+            "Establish regular review and accountability for authentication mechanisms, especially for privileged access."
+          ]
+        },
+        {
+          "control_id": "IA-5",
+          "control_name": "Authenticator Management",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions procedures for creating, changing, and safeguarding passwords, as well as access management, but lacks detailed processes for verifying identity, initial authenticator content, and enforcing restrictions on all types of authenticators (tokens, certificates).",
+          "evidence": [
+            "procedures for creating, changing, and safeguarding passwords.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures that, based upon the entity\u2019s access authorization policies, establish, document, review, and modify a user\u2019s right of access to a workstation, transaction, program, or process.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances."
+          ],
+          "gaps": [
+            "No mention of how identity is verified prior to provisioning authenticators.",
+            "Initial authenticator content (e.g., password complexity, initial tokens) is not described.",
+            "Enforcement of authenticator restrictions (such as password reuse, length, or certificate/token handling) is missing.",
+            "No process for managing certificate or token lifecycle (issuance, revocation, replacement).",
+            "No monitoring or metrics for authenticator management effectiveness."
+          ],
+          "recommendations": [
+            "Document and formalize processes for verifying user identity prior to issuing authenticators, including credentials, tokens, and certificates.",
+            "Establish minimum requirements for initial authenticator content (e.g., password complexity, token setup, certificate issuance).",
+            "Enforce restrictions on authenticator use, such as password reuse, length, rotation, and token/certificate handling.",
+            "Include procedures for managing the full lifecycle of authenticators, including revocation, reissuance, and periodic review.",
+            "Define and implement metrics for measuring authenticator management effectiveness and assign accountability."
+          ]
+        },
+        {
+          "control_id": "IA-8",
+          "control_name": "Identification and Authentication (Non-Organizational Users)",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy asserts use of unique identifiers, session controls, and general authentication procedures, but does not explicitly distinguish or define requirements for non-organizational users and their authentication processes, nor does it require unique identification for them.",
+          "evidence": [
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection.",
+            "procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights."
+          ],
+          "gaps": [
+            "Policy does not specifically define 'non-organizational users' nor differentiate their authentication requirements from organizational users.",
+            "No formal process described for granting, managing, or revoking access for non-organizational users.",
+            "No requirement that non-organizational users are uniquely identified and authenticated before access.",
+            "No mention of processes for periodic review of non-organizational user access."
+          ],
+          "recommendations": [
+            "Define 'non-organizational users' within the policy and specify circumstances under which they may gain access.",
+            "Establish explicit requirement that all non-organizational users or processes acting on their behalf are uniquely identified and authenticated.",
+            "Document processes for provisioning, reviewing, and deprovisioning non-organizational user accounts.",
+            "Include requirements for periodic review and revalidation of non-organizational user access.",
+            "Consider specifying stronger authentication mechanisms for non-organizational users, such as multi-factor authentication."
+          ]
+        },
+        {
+          "control_id": "IR-1",
+          "control_name": "Incident Response Policy and Procedures",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal incident response program with procedures for identifying, responding to, documenting, and mitigating security incidents, and assigns responsibility to a Coordinator, but does not comprehensively address dissemination, explicit roles and responsibilities, or specific compliance requirements beyond referencing legal requirements.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "The Coordinator will establish procedures for identifying and assessing risks in each relevant area of Provider\u2019s operations outlined above.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations."
+          ],
+          "gaps": [
+            "Roles and responsibilities for incident response are not detailed beyond assignment to a 'Coordinator'.",
+            "Dissemination process for the incident response policy and procedures is not specified.",
+            "Explicit requirements for compliance (e.g., regulatory mapping, reporting, evidence retention) are not clearly stated.",
+            "The policy does not clearly define the scope of the incident response program."
+          ],
+          "recommendations": [
+            "Explicitly define and document roles and responsibilities for all personnel involved in incident response, including escalation paths.",
+            "Describe the process for disseminating the incident response policy and procedures to relevant stakeholders and staff.",
+            "Include a statement on compliance detailing which regulations, standards, or legal requirements the incident response policy addresses, and how compliance is enforced.",
+            "Provide a clear definition of the scope (e.g., systems, data types, incident types) governed by the incident response policy."
+          ]
+        },
+        {
+          "control_id": "IR-4",
+          "control_name": "Incident Handling",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines incident handling procedures, including detection, response, mitigation, documentation, and references contingency planning, but lacks explicit details for all phases and clear coordination between incident handling and contingency planning.",
+          "evidence": [
+            "Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information.",
+            "The Coordinator will prepare and maintain written safeguards and will provide guidance on implementation of safeguards to all affected company employees.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations."
+          ],
+          "gaps": [
+            "Policy does not explicitly outline procedures for the full incident response lifecycle (preparation, detection, analysis, containment, eradication, recovery) in detail.",
+            "No clear evidence that incident handling activities are actively coordinated with contingency planning.",
+            "Lacks defined accountability, metrics, or ongoing monitoring for incident handling effectiveness.",
+            "No mention of post-incident review or lessons learned for continuous improvement."
+          ],
+          "recommendations": [
+            "Expand the incident response policy to provide clear procedures for each phase: preparation, detection, analysis, containment, eradication, and recovery.",
+            "Document how incident response and contingency planning are coordinated, including roles and communication protocols.",
+            "Establish metrics and assign accountability for incident handling activities, including monitoring and reporting effectiveness.",
+            "Include requirements for post-incident reviews to capture lessons learned and drive continuous improvement."
+          ]
+        },
+        {
+          "control_id": "IR-6",
+          "control_name": "Incident Reporting",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions reporting of security incidents and includes language about security incident procedures, but lacks specific, formalized requirements for personnel to report incidents to the incident response capability or to defined authorities. There is no explicit process, roles, or timelines documented.",
+          "evidence": [
+            "procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies",
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "No explicit requirement for all personnel to report suspected security incidents to a designated incident response capability.",
+            "No defined process or contact point for reporting security incidents.",
+            "No mention of timely escalation or reporting obligations to outside or higher authorities.",
+            "No roles or responsibilities assigned to assure incident reporting compliance."
+          ],
+          "recommendations": [
+            "Define and document a clear, formal process for all personnel to report suspected or actual security incidents, including contact channels and responsibilities.",
+            "Specify the required timelines for initial reporting and escalation.",
+            "Identify and define the organizational incident response capability\u2014such as an Incident Response Team or Coordinator\u2014to whom incidents must be reported.",
+            "Include procedures for reporting incidents to external authorities or regulators where applicable.",
+            "Train employees on their responsibilities for incident reporting and regularly test the process for effectiveness."
+          ]
+        },
+        {
+          "control_id": "RA-3",
+          "control_name": "Risk Assessment",
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal risk assessment process that considers likelihood and impact of harm from unauthorized activity, requires periodic reviews, and mandates assessments at both the organizational and departmental levels. However, while documentation and periodic review are required, details on specific metrics, continuous improvement, and integration with enterprise risk management are not present.",
+          "evidence": [
+            "Each department is responsible for maintaining an active risk assessment policy. The Risk Assessment Process identifies various events or threats within the department that could negatively affect the institution strategically or operationally. Management should evaluate the likelihood of various events and rank the possible impact.",
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "The risk assessment will be conducted by personnel or counsel with sufficient expertise, and should (at a minimum) include consideration of any risks, current safeguards to manage those risks, and an analysis of Information protection in each relevant aspect of Provider\u2019s operations."
+          ],
+          "gaps": [
+            "No evidence of measured metrics or indicators for risk assessment effectiveness.",
+            "No mention of integration with enterprise-level risk management or continuous improvement.",
+            "Specific guidance on how results are documented is lacking.",
+            "Criteria for defining risk assessment frequency beyond the annual review or identification of trigger events is not detailed."
+          ],
+          "recommendations": [
+            "Define and document specific metrics for risk assessment effectiveness and monitor them regularly.",
+            "Integrate the risk assessment process with broader organizational/enterprise risk management activities.",
+            "Detail the required format and content for documenting risk assessment results.",
+            "Specify triggers for ad-hoc or more frequent risk assessments (e.g., significant changes to technology, threat landscape, or information assets), in addition to the annual review.",
+            "Establish a process for continuous improvement of the risk assessment methodology and outcomes."
+          ]
+        },
+        {
+          "control_id": "RA-5",
+          "control_name": "Vulnerability Scanning",
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions general risk assessment and the implementation of safeguards to address vulnerabilities, but it does not explicitly require or describe formal vulnerability scanning processes, defined scanning frequency, or details on scanning tool usage, remediation, and information sharing.",
+          "evidence": [
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement for regularly scheduled vulnerability scans or defined scanning frequencies.",
+            "No mention of approved vulnerability scanning tools or technical requirements for their use.",
+            "No documented process for reviewing, analyzing, and remediating vulnerabilities identified in scan reports.",
+            "No reference to sharing vulnerability scan results or related risk information with appropriate stakeholders."
+          ],
+          "recommendations": [
+            "Establish and document a formal vulnerability scanning program that includes specific scanning frequencies based on system risk.",
+            "Specify the use of vetted vulnerability scanning tools and ensure their regular update.",
+            "Implement and document procedures for analyzing scan results and promptly remediating discovered vulnerabilities.",
+            "Define a process for distributing vulnerability findings and remediation status to relevant personnel and management."
+          ]
+        },
+        {
+          "control_id": "SC-7",
+          "control_name": "Boundary Protection",
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references firewalls, restricted/limited network access, and risk-based implementation of safeguards, but lacks formal, organization-wide requirements or definitions for monitoring, internal segmentation, managed interfaces, or the use of subnetworks for public-facing components.",
+          "evidence": [
+            "Installation of firewalls, restricted access, data encryption, or limited network/internet access are all possible safeguards in this example. The department has discretion to decide whether a proposed safeguard or safeguards constitutes an adequate remedy for an assessed risk.",
+            "All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement to monitor and control communications at both external and key internal boundaries.",
+            "No mandate or standard for implementing subnetworks (DMZs or similar) for publicly accessible components.",
+            "Lack of formal definition or enforcement of 'managed interfaces' for external connections.",
+            "Responsibility for selecting and implementing safeguards is decentralized and discretionary, leading to inconsistent application."
+          ],
+          "recommendations": [
+            "Formally require monitoring and control of communications at all external and key internal network boundaries, not just by suggestion or discretionary risk analysis.",
+            "Define and mandate the use of subnetworks (e.g., DMZs) for all publicly accessible systems/components.",
+            "Establish policy that all external network connections must pass through managed, approved interfaces with centralized oversight.",
+            "Create and document standard technical configurations and controls for firewalls, boundary protections, and network segmentation, and ensure consistent implementation across all departments.",
+            "Implement ongoing metrics and regular reviews to ensure boundary protection controls are effective and organization-wide."
+          ]
+        },
+        {
+          "control_id": "SC-28",
+          "control_name": "Protection of Information at Rest",
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy explicitly addresses access controls, integrity safeguards, and includes encryption as a possible measure, indicating a formal, documented process for protecting information at rest. However, encryption is not mandated, details are high-level, and there is insufficient evidence of systematic measurement, enforcement, or continuous improvement.",
+          "evidence": [
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Policies and procedures for electronic information systems ... to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Policies and procedures to protect electronic Information from improper alteration or destruction.",
+            "All Provider departments must employ technical safeguards to ensure that electronically stored Information is secure from unauthorized access or use.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "Encryption of data at rest is not required or consistently mandated; it is only listed as an optional safeguard.",
+            "No clear metrics, continuous monitoring, or clear accountability for ensuring the effectiveness of encryption and access controls.",
+            "Limited detail on technical implementation or coverage (e.g., which systems or data classes must be encrypted, encryption standards).",
+            "No documented process for periodic review or improvement of encryption and access control measures."
+          ],
+          "recommendations": [
+            "Mandate encryption for all sensitive data at rest, with clear requirements for algorithms and key management.",
+            "Define minimum technical standards for access controls and integrity protection for data at rest.",
+            "Establish formal processes for ongoing monitoring and periodic audits of encryption and access control effectiveness, including assignment of accountability.",
+            "Require regular review and continuous improvement of the safeguards, with integration into risk management and incident response processes."
+          ]
+        },
+        {
+          "control_id": "SI-2",
+          "control_name": "Flaw Remediation",
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy demonstrates awareness of system flaws and risks, mentions monitoring, and requires safeguards to mitigate assessed risks, but lacks explicit procedures for flaw remediation, update testing, and integration with configuration management.",
+          "evidence": [
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Security breaches include ... programming fraud, computer viruses, hacking, or denial of service attacks.",
+            "System failures include ... software failure ...",
+            "The department would then be responsible for implementing safeguards to mitigate the assessed risk."
+          ],
+          "gaps": [
+            "No process is outlined for identifying, reporting, and correcting information system flaws (e.g., software vulnerabilities).",
+            "No requirements for testing software updates or patches prior to deployment.",
+            "No incorporation of flaw remediation activities into configuration management is described.",
+            "No metrics, accountability, or continuous improvement mechanisms around flaw remediation."
+          ],
+          "recommendations": [
+            "Define and formalize procedures for identifying, reporting, and correcting system flaws, including roles and responsibilities.",
+            "Establish and document a process for testing software updates and patches before deployment.",
+            "Integrate flaw remediation actions with the organization's configuration management process.",
+            "Specify monitoring metrics and establish accountability for flaw remediation activities.",
+            "Initiate periodic evaluation and improvement cycles for the flaw remediation process."
+          ]
+        },
+        {
+          "control_id": "SI-3",
+          "control_name": "Malicious Code Protection",
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references scanning and filtering incoming emails and files for viruses, periodic security updates, and patch management, but lacks detail on automated updates, centralized management, and controls at both entry and exit points. The process is not fully defined or measured.",
+          "evidence": [
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "Establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software.",
+            "Ensure that patches are current.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit requirement that malicious code protection mechanisms are deployed at both entry and exit points.",
+            "No mention of automated updates for anti-malware solutions.",
+            "No reference to centralized management of malicious code protection mechanisms.",
+            "Lacks defined metrics or accountability for effectiveness of control."
+          ],
+          "recommendations": [
+            "Define and require the implementation of malicious code protection at all entry and exit points (e.g., email, web traffic, USB devices).",
+            "Mandate the use of anti-malware tools with automated update capabilities.",
+            "Establish centralized management for monitoring, updating, and maintaining protection mechanisms.",
+            "Introduce regular and auditable metrics to measure the effectiveness and coverage of malicious code defenses."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-05T21:35:38.464938",
+  "status": "completed"
+}
