@@ -1,0 +1,852 @@
+{
+  "assessment_id": "93eb72b6-7c80-434d-a80f-986b8670d334",
+  "document_id": "8ea77089821749aea91b9489524cdadf",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "csa_ccm"
+  ],
+  "overall_posture_score": 1.26,
+  "framework_results": [
+    {
+      "framework_id": "csa_ccm",
+      "framework_name": "CSA Cloud Controls Matrix",
+      "overall_score": 1.26,
+      "family_scores": [
+        {
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "average_score": 0.32,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.5,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.52,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.0,
+          "control_count": 3,
+          "weight": 1.4
+        },
+        {
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "average_score": 1.41,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.73,
+          "control_count": 4,
+          "weight": 1.5
+        },
+        {
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "average_score": 1.35,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.5,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.0,
+          "control_count": 3,
+          "weight": 1.4
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "AIS-01",
+          "control_name": "Application and Interface Security Policy",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts address general information security management, access controls, incident response, contingency planning, and physical security, but contain no mention of application security, secure software development, application interfaces, or any guidance specific to the planning, delivery, and support of application security capabilities.",
+          "evidence": [],
+          "gaps": [
+            "No application security policy or procedures are established, documented, or communicated",
+            "No guidance for secure application development lifecycle (SDLC) practices",
+            "No mention of application interface security (e.g., API security, input validation, authentication for applications)",
+            "No procedures for application security testing (e.g., SAST, DAST, penetration testing)",
+            "No defined approval, evaluation, or maintenance cycle for application security policies",
+            "No mention of secure coding standards or application vulnerability management"
+          ],
+          "recommendations": [
+            "Develop and formally document a dedicated Application and Interface Security Policy covering secure design, development, deployment, and maintenance of applications",
+            "Define secure coding standards and mandatory security testing requirements (SAST, DAST, penetration testing) within the SDLC",
+            "Establish API and interface security requirements including authentication, authorization, input validation, and encryption",
+            "Implement a formal approval, communication, and periodic review process for the application security policy",
+            "Integrate application security policy with the organization's broader risk management framework and define metrics for monitoring compliance and effectiveness"
+          ]
+        },
+        {
+          "control_id": "AIS-02",
+          "control_name": "Application Security Baseline Requirements",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy contains no application security baseline requirements and makes no mention of OWASP Top 10 or any application-specific security standards. The excerpts focus on general IT security, access controls, risk assessment, and infrastructure safeguards, but do not address application security categories or secure development practices.",
+          "evidence": [
+            "All risk assessments must identify reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "information systems (including network and software design, as well as information processing, storage, transmission and disposal)"
+          ],
+          "gaps": [
+            "No baseline security requirements established for different categories of applications (e.g., web, mobile, API, internal)",
+            "No mention of OWASP Top 10 vulnerabilities or any equivalent application vulnerability framework",
+            "No documented secure coding standards or application security guidelines",
+            "No application classification or categorization scheme to drive differentiated security requirements",
+            "No requirements for secure software development lifecycle (SDLC) practices",
+            "No mention of application-level security controls such as input validation, output encoding, session management, or error handling"
+          ],
+          "recommendations": [
+            "Develop and document formal baseline security requirements for each category of application (web, mobile, API, internal, cloud-hosted) that address authentication, authorization, input validation, session management, cryptography, error handling, and logging",
+            "Explicitly require that all applications address the OWASP Top 10 vulnerabilities as a minimum baseline, and incorporate OWASP guidelines into development and review processes",
+            "Implement a secure software development lifecycle (SDLC) policy that integrates security requirements, threat modeling, secure code reviews, and application security testing (SAST/DAST)",
+            "Create an application classification framework that ties risk levels to specific security baseline requirements",
+            "Establish periodic review and update cycles for application security baselines to reflect evolving threats and updated OWASP guidance"
+          ]
+        },
+        {
+          "control_id": "AIS-04",
+          "control_name": "Application Security Metrics",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy addresses general risk assessment and vulnerability management at a high level, including applying security patches and reducing risks to reasonable levels, but it does not define any application security-specific remediation process, automation of remediation, application security metrics, or SLAs as required by this control.",
+          "evidence": [
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "Computers should have the most recently available and appropriate software security patches, commensurate with the identified level of acceptable risk.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "The assessment, at a minimum, must include employee training and management, information systems (including network and software design, as well as information processing, storage, transmission and disposal), and detecting, preventing, and responding to attacks."
+          ],
+          "gaps": [
+            "No defined process specifically for remediating application security vulnerabilities (e.g., SAST/DAST findings, dependency vulnerabilities)",
+            "No mention of automating remediation of application security vulnerabilities",
+            "No application security metrics are defined (e.g., mean time to remediate, vulnerability density, percentage of critical vulnerabilities resolved within SLA)",
+            "No SLAs established for application security vulnerability remediation timelines",
+            "No distinction between general system patching and application-layer security remediation"
+          ],
+          "recommendations": [
+            "Define a formal application security vulnerability remediation process with clear roles, responsibilities, and workflow stages (identification, triage, remediation, verification)",
+            "Establish SLAs for remediation based on vulnerability severity (e.g., critical within 24-48 hours, high within 7 days, medium within 30 days)",
+            "Define and track application security metrics such as mean time to remediate (MTTR), vulnerability density per application, open vulnerability aging, and SLA compliance rates",
+            "Implement automated remediation capabilities where possible, such as automated dependency updates, CI/CD pipeline security gates, and automated patching for known application vulnerabilities",
+            "Integrate application security scanning tools (SAST, DAST, SCA) into the development lifecycle with automated ticket creation and tracking for identified vulnerabilities"
+          ]
+        },
+        {
+          "control_id": "BCR-01",
+          "control_name": "Business Continuity Management Policy",
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy references contingency planning, business continuity, data backup/restoration, and emergency mode operations, but lacks a formally established, approved, and communicated standalone Business Continuity Management (BCM) policy. Annual testing is mentioned as optional ('may be implemented') rather than mandatory.",
+          "evidence": [
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information.",
+            "Procedures to enable continuation of critical business processes for protection of the security of electronic Information while operating in emergency mode",
+            "Procedures for periodic testing and revision of contingency plans.",
+            "Assessment of the relative criticality of specific applications and data in support of other contingency plan components.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity."
+          ],
+          "gaps": [
+            "No formally established, documented, and approved standalone Business Continuity Management (BCM) policy \u2014 continuity is referenced as a sub-component of a broader information security policy.",
+            "Testing of BCM plans is listed as optional ('may be implemented') rather than mandated at least annually as required by the control.",
+            "No defined process for formal approval, communication, and periodic review/evaluation of the BCM policy itself.",
+            "No mention of defined roles, responsibilities, or accountability specifically for BCM governance beyond the generic 'Coordinator' role.",
+            "No mention of Recovery Time Objectives (RTOs), Recovery Point Objectives (RPOs), or other BCM-specific metrics.",
+            "No evidence of a communication plan for distributing BCM policies and procedures to relevant stakeholders."
+          ],
+          "recommendations": [
+            "Develop and formally approve a standalone Business Continuity Management policy that defines scope, objectives, roles and responsibilities, RTOs/RPOs, and governance structure.",
+            "Change the language around BCM plan testing from optional ('may be implemented') to mandatory and specify at least annual testing frequency, including tabletop exercises and full-scale simulations.",
+            "Establish a formal review cycle (e.g., annual) for the BCM policy with documented approval by senior management.",
+            "Define and document a communication plan to ensure all relevant stakeholders receive and acknowledge the BCM policy and procedures.",
+            "Implement metrics and reporting mechanisms to measure BCM plan effectiveness, including test results, lessons learned, and corrective actions.",
+            "Integrate BCM planning with the organization's broader risk management framework and ensure alignment with business impact analysis (BIA) results."
+          ]
+        },
+        {
+          "control_id": "BCR-03",
+          "control_name": "Business Continuity Testing",
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy makes ad hoc references to 'periodic testing and revision of contingency plans' but does not define specific testing procedures, planned intervals, test types, or processes for updating plans based on test results.",
+          "evidence": [
+            "Procedures for periodic testing and revision of contingency plans.",
+            "Procedures to enable continuation of critical business processes for protection of the security of electronic Information while operating in emergency mode",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance"
+          ],
+          "gaps": [
+            "No defined testing procedures specifying the types of tests to be conducted (e.g., tabletop exercises, functional tests, full-scale simulations)",
+            "No specified frequency or planned intervals for business continuity and disaster recovery testing",
+            "No documented process for capturing test results, lessons learned, and feeding them back into plan updates",
+            "No defined roles and responsibilities specific to conducting and evaluating BC/DR tests",
+            "No success criteria or metrics to measure the effectiveness of BC/DR tests",
+            "No requirement to document and track remediation actions identified during testing"
+          ],
+          "recommendations": [
+            "Develop a formal BC/DR testing program that specifies test types (tabletop, walkthrough, simulation, full interruption), scope, and frequency (e.g., at least annually or after significant changes)",
+            "Define clear roles and responsibilities for planning, executing, and evaluating BC/DR tests, including the Coordinator's oversight role",
+            "Establish a formal post-test review process that documents findings, gaps, and corrective actions, with defined timelines for updating BC/DR plans based on test results",
+            "Implement measurable success criteria and key performance indicators (e.g., Recovery Time Objectives achieved, percentage of critical systems recovered) to evaluate test effectiveness",
+            "Maintain a test log and remediation tracker to ensure continuous improvement and audit readiness"
+          ]
+        },
+        {
+          "control_id": "CCC-01",
+          "control_name": "Change Management Policy",
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains tangential references to protecting against 'accidental and intentional alterations' and documenting 'repairs and modifications to physical components,' but lacks any formal, dedicated change management policy or procedures for managing risks associated with applying changes to organization assets such as applications, systems, infrastructure, or configurations.",
+          "evidence": [
+            "help protect critical parts of the network from both accidental and intentional alterations.",
+            "Policies and procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks).",
+            "Procedures to control and validate a person's access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations."
+          ],
+          "gaps": [
+            "No formal change management policy or procedure is established, documented, or communicated",
+            "No defined change request, review, approval, and implementation workflow for changes to applications, systems, infrastructure, or configurations",
+            "No risk assessment process specific to evaluating the impact of proposed changes before implementation",
+            "No rollback or back-out procedures defined for failed changes",
+            "No classification or categorization of changes (e.g., standard, normal, emergency)",
+            "No change advisory board (CAB) or equivalent approval authority defined",
+            "No post-implementation review process for evaluating the success of changes",
+            "No requirements for testing changes prior to deployment in production environments",
+            "No communication protocols for notifying stakeholders of upcoming or completed changes",
+            "No metrics or monitoring mechanisms to evaluate the effectiveness of change management processes"
+          ],
+          "recommendations": [
+            "Develop and formally document a comprehensive Change Management Policy that covers all organizational assets including applications, systems, infrastructure, and configurations",
+            "Define a structured change management lifecycle including request submission, impact/risk assessment, approval, testing, implementation, and post-implementation review",
+            "Establish a Change Advisory Board (CAB) or equivalent governance body responsible for reviewing and approving changes based on risk and impact",
+            "Implement change categorization (standard, normal, emergency) with appropriate approval workflows for each category",
+            "Define rollback and contingency procedures for changes that fail or cause unintended consequences",
+            "Integrate change management with the existing risk assessment process to ensure changes are evaluated for security and operational risks prior to implementation",
+            "Establish KPIs and metrics to measure change management effectiveness, such as change success rate, number of unauthorized changes, and mean time to implement",
+            "Communicate the change management policy to all relevant personnel and incorporate it into security awareness training"
+          ]
+        },
+        {
+          "control_id": "CCC-04",
+          "control_name": "Unauthorized Change Protection",
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several foundational elements relevant to unauthorized change protection\u2014including access controls, integrity protections, audit controls, and workforce security\u2014but lacks specific, formal processes for detecting and preventing unauthorized changes to organization assets (addition, removal, update, management). The controls described are largely generic safeguards oriented toward electronic information confidentiality and integrity rather than explicit change management procedures.",
+          "evidence": [
+            "Integrity. Policies and procedures to protect electronic Information from improper alteration or destruction. This safeguard may be implemented by electronic mechanisms to corroborate that electronic Information has not been altered or destroyed in an unauthorized manner.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Appropriate sanctions against workforce members who fail to comply with security policies and procedures.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends."
+          ],
+          "gaps": [
+            "No formal change management process is defined to control the addition, removal, update, or management of organization assets.",
+            "No explicit controls for detecting unauthorized changes (e.g., file integrity monitoring, configuration drift detection, change detection alerting).",
+            "No defined approval workflow or change authorization board for changes to systems, configurations, or assets.",
+            "No baseline configuration management or asset inventory management process referenced against which unauthorized changes would be measured.",
+            "No specific mention of restricting unauthorized modifications to infrastructure, applications, or system configurations beyond general access controls.",
+            "No defined metrics, monitoring, or accountability mechanisms specific to unauthorized change prevention."
+          ],
+          "recommendations": [
+            "Implement a formal change management policy that defines approval workflows, roles, and responsibilities for authorizing changes to organization assets (systems, configurations, software, infrastructure).",
+            "Deploy file integrity monitoring (FIM), configuration management databases (CMDB), and automated change detection tools to identify unauthorized modifications in real time.",
+            "Establish and maintain baseline configurations for critical assets, with periodic reviews to detect configuration drift or unauthorized changes.",
+            "Define specific controls for preventing unauthorized addition, removal, or modification of assets, such as role-based change authorization, separation of duties, and least-privilege principles applied to administrative functions.",
+            "Integrate change management metrics and monitoring into a continuous improvement cycle, including tracking unauthorized change attempts, mean time to detect, and remediation effectiveness.",
+            "Conduct periodic audits specifically focused on change management compliance, with documented results and corrective action plans."
+          ]
+        },
+        {
+          "control_id": "CEK-01",
+          "control_name": "Encryption and Key Management Policy",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only a brief, incidental mention of a 'mechanism to encrypt and decrypt electronic Information' as an optional implementation measure under access controls, but does not establish any dedicated encryption or key management policies, procedures, or protections.",
+          "evidence": [
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network."
+          ],
+          "gaps": [
+            "No dedicated encryption policy is established, documented, approved, or communicated",
+            "No key management policy or procedures are defined (key generation, distribution, storage, rotation, revocation, destruction)",
+            "No requirements for protecting encryption keys against disclosure and misuse",
+            "No defined encryption standards, algorithms, or minimum key lengths",
+            "No procedures for evaluating and maintaining encryption and key management practices over time",
+            "No roles and responsibilities assigned for encryption and key management",
+            "No distinction between encryption requirements for data at rest, data in transit, and data in use",
+            "Encryption is mentioned only as an optional ('may be implemented') access control mechanism rather than a mandatory safeguard"
+          ],
+          "recommendations": [
+            "Develop and formally approve a dedicated Encryption and Key Management Policy that specifies approved encryption algorithms, minimum key lengths, and use cases for data at rest, in transit, and in use",
+            "Define comprehensive key lifecycle management procedures covering key generation, distribution, storage, rotation, expiration, revocation, and destruction",
+            "Establish access controls and protections for encryption keys, including separation of duties, secure key storage (e.g., HSMs), and restrictions against key disclosure",
+            "Assign clear roles and responsibilities (e.g., key custodians) for encryption and key management activities",
+            "Implement periodic review cycles to evaluate the effectiveness of encryption controls and update them based on evolving threats and regulatory requirements",
+            "Integrate encryption and key management requirements into the organization's broader risk management and compliance framework"
+          ]
+        },
+        {
+          "control_id": "CEK-03",
+          "control_name": "Data Encryption",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only ad hoc, non-mandatory references to encryption without specifying industry-standard algorithms, key lengths, or comprehensive coverage of data at rest, in transit, and in use. Encryption is mentioned as optional ('should be considered,' 'may be implemented') rather than as a required, formally defined practice.",
+          "evidence": [
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Encryption of data should be considered for instances involving the transportation of data across any network, particularly for any communications that connect to an outside system or network (such as the Internet).",
+            "Versions of email that encrypt the messages and attachments can be obtained and should be used wherever large amounts of Information are involved.",
+            "Provider recommends that any information that users consider sensitive or vulnerable be encrypted."
+          ],
+          "gaps": [
+            "No specification of industry-standard encryption algorithms (e.g., AES-256, RSA-2048, TLS 1.2/1.3).",
+            "No specification of required key lengths or cryptographic strength requirements.",
+            "No mandatory encryption requirement for data at rest \u2014 encryption is listed as optional ('may be implemented').",
+            "No mandatory encryption requirement for data in transit \u2014 encryption is merely recommended ('should be considered').",
+            "No mention whatsoever of encryption for data in use (e.g., in-memory encryption, secure enclaves).",
+            "Encryption language is permissive ('should,' 'may,' 'recommends') rather than mandatory ('shall,' 'must').",
+            "No reference to key management practices, key rotation, or key lifecycle management.",
+            "No defined accountability or metrics for monitoring encryption compliance."
+          ],
+          "recommendations": [
+            "Establish a mandatory encryption policy requiring encryption for all sensitive data at rest, in transit, and in use, using imperative language ('shall' or 'must').",
+            "Specify approved industry-standard encryption algorithms and minimum key lengths (e.g., AES-256 for data at rest, TLS 1.2+ for data in transit).",
+            "Address data-in-use encryption requirements, including considerations for secure enclaves, tokenization, or in-memory protections where applicable.",
+            "Develop and document a comprehensive key management policy covering key generation, distribution, storage, rotation, revocation, and destruction.",
+            "Implement monitoring and auditing mechanisms to verify encryption is consistently applied across all environments and data states.",
+            "Align the encryption policy with recognized frameworks such as NIST SP 800-175B or CSA CCM to ensure comprehensive coverage."
+          ]
+        },
+        {
+          "control_id": "CEK-04",
+          "control_name": "Encryption Algorithm",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions encryption as a mechanism for protecting data in transit and at rest, but it is entirely ad hoc\u2014using permissive language like 'should be considered' and 'whenever deemed appropriate'\u2014and makes no reference to specific encryption algorithms, key lengths, or FIPS 140-2/3 standards.",
+          "evidence": [
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Secure Transmissions: Encryption of data should be considered for instances involving the transportation of data across any network, particularly for any communications that connect to an outside system or network (such as the Internet).",
+            "A mechanism to encrypt electronic Information whenever deemed appropriate.",
+            "Security measures to ensure that electronically transmitted electronic Information is not improperly modified without detection until disposed of."
+          ],
+          "gaps": [
+            "No specification of industry-accepted encryption algorithms (e.g., AES-256, RSA-2048, TLS 1.2+).",
+            "No reference to or alignment with FIPS 140-2 or FIPS 140-3 standards.",
+            "Encryption is described as optional ('should be considered,' 'may be implemented,' 'whenever deemed appropriate') rather than mandatory for data at rest and in transit.",
+            "No requirements for minimum key lengths or cryptographic strength.",
+            "No distinction between encryption requirements for data at rest versus data in transit with corresponding algorithm specifications.",
+            "No process for reviewing and updating approved encryption algorithms as standards evolve."
+          ],
+          "recommendations": [
+            "Define and mandate specific industry-accepted encryption algorithms (e.g., AES-256 for data at rest, TLS 1.2+ for data in transit) with minimum key length requirements.",
+            "Explicitly require FIPS 140-2/3 validated cryptographic modules where applicable, and document where these standards apply within the environment.",
+            "Replace permissive language ('should be considered,' 'whenever deemed appropriate') with mandatory requirements for encryption of all sensitive data at rest and in transit.",
+            "Establish and maintain an approved cryptographic algorithms list that is reviewed and updated at least annually to align with current industry standards and threat landscape.",
+            "Implement a governance process to monitor compliance with encryption standards, including periodic audits of cryptographic configurations across systems."
+          ]
+        },
+        {
+          "control_id": "GRC-01",
+          "control_name": "Governance Program",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes a designated Coordinator, risk assessment processes, periodic review, and multiple safeguard categories, which demonstrates foundational governance elements. However, the program is primarily focused on information/data protection compliance rather than establishing a strategic governance program that explicitly aligns information security strategies with business objectives.",
+          "evidence": [
+            "Provider will designate an Information Security Program Coordinator (\"Coordinator\") who will be primarily responsible for coordinating and overseeing the Program. The Coordinator will report to the Chief Executive Officer.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information."
+          ],
+          "gaps": [
+            "No explicit alignment of information security strategy with business objectives or organizational mission",
+            "No defined governance structure beyond a single Coordinator \u2014 lacks mention of a governance committee, board oversight, or cross-functional governance body",
+            "No defined metrics or KPIs for measuring governance program effectiveness",
+            "No mention of how security policies are communicated, approved, or ratified by senior leadership or the board",
+            "No formal policy lifecycle management process (creation, approval, versioning, distribution, exception handling)",
+            "No integration with enterprise risk management or broader organizational governance frameworks",
+            "No mention of regulatory or standards frameworks (e.g., ISO 27001, NIST) guiding the governance program structure"
+          ],
+          "recommendations": [
+            "Establish a formal governance charter that explicitly states how information security strategy supports and aligns with business objectives",
+            "Create an Information Security Governance Committee with cross-functional representation and defined roles, responsibilities, and meeting cadence",
+            "Implement a formal policy lifecycle management process including creation, review, approval by senior leadership, version control, and distribution",
+            "Define measurable governance KPIs (e.g., policy compliance rates, risk assessment completion, training completion) and establish regular reporting to executive leadership and/or the board",
+            "Adopt a recognized governance framework (e.g., NIST CSF, ISO 27001, COBIT) to structure the governance program and demonstrate alignment with industry best practices",
+            "Document how the governance program integrates with enterprise risk management and strategic planning processes"
+          ]
+        },
+        {
+          "control_id": "GRC-03",
+          "control_name": "Cybersecurity Training",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges the need for a security awareness and training program for all employees (including management) and identifies several training topics, but lacks specifics on training frequency, completion tracking, content update schedules, and accountability mechanisms.",
+          "evidence": [
+            "Security awareness and training. A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies, and/or procedures for creating, changing, and safeguarding passwords.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments.",
+            "Train any employees that have the ability to transfer funds on behalf of the business to follow the policy according to these procedures.",
+            "The assessment, at a minimum, must include employee training and management"
+          ],
+          "gaps": [
+            "No defined frequency or schedule for security awareness training (only 'periodic' is mentioned without specifics)",
+            "No mechanism or system identified for tracking training completion rates",
+            "No defined process for regularly updating or reviewing training content",
+            "Training topics are described using permissive language ('may be implemented by') rather than mandatory requirements",
+            "No mention of onboarding training for new hires or role-based training beyond fund transfer employees",
+            "No metrics, KPIs, or reporting requirements for the training program",
+            "No mention of training delivery methods or platforms"
+          ],
+          "recommendations": [
+            "Define mandatory training frequency (e.g., annual for all employees, upon hire for new employees) and specify role-based training requirements",
+            "Implement a learning management system (LMS) or equivalent tool to track training assignments, completion rates, and due dates, with regular reporting to management",
+            "Replace permissive language ('may be implemented') with mandatory requirements specifying minimum training topics all employees must complete",
+            "Establish a formal process for annual review and update of training content to reflect emerging threats, regulatory changes, and lessons learned from incidents",
+            "Define accountability measures such as escalation procedures for non-completion and tie training compliance to performance reviews or access provisioning"
+          ]
+        },
+        {
+          "control_id": "GRC-05",
+          "control_name": "Intellectual Property",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy document contains no mention of intellectual property protection, software licensing, or any related procedures. All excerpts focus exclusively on information security safeguards such as access control, audit controls, incident response, and contingency planning.",
+          "evidence": [],
+          "gaps": [
+            "No policy or procedures for protecting intellectual property rights",
+            "No software licensing management or compliance procedures",
+            "No procedures for tracking and managing software assets and their licenses",
+            "No guidance on proper use of copyrighted materials or proprietary information",
+            "No procedures for ensuring compliance with third-party licensing agreements for software and services",
+            "No definition of what constitutes the organization's intellectual property or how it should be safeguarded"
+          ],
+          "recommendations": [
+            "Develop a dedicated Intellectual Property Protection Policy that defines IP ownership, classification, and handling requirements",
+            "Establish a Software Asset Management (SAM) program with procedures for tracking all software licenses, ensuring compliance, and conducting periodic audits",
+            "Implement procedures for reviewing and approving third-party software and service agreements to ensure proper licensing",
+            "Include IP protection responsibilities in employee onboarding, including confidentiality and IP assignment agreements",
+            "Create processes for periodic audits of software installations against purchased licenses to identify unauthorized or unlicensed software",
+            "Integrate IP protection awareness into the existing security awareness and training program"
+          ]
+        },
+        {
+          "control_id": "IAM-01",
+          "control_name": "Identity and Access Management Policy",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements of identity and access management including authorization, access reviews, workforce security, and termination procedures, but it lacks explicit least-privilege principles, formal approval workflows, communication procedures, and defined evaluation/maintenance cycles for the IAM policies themselves.",
+          "evidence": [
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures that, based upon the entity's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Appropriate sanctions against workforce members who fail to comply with security policies and procedures.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "No explicit statement or enforcement of least-privilege access principles",
+            "No formal approval process for the IAM policy itself (e.g., designated approver, approval records)",
+            "No defined communication plan for disseminating IAM policies to all relevant stakeholders",
+            "No defined schedule or process for periodic evaluation and maintenance of IAM policies",
+            "No role-based access control (RBAC) or other structured access model defined",
+            "No defined metrics or KPIs for measuring IAM policy effectiveness",
+            "Policy language is largely aspirational ('may be implemented') rather than mandatory in several areas",
+            "No explicit coverage of privileged access management or separation of duties"
+          ],
+          "recommendations": [
+            "Add an explicit least-privilege access principle statement requiring that users receive only the minimum access necessary to perform their job functions",
+            "Define a formal approval workflow for IAM policies including designated approvers and documented approval records",
+            "Establish a communication plan that ensures IAM policies are disseminated to all employees, contractors, and relevant third parties upon hire and policy updates",
+            "Institute a defined review cycle (e.g., annual) for evaluating and updating IAM policies with documented review outcomes",
+            "Replace permissive language ('may be implemented') with mandatory language ('shall be implemented') to ensure consistent enforcement",
+            "Implement role-based access control (RBAC) and document privileged access management procedures including separation of duties",
+            "Define measurable KPIs for IAM effectiveness such as access review completion rates, orphaned account counts, and time-to-revoke metrics"
+          ]
+        },
+        {
+          "control_id": "IAM-02",
+          "control_name": "Strong Authentication",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions authentication concepts at a general level (login/password protection, person or entity authentication verification) but lacks any specific requirements for strong authentication mechanisms or multi-factor authentication, particularly for privileged or cloud service access.",
+          "evidence": [
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk. For example, access to Information may be restricted through the use of login and password protection. For higher levels of risk, additional safeguards such as use of encryption technologies may be employed.",
+            "All passwords must be at least 6 characters long and contain at least one letter and one number. Users will be required to change their password at least every 90 days.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "There must be a limit to the number of repeated unsuccessful attempts to log into an application or server that deals with Information. For example, a system that 'locks' access from a particular account after 3 failed attempts would meet this criterion."
+          ],
+          "gaps": [
+            "No requirement for multi-factor authentication (MFA) for any access, including cloud services or privileged access",
+            "No definition or requirement for strong authentication mechanisms (e.g., certificate-based, hardware tokens, biometrics)",
+            "Password policy is weak by modern standards \u2014 only 6 characters minimum with minimal complexity requirements",
+            "No differentiation of authentication requirements for privileged accounts versus standard user accounts",
+            "No mention of cloud service access controls or cloud-specific authentication requirements",
+            "No reference to modern authentication standards (e.g., FIDO2, SAML, OAuth, OpenID Connect)",
+            "Higher risk scenarios reference encryption as an additional safeguard rather than stronger authentication factors"
+          ],
+          "recommendations": [
+            "Implement a mandatory multi-factor authentication (MFA) policy for all user access to cloud services, remote access, and privileged accounts",
+            "Strengthen password requirements to a minimum of 12-16 characters aligned with current NIST SP 800-63B guidelines and consider eliminating periodic rotation in favor of breach-based password changes",
+            "Define and enforce enhanced authentication requirements for privileged accounts, including phishing-resistant MFA methods such as hardware security keys or certificate-based authentication",
+            "Establish specific authentication policies for cloud service access including SSO integration, conditional access policies, and session management controls",
+            "Create a tiered authentication framework that maps authentication strength to risk levels, explicitly requiring MFA at all but the lowest risk tiers",
+            "Implement centralized identity provider (IdP) solutions that enforce consistent strong authentication across all systems and cloud services"
+          ]
+        },
+        {
+          "control_id": "IAM-05",
+          "control_name": "Least Privilege",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements related to access control, including granting appropriate access, establishing and reviewing user access rights, and terminating access when no longer needed. However, it does not explicitly invoke the principle of least privilege, lacks defined review frequency/metrics, and does not describe a formal process for regularly revoking unnecessary permissions.",
+          "evidence": [
+            "Policies and procedures that, based upon the entity's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.",
+            "Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights."
+          ],
+          "gaps": [
+            "No explicit reference to the principle of least privilege \u2014 access is described as 'appropriate' but not defined as the minimum necessary to perform job functions.",
+            "No defined frequency or schedule for periodic access rights reviews (e.g., quarterly, semi-annual).",
+            "No formal process described for identifying and revoking unnecessary or excessive permissions on a regular basis.",
+            "No defined metrics, accountability, or reporting mechanisms for monitoring adherence to least privilege.",
+            "No mention of role-based access control (RBAC) or other structured mechanisms to enforce least privilege systematically."
+          ],
+          "recommendations": [
+            "Explicitly adopt and document the principle of least privilege, requiring that users are granted only the minimum access necessary to perform their job duties.",
+            "Establish a defined schedule (e.g., quarterly) for access rights reviews, with documented procedures for identifying and revoking excessive or unnecessary permissions.",
+            "Implement role-based access control (RBAC) to systematically enforce least privilege across systems and applications.",
+            "Define accountability by assigning access review responsibilities to specific roles (e.g., data owners, managers) and require documented sign-off on review outcomes.",
+            "Establish metrics and reporting for access reviews, such as tracking the number of permissions revoked per review cycle and time-to-remediate excessive access findings."
+          ]
+        },
+        {
+          "control_id": "IAM-08",
+          "control_name": "User Access Provisioning",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements of user access provisioning\u2014including authorization, access determination based on role, establishment and modification of access rights, and termination of access\u2014but lacks specifics on how access changes are recorded/logged and communicated, and does not define a formal end-to-end provisioning process with clear workflows, approvals, or notification mechanisms.",
+          "evidence": [
+            "Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Policies and procedures that, based upon the entity's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process."
+          ],
+          "gaps": [
+            "No formal, documented user access provisioning workflow that defines request, approval, implementation, and verification steps.",
+            "No explicit requirement to record or log all access provisioning and deprovisioning actions (audit trail).",
+            "No defined mechanism for communicating access changes to relevant stakeholders (e.g., managers, asset owners, the user).",
+            "No mention of provisioning for organizationally managed (non-electronic) information assets beyond physical facility access.",
+            "No defined metrics, SLAs, or accountability measures for the provisioning process.",
+            "No reference to automated provisioning tools or integration with identity management systems."
+          ],
+          "recommendations": [
+            "Develop a formal, end-to-end user access provisioning procedure that documents each step: request submission, managerial/data owner approval, implementation, verification, and notification.",
+            "Implement mandatory logging/recording of all access provisioning, modification, and revocation events with timestamps, approvers, and justification.",
+            "Define a communication protocol that notifies relevant parties (user, manager, IT, data/asset owners) when access changes occur.",
+            "Extend provisioning procedures to cover all organizationally owned or managed information assets, not just electronic information.",
+            "Establish KPIs and periodic reviews (e.g., provisioning turnaround time, audit of provisioning logs) to monitor process effectiveness and drive continuous improvement.",
+            "Consider implementing automated provisioning workflows integrated with HR and identity management systems to reduce manual errors and improve auditability."
+          ]
+        },
+        {
+          "control_id": "LOG-01",
+          "control_name": "Logging and Monitoring Policy",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains ad hoc references to logging and monitoring concepts\u2014such as reviewing audit logs, monitoring log-in attempts, and implementing audit controls\u2014but lacks a formal, dedicated logging and monitoring policy that defines what events are logged, log retention, log protection, and how logs are managed throughout their lifecycle.",
+          "evidence": [
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "procedures for monitoring log-in attempts and reporting discrepancies"
+          ],
+          "gaps": [
+            "No dedicated, formally documented logging and monitoring policy exists",
+            "No definition of what specific events must be logged (e.g., authentication events, privilege changes, data access, system events)",
+            "No log retention requirements or retention periods defined",
+            "No log protection and integrity requirements (e.g., tamper-proofing, access restrictions on logs)",
+            "No defined log management lifecycle (collection, storage, analysis, archival, disposal)",
+            "No requirements for centralized log collection or SIEM integration",
+            "No defined monitoring requirements such as real-time alerting thresholds or escalation procedures",
+            "No approval, communication, or periodic evaluation/review cycle for the logging and monitoring policy itself",
+            "No defined roles and responsibilities for log review and monitoring activities",
+            "No metrics or KPIs defined for measuring the effectiveness of logging and monitoring"
+          ],
+          "recommendations": [
+            "Develop a standalone Logging and Monitoring Policy that is formally approved, communicated to all relevant stakeholders, and reviewed on a defined schedule (e.g., annually)",
+            "Define a comprehensive list of loggable events including authentication successes/failures, privilege escalation, administrative actions, data access, system errors, and configuration changes",
+            "Establish log retention periods aligned with regulatory and business requirements",
+            "Implement log integrity controls such as write-once storage, hashing, or centralized SIEM with access restrictions",
+            "Define roles and responsibilities for log review frequency, escalation procedures, and incident correlation",
+            "Establish metrics and KPIs for monitoring effectiveness (e.g., mean time to detect, log review completion rates) and integrate logging requirements into the broader risk management framework"
+          ]
+        },
+        {
+          "control_id": "LOG-05",
+          "control_name": "Audit Log Monitoring",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements relevant to audit log monitoring \u2014 including procedures to review audit logs, monitoring log-in attempts, reporting discrepancies, and implementing audit controls \u2014 but lacks specifics on establishing alerts for suspicious activity, defining typical/expected patterns, and ensuring timely response to detected anomalies.",
+          "evidence": [
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "procedures for monitoring log-in attempts and reporting discrepancies",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures"
+          ],
+          "gaps": [
+            "No defined process for establishing baselines of typical or expected activity patterns against which anomalies would be detected.",
+            "No mention of automated alerting mechanisms for suspicious activity detected in audit logs.",
+            "No defined timelines or SLAs for responding to alerts or anomalous activity identified through log monitoring.",
+            "No specification of monitoring frequency (e.g., real-time, daily, weekly) for audit log review.",
+            "No defined metrics or KPIs for measuring the effectiveness of log monitoring activities.",
+            "No mention of SIEM or centralized log management tools to support monitoring at scale."
+          ],
+          "recommendations": [
+            "Define and document baseline activity patterns for critical systems to enable detection of anomalous behavior in audit logs.",
+            "Implement automated alerting through a SIEM or equivalent tool that triggers notifications for suspicious activity based on predefined rules and thresholds.",
+            "Establish specific response timelines (e.g., critical alerts reviewed within 15 minutes, high-severity within 1 hour) with assigned accountability for triage and escalation.",
+            "Document monitoring frequency requirements \u2014 real-time monitoring for high-risk systems, daily review for lower-risk systems.",
+            "Define and track metrics such as mean time to detect (MTTD), mean time to respond (MTTR), and volume of alerts reviewed vs. escalated to measure monitoring effectiveness.",
+            "Integrate log monitoring procedures with the existing security incident procedures to ensure a seamless workflow from detection to response."
+          ]
+        },
+        {
+          "control_id": "LOG-08",
+          "control_name": "Auditability",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions audit controls and periodic review of audit logs at a high level, but does not identify or document specific compliance requirements for audit log retention periods, nor does it establish protections specifically for audit log integrity and unauthorized access.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Integrity. Policies and procedures to protect electronic Information from improper alteration or destruction."
+          ],
+          "gaps": [
+            "No identification or documentation of specific compliance requirements governing audit log retention (e.g., regulatory mandates, industry standards, contractual obligations)",
+            "No defined retention period for audit logs",
+            "No explicit protections for audit logs against unauthorized access, modification, or deletion",
+            "No procedures for secure storage, archival, or disposal of audit logs",
+            "No accountability or roles assigned for managing audit log retention and protection",
+            "No metrics or monitoring mechanisms to ensure audit log retention compliance"
+          ],
+          "recommendations": [
+            "Identify all applicable regulatory, legal, and contractual requirements that mandate audit log retention (e.g., HIPAA, PCI-DSS, SOX) and document them in the policy",
+            "Define specific retention periods for audit logs based on identified compliance requirements and organizational risk appetite",
+            "Implement access controls restricting audit log access to authorized personnel only, with logging of any access to the logs themselves",
+            "Establish integrity protections for audit logs such as write-once storage, cryptographic hashing, or centralized tamper-evident log management systems",
+            "Assign roles and responsibilities for audit log management, including retention, protection, and periodic review",
+            "Implement monitoring and periodic audits to verify that audit log retention and protection controls are functioning as intended"
+          ]
+        },
+        {
+          "control_id": "SEF-01",
+          "control_name": "Incident Management Policy",
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges the need for security incident procedures and outlines high-level elements (identification, response, mitigation, documentation of incidents), but lacks formal detail on roles and responsibilities for incident response, approval processes, communication plans, evaluation cycles, and defined procedures beyond general statements.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity."
+          ],
+          "gaps": [
+            "No formally defined roles and responsibilities for incident response beyond a general 'Coordinator' role; no incident response team structure is specified.",
+            "No documented incident classification or severity levels to guide response priorities.",
+            "No formal approval, communication, or distribution process for the incident management policy itself.",
+            "No defined evaluation or review cycle for the incident management policies and procedures.",
+            "No escalation procedures, notification timelines, or external reporting requirements (e.g., regulatory notifications) are specified.",
+            "No metrics or KPIs defined for measuring incident response effectiveness.",
+            "No mention of post-incident review or lessons-learned processes for continuous improvement."
+          ],
+          "recommendations": [
+            "Develop a dedicated, standalone Incident Management Policy that is formally approved by senior management, with a defined review and update cycle (e.g., annually).",
+            "Define an Incident Response Team (IRT) with clearly documented roles, responsibilities, and escalation paths, including executive sponsors and technical responders.",
+            "Establish an incident classification and severity framework with corresponding response procedures, SLAs, and notification requirements.",
+            "Include post-incident review (lessons learned) procedures and integrate findings back into risk management and policy updates for continuous improvement.",
+            "Define metrics for incident response (e.g., mean time to detect, mean time to respond, number of incidents by category) and establish regular reporting to management.",
+            "Document communication and notification procedures for internal stakeholders, affected parties, and regulatory bodies as required by applicable law."
+          ]
+        },
+        {
+          "control_id": "SEF-03",
+          "control_name": "Incident Reporting",
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions security incident procedures at a high level (identification, response, mitigation, documentation) but lacks a defined incident response plan with specific communications requirements, stakeholder notification processes, regulatory reporting obligations, and required timeframes.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "No defined security incident response plan with specific phases (detection, containment, eradication, recovery, lessons learned)",
+            "No requirements for communications to stakeholders (internal or external) during or after incidents",
+            "No mention of regulatory body notification requirements or obligations",
+            "No defined timeframes for incident reporting or escalation",
+            "No incident severity classification or escalation procedures",
+            "No identification of specific regulatory frameworks requiring breach notification (e.g., state breach notification laws, HIPAA, GDPR)",
+            "No defined roles and responsibilities for incident response team members beyond the Coordinator"
+          ],
+          "recommendations": [
+            "Develop a formal, detailed Incident Response Plan (IRP) with clearly defined phases: preparation, detection/analysis, containment, eradication, recovery, and post-incident review",
+            "Define specific timeframes for internal escalation and external notification aligned with applicable regulatory requirements (e.g., 72 hours for GDPR, state-specific breach notification deadlines)",
+            "Create a stakeholder communication plan that identifies who must be notified (affected individuals, regulators, law enforcement, clients, board of directors) and the required content and timing of each notification",
+            "Establish incident severity classification levels with corresponding escalation paths and response timeframes",
+            "Define roles and responsibilities for an incident response team beyond the Coordinator, including legal, communications, and technical personnel",
+            "Conduct periodic tabletop exercises and simulations to test the incident response plan and communications procedures",
+            "Maintain a log of lessons learned from incidents and near-misses to continuously improve the response plan"
+          ]
+        },
+        {
+          "control_id": "TVM-01",
+          "control_name": "Antivirus and Anti-malware",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains ad hoc recommendations for antivirus use and mentions scanning/filtering incoming emails for viruses, but lacks a formal, comprehensive anti-malware program with defined requirements for deployment across all assets, definition update schedules, scan frequencies, and monitoring procedures.",
+          "evidence": [
+            "Always run the only the most current Provider recommended anti-virus software.",
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "If lab testing conflicts with anti-virus software, run the anti-virus utility to ensure a clean machine, disable the software, then run the lab test. After the lab test, enable the anti-virus software.",
+            "Always scan a floppy diskette from an unknown source for viruses before using it.",
+            "procedures for guarding against, detecting, and reporting malicious software"
+          ],
+          "gaps": [
+            "No formal requirement to deploy antivirus/anti-malware on all organizational assets (endpoints, servers, etc.)",
+            "No defined schedule or requirement for keeping malware definitions/signatures current",
+            "No specification of regular scan frequencies (e.g., real-time scanning, daily/weekly full scans)",
+            "No centralized management, monitoring, or reporting requirements for anti-malware solutions",
+            "No metrics or accountability mechanisms to measure anti-malware effectiveness",
+            "Antivirus guidance is presented as 'recommended processes' rather than mandatory policy requirements",
+            "No mention of advanced anti-malware capabilities such as behavioral analysis, EDR, or next-generation endpoint protection",
+            "No defined process for responding to malware detections or quarantine procedures"
+          ],
+          "recommendations": [
+            "Establish a formal anti-malware policy mandating deployment of antivirus/anti-malware software on all organizational endpoints, servers, and applicable assets",
+            "Define explicit requirements for automatic definition/signature updates (e.g., at least daily) and specify regular scan schedules (e.g., real-time plus weekly full scans)",
+            "Implement centralized anti-malware management with dashboards, alerting, and reporting to monitor coverage, definition currency, and detection events across the organization",
+            "Define incident response procedures specific to malware detections, including quarantine, remediation, and escalation steps",
+            "Establish metrics and KPIs (e.g., percentage of assets with current definitions, number of detections, mean time to remediation) with assigned accountability",
+            "Consider deploying advanced endpoint protection capabilities such as EDR and behavioral-based detection in addition to signature-based antivirus"
+          ]
+        },
+        {
+          "control_id": "TVM-02",
+          "control_name": "Vulnerability Management",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains scattered references to vulnerability-related activities (patching, risk assessment, scanning emails) but lacks a formal, dedicated vulnerability management program with defined processes for systematic identification, tracking, and remediation of vulnerabilities across systems and applications.",
+          "evidence": [
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "Ensure that patches are current.",
+            "Upgrade any unsupported operating systems for desktops and servers.",
+            "Scan and filter incoming emails and files that could contain viruses."
+          ],
+          "gaps": [
+            "No formal vulnerability management program or lifecycle defined (identification, classification, tracking, remediation, verification)",
+            "No mention of vulnerability scanning tools, frequency, or scope (e.g., network scans, application scans, container scans)",
+            "No defined SLAs or timelines for vulnerability remediation based on severity/criticality",
+            "No vulnerability tracking system or centralized repository for managing identified vulnerabilities",
+            "No defined metrics or KPIs for measuring vulnerability management effectiveness (e.g., mean time to remediate, scan coverage)",
+            "No mention of vulnerability prioritization methodology (e.g., CVSS scoring, risk-based prioritization)",
+            "No process for monitoring vulnerability disclosures or threat intelligence feeds",
+            "No defined roles and responsibilities specifically for vulnerability management beyond the general Coordinator role",
+            "No mention of application security testing (SAST, DAST, penetration testing)"
+          ],
+          "recommendations": [
+            "Establish a formal vulnerability management policy and program that defines the full lifecycle: discovery, classification, prioritization, remediation, and verification",
+            "Implement regular automated vulnerability scanning (at least monthly for infrastructure, and per-release for applications) with defined scope covering all organizational systems",
+            "Define remediation SLAs based on vulnerability severity (e.g., critical: 72 hours, high: 30 days, medium: 90 days, low: 180 days)",
+            "Deploy a centralized vulnerability tracking platform to log, assign, and monitor remediation progress",
+            "Establish KPIs and regular reporting on vulnerability management metrics such as scan coverage, open vulnerability counts by severity, and mean time to remediate",
+            "Integrate threat intelligence feeds and vendor advisories into the vulnerability identification process",
+            "Include application security testing (penetration testing, DAST/SAST) as part of the vulnerability management program"
+          ]
+        },
+        {
+          "control_id": "TVM-03",
+          "control_name": "Vulnerability Remediation",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only an ad hoc mention to 'ensure that patches are current' and 'upgrade any unsupported operating systems,' but lacks any formal vulnerability remediation process, severity-based prioritization, defined SLAs, or structured patching workflow.",
+          "evidence": [
+            "Ensure that patches are current.",
+            "Upgrade any unsupported operating systems for desktops and servers.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level."
+          ],
+          "gaps": [
+            "No formal vulnerability management or remediation process is defined",
+            "No severity-based classification or prioritization of vulnerabilities (e.g., critical, high, medium, low)",
+            "No defined SLAs or timeframes for remediating vulnerabilities based on severity",
+            "No mention of vulnerability scanning tools, frequency, or methodology",
+            "No process for tracking, monitoring, or reporting on remediation progress",
+            "No accountability or roles defined specifically for vulnerability remediation beyond the general Coordinator role",
+            "No exception or risk acceptance process for vulnerabilities that cannot be patched within SLAs"
+          ],
+          "recommendations": [
+            "Develop a formal Vulnerability Management Policy that defines the end-to-end process for identifying, classifying, prioritizing, and remediating vulnerabilities",
+            "Establish severity-based SLAs for remediation (e.g., critical: 72 hours, high: 7 days, medium: 30 days, low: 90 days)",
+            "Implement regular vulnerability scanning (e.g., weekly for critical assets, monthly for others) using automated tools and define scanning scope",
+            "Define roles and responsibilities for vulnerability remediation, including asset owners, IT operations, and security teams",
+            "Create a tracking and reporting mechanism with metrics such as mean time to remediate, percentage of vulnerabilities remediated within SLA, and aging vulnerabilities",
+            "Establish a formal exception/risk acceptance process for vulnerabilities that cannot be remediated within defined SLAs, requiring documented business justification and compensating controls"
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-19T19:59:11.842807",
+  "status": "completed"
+}

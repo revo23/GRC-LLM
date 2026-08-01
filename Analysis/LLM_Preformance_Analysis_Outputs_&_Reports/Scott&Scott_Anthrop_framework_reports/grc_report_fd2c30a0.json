@@ -1,0 +1,764 @@
+{
+  "assessment_id": "fd2c30a0-b1e8-49b6-80b6-71add9747739",
+  "document_id": "8ea77089821749aea91b9489524cdadf",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "pci_dss"
+  ],
+  "overall_posture_score": 1.22,
+  "framework_results": [
+    {
+      "framework_id": "pci_dss",
+      "framework_name": "PCI DSS",
+      "overall_score": 1.22,
+      "family_scores": [
+        {
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "average_score": 0.79,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "average_score": 0.59,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "average_score": 0.75,
+          "control_count": 4,
+          "weight": 1.3
+        },
+        {
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "average_score": 1.74,
+          "control_count": 4,
+          "weight": 1.4
+        },
+        {
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "average_score": 0.69,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "average_score": 3.0,
+          "control_count": 2,
+          "weight": 1.2
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "PCI-1.1",
+          "control_name": "Network Security Controls: Processes and Mechanisms",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to security management, risk assessment, and protecting critical parts of the network, but lacks any specific mention of network security controls (firewalls, segmentation, ACLs, etc.), their configuration standards, or a defined process for reviewing network security control configurations at least every 12 months.",
+          "evidence": [
+            "help protect critical parts of the network from both accidental and intentional alterations.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards."
+          ],
+          "gaps": [
+            "No explicit definition or documentation of network security controls (e.g., firewalls, IDS/IPS, network segmentation, access control lists)",
+            "No defined process for installing, configuring, and maintaining network security controls",
+            "No requirement for reviewing network security control configurations at least once every 12 months \u2014 the annual review mentioned is for the overall program, not specifically for network security control configurations",
+            "No documented roles and responsibilities specific to network security control management",
+            "No mention of network diagrams, data flow diagrams, or documentation of network architecture",
+            "No standards or baselines for network security control configurations"
+          ],
+          "recommendations": [
+            "Develop a dedicated network security policy that explicitly defines processes for installing, configuring, and maintaining network security controls such as firewalls, IDS/IPS, and network segmentation",
+            "Establish a formal requirement to review all network security control configurations (rulesets, ACLs, firewall rules) at least once every 12 months, with documented evidence of each review",
+            "Create and maintain current network diagrams and data flow diagrams that identify all network security controls and their placement",
+            "Define specific roles, responsibilities, and accountability for network security control management, including change management procedures",
+            "Implement configuration standards and baselines for all network security controls, with documented approval and justification for all allowed services, protocols, and ports"
+          ]
+        },
+        {
+          "control_id": "PCI-1.2",
+          "control_name": "Network Security Controls Configuration",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only generic, high-level references to firewalls, network security, and access controls but lacks any specific requirements for configuring network security controls to restrict inbound and outbound traffic with a default-deny posture. There are no formal procedures, rulesets, or documented processes for traffic filtering.",
+          "evidence": [
+            "Special attention must be given to security-related software such as anti-virus and firewall protection to ensure that they provide the maximum level of protection.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.",
+            "installations that allow unrestricted access to resources must be configured with extra care to minimize security risks"
+          ],
+          "gaps": [
+            "No explicit requirement to configure network security controls (firewalls, ACLs, etc.) to restrict both inbound and outbound traffic to only what is necessary",
+            "No default-deny rule or policy requiring all other traffic to be denied by default",
+            "No specification of traffic filtering rules, port restrictions, protocol restrictions, or network segmentation requirements",
+            "No defined process for reviewing and maintaining firewall/NSC rulesets periodically",
+            "No documentation requirements for business justification of allowed traffic flows",
+            "No mention of restricting traffic between trusted and untrusted networks or cardholder data environment boundaries",
+            "The policy leaves technical safeguard decisions to the Coordinator's discretion rather than mandating specific network security configurations"
+          ],
+          "recommendations": [
+            "Develop a dedicated network security controls policy that mandates default-deny rules for both inbound and outbound traffic on all network security devices",
+            "Document specific requirements for firewall/NSC rulesets including allowed ports, protocols, services, and source/destination addresses with business justification for each rule",
+            "Implement a formal process for periodic review of all network security control configurations (at least every six months) with documented approvals",
+            "Define network segmentation requirements and traffic restriction rules for cardholder data environments, DMZs, and internal network zones",
+            "Establish accountability and metrics for monitoring NSC configurations, including change management processes and compliance verification"
+          ]
+        },
+        {
+          "control_id": "PCI-1.3",
+          "control_name": "Network Access to the Cardholder Data Environment",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 0,
+          "score_rationale": "The policy contains no specific provisions for restricting network access to and from a cardholder data environment (CDE), no mention of DMZ architecture, firewall rules between CDE and untrusted networks, or prohibition of direct public access to CDE components. The excerpts address general remote access controls and acceptable use but do not reference cardholder data, CDE segmentation, or network architecture controls required by PCI DSS 1.3.",
+          "evidence": [
+            "Remote access should be strictly controlled, using one-time password authentication.",
+            "Effecting security breaches or disruptions of network communication. Security breaches include, but are not limited to, accessing data of which the employee is not an intended recipient or logging into a server or account that the employee is not expressly authorized to access"
+          ],
+          "gaps": [
+            "No definition or identification of a cardholder data environment (CDE) within the policy",
+            "No requirement to prohibit direct public access between the internet and any system component in the CDE",
+            "No mention of DMZ architecture or placement of publicly accessible components in a DMZ separate from the CDE",
+            "No firewall or access control rules restricting inbound and outbound traffic to only what is necessary for the CDE",
+            "No requirement to restrict inbound traffic to system components that provide authorized publicly accessible services, protocols, and ports",
+            "No anti-spoofing measures or ingress/egress filtering requirements for CDE network boundaries",
+            "No prohibition of direct routes between the internet and the CDE for inbound or outbound traffic",
+            "No requirement to place database servers or storage components holding cardholder data on an internal network zone segregated from the DMZ"
+          ],
+          "recommendations": [
+            "Develop and document a formal network segmentation architecture that defines the CDE boundaries, DMZ zones, and trusted/untrusted network segments",
+            "Implement and document firewall and router rules that explicitly prohibit direct public access to any CDE component and restrict traffic to only authorized protocols, ports, and IP addresses",
+            "Create policy language requiring placement of all publicly accessible system components (e.g., web servers) in a DMZ, with database and cardholder data storage systems on isolated internal network segments",
+            "Document requirements for anti-spoofing, ingress/egress filtering, and stateful inspection at CDE boundaries",
+            "Implement network diagrams showing all connections to and from the CDE and review them at least annually as part of the policy",
+            "Establish monitoring and logging requirements for all traffic crossing CDE boundaries to detect unauthorized access attempts"
+          ]
+        },
+        {
+          "control_id": "PCI-2.1",
+          "control_name": "Default Passwords and Security Parameters",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general password management and access authentication requirements but does not specifically address changing vendor-supplied default passwords, removing/disabling unnecessary default accounts, or defining formal processes for applying secure configurations to systems and devices.",
+          "evidence": [
+            "Keep passwords secure and do not share accounts. Authorized users are responsible for the security of their passwords and accounts. Both system and user level passwords should be changed at least every 90 days.",
+            "Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk.",
+            "installations that allow unrestricted access to resources must be configured with extra care to minimize security risks. Special attention must be given to security-related software such as anti-virus and firewall protection to ensure that they provide the maximum level of protection."
+          ],
+          "gaps": [
+            "No explicit requirement to change all vendor-supplied default passwords before deploying systems into the environment",
+            "No process defined for identifying and removing or disabling unnecessary default accounts on systems, applications, and network devices",
+            "No defined and documented secure configuration standards or hardening baselines for system components",
+            "No mention of changing default SNMP community strings, wireless encryption keys, or other vendor-supplied security parameters",
+            "No formal process or mechanism for applying and verifying secure configurations across the environment",
+            "Password minimum length of 6 characters does not meet PCI DSS requirements (minimum 7 or 12 characters depending on version)"
+          ],
+          "recommendations": [
+            "Develop and document formal secure configuration standards/hardening baselines for all system component types (servers, network devices, applications, databases, etc.) based on industry-accepted sources such as CIS Benchmarks",
+            "Create an explicit policy requiring all vendor-supplied default passwords, accounts, and security parameters to be changed or removed before any system is deployed into production",
+            "Implement a process to inventory and disable or remove all unnecessary default accounts across all system components",
+            "Establish procedures to verify secure configurations are applied consistently, including automated configuration scanning and periodic audits",
+            "Update password requirements to meet current PCI DSS v4.0 standards (minimum 12 characters or 8 characters if the system does not support 12, with numeric and alphabetic characters)",
+            "Document specific requirements for changing default SNMP community strings, wireless encryption keys, and other common vendor-supplied security parameters"
+          ]
+        },
+        {
+          "control_id": "PCI-2.2",
+          "control_name": "System Components Configured and Managed Securely",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to configuring systems securely and implementing safeguards, but lacks specific, formal configuration standards or hardening baselines for system components as required by PCI DSS 2.2. The language is high-level and risk-based rather than prescriptive with defined configuration standards.",
+          "evidence": [
+            "installations that allow unrestricted access to resources must be configured with extra care to minimize security risks. Special attention must be given to security-related software such as anti-virus and firewall protection to ensure that they provide the maximum level of protection.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Provider reserves the right to audit networks and systems on a periodic basis to ensure compliance and security."
+          ],
+          "gaps": [
+            "No formal, documented configuration standards or hardening baselines (e.g., CIS Benchmarks, DISA STIGs, or vendor hardening guides) for all system components",
+            "No requirement to remove or disable unnecessary default accounts, services, protocols, ports, and functions",
+            "No mention of changing vendor-supplied default passwords and security parameters",
+            "No process for managing and applying configuration standards consistently across all system components (servers, network devices, endpoints, etc.)",
+            "No requirement to document the business justification for enabled services, protocols, daemons, and ports",
+            "No defined process for reviewing and updating configuration standards periodically",
+            "No specific mention of system hardening procedures or secure configuration management lifecycle",
+            "No reference to maintaining an inventory of system components subject to configuration standards"
+          ],
+          "recommendations": [
+            "Develop and document formal configuration/hardening standards for all system component types (servers, network devices, databases, applications, endpoints) based on industry-accepted sources such as CIS Benchmarks or vendor guidelines",
+            "Implement a process to change all vendor-supplied default passwords and remove/disable unnecessary default accounts, services, protocols, and ports on all system components",
+            "Establish a requirement to document business justifications for all enabled services, protocols, daemons, and ports, along with compensating security features for insecure protocols",
+            "Create a configuration management process that includes periodic reviews, automated compliance scanning, and remediation tracking with defined metrics and accountability",
+            "Integrate configuration standards into the system deployment lifecycle so that no system component is placed into production without being hardened per the approved baseline"
+          ]
+        },
+        {
+          "control_id": "PCI-3.1",
+          "control_name": "Stored Account Data is Kept to Minimum",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 0,
+          "score_rationale": "The policy contains no provisions specifically addressing stored account data, cardholder data retention policies, data minimization requirements, or processes for protecting stored payment card information. The policy is a general information security program focused on personal identifying information and electronic information broadly, with no PCI DSS-specific controls.",
+          "evidence": [
+            "Provider established an Information Security Program (the \"Program\") to assure compliance with applicable laws.",
+            "the Program provides for the security and confidentiality of personal identifying information or sensitive personal information collected, protects against anticipated threats or hazards to the security or integrity of such information",
+            "A mechanism to encrypt and decrypt electronic Information."
+          ],
+          "gaps": [
+            "No definition or identification of stored account data, cardholder data (CHD), or sensitive authentication data (SAD)",
+            "No data retention policy specific to cardholder data defining retention periods and disposal requirements",
+            "No data minimization requirements specifying that stored account data is kept to a minimum",
+            "No processes for secure deletion or destruction of cardholder data when no longer needed",
+            "No data discovery or inventory processes to identify where cardholder data is stored",
+            "No restrictions on storage of sensitive authentication data (e.g., full track data, CVV, PIN) after authorization",
+            "No masking or truncation requirements for displayed PANs",
+            "No defined roles and responsibilities for protecting stored account data"
+          ],
+          "recommendations": [
+            "Develop a dedicated cardholder data retention and disposal policy that specifies what account data may be stored, where it is stored, the maximum retention period, and secure deletion procedures",
+            "Implement a data discovery process to locate and inventory all stored cardholder data across systems, applications, and physical media",
+            "Explicitly prohibit storage of sensitive authentication data after authorization and document technical controls enforcing this requirement",
+            "Define data minimization standards requiring that only cardholder data necessary for legitimate business purposes is retained",
+            "Implement PAN masking and truncation policies for displayed cardholder data and encryption requirements for stored data",
+            "Establish periodic reviews (at least quarterly) to verify that stored cardholder data does not exceed defined retention periods and that expired data is securely purged"
+          ]
+        },
+        {
+          "control_id": "PCI-3.4",
+          "control_name": "Access to Cardholder Data is Restricted",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy establishes a general principle of least-privilege access based on business need to know, but it entirely fails to address the specific PCI requirement that PANs must be rendered unreadable anywhere they are stored. There is no mention of cardholder data, PAN, encryption at rest, hashing, truncation, or tokenization.",
+          "evidence": [
+            "Each department shall confirm that employee tasks require access to Information before allowing access. Employees shall only have access to Information necessary to complete their job functions \u2013 no \"blanket\" access will be given to all Information unless deemed necessary.",
+            "Access to Information may be restricted through the use of login and password protection. For higher levels of risk, additional safeguards such as use of encryption technologies may be employed.",
+            "All employees who have access to Information will be required to sign a confidentiality agreement."
+          ],
+          "gaps": [
+            "No specific mention of cardholder data, Primary Account Numbers (PAN), or stored account data \u2014 the policy uses only a generic term 'Information'.",
+            "No requirement to render PAN unreadable anywhere it is stored (e.g., via encryption, hashing, truncation, or tokenization).",
+            "No defined data classification scheme that would identify cardholder data as requiring specific protections beyond general 'Information'.",
+            "No mention of encryption key management for data at rest.",
+            "No role-based access control (RBAC) framework specifically mapped to cardholder data environments.",
+            "No logging or monitoring of access to stored cardholder data.",
+            "No formal process for periodic review of access rights to cardholder data."
+          ],
+          "recommendations": [
+            "Explicitly define cardholder data and PAN within the policy's scope and data classification framework, distinct from general 'Information'.",
+            "Implement and document a requirement that PAN must be rendered unreadable anywhere it is stored using one or more approved methods: strong one-way hashing, truncation, index tokens with securely stored pads, or strong cryptography with associated key management.",
+            "Establish a formal role-based access control (RBAC) model specifically for the cardholder data environment (CDE), with documented business justification for each role granted access.",
+            "Define encryption key management procedures for data-at-rest encryption, including key generation, distribution, storage, rotation, and destruction.",
+            "Implement periodic access reviews (at least semi-annually) for all users with access to stored cardholder data, with documented approval and revocation processes.",
+            "Add audit logging and monitoring requirements for all access to stored cardholder data, with alerts for anomalous access patterns."
+          ]
+        },
+        {
+          "control_id": "PCI-3.5",
+          "control_name": "Primary Account Number (PAN) Security",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 0,
+          "score_rationale": "The policy contains no specific reference to Primary Account Number (PAN), cardholder data, payment card data, or any requirement to render PAN unreadable using strong cryptography wherever it is stored. The encryption references in the policy are generic, optional ('should be considered'), and not tied to PAN security requirements.",
+          "evidence": [
+            "Encryption of data should be considered for instances involving the transportation of data across any network",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "For higher levels of risk, additional safeguards such as use of encryption technologies may be employed."
+          ],
+          "gaps": [
+            "No mention of Primary Account Number (PAN), cardholder data, or payment card information anywhere in the policy",
+            "No requirement to render PAN unreadable wherever it is stored using strong cryptography (e.g., AES-256, TDES)",
+            "No specification of approved cryptographic algorithms or key strengths for protecting stored PAN",
+            "No cryptographic key management procedures defined (key generation, distribution, storage, rotation, destruction)",
+            "No policy defining where PAN storage is permitted or prohibited",
+            "No data discovery or inventory process to identify all locations where PAN may be stored",
+            "Encryption language is permissive ('should be considered,' 'may be employed') rather than mandatory, which fails to meet PCI DSS requirements",
+            "No reference to alternative PAN protection methods such as truncation, tokenization, or hashing"
+          ],
+          "recommendations": [
+            "Develop a dedicated PCI DSS cardholder data security policy that explicitly addresses PAN storage, transmission, and processing requirements",
+            "Mandate strong cryptography (e.g., AES-256) for rendering PAN unreadable wherever it is stored, with no permissive or optional language",
+            "Implement and document a cryptographic key management program covering the full key lifecycle per PCI DSS Requirement 3.6/3.7",
+            "Conduct a PAN data discovery exercise to identify and inventory all storage locations, eliminating unnecessary PAN storage",
+            "Define approved methods for PAN protection including encryption, truncation, tokenization, and one-way hashing, specifying when each is appropriate",
+            "Replace permissive language ('should,' 'may') with mandatory language ('must,' 'shall') for all encryption and PAN protection requirements"
+          ]
+        },
+        {
+          "control_id": "PCI-4.1",
+          "control_name": "Strong Cryptography During Transmission",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to transmission security and encryption but lacks the specificity required by PCI DSS 4.1. There is no explicit mention of cardholder data, strong cryptography standards, open/public networks, or formally defined and understood processes for protecting data in transit.",
+          "evidence": [
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.",
+            "A mechanism to encrypt electronic Information whenever deemed appropriate.",
+            "Secure Transmissions: Encryption of data should be considered for instances involving the transportation of data across any network, particularly for any communications that connect to an outside system or network (such as the Internet).",
+            "Users should clearly understand that normal email cannot be considered a secure way to transport Information, particularly outside of the local email server."
+          ],
+          "gaps": [
+            "No specific reference to cardholder data (CHD) or payment card data \u2014 the policy addresses generic 'Information' only",
+            "No requirement for 'strong cryptography' \u2014 encryption is described as optional ('whenever deemed appropriate,' 'should be considered') rather than mandatory",
+            "No specification of approved cryptographic protocols or cipher suites (e.g., TLS 1.2+, prohibition of SSL/early TLS)",
+            "No explicit identification of 'open, public networks' as a transmission context requiring mandatory encryption",
+            "No documented, formally defined processes or procedures specifically for protecting data during transmission as required by the control",
+            "No evidence that roles, responsibilities, and understanding of these processes have been communicated to relevant personnel",
+            "No reference to PCI DSS requirements or alignment with payment card industry standards",
+            "No mention of certificate management, key management, or trusted certificate authorities for transmission encryption"
+          ],
+          "recommendations": [
+            "Develop a dedicated PCI DSS-aligned policy section that mandates strong cryptography (e.g., TLS 1.2 or higher) for all cardholder data transmitted over open, public networks",
+            "Replace permissive language ('should be considered,' 'whenever deemed appropriate') with mandatory requirements ('must,' 'shall') for encrypting cardholder data in transit",
+            "Define and document specific approved cryptographic protocols, cipher suites, and key strengths, and prohibit deprecated protocols such as SSL and early TLS",
+            "Explicitly define what constitutes 'open, public networks' (e.g., Internet, wireless, cellular, satellite) in the policy context",
+            "Establish formal roles and responsibilities for managing transmission encryption, including certificate and key lifecycle management",
+            "Implement training and awareness programs to ensure all relevant personnel understand the processes and mechanisms for protecting cardholder data during transmission",
+            "Integrate monitoring and metrics to verify compliance with transmission encryption requirements on an ongoing basis"
+          ]
+        },
+        {
+          "control_id": "PCI-4.2",
+          "control_name": "PAN Secured During Transmission",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to encryption during transmission but uses weak, non-mandatory language ('should be considered,' 'whenever deemed appropriate') and completely lacks specific requirements for PAN protection, strong cryptography standards, trusted keys/certificates management, and secure protocol version enforcement.",
+          "evidence": [
+            "Encryption of data should be considered for instances involving the transportation of data across any network, particularly for any communications that connect to an outside system or network (such as the Internet).",
+            "A mechanism to encrypt electronic Information whenever deemed appropriate.",
+            "Versions of email that encrypt the messages and attachments can be obtained and should be used wherever large amounts of Information are involved.",
+            "Digital certificates must not be copied to or transferred between PODs."
+          ],
+          "gaps": [
+            "No specific mention of PAN (Primary Account Number) or cardholder data protection during transmission",
+            "No requirement for strong cryptography \u2014 language uses 'should be considered' and 'whenever deemed appropriate' rather than mandatory directives",
+            "No specification of approved cryptographic protocols, cipher suites, or minimum key lengths (e.g., TLS 1.2+, AES-256)",
+            "No requirement to only accept trusted keys and certificates during transmission, and no certificate validation or trust management process defined",
+            "No requirement to disable insecure protocol versions or configurations (e.g., SSL, early TLS)",
+            "No inventory or monitoring of transmission channels carrying PAN data",
+            "No reference to PCI DSS requirements or alignment with PCI standards for transmission security"
+          ],
+          "recommendations": [
+            "Create a dedicated policy section mandating strong cryptography (e.g., TLS 1.2 or higher with approved cipher suites) for all transmissions of PAN data across open or public networks",
+            "Explicitly define which cryptographic protocols and versions are approved and require disabling of all insecure versions (SSL, TLS 1.0, TLS 1.1)",
+            "Establish a certificate and key management policy requiring only trusted keys/certificates, including validation processes, certificate authority requirements, and expiration management",
+            "Replace permissive language ('should be considered,' 'whenever deemed appropriate') with mandatory requirements ('must,' 'shall') for encrypting PAN during transmission",
+            "Implement monitoring and scanning procedures to verify that PAN transmissions are consistently encrypted with approved protocols and that no insecure configurations exist",
+            "Maintain an inventory of all transmission channels and methods used to send or receive PAN data and ensure each is assessed for compliance"
+          ]
+        },
+        {
+          "control_id": "PCI-5.1",
+          "control_name": "Anti-malware Processes",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains ad hoc references to malware-related activities such as scanning/filtering incoming emails and files for viruses and security awareness training that includes procedures for detecting malicious software, but it lacks a formally defined anti-malware solution deployment strategy, does not specify deployment across all system components, and does not document exceptions for systems not at risk.",
+          "evidence": [
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "procedures for guarding against, detecting, and reporting malicious software",
+            "Security breaches include external and internal security breaches, programming fraud, computer viruses, hacking, or denial of service attacks.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures"
+          ],
+          "gaps": [
+            "No formal anti-malware policy defining processes and mechanisms to protect all systems against malware",
+            "No requirement to deploy an anti-malware solution on all system components",
+            "No documented risk-based exceptions for systems determined not to be at risk from malware",
+            "No periodic evaluation specifically of the anti-malware solution's effectiveness",
+            "No defined frequency or process for updating anti-malware signatures or definitions",
+            "Email/file scanning is mentioned but there is no comprehensive endpoint anti-malware deployment requirement covering servers, workstations, and other components"
+          ],
+          "recommendations": [
+            "Develop a dedicated anti-malware policy that explicitly requires deployment of anti-malware solutions on all system components in scope for PCI DSS",
+            "Establish a formal process to evaluate and document which systems are not at risk from malware, including periodic reviews of those determinations",
+            "Define requirements for anti-malware signature updates, real-time scanning, and periodic full-system scans",
+            "Implement monitoring and metrics for anti-malware solution coverage, detection rates, and update compliance across all endpoints",
+            "Include anti-malware requirements in the security awareness training program so all personnel understand the processes and their responsibilities"
+          ]
+        },
+        {
+          "control_id": "PCI-5.3",
+          "control_name": "Anti-malware Mechanisms Active and Maintained",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains ad hoc mentions of anti-malware practices\u2014such as running current anti-virus software, scanning incoming emails, and general virus prevention tips\u2014but lacks a formal, documented process for ensuring anti-malware mechanisms are actively maintained, regularly updated, continuously monitored, and that scheduled scans are performed.",
+          "evidence": [
+            "Always run the only the most current Provider recommended anti-virus software.",
+            "Scan and filter incoming emails and files that could contain viruses.",
+            "If lab testing conflicts with anti-virus software, run the anti-virus utility to ensure a clean machine, disable the software, then run the lab test. After the lab test, enable the anti-virus software.",
+            "procedures for guarding against, detecting, and reporting malicious software",
+            "Always scan a floppy diskette from an unknown source for viruses before using it."
+          ],
+          "gaps": [
+            "No defined schedule or policy for regular anti-malware signature/definition updates",
+            "No requirement for periodic or real-time malware scans across all systems",
+            "No monitoring process or metrics to verify anti-malware mechanisms are active and functioning",
+            "No policy addressing centralized management or reporting of anti-malware status",
+            "No process for logging, alerting, or responding to malware detections",
+            "No prohibition against users disabling anti-malware without authorization, and no compensating controls documented beyond the lab testing exception",
+            "No defined accountability or roles responsible for maintaining anti-malware solutions"
+          ],
+          "recommendations": [
+            "Implement a formal anti-malware policy specifying required deployment on all endpoints and servers, automatic signature updates (at minimum daily), and real-time scanning",
+            "Deploy centralized anti-malware management with dashboards and alerting to monitor that all agents are active, up-to-date, and reporting",
+            "Define scheduled full-system scans (e.g., weekly) in addition to real-time protection, and document the schedule in policy",
+            "Establish procedures for logging and responding to malware detections, including escalation and incident response integration",
+            "Define metrics and KPIs (e.g., percentage of endpoints with current definitions, scan completion rates) and assign accountability to specific roles for anti-malware maintenance",
+            "Restrict the ability to disable anti-malware software to authorized personnel only, with documented approval and time-limited exceptions"
+          ]
+        },
+        {
+          "control_id": "PCI-6.2",
+          "control_name": "Bespoke and Custom Software Developed Securely",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no mention of secure software development practices, secure coding guidelines, OWASP Top 10 vulnerabilities, code reviews, or any software development lifecycle (SDLC) methodology. The documents focus entirely on general IT security, acceptable use, access controls, and data handling.",
+          "evidence": [],
+          "gaps": [
+            "No secure software development lifecycle (SDLC) policy or framework defined",
+            "No reference to secure coding guidelines or standards (e.g., OWASP Top 10)",
+            "No requirements for code reviews, static analysis, or dynamic application security testing",
+            "No mention of training developers on secure coding practices",
+            "No processes for identifying and remediating common software vulnerabilities (injection, XSS, broken authentication, etc.)",
+            "No separation of development, testing, and production environments addressed",
+            "No change management or version control processes for custom software development"
+          ],
+          "recommendations": [
+            "Develop and implement a formal Secure Software Development Lifecycle (SSDLC) policy that covers all phases from design through deployment",
+            "Establish mandatory secure coding standards that explicitly address OWASP Top 10 vulnerabilities including injection flaws, broken authentication, XSS, insecure deserialization, and others",
+            "Implement mandatory code review processes including both peer reviews and automated static/dynamic analysis tools (SAST/DAST)",
+            "Require secure coding training for all developers working on bespoke and custom software, with periodic refreshers",
+            "Define processes for threat modeling and security architecture reviews during the design phase of software development",
+            "Implement pre-release security testing requirements including penetration testing for custom applications before production deployment"
+          ]
+        },
+        {
+          "control_id": "PCI-6.3",
+          "control_name": "Security Vulnerabilities Identified and Addressed",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only a generic, ad hoc mention of security patches and vulnerability management without defining formal processes, timelines, criticality classifications, or specific patch installation requirements such as the 30-day critical patch mandate.",
+          "evidence": [
+            "System / Security Updates: Computers should have the most recently available and appropriate software security patches, commensurate with the identified level of acceptable risk.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level."
+          ],
+          "gaps": [
+            "No defined vulnerability management process or lifecycle (identification, classification, remediation, verification)",
+            "No requirement to install critical patches within 30 days or any specified timeframe",
+            "No vulnerability severity ranking or criticality classification system (e.g., CVSS-based)",
+            "No mention of vulnerability scanning tools, frequency, or scope",
+            "Language uses 'should' rather than mandatory 'must/shall' for security patching, leaving compliance discretionary",
+            "No defined roles and responsibilities specific to patch management beyond the general Coordinator role",
+            "No metrics or monitoring mechanisms for tracking patch compliance or vulnerability remediation status"
+          ],
+          "recommendations": [
+            "Establish a formal vulnerability management policy that defines the full lifecycle: identification, classification, prioritization, remediation, and verification",
+            "Mandate that critical and high-severity security patches be installed within 30 days of release, with documented exceptions requiring risk acceptance approval",
+            "Implement regular vulnerability scanning (at least quarterly and after significant changes) using industry-standard tools and define the scope of scanning",
+            "Adopt a vulnerability severity classification system (e.g., CVSS) to prioritize remediation efforts with defined SLAs for each severity level",
+            "Define specific roles, responsibilities, and accountability for patch management and vulnerability remediation",
+            "Establish metrics and reporting dashboards to track patch compliance rates, mean time to remediate, and aging vulnerabilities"
+          ]
+        },
+        {
+          "control_id": "PCI-7.1",
+          "control_name": "Access Control Processes",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses general access control concepts including authorization procedures, business need-based access, and termination of access, but it lacks specificity to cardholder data environments, does not reference PCI DSS requirements explicitly, and many safeguards are described as optional ('may be implemented') rather than mandatory.",
+          "evidence": [
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Information access management. Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures that, based upon the entity's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.",
+            "Access control. Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends."
+          ],
+          "gaps": [
+            "No specific reference to 'cardholder data' or PCI DSS scope \u2014 the policy uses generic 'electronic Information' terminology without distinguishing sensitive payment data.",
+            "No explicit 'business need to know' principle defined as a foundational access control requirement, which is a core PCI DSS 7.1 concept.",
+            "No defined roles and responsibilities for managing access control processes (e.g., data owners, access approvers).",
+            "Many safeguards are described as optional ('may be implemented by one or all of the following, as appropriate') rather than mandatory requirements.",
+            "No documented process for periodic review of access rights to system components and cardholder data.",
+            "No mention of least privilege or default-deny access models.",
+            "No formal communication mechanism to ensure access control processes are 'defined and understood' by all relevant personnel."
+          ],
+          "recommendations": [
+            "Develop a dedicated PCI DSS access control policy that explicitly references cardholder data and system components within the cardholder data environment (CDE).",
+            "Formally define and document the 'business need to know' and 'least privilege' principles as mandatory foundations for all access decisions.",
+            "Assign specific roles and responsibilities (e.g., data owners, system administrators, access approvers) for managing and approving access to CDE resources.",
+            "Convert optional safeguard language ('may be implemented') to mandatory requirements ('must be implemented') for all controls protecting cardholder data.",
+            "Establish a formal periodic access review process with defined frequency (e.g., at least every six months) for all access to system components and cardholder data.",
+            "Implement a communication and training program to ensure all relevant personnel understand the access control processes and their responsibilities under PCI DSS Requirement 7."
+          ]
+        },
+        {
+          "control_id": "PCI-7.2",
+          "control_name": "Access to System Components and Data",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes foundational concepts of access control, least-privilege ('only access to Information necessary to complete their job functions'), unique user identification, and authorization procedures, but lacks the specificity and granularity required by PCI DSS 7.2, such as formal role-based access control (RBAC) definitions, explicit access control models, coverage of all system components, and defined review/approval workflows for access assignments.",
+          "evidence": [
+            "Employees shall only have access to Information necessary to complete their job functions \u2013 no 'blanket' access will be given to all Information unless deemed necessary.",
+            "Each department shall confirm that employee tasks require access to Information before allowing access.",
+            "Access control. Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "A unique name and/or number for identifying and tracking user identity."
+          ],
+          "gaps": [
+            "No formal role-based access control (RBAC) system defined with specific roles mapped to system components and data as required by PCI DSS 7.2.",
+            "No explicit mention of access control lists (ACLs) or access control mechanisms configured to enforce least privilege on a per-system-component basis.",
+            "No documented process for formally approving and documenting access assignments with management sign-off, including specific privileges granted.",
+            "No requirement to restrict access based on job classification, function, or role with a formal access matrix.",
+            "No mention of default-deny-all settings for access control systems, which PCI DSS 7.2 requires.",
+            "No defined metrics or monitoring mechanisms to measure the effectiveness of access controls or detect privilege creep.",
+            "Policy language uses 'may be implemented' and 'as appropriate' qualifiers, indicating optional rather than mandatory implementation."
+          ],
+          "recommendations": [
+            "Implement a formal role-based access control (RBAC) model that maps specific job roles to required access privileges for each system component and data type in scope for PCI DSS.",
+            "Define and enforce a default-deny-all access policy, granting access only when explicitly authorized based on documented business need.",
+            "Create a formal access approval workflow requiring documented management authorization before access is provisioned, including the specific privileges granted.",
+            "Develop and maintain an access control matrix that maps user roles to system components and data, reviewed at least semi-annually.",
+            "Replace optional language ('may be implemented,' 'as appropriate') with mandatory requirements to ensure consistent enforcement across the organization.",
+            "Implement periodic access reviews (at least every six months) with documented evidence of review outcomes and remediation of inappropriate access."
+          ]
+        },
+        {
+          "control_id": "PCI-8.2",
+          "control_name": "User Identification and Authentication",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses unique user identification, authentication procedures, password requirements, and account lockout mechanisms, but lacks comprehensive lifecycle management elements such as formal onboarding/offboarding procedures, periodic access reviews, handling of shared/group accounts, and specific requirements for administrator accounts.",
+          "evidence": [
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "All passwords must be at least 6 characters long and contain at least one letter and one number. Users will be required to change their password at least every 90 days.",
+            "There must be a limit to the number of repeated unsuccessful attempts to log into an application or server that deals with Information. For example, a system that 'locks' access after 3 failed attempts would meet this criterion.",
+            "if a remote access account is not used for a period of six months the account should be eliminated and no longer function.",
+            "Each department shall confirm that employee tasks require access to Information before allowing access. Employees shall only have access to Information necessary to complete their job functions."
+          ],
+          "gaps": [
+            "No formal account lifecycle management process covering creation, modification, suspension, and deletion of accounts across all account types.",
+            "No explicit prohibition of shared, group, or generic accounts as required by PCI DSS 8.2.",
+            "No specific policies for managing administrator or privileged account identification and authentication distinct from general users.",
+            "Password complexity requirements (minimum 6 characters, one letter and one number) fall short of PCI DSS requirements (minimum 12 characters or system maximum, with complexity).",
+            "No formal process for revoking access upon termination or role change beyond remote access accounts.",
+            "No defined periodic user access reviews or recertification processes.",
+            "No mention of multi-factor authentication (MFA) requirements for administrative or remote access.",
+            "No policy addressing management of inactive accounts beyond remote access (general 90-day inactivity requirement not addressed).",
+            "No procedures for managing third-party or vendor account identification and lifecycle."
+          ],
+          "recommendations": [
+            "Develop and document a comprehensive account lifecycle management procedure covering provisioning, modification, suspension, and deprovisioning for all user and administrator accounts.",
+            "Explicitly prohibit shared, group, and generic accounts and define exception processes where technically unavoidable.",
+            "Update password policies to align with current PCI DSS v4.0 requirements (minimum 12 characters, alphanumeric complexity).",
+            "Implement and document MFA requirements for all administrative access and remote network access.",
+            "Establish a formal process for immediate access revocation upon employee termination or role change, with defined SLAs.",
+            "Implement quarterly or semi-annual user access reviews with documented sign-off by account owners and management.",
+            "Define specific policies and controls for privileged/administrator accounts, including enhanced monitoring and separate authentication requirements.",
+            "Extend the inactive account policy to all account types with a 90-day inactivity threshold per PCI DSS requirements."
+          ]
+        },
+        {
+          "control_id": "PCI-8.4",
+          "control_name": "Multi-Factor Authentication (MFA)",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions 'one-time password authentication' for remote access and general 'person or entity authentication' procedures, but nowhere explicitly requires multi-factor authentication (MFA) using two or more distinct authentication factors. The policy lacks any formal definition, implementation requirements, or scope for MFA as required by PCI DSS 8.4.",
+          "evidence": [
+            "Remote access should be strictly controlled, using one-time password authentication.",
+            "For higher levels of risk, additional safeguards such as use of encryption technologies may be employed.",
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "Access Authentication: Adequate authentication and authorization functions must be provided, commensurate with appropriate use and the acceptable level of risk."
+          ],
+          "gaps": [
+            "No explicit requirement for multi-factor authentication (something you know, something you have, something you are) \u2014 MFA is never mentioned by name or definition.",
+            "No requirement for MFA for all non-console administrative access into the cardholder data environment (CDE).",
+            "No requirement for MFA for all remote network access originating from outside the network.",
+            "One-time password authentication alone does not constitute MFA unless combined with a second distinct factor, which is not specified.",
+            "No identification or scoping of the cardholder data environment (CDE) in relation to access controls.",
+            "No defined MFA technologies, implementation standards, or approved MFA methods.",
+            "No mention of MFA for third-party remote access, only general 'one-time password' controls."
+          ],
+          "recommendations": [
+            "Define and implement a formal MFA policy requiring at least two distinct authentication factors (e.g., something you know + something you have) for all non-console administrative access to the CDE.",
+            "Require MFA for all remote network access, including employees and third parties, and specify approved MFA technologies (e.g., hardware tokens, authenticator apps, push notifications).",
+            "Explicitly scope the cardholder data environment and map all access points requiring MFA enforcement.",
+            "Replace or supplement one-time password authentication with a true MFA solution that combines two or more independent authentication factors.",
+            "Document MFA configuration standards, including session timeout, re-authentication requirements, and resistance to replay attacks.",
+            "Implement monitoring and reporting to verify MFA is enforced on all in-scope access points and audit compliance regularly."
+          ]
+        },
+        {
+          "control_id": "PCI-10.2",
+          "control_name": "Audit Logs Capture User Activities",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions audit controls and periodic review of audit logs at a high level, but lacks specific requirements for logging individual user access to cardholder data, capturing specific event types, or implementing anomaly/suspicious activity detection as required by PCI 10.2.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports."
+          ],
+          "gaps": [
+            "No specific requirement to log all individual user access to cardholder data",
+            "No enumeration of required auditable events (e.g., access to cardholder data, actions by privileged users, invalid logical access attempts, changes to audit logs, authentication mechanisms, system-level objects)",
+            "No mention of capturing details such as user identification, event type, date/time, success/failure, origination, and identity/name of affected data or resource",
+            "No defined mechanism for anomaly or suspicious activity detection from audit logs",
+            "No specific reference to cardholder data or PCI DSS scope",
+            "No requirements for log integrity protection, retention periods, or centralized log management",
+            "No defined forensic analysis capability or procedures leveraging audit logs"
+          ],
+          "recommendations": [
+            "Develop a detailed audit logging policy that explicitly requires logging all individual user access to cardholder data environments, including specific event types mandated by PCI DSS 10.2 (e.g., all access to CHD, privileged user actions, invalid access attempts, changes to identification/authentication mechanisms)",
+            "Specify the minimum log entry fields: user ID, event type, date/time, success/failure indication, origination of event, and identity of affected data/system/resource",
+            "Implement automated anomaly and suspicious activity detection mechanisms (e.g., SIEM) with defined alerting thresholds and response procedures",
+            "Establish log integrity controls such as tamper-evident logging, access restrictions on log files, and defined retention periods (minimum 12 months with 3 months immediately available per PCI DSS)",
+            "Define forensic analysis procedures that leverage audit logs for incident investigation and post-incident review"
+          ]
+        },
+        {
+          "control_id": "PCI-10.6",
+          "control_name": "Time Synchronization Mechanisms",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 0,
+          "score_rationale": "The policy contains no mention of time synchronization technology, NTP/PTP protocols, consistent time sources, or protection of time data from unauthorized modification. None of the excerpts address any aspect of this control requirement.",
+          "evidence": [],
+          "gaps": [
+            "No mention of time synchronization technology (e.g., NTP, PTP) being deployed across systems",
+            "No requirement for systems to synchronize to a consistent and authoritative time source",
+            "No policy for ensuring time data accuracy and correctness across all systems",
+            "No controls specified for protecting time data from unauthorized modification",
+            "No procedures for monitoring or alerting on time synchronization failures or drift",
+            "No designation of authoritative internal time servers or reference to external time sources"
+          ],
+          "recommendations": [
+            "Develop and implement a formal time synchronization policy requiring all systems to use NTP or equivalent technology synchronized to an authoritative, industry-accepted time source (e.g., stratum 1 or stratum 2 NTP servers)",
+            "Document specific configurations for time synchronization including designated internal time servers, acceptable time drift thresholds, and fallback time sources",
+            "Implement access controls and integrity protections on time data and time synchronization settings to prevent unauthorized modification (e.g., restrict NTP configuration changes to authorized administrators only)",
+            "Establish monitoring and alerting mechanisms to detect time synchronization failures, significant clock drift, or unauthorized changes to time settings",
+            "Include time synchronization verification in regular audit and compliance review processes, with defined metrics for acceptable time accuracy"
+          ]
+        },
+        {
+          "control_id": "PCI-10.7",
+          "control_name": "Failures Detected and Reported",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to detecting, preventing, and responding to system failures and security incidents, but lacks specific provisions for detecting failures of critical security controls, prompt alerting/reporting mechanisms, and the use of log management tools to facilitate log reviews as required by PCI 10.7.",
+          "evidence": [
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "System failures - System failures include network failure, interdependency risk, interface failure, hardware failure, software failure, or internal telecommunication failure.",
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes."
+          ],
+          "gaps": [
+            "No specific requirement to detect failures of critical security controls (e.g., firewalls, IDS/IPS, antivirus, access controls, audit logging, network segmentation)",
+            "No mention of automated alerting or prompt notification mechanisms when critical security controls fail",
+            "No reference to log management tools or SIEM solutions to facilitate log reviews",
+            "No defined response procedures or timelines specifically for security control failures",
+            "No defined metrics or monitoring for ensuring critical security controls remain operational",
+            "No identification or enumeration of which security controls are considered 'critical' and must be monitored for failure"
+          ],
+          "recommendations": [
+            "Develop and document a comprehensive list of critical security controls that must be continuously monitored for failures (e.g., firewalls, IDS/IPS, FIM, antivirus, audit logging, access controls, network segmentation)",
+            "Implement automated alerting mechanisms (e.g., SIEM, monitoring tools) that immediately detect and notify appropriate personnel when a critical security control fails",
+            "Deploy and document the use of log management tools (e.g., SIEM) to centralize, correlate, and facilitate regular review of security logs",
+            "Define specific response procedures with timeframes for investigating and remediating critical security control failures",
+            "Establish escalation procedures and accountability for prompt response to detected failures, including documentation of incidents and resolutions",
+            "Include regular testing of failure detection mechanisms as part of periodic evaluation processes"
+          ]
+        },
+        {
+          "control_id": "PCI-12.1",
+          "control_name": "Comprehensive Information Security Policy",
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy demonstrates a comprehensive information security policy covering multiple domains (administrative, technical, physical safeguards, access management, incident response, contingency planning, security awareness) with a defined annual review process conducted by a designated Coordinator. However, it lacks specific metrics for measuring policy effectiveness and evidence of continuous improvement mechanisms beyond the annual review cycle.",
+          "evidence": [
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "Effective May 3, 2023. This Written Information Security Policy supersedes and replaces all prior versions.",
+            "Provider established an Information Security Program (the \"Program\") to assure compliance with applicable laws. As required by law, the Program provides for the security and confidentiality of personal identifying information or sensitive personal information collected, protects against anticipated threats or hazards to the security or integrity of such information, and protects against unauthorized access to or use of such information.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards."
+          ],
+          "gaps": [
+            "No explicit mention of PCI DSS or cardholder data protection requirements \u2014 the policy is framed around general privacy/information security law compliance rather than payment card industry standards.",
+            "No defined metrics or KPIs for measuring the effectiveness of the information security policy.",
+            "No evidence of a formal version control or change log documenting specific revisions made during annual reviews.",
+            "No mention of how the policy is disseminated to all personnel or how acknowledgment of the policy is tracked to ensure it is 'known' by all relevant parties.",
+            "The policy lacks explicit reference to all PCI DSS-required policy topics such as encryption, network security, vulnerability management, and logging/monitoring as formal policy components."
+          ],
+          "recommendations": [
+            "Explicitly incorporate PCI DSS requirements and cardholder data environment (CDE) scope into the information security policy framework.",
+            "Implement a formal version control mechanism with a documented change log that records what was reviewed, what changed, and approval signatures for each annual review cycle.",
+            "Establish a policy acknowledgment process requiring all personnel to confirm they have read and understood the policy, with tracking and reporting capabilities.",
+            "Define measurable KPIs for policy compliance (e.g., percentage of staff who completed policy acknowledgment, number of policy exceptions, timeliness of annual reviews) and report on them periodically.",
+            "Expand the policy to explicitly address all PCI DSS Requirement 12 sub-topics including acceptable use of technologies, encryption standards, network security, and vulnerability management."
+          ]
+        },
+        {
+          "control_id": "PCI-12.3",
+          "control_name": "Risks Identified, Evaluated, and Managed",
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal risk assessment process with identified risk categories, designated responsibility (Coordinator), annual review cycles, and requirements for implementing safeguards based on assessed risks. However, it lacks specific mention of the cardholder data environment (CDE), PCI DSS-specific risk methodology, defined risk ranking/scoring metrics, and evidence of continuous monitoring or measurement against defined KPIs.",
+          "evidence": [
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "The Risk Assessment Process identifies various events or threats within the department that could negatively affect the institution strategically or operationally. Management should evaluate the likelihood of various events and rank the possible impact.",
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "The risk assessment will be conducted by personnel or counsel with sufficient expertise, and should (at a minimum) include consideration of any risks, current safeguards to manage those risks, and an analysis of Information protection in each relevant aspect of Provider's operations.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Each department is responsible for maintaining an active risk assessment policy."
+          ],
+          "gaps": [
+            "No explicit reference to the cardholder data environment (CDE) or PCI DSS scope; risk assessment is framed around generic 'Information' rather than cardholder data specifically.",
+            "No defined risk assessment methodology or framework (e.g., quantitative/qualitative scoring criteria, risk matrices, or risk appetite/tolerance thresholds) as required by PCI DSS 12.3.",
+            "No documentation of a formal risk register or requirement to maintain one for tracking identified risks and their treatment status.",
+            "No mention of targeted risk assessments upon significant changes to the environment, as required by PCI DSS 12.3.2.",
+            "No defined metrics or KPIs for measuring the effectiveness of the risk management program.",
+            "Departments have discretion to decide whether safeguards are adequate, which lacks governance rigor and centralized oversight for PCI compliance."
+          ],
+          "recommendations": [
+            "Explicitly scope the risk assessment process to include the cardholder data environment (CDE) and all systems that store, process, or transmit cardholder data, as required by PCI DSS.",
+            "Adopt and document a formal risk assessment methodology (e.g., NIST SP 800-30, ISO 27005, or FAIR) with defined risk scoring criteria, likelihood/impact scales, and risk acceptance thresholds.",
+            "Implement and maintain a formal risk register that tracks identified risks, risk owners, treatment plans, residual risk levels, and remediation timelines.",
+            "Add a requirement for targeted risk assessments upon significant environmental changes (e.g., new system deployments, infrastructure changes, mergers) per PCI DSS 12.3.2.",
+            "Establish centralized governance over risk treatment decisions rather than leaving adequacy determinations to individual department discretion.",
+            "Define measurable KPIs for the risk management program and report them to senior leadership at defined intervals to move toward a managed maturity level."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-19T19:56:25.458102",
+  "status": "completed"
+}

@@ -1,0 +1,233 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : Scott & Scott Written-Information-Security-Policy.pdf
+Assessment JSON: grc_report_102296c8.json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-07-02 19:01 UTC
+Frameworks     : cmmc
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.839 / 1.000  (Good)
+================================================================================
+Controls evaluated: 20
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.867  [#################...]  Good
+  Evidence Relevance      0.624  [############........]  Needs Improvement
+  Score Consistency       0.827  [#################...]  Good
+  Gap Completeness        0.840  [#################...]  Good
+  Recommendation Quality  0.875  [##################..]  Good
+  Evidence Groundedness   1.000  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: Cybersecurity Maturity Model Certification
+Quality Score: 0.839  [#################...]  Good
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.867  [#################...]
+  Evidence Relevance      0.624  [############........]
+  Score Consistency       0.827  [#################...]
+  Gap Completeness        0.840  [#################...]
+  Recommendation Quality  0.875  [##################..]
+  Evidence Groundedness   1.000  [####################]
+
+  Family: Access Control  (4 controls)  Quality: 0.838  Good
+  --------------------------------------------------------------------------------
+  AC.L1-3.1.1  |  Authorized Access Control  |  Maturity: 3 (Defined)  |  Quality: 0.855 (Good)
+    Faithfulness              0.820  The rationale and gaps are largely grounded in the evidence quotes, but the gap referencing 'GSM phones' as the only device authorization mention appears to derive from context not present in the cited evidence quotes, and the claim about 'software programs' being 'briefly mentioned' is a slight overstatement given evidence [5] explicitly references software programs with access rights.
+    Evidence Relevance        0.880  The majority of evidence quotes directly address authorization, access control, user identification, authentication, and least privilege — all core to AC.L1-3.1.1 — though some quotes (e.g., [1], [3]) are somewhat procedural/administrative rather than demonstrating implemented technical controls for limiting access to specific transaction types.
+    Score Consistency         0.800  A score of 3 is reasonably consistent with the evidence, which shows documented policies covering most control elements (user authorization, least privilege, unique IDs, authentication) but lacks device-level controls, transaction-type definitions, and process/service account coverage, justifying a defined but not fully managed level.
+    Gap Completeness          0.780  The gaps are largely accurate and cover important missing elements such as device authorization, transaction/function definitions, service accounts, and access metrics; however, the gap about RBAC may partially contradict evidence [2] and [7] which imply a job-function-based access model, and no gap addresses the absence of enforcement or technical implementation evidence beyond policy documentation.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to identified gaps — including RBAC framework implementation, device authorization policy, service account management, access review cycles, and an access control matrix — with sufficient detail to guide remediation rather than offering generic boilerplate advice.
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+  AC.L2-3.1.3  |  Control CUI Flow  |  Maturity: 1 (Initial)  |  Quality: 0.817 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect what the evidence does and does not show; the evidence quotes only address general transmission security and access authorization, and the rationale correctly notes the absence of CUI-specific flow control language without overstating or contradicting what the evidence says.
+    Evidence Relevance        0.350  The cited quotes address generic transmission security, access authorization, and encryption concepts but none specifically address CUI flow control, security policy filters, or protected processing domains, making them only peripherally related to this control's requirements.
+    Score Consistency         0.850  A score of 1/5 is appropriate given that the evidence only shows generic, tangentially related policy language with no CUI-specific flow control mechanisms, aligning well with the numerous substantive gaps identified.
+    Gap Completeness          0.880  The gaps are thorough and cover all major requirements of the control—CUI identification, flow policy, security policy filters, protected processing domains, approved authorizations framework, and cross-boundary controls—though monitoring/logging of CUI flows could have been listed as a gap rather than only appearing in recommendations.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete examples such as DLP tools, deep packet inspection, network segmentation, data flow diagrams, and boundary protection mechanisms, with no generic boilerplate filler.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  AC.L2-3.1.5  |  Least Privilege  |  Maturity: 1 (Initial)  |  Quality: 0.850 (Good)
+    Faithfulness              0.920  The rationale accurately reflects that the evidence quotes contain only general access control language with no explicit mention of least privilege or privileged accounts, and the gaps do not contradict anything stated in the evidence quotes.
+    Evidence Relevance        0.550  The quotes address general workforce access, authorization, and role-based access concepts that are tangentially related to least privilege, but none specifically address privileged accounts, security functions, or the principle of least privilege as required by this control, making them only marginally relevant.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only generic access control language with no explicit least privilege implementation, though a score of 1 versus 0 is defensible since some foundational access authorization concepts are present.
+    Gap Completeness          0.880  The gaps are comprehensive and accurately capture the missing control requirements including least privilege enforcement, privileged account identification, monitoring, security function restrictions, and periodic review, though they could also mention the gap around separation of duties for privileged functions as a distinct item.
+    Recommendation Quality    0.900  The recommendations are specific, actionable, and directly tied to each identified gap, including concrete examples such as PAM tools, quarterly review cycles, just-in-time access, and defined privileged role categories, with no generic boilerplate that is unrelated to the gaps.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  AC.L2-3.1.12  |  Control Remote Access  |  Maturity: 2 (Developing)  |  Quality: 0.828 (Good)
+    Faithfulness              0.850  The rationale and gaps are mostly grounded in the evidence; the claim that encryption is mentioned 'only generically' is supported by evidence [5] and [6], and the absence of monitoring is not contradicted by any quote, though evidence [4] does imply some security awareness about transmission that the rationale slightly underplays.
+    Evidence Relevance        0.650  Several quotes (e.g., [2], [3], [7]) address remote access policy context but are only peripherally related to the control's core requirements of monitoring sessions and employing cryptographic mechanisms, while [5] and [6] are generic encryption references not specific to remote access sessions.
+    Score Consistency         0.800  A score of 2 is reasonable given that the evidence shows basic remote access controls and general encryption mentions but lacks specific monitoring requirements and explicit cryptographic mandates for remote sessions, reflecting a partial/ad-hoc implementation level.
+    Gap Completeness          0.820  The gaps comprehensively cover the two main control requirements (monitoring and cryptographic protection) and extend to session controls and tooling, though the gap about 'metrics and accountability mechanisms' is somewhat vague and less directly tied to the control's explicit requirements.
+    Recommendation Quality    0.850  Recommendations are specific and actionable, directly addressing each identified gap with concrete examples (TLS 1.2+, IPsec VPN, session timeouts), though the last recommendation on metrics and audits is slightly generic and less tightly tied to the specific control requirement.
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+
+  Family: Audit and Accountability  (2 controls)  Quality: 0.846  Good
+  --------------------------------------------------------------------------------
+  AU.L2-3.3.1  |  System Auditing  |  Maturity: 1 (Initial)  |  Quality: 0.845 (Good)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence shows — high-level mentions of audit controls and login monitoring without specifics — and the gaps correctly identify absences not contradicted by the quoted evidence, though the claim about 'no procedures for monitoring' is slightly in tension with evidence quote [2] which does reference monitoring login attempts and reporting discrepancies.
+    Evidence Relevance        0.720  Evidence quotes [1] and [2] are directly relevant to system auditing, but quote [3] about detecting/preventing attacks is tangentially related and does not specifically address audit log creation or retention, making it only partially on-topic for this control.
+    Score Consistency         0.800  A score of 1 is reasonably consistent with the thin evidence — the policy acknowledges audit controls conceptually and mentions login monitoring but lacks any operational specifics on log creation, retention, or analysis — though a score of 2 might also be defensible given that two quotes do touch on relevant audit concepts.
+    Gap Completeness          0.820  The gaps are comprehensive and cover the major requirements of AU.L2-3.3.1 (event types, retention, log protection, review procedures, content requirements, investigation process), though the gap claiming 'no procedures for monitoring log-in attempts' is partially contradicted by evidence quote [2], and some gaps (centralized log management, SIEM) go beyond the strict control requirement.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap — including concrete examples like retention periods (90 days/1 year), required log fields, and SIEM implementation — making them genuinely useful rather than generic boilerplate.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  AU.L2-3.3.2  |  User Accountability  |  Maturity: 2 (Developing)  |  Quality: 0.847 (Good)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence quotes state—unique IDs, audit controls, log review, and authentication are present—and the gaps correctly identify what is absent, though the claim about 'no formal mechanism for using audit trail evidence in disciplinary proceedings' is slightly overstated given evidence [5] explicitly mentions sanctions against non-compliant workforce members.
+    Evidence Relevance        0.780  Most quotes (unique user ID, audit controls, log review, authentication) are directly relevant to user accountability and traceability, though evidence [6] about monitoring for 'security and network maintenance purposes' is only tangentially related to individual user accountability and evidence [5] on sanctions is a peripheral supporting element.
+    Score Consistency         0.750  A score of 2 is reasonable given that foundational elements (unique IDs, audit controls, log review, authentication) exist but explicit traceability requirements, logging specifics, and end-to-end accountability procedures are absent; however, the presence of four directly relevant foundational controls could arguably support a score of 3, making 2 slightly conservative.
+    Gap Completeness          0.850  The gaps are comprehensive and well-targeted, covering the key missing elements (explicit traceability mandate, shared account prohibition, detailed logging requirements, cross-system correlation, retention periods, and formal accountability proceedings), though the gap about sanctions mechanisms is partially contradicted by evidence [5] and could have been more precisely scoped.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to each identified gap—including concrete examples like SIEM, PAM with session recording, specific log event types, and a defined retention period—making them clearly implementable and well-tied to the control's requirements.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+
+  Family: Configuration Management  (2 controls)  Quality: 0.898  Good
+  --------------------------------------------------------------------------------
+  CM.L2-3.4.1  |  System Baselining  |  Maturity: 1 (Initial)  |  Quality: 0.813 (Good)
+    Faithfulness              0.950  The rationale accurately characterizes the evidence quotes as tangential references to hardware tracking and media controls rather than formal baseline configuration management, and the gaps do not contradict any of the cited evidence — all claims are well-grounded in what the quotes actually state.
+    Evidence Relevance        0.300  The three cited quotes address hardware/media movement tracking, device and media controls, and workstation use policies — none of these directly address baseline configuration establishment, software/firmware inventories, or lifecycle-based configuration management as required by CM.L2-3.4.1, making them only peripherally relevant.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only tangential, loosely related policy elements with no substantive coverage of baseline configuration management, aligning well with a 'minimal/ad hoc' maturity level.
+    Gap Completeness          0.880  The gaps comprehensively cover the key requirements of the control — baseline establishment, lifecycle integration, comprehensive inventory, and change/deviation tracking — though they could more explicitly call out firmware-specific inventory gaps and documentation management as distinct items.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly tied to each identified gap, including concrete measures like a Configuration Control Board, SDLC-phase-specific baseline reviews, and automation tooling, with no generic boilerplate that is disconnected from the gaps.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  CM.L2-3.4.2  |  Security Configuration Enforcement  |  Maturity: 0 (Not Implemented)  |  Quality: 0.983 (Excellent)
+    Faithfulness              1.000  With no evidence quotes provided, the rationale and gaps make no claims that could be contradicted by evidence; all assertions are appropriately scoped to the absence of relevant policy content, making the assessment internally faithful.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is consistent and appropriate given that the policy apparently contains no content relevant to security configuration enforcement for this control.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with the complete absence of any evidence quotes or policy content addressing security configuration baselines, enforcement mechanisms, or related processes.
+    Gap Completeness          0.950  The gaps comprehensively cover the major requirements of CM.L2-3.4.2 including baseline definition, documentation, enforcement mechanisms, industry benchmarks, review processes, and roles; a minor omission is the lack of explicit mention of configuration deviation/exception handling processes, but overall coverage is thorough.
+    Recommendation Quality    0.950  Recommendations are specific, actionable, and directly tied to each identified gap, citing concrete tools (SCCM, Ansible, CIS Benchmarks, DISA STIGs) and processes; they are well-structured and appropriately tailored to the control's requirements rather than being generic boilerplate.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+
+  Family: Identification and Authentication  (3 controls)  Quality: 0.833  Good
+  --------------------------------------------------------------------------------
+  IA.L1-3.5.1  |  Identification  |  Maturity: 3 (Defined)  |  Quality: 0.828 (Good)
+    Faithfulness              0.820  The rationale's claim that the policy 'covers most core requirements' is partially supported by the evidence, but the assertion about 'access management policies' covering authentication is a mild overreach since evidence quotes [3] and [4] address authorization rather than identification/authentication specifically; the gaps are not contradicted by any evidence and are logically derived from what is absent.
+    Evidence Relevance        0.720  Quotes [1] and [2] are directly relevant to user identification and authentication requirements, but quotes [3] and [4] address access authorization policies rather than identification of users, processes, or devices, making them only tangentially related to the specific control requirement.
+    Score Consistency         0.780  A score of 3 is reasonable given that the policy addresses unique user identifiers and authentication procedures but lacks coverage of process/device identification and lifecycle management; however, the evidence base is relatively thin (two directly relevant quotes) and the five identified gaps suggest a score closer to 2-3 is defensible, making 3 slightly generous but not unreasonable.
+    Gap Completeness          0.800  The gaps comprehensively cover the missing elements for processes, devices, lifecycle management, and identifier standards, but the fifth gap about metrics and monitoring, while valid for higher maturity, is not strictly a core requirement of the IA.L1-3.5.1 control and slightly inflates gap scope beyond the control's baseline mandate.
+    Recommendation Quality    0.850  Recommendations are specific and directly mapped to each identified gap, including concrete examples such as MAC address registration, naming conventions, and periodic access reviews, making them actionable and well-targeted rather than generic boilerplate.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  IA.L2-3.5.3  |  Multifactor Authentication  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.780  Most rationale claims are supported by the evidence (OTP mention, lack of explicit MFA, generic authentication reference), but the gap about 'Password policy (6 characters, 90-day rotation)' is asserted without any corresponding evidence quote to substantiate those specific details, making it an unsupported factual claim.
+    Evidence Relevance        0.550  Evidence [1] about one-time password remote access has marginal relevance to MFA, but Evidence [2] (encryption as a safeguard) and Evidence [3] (generic authentication definition) are only tangentially related to the specific MFA requirement for privileged and non-privileged account access and do not directly address the control's core requirement.
+    Score Consistency         0.820  A score of 1 is reasonably consistent with the evidence, which shows only a weak indirect reference to a potential MFA-adjacent mechanism (OTP) and no explicit MFA mandate, policy definition, or account-type differentiation, warranting a minimal maturity score.
+    Gap Completeness          0.800  The gaps comprehensively cover the control's requirements — missing MFA mandate, no privileged/non-privileged distinction, no local access coverage, and no network access for non-privileged accounts — though the password policy gap, while potentially valid, is not grounded in the provided evidence and feels out of scope for this specific control.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and well-tied to the identified gaps, including defining MFA factors, naming concrete technologies, differentiating account types, and referencing NIST SP 800-63B, though the password policy recommendation is only loosely connected to the MFA control requirement.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  IA.L2-3.5.7  |  Password Complexity  |  Maturity: 1 (Initial)  |  Quality: 0.870 (Good)
+    Faithfulness              0.900  The rationale and gaps derive directly from the evidence quotes; claims about weak length (6 chars), minimal complexity, no change-of-characters requirement, and no automated tools are all supported by or consistent with the cited evidence, with no assertions contradicted by the quotes, though the gap about 'no prohibition against breached password lists' goes slightly beyond what the evidence can confirm or deny.
+    Evidence Relevance        0.720  Quote [1] is directly relevant to password complexity, quote [2] addresses password change frequency but is only tangentially relevant to 'change of characters' requirements, and quote [3] is vague boilerplate that does not substantively address the specific control requirements around complexity or automated tools.
+    Score Consistency         0.880  A score of 1/5 is well-justified given that the policy has a critically weak length requirement, minimal complexity rules, no change-of-characters requirement, and no mention of automated tools — the evidence shows bare minimal effort that aligns with an initial/ad-hoc maturity level.
+    Gap Completeness          0.850  The gaps comprehensively cover the control's key requirements — change of characters, automated tools, length, complexity, and breached password lists — though the gap about password history/reuse prevention is listed as a recommendation rather than a gap, and the breached-password-list gap is a reasonable inference but not strictly derivable from the evidence.
+    Recommendation Quality    0.870  Recommendations are specific, actionable, and directly tied to identified gaps, with concrete references to standards (NIST SP 800-63B, CMMC) and specific thresholds (12-14 characters, 4 changed characters, 24-password history), though the passphrase alternative slightly dilutes focus without being tied to a specific gap.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Incident Response  (2 controls)  Quality: 0.849  Good
+  --------------------------------------------------------------------------------
+  IR.L2-3.6.1  |  Incident Handling  |  Maturity: 2 (Developing)  |  Quality: 0.845 (Good)
+    Faithfulness              0.820  The rationale and gaps are largely grounded in the evidence; however, the claim that 'recovery' is absent from incident handling is slightly overstated since Evidence [2] mentions 'correct' and Evidence [3] references 'contingency planning,' which partially implies recovery — the assessment acknowledges this only in a qualified way, keeping faithfulness reasonably high but not perfect.
+    Evidence Relevance        0.720  Evidence [1] and [2] are directly relevant to incident handling, Evidence [3] partially addresses detection and response, but Evidence [4] relates to contingency/disaster recovery rather than operational incident handling, making it tangentially relevant at best and slightly diluting the evidence set.
+    Score Consistency         0.800  A score of 2 is reasonable given that the evidence shows partial, high-level acknowledgment of incident-handling concepts without explicit coverage of all six required phases, aligning well with a 'policy exists but is incomplete/informal' maturity level.
+    Gap Completeness          0.850  The gaps are thorough and cover most of the control's required elements (preparation, analysis, user response, roles, metrics), though the gap regarding 'detection' is somewhat underemphasized given the evidence partially references detection in [2] and [3], and the gaps could more precisely distinguish what is merely implicit versus entirely absent.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly map to the identified gaps (e.g., IRP with six phases, IRT with escalation paths, tabletop exercises, forensic procedures, metrics/KPIs), with only minor redundancy between the IRP development recommendation and the phase-specific ones.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  IR.L2-3.6.2  |  Incident Reporting  |  Maturity: 1 (Initial)  |  Quality: 0.853 (Good)
+    Faithfulness              0.850  The rationale and gaps accurately reflect what the evidence quotes state and do not assert facts contradicted by the evidence; however, the gap noting 'Periodic Coordinator reports address program status, not specific incident reporting' is a fair inference from evidence [3], and all major claims trace back to the cited quotes without fabrication.
+    Evidence Relevance        0.720  Evidence [1] is directly relevant to incident documentation requirements, but evidence [2] (Coordinator reports to CEO) and evidence [3] (periodic program status reports) are only tangentially related to incident reporting as defined by the control, making roughly a third of the evidence only loosely on-topic.
+    Score Consistency         0.800  A score of 1 is reasonable given that the evidence shows only high-level policy intent (documentation mentioned, no tracking, no designated authorities, no timelines, no external reporting) with no substantive procedural implementation, which aligns with an initial/ad-hoc maturity level.
+    Gap Completeness          0.880  The gaps comprehensively cover the major missing elements—tracking mechanisms, internal/external designated authorities, reporting timelines, escalation, classification criteria, and external regulatory obligations—with no gaps contradicted by the evidence and no obvious omissions, though a gap around incident response roles/responsibilities coordination could have been noted.
+    Recommendation Quality    0.870  Recommendations are specific, actionable, and directly tied to each identified gap (e.g., 72-hour DoD reporting timeline, DIBNet/CISA notification, incident tracking log with defined fields), avoiding generic boilerplate and providing concrete implementation guidance aligned to the control's requirements.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Risk Assessment  (2 controls)  Quality: 0.836  Good
+  --------------------------------------------------------------------------------
+  RA.L2-3.11.1  |  Risk Assessments  |  Maturity: 3 (Defined)  |  Quality: 0.850 (Good)
+    Faithfulness              0.820  Most rationale claims are grounded in the evidence quotes, but the gap claiming 'no mention of risk to organizational operations or individuals' is partially contradicted by Evidence [1] which explicitly references threats that 'negatively affect the institution strategically or operationally,' and Evidence [6] references confidentiality, integrity, and availability — making that gap somewhat overstated.
+    Evidence Relevance        0.880  The majority of quotes directly address periodic risk assessment activities, scope, and safeguard implementation relevant to the control requirement, though Evidence [5] about designing and maintaining safeguards is more about risk treatment than risk assessment itself and is only tangentially relevant.
+    Score Consistency         0.800  A score of 3 is reasonably consistent with evidence showing a structured, documented risk assessment process with annual review cycles and defined responsibilities, tempered by legitimate gaps around CUI specificity, scoring methodology, and metrics, though some gaps (e.g., risk to operations/individuals) are partially contradicted by evidence, suggesting the score could arguably be slightly higher.
+    Gap Completeness          0.750  The gaps cover important missing elements such as CUI specificity, risk scoring methodology, and assessment frequency, but the gap claiming no mention of risk to organizational operations or individuals is contradicted by Evidence [1], reducing accuracy; additionally, the gaps do not address the absence of evidence of actual risk assessment execution or documentation of results, which is a meaningful omission for a periodic-assessment control.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and well-matched to the identified gaps — referencing NIST SP 800-30, defining CUI scope, setting concrete frequencies, and establishing centralized oversight — though the recommendation to address risk to operations/individuals is weakly tied to a gap that the evidence partially contradicts, slightly reducing overall quality.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+  RA.L2-3.11.2  |  Vulnerability Scan  |  Maturity: 1 (Initial)  |  Quality: 0.822 (Good)
+    Faithfulness              0.850  The rationale accurately characterizes what the evidence quotes state and does not fabricate unsupported claims; the minor deduction is because asserting the policy 'never explicitly defines a vulnerability scanning program' is a fair inference, but evidence quote [3] about periodic network auditing and [4] about assessing vulnerabilities are slightly understated in the rationale as potentially overlapping with the control requirement.
+    Evidence Relevance        0.550  Quotes [1] (patch currency) and [2] (email/virus scanning) are only tangentially related to vulnerability scanning of organizational systems and applications, while [3] (periodic network audits) and [4] (risk/vulnerability assessment) are more relevant but still do not directly address the specific control requirement; overall the evidence set is weakly relevant.
+    Score Consistency         0.800  A score of 1 is broadly consistent with the evidence — the policy shows only indirect, implicit indicators of vulnerability management with no formal scanning program defined — though some might argue a score of 2 is defensible given that quotes [3] and [4] do reference periodic auditing and vulnerability assessment activities.
+    Gap Completeness          0.850  The gaps comprehensively cover the core control requirements (periodic schedules, ad hoc scanning for new vulnerabilities, tools/methodologies, remediation tracking) and include useful specifics like authenticated vs. unauthenticated scans, though none of the identified gaps are contradicted by the evidence and no obvious requirement is missed.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap, including concrete examples such as scan frequencies, severity-based remediation timelines, and integration with the existing risk assessment process referenced in evidence quote [4].
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: System and Communications Protection  (2 controls)  Quality: 0.814  Good
+  --------------------------------------------------------------------------------
+  SC.L1-3.13.1  |  Boundary Protection  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.820  The rationale and gaps are largely grounded in the evidence, accurately noting the absence of specific boundary protection mechanisms; however, the gap claiming transmission security is 'optional (may be implemented)' is not directly supported by any of the quoted evidence, which does not include the word 'may', introducing an unsupported assertion.
+    Evidence Relevance        0.550  Quotes [1] and [2] have partial relevance to boundary protection, but quotes [3], [4], and [5] relate to encryption, data integrity, and risk assessment respectively — these are tangential to the specific control requirement of monitoring and controlling communications at external and key internal boundaries.
+    Score Consistency         0.800  A score of 1 out of 5 is reasonably consistent with the evidence, which shows only general, indirect references to network security with no specific boundary protection mechanisms, justifying an initial/ad hoc maturity level.
+    Gap Completeness          0.780  The gaps are comprehensive and cover most key requirements of the control (firewalls, DMZs, traffic monitoring, segmentation, inbound/outbound control), but the claim about optional language is unsubstantiated by the evidence quotes, slightly undermining completeness accuracy.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to the identified gaps, including concrete examples like deny-all/permit-by-exception policies and network diagrams, though the recommendation to replace optional language lacks a direct textual anchor in the cited evidence.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  SC.L2-3.13.10  |  Cryptographic Key Management  |  Maturity: 0 (Not Implemented)  |  Quality: 0.828 (Good)
+    Faithfulness              0.950  The rationale accurately characterizes the evidence quotes as mentioning only encryption mechanisms and a recommendation to encrypt sensitive data, with no key management details, and the gaps correctly identify absent elements without contradicting anything in the evidence.
+    Evidence Relevance        0.250  The two quoted excerpts reference encryption in a generic sense but address neither cryptographic key management nor any element of the key lifecycle, making them tangentially related to the control at best and insufficient to directly support assessment of SC.L2-3.13.10.
+    Score Consistency         0.950  A score of 0 is well-justified given that the evidence contains absolutely no provisions addressing key generation, distribution, storage, rotation, revocation, or destruction, and a score of 0 correctly reflects the complete absence of key management policy content.
+    Gap Completeness          0.900  The gaps are comprehensive and accurately enumerate all major components of cryptographic key management required by the control (full lifecycle, standards references, roles, storage mechanisms), with no gaps contradicted by the evidence, though 'key usage controls' and 'audit/logging of key operations' could have been listed as a gap rather than only as a recommendation.
+    Recommendation Quality    0.920  Recommendations are specific, actionable, and directly mapped to each identified gap, referencing concrete standards (NIST SP 800-57, FIPS 140-2/3), technologies (HSMs), and organizational practices (separation of duties, key custodians), with minimal boilerplate.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+
+  Family: System and Information Integrity  (3 controls)  Quality: 0.813  Good
+  --------------------------------------------------------------------------------
+  SI.L1-3.14.1  |  Flaw Remediation  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect what the evidence quotes show — the quotes relate only to risk classification categories and malware detection, not flaw remediation processes — and no claims are contradicted by the evidence, though the malware detection quote slightly touches on detection which is marginally relevant.
+    Evidence Relevance        0.250  The cited evidence quotes are largely definitional/taxonomic risk categories (system failures, development problems) from a risk assessment context and a generic malware detection reference, none of which directly address the control's specific requirements of identifying, reporting, correcting flaws, or testing updates for effectiveness.
+    Score Consistency         0.850  A score of 1 is appropriate given that no dedicated flaw remediation or patch management process is evidenced in the retrieved policy excerpts, with only tangential references cited, which is consistent with a minimal/ad-hoc maturity level.
+    Gap Completeness          0.880  The gaps comprehensively cover the control's key requirements — timely identification, reporting, correction, testing of updates, SLAs, vulnerability tracking, and accountability — with no gaps contradicted by evidence, though firmware-specific testing nuances could be slightly more elaborated.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete examples such as severity-based timelines, non-production testing environments, scanning cadence, role assignments, and measurable metrics like mean time to patch.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  SI.L1-3.14.2  |  Malicious Code Protection  |  Maturity: 2 (Developing)  |  Quality: 0.828 (Good)
+    Faithfulness              0.820  The rationale and gaps are mostly grounded in the evidence; however, the claim about permissive language ('may be implemented,' 'possible safeguards') is not substantiated by any of the four quoted evidence excerpts, which are actually stated as imperatives ('Scan and filter,' 'Ensure that patches are current'), making that specific gap assertion unfaithful to the provided evidence.
+    Evidence Relevance        0.720  Quotes [1] and [2] are directly relevant to malicious code protection, but quotes [3] and [4] address general patch management rather than malicious code protection mechanisms specifically, making them only tangentially relevant to this control's core requirement.
+    Score Consistency         0.780  A score of 2 is reasonably consistent with the evidence showing fragmented, high-level references to malware protection without formal deployment requirements or update mechanisms, though the evidence does demonstrate some awareness of the control domain which supports a score above 1.
+    Gap Completeness          0.800  The gaps comprehensively cover missing deployment scope, update mechanisms, real-time scanning, and verification processes, but the gap about permissive language is not supported by the cited evidence and represents an inaccuracy, while the gaps otherwise capture the major omissions well.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to the identified gaps, including concrete details like defining maximum allowable update lag times and mandating centralized management, though the recommendation to replace permissive language is weakly tied to an unsupported gap.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  SI.L2-3.14.6  |  Security Alert Monitoring  |  Maturity: 1 (Initial)  |  Quality: 0.812 (Good)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as general/lacking specificity, and the gaps are mostly supported by what is absent from the evidence; however, evidence [4] does mention 'monitoring log-in attempts and reporting discrepancies' and evidence [1] references detecting attacks, which slightly undercuts claims that there is no detection process, though the characterization as informal/incomplete remains fair.
+    Evidence Relevance        0.620  Evidence [2] (audit log review) and [4] (monitoring log-in attempts, malicious software procedures) have partial relevance to the control, but evidence [1] is a high-level objective statement and evidence [3] (email scanning) addresses only a narrow subset of inbound traffic monitoring, making the overall evidence set only loosely aligned with continuous inbound/outbound communications traffic monitoring.
+    Score Consistency         0.780  A score of 1 is reasonably consistent with the weak, indirect evidence presented — the policy gestures toward monitoring concepts but lacks any formal continuous monitoring process — though the presence of four partially relevant quotes and explicit mentions of log monitoring and attack detection could arguably justify a score of 2.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements (continuous monitoring, outbound traffic, tooling, correlation, alerting/escalation, metrics), but the gap claiming 'no mention of monitoring outbound communications traffic' is fully accurate and well-identified; however, the list does not explicitly call out the absence of inbound network traffic monitoring beyond email, and some gaps (e.g., metrics/accountability) are slightly peripheral to the core control requirement.
+    Recommendation Quality    0.820  Recommendations are specific, actionable, and directly map to each identified gap (e.g., IDS/IPS and SIEM for continuous monitoring, outbound traffic monitoring for the outbound gap, defined escalation timelines for the alerting gap), though they remain somewhat technology-prescriptive without acknowledging that organizations may already have partial capabilities that need formalization rather than full deployment.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================

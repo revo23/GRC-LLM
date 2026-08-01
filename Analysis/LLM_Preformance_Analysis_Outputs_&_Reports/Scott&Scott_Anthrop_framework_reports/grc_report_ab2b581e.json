@@ -1,0 +1,672 @@
+{
+  "assessment_id": "ab2b581e-fd51-4d19-8b74-b8b7a87d5e52",
+  "document_id": "8ea77089821749aea91b9489524cdadf",
+  "document_name": "Scott & Scott Written-Information-Security-Policy.pdf",
+  "frameworks_assessed": [
+    "hipaa"
+  ],
+  "overall_posture_score": 1.77,
+  "framework_results": [
+    {
+      "framework_id": "hipaa",
+      "framework_name": "HIPAA Security Rule",
+      "overall_score": 1.77,
+      "family_scores": [
+        {
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 2.5,
+          "control_count": 8,
+          "weight": 1.4
+        },
+        {
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 1.76,
+          "control_count": 4,
+          "weight": 1.2
+        },
+        {
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 1.81,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Organizational Requirements",
+          "framework_id": "hipaa",
+          "average_score": 0.0,
+          "control_count": 1,
+          "weight": 1.1
+        },
+        {
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.2
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "164.308(a)(1)",
+          "control_name": "Security Management Process",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents the security management process with explicit language addressing prevention, detection, containment, and correction of security violations, as well as risk assessment and risk reduction measures. However, specific metrics, measurement processes, and evidence of continuous improvement beyond annual review are not demonstrated, keeping it at the 'Defined' level.",
+          "evidence": [
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level.",
+            "Appropriate sanctions against workforce members who fail to comply with security policies and procedures.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "The Risk Assessment Process identifies various events or threats within the department that could negatively affect the institution strategically or operationally. Management should evaluate the likelihood of various events and rank the possible impact.",
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations."
+          ],
+          "gaps": [
+            "No defined metrics or KPIs for measuring the effectiveness of the security management process (e.g., number of incidents, time to remediate, residual risk levels).",
+            "The risk assessment process lacks specificity regarding methodology, tools, or frameworks (e.g., NIST, OCTAVE) to ensure thoroughness and consistency.",
+            "No explicit mention of a formal risk register or documented risk treatment plans with assigned owners and timelines.",
+            "The policy uses permissive language such as 'may be implemented' and 'as appropriate' in several areas, which weakens enforceability.",
+            "No evidence of formal integration with an enterprise risk management framework or feedback loop from incident response findings back into the risk analysis."
+          ],
+          "recommendations": [
+            "Define specific metrics and KPIs (e.g., risk scores, remediation timelines, incident counts) for measuring and monitoring the security management process on an ongoing basis.",
+            "Adopt and document a formal risk assessment methodology (e.g., NIST SP 800-30) with standardized scoring criteria, and maintain a centralized risk register with risk owners and treatment deadlines.",
+            "Replace permissive language ('may be implemented') with mandatory language ('shall be implemented') to strengthen policy enforceability.",
+            "Establish a formal feedback loop where findings from security incidents, audit log reviews, and vulnerability assessments are fed back into the risk analysis to continuously update risk ratings and controls.",
+            "Document evidence of periodic risk assessment execution (e.g., completed assessment reports, meeting minutes) to demonstrate operational compliance beyond policy existence."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(2)",
+          "control_name": "Assigned Security Responsibility",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally designates an Information Security Program Coordinator responsible for developing, implementing, and overseeing the security program, with a defined reporting structure to the CEO. However, the policy does not name a specific individual, and lacks defined metrics or accountability mechanisms beyond annual review to monitor the effectiveness of this assignment.",
+          "evidence": [
+            "Provider will designate an Information Security Program Coordinator (\"Coordinator\") who will be primarily responsible for coordinating and overseeing the Program. The Coordinator will report to the Chief Executive Officer.",
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information.",
+            "The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations. The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards."
+          ],
+          "gaps": [
+            "No specific individual is named as the Coordinator; the policy only establishes the role in general terms.",
+            "No defined qualifications or competency requirements for the security official are specified.",
+            "No formal metrics or KPIs to measure the effectiveness of the Coordinator's responsibilities.",
+            "No explicit mention of HIPAA or the term 'security official' as required by 164.308(a)(2), though the functional equivalent is present."
+          ],
+          "recommendations": [
+            "Formally identify and document a specific named individual as the HIPAA Security Official (Coordinator) to satisfy the explicit identification requirement of 164.308(a)(2).",
+            "Define required qualifications, experience, and competencies for the Coordinator role.",
+            "Explicitly reference HIPAA Security Rule compliance as part of the Coordinator's responsibilities to ensure alignment with regulatory requirements.",
+            "Establish measurable performance metrics and accountability mechanisms for the security official's duties, including documented reporting cadence and escalation procedures."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(3)",
+          "control_name": "Workforce Security",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents workforce security policies covering authorization/supervision, access determination, and termination procedures, which aligns well with the HIPAA requirement. However, the language is largely aspirational ('may be implemented by one or all of the following') and lacks specific metrics, monitoring mechanisms, or evidence of operational enforcement.",
+          "evidence": [
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "Information access management. Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures that, based upon the entity's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process."
+          ],
+          "gaps": [
+            "The policy uses permissive language ('may be implemented by one or all of the following, as appropriate') rather than mandatory requirements for the addressable implementation specifications (authorization/supervision, workforce clearance, termination procedures).",
+            "No defined process or criteria for workforce clearance procedures \u2014 how background checks, role-based access decisions, or clearance levels are specifically determined.",
+            "No specific timelines for access termination upon workforce member separation or role change.",
+            "No defined metrics or monitoring mechanisms to measure the effectiveness of workforce security controls (e.g., periodic access reviews, recertification schedules).",
+            "The policy does not explicitly address non-employee workforce members such as contractors, volunteers, or trainees \u2014 it references only 'company employees.'"
+          ],
+          "recommendations": [
+            "Replace permissive language with mandatory requirements for all three implementation specifications (authorization/supervision, workforce clearance, and termination procedures), or formally document the rationale for not implementing any addressable specification.",
+            "Define specific workforce clearance procedures including background verification, role-based access criteria, and approval workflows before granting access to ePHI.",
+            "Establish mandatory timelines for access termination (e.g., immediate upon termination, within 24 hours for role changes) and document the process for retrieving access credentials and devices.",
+            "Implement periodic access reviews (e.g., quarterly or semi-annually) with documented recertification to verify that workforce members' access remains appropriate.",
+            "Expand the scope of workforce security to explicitly cover all workforce members as defined by HIPAA, including contractors, volunteers, trainees, and other non-employee persons under organizational control."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(4)",
+          "control_name": "Information Access Management",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges information access management as a requirement and mentions several relevant elements (granting access, authorization procedures, access rights), but lacks specific, detailed procedures for authorizing access to ePHI specifically, and the language is largely permissive ('may be implemented') rather than prescriptive, indicating incomplete implementation.",
+          "evidence": [
+            "Information access management. Policies and procedures for authorizing access to electronic Information that are consistent with applicable law and best practices related to information security.",
+            "Policies and procedures for granting access to electronic Information, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+            "Procedures for the authorization and/or supervision of company employees who work with electronic Information or in locations where it might be accessed;",
+            "Procedures to determine that the access of a company employee to electronic Information is appropriate.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends.",
+            "policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights."
+          ],
+          "gaps": [
+            "No explicit reference to ePHI or HIPAA-specific access management requirements; the policy uses generic 'Information' terminology that may not clearly map to HIPAA obligations.",
+            "The policy uses permissive language ('may be implemented') for key implementation specifications rather than defining mandatory, concrete procedures.",
+            "No defined role-based access control (RBAC) framework or formal access authorization workflow (e.g., who approves access, what criteria are used, documentation requirements).",
+            "No specific procedures for access establishment and modification as required by 164.308(a)(4)(ii)(C).",
+            "No mention of isolating healthcare clearinghouse functions as required by 164.308(a)(4)(ii)(A) if applicable.",
+            "No periodic access review or recertification process is explicitly defined with timelines or accountability.",
+            "No defined metrics or monitoring mechanisms to measure the effectiveness of access management controls."
+          ],
+          "recommendations": [
+            "Explicitly reference ePHI and HIPAA requirements within the information access management policy to ensure clear applicability.",
+            "Convert permissive 'may be implemented' language to mandatory 'shall be implemented' for required implementation specifications under 164.308(a)(4).",
+            "Develop and document a formal access authorization workflow that specifies who can request access, who approves it, what criteria are evaluated, and how approvals are documented.",
+            "Implement a role-based access control (RBAC) model with defined roles mapped to minimum necessary ePHI access levels.",
+            "Establish a formal access review and recertification process on a defined schedule (e.g., quarterly or semi-annually) with assigned accountability.",
+            "Create specific procedures for access establishment, modification, and revocation tied to workforce changes (onboarding, role changes, termination).",
+            "Define measurable metrics for access management effectiveness, such as tracking unauthorized access attempts, access review completion rates, and time-to-revoke for terminated employees."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(5)",
+          "control_name": "Security Awareness and Training",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges the requirement for a security awareness and training program covering all employees including management, and references the key addressable topics (malicious software, log-in monitoring, password management). However, the language is largely aspirational and lacks specifics on training frequency, delivery methods, content requirements, tracking completion, or measuring effectiveness.",
+          "evidence": [
+            "Security awareness and training. A security awareness and training program for all company employees (including management). This safeguard may be implemented by establishment of periodic security updates, procedures for guarding against, detecting, and reporting malicious software, procedures for monitoring log-in attempts and reporting discrepancies, and/or procedures for creating, changing, and safeguarding passwords.",
+            "The Coordinator will be responsible for ensuring that company staff is trained in the relevant legal requirements for handling and storing Information. The Coordinator will be responsible for maintaining a high level of awareness and sensitivity to safeguarding Information within all departments.",
+            "All employees that have access to Information or work with systems that handle Information should receive adequate training for handling and disposal of such Information.",
+            "Train any employees that have the ability to transfer funds on behalf of the business to follow the policy according to these procedures."
+          ],
+          "gaps": [
+            "No defined training frequency or schedule (e.g., annual, upon hire, upon role change) \u2014 only 'periodic security updates' is mentioned",
+            "No specific training curriculum or content requirements beyond high-level topic references",
+            "No mechanism for tracking training completion or maintaining training records",
+            "No metrics or KPIs to measure training program effectiveness",
+            "No requirement for role-based training tailored to different workforce member responsibilities",
+            "Password management procedures are referenced as a possibility ('may be implemented') rather than a requirement",
+            "Log-in monitoring training is described only as a potential implementation specification, not a defined process",
+            "No mention of phishing awareness or social engineering training despite cyber attack safeguards section"
+          ],
+          "recommendations": [
+            "Develop a formal training schedule specifying mandatory security awareness training upon hire, annually, and upon significant policy or system changes",
+            "Create documented training curricula that explicitly cover malicious software protection, log-in monitoring awareness, and password management best practices",
+            "Implement a training management system to track completion rates, send reminders, and maintain records of all workforce training",
+            "Define measurable effectiveness metrics such as phishing simulation click rates, training completion percentages, and post-training assessment scores",
+            "Change permissive language ('may be implemented') to mandatory language ('shall be implemented') for all addressable implementation specifications",
+            "Add role-based training modules for employees with elevated access or specific responsibilities (e.g., fund transfers, system administration)",
+            "Include periodic testing such as simulated phishing exercises to reinforce training and measure behavioral change"
+          ]
+        },
+        {
+          "control_id": "164.308(a)(6)",
+          "control_name": "Security Incident Procedures",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy explicitly acknowledges the requirement for security incident procedures and outlines high-level elements (identification, response, mitigation, documentation), but lacks detailed, actionable procedures such as incident classification, escalation paths, roles and responsibilities, notification timelines, and post-incident review processes.",
+          "evidence": [
+            "Security incident procedures. Policies and procedures to address security incidents. This safeguard will be implemented by identification and response to suspected or known security incidents; mitigation, to the extent practicable, of any harmful effects of security incidents that are known to the company; and documentation of security incidents and their outcomes.",
+            "Detecting, preventing and responding to attacks, intrusions, or other system failures (including data processing and telephone communication), as well as contingency planning and business continuity.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "Security breaches - Security breaches include external and internal security breaches, programming fraud, computer viruses, hacking, or denial of service attacks."
+          ],
+          "gaps": [
+            "No detailed incident response plan with defined phases (detection, analysis, containment, eradication, recovery, lessons learned)",
+            "No defined roles and responsibilities for incident response team members",
+            "No incident classification or severity levels defined",
+            "No escalation procedures or notification timelines specified",
+            "No specific procedures for reporting security incidents to affected individuals, HHS, or other required parties under HIPAA breach notification rules",
+            "No defined metrics or KPIs for measuring incident response effectiveness",
+            "No requirement for post-incident review or root cause analysis",
+            "No evidence of testing or exercising the incident response procedures"
+          ],
+          "recommendations": [
+            "Develop a comprehensive Incident Response Plan (IRP) with clearly defined phases: preparation, detection/analysis, containment, eradication, recovery, and post-incident activity",
+            "Establish an incident response team with clearly defined roles, responsibilities, and contact information",
+            "Define incident classification categories and severity levels with corresponding escalation procedures and response timeframes",
+            "Integrate HIPAA breach notification requirements into the incident procedures, including timelines for notifying individuals, HHS, and media as applicable",
+            "Implement metrics to track incident response performance (e.g., mean time to detect, mean time to respond, number of incidents by type)",
+            "Require formal post-incident reviews and document lessons learned to drive continuous improvement",
+            "Conduct regular tabletop exercises and simulations to test and refine the incident response procedures"
+          ]
+        },
+        {
+          "control_id": "164.308(a)(7)",
+          "control_name": "Contingency Plan",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges all five components of the contingency plan requirement (data backup, disaster recovery, emergency mode operations, testing, and criticality analysis), but the language is high-level and aspirational rather than defining specific, actionable procedures. Testing and criticality analysis are treated as optional ('may be implemented') rather than committed safeguards.",
+          "evidence": [
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence (for example, fire, vandalism, system failure, and natural disaster) that damages systems that contain electronic Information.",
+            "Procedures to create and maintain retrievable exact copies of electronic Information.",
+            "Procedures to restore any loss of data.",
+            "Procedures to enable continuation of critical business processes for protection of the security of electronic Information while operating in emergency mode",
+            "Procedures for periodic testing and revision of contingency plans.",
+            "Assessment of the relative criticality of specific applications and data in support of other contingency plan components.",
+            "Procedures that allow facility access in support of restoration of lost data under any disaster recovery plan or emergency mode operations plan in the event of an emergency."
+          ],
+          "gaps": [
+            "Testing and revision of contingency plans is presented as optional ('may be implemented') rather than a required, scheduled activity with defined frequency and success criteria.",
+            "Applications and data criticality analysis is also presented as optional ('may be implemented') rather than a committed requirement.",
+            "No specific data backup procedures are defined (e.g., backup frequency, storage locations, media types, encryption requirements, offsite/cloud storage).",
+            "No specific disaster recovery plan is documented with defined RTOs, RPOs, roles/responsibilities, or recovery procedures.",
+            "No emergency mode operations procedures are detailed beyond a general statement about continuation of critical business processes.",
+            "No defined metrics, accountability, or reporting mechanisms specific to contingency plan performance.",
+            "No evidence of actual testing results, lessons learned, or plan revision history."
+          ],
+          "recommendations": [
+            "Elevate testing/revision of contingency plans and applications criticality analysis from optional ('may') to required ('will') safeguards with defined frequencies (e.g., annual testing at minimum).",
+            "Develop and document a detailed Data Backup Plan specifying backup frequency, retention periods, storage locations (including offsite/cloud), encryption, and verification procedures.",
+            "Create a formal Disaster Recovery Plan with defined Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs), step-by-step recovery procedures, and assigned roles/responsibilities.",
+            "Document specific Emergency Mode Operations procedures that identify critical systems, manual workarounds, communication protocols, and criteria for entering and exiting emergency mode.",
+            "Conduct and document a formal Applications and Data Criticality Analysis that prioritizes systems containing ePHI and informs backup and recovery priorities.",
+            "Establish a testing schedule with documented test scenarios, results, and corrective actions to be fed back into plan revisions.",
+            "Assign specific accountability for contingency plan maintenance and define metrics (e.g., successful backup completion rate, RTO achievement in tests) to track effectiveness."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(8)",
+          "control_name": "Evaluation",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents the requirement for periodic technical and nontechnical evaluations and ties them to environmental or operational changes, and the program includes an annual review cycle. However, the policy lacks specific metrics, defined evaluation methodologies, and documented accountability for tracking evaluation outcomes.",
+          "evidence": [
+            "Evaluation. Performance of periodic technical and nontechnical evaluations in response to any environmental or operational changes affecting the security of electronic Information, that establishes the extent to which the company's security policies and procedures continue to meet the requirements of applicable law or otherwise remain effective.",
+            "This Program will be reviewed and adjusted periodically. The Coordinator will review the Program annually to ensure ongoing compliance, as well as consistency with other existing and future laws and regulations.",
+            "The Coordinator will provide periodic reports on the status of the Program and note any changes to the overall risk assessment and changes to established safeguards.",
+            "Some areas of the company may require more frequent review than others, such as IT, records management, or any other area that comes in contact with a high volume of Information or is especially vulnerable to technological or procedural risks and threats."
+          ],
+          "gaps": [
+            "No defined evaluation methodology or framework specifying how technical and nontechnical evaluations should be conducted (e.g., vulnerability scanning, penetration testing, policy audits, interviews).",
+            "Evaluations are described as triggered by 'environmental or operational changes' but no defined periodic schedule specifically for the evaluation requirement (distinct from the general annual program review).",
+            "No mention of independent or third-party evaluation to ensure objectivity.",
+            "No specific metrics or success criteria to measure the effectiveness of evaluations.",
+            "No documented process for tracking evaluation findings, remediation actions, and closure timelines.",
+            "The policy does not explicitly reference the HIPAA Security Rule or 164.308(a)(8) as the standard against which evaluations are measured."
+          ],
+          "recommendations": [
+            "Establish a formal evaluation procedure that specifies the scope, methodology, frequency, and responsible parties for both technical evaluations (e.g., vulnerability assessments, penetration tests, configuration reviews) and nontechnical evaluations (e.g., policy reviews, workforce interviews, process audits).",
+            "Define a fixed periodic schedule (e.g., annually or biannually) for conducting evaluations, in addition to event-triggered evaluations.",
+            "Incorporate the use of independent or third-party evaluators to ensure objectivity and thoroughness.",
+            "Create a formal tracking mechanism for evaluation findings, including remediation action plans, owners, target dates, and verification of closure.",
+            "Explicitly reference HIPAA Security Rule requirements as the benchmark against which evaluations assess compliance.",
+            "Define metrics and KPIs to measure evaluation effectiveness and report results to leadership for continuous improvement."
+          ]
+        },
+        {
+          "control_id": "164.310(a)(1)",
+          "control_name": "Facility Access Controls",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy directly acknowledges the facility access controls requirement and enumerates the key implementation specifications (contingency operations, facility security plan, access control and validation, maintenance records). However, the language is largely aspirational and permissive ('may be implemented by one or all of the following, as appropriate') without defining concrete, mandatory procedures, specific physical security mechanisms, assigned responsibilities, or measurable metrics.",
+          "evidence": [
+            "Facility access controls. Policies and procedures to limit physical access to electronic information systems and the facility or facilities in which they are housed, while ensuring that properly authorized access is allowed.",
+            "Procedures that allow facility access in support of restoration of lost data under any disaster recovery plan or emergency mode operations plan in the event of an emergency.",
+            "Policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.",
+            "Procedures to control and validate a person's access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.",
+            "Policies and procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks)."
+          ],
+          "gaps": [
+            "No specific physical access control mechanisms are defined (e.g., badge readers, key cards, biometrics, locks, security cameras, alarm systems).",
+            "No designated roles or responsibilities for managing and enforcing facility access controls.",
+            "No procedures for maintaining and reviewing facility access logs or visitor logs.",
+            "Implementation specifications are presented as optional ('may be implemented') rather than mandatory requirements.",
+            "No metrics, monitoring, or audit processes defined for evaluating the effectiveness of physical access controls.",
+            "No specific mention of how facility access is periodically reviewed or recertified.",
+            "No procedures for revoking physical access upon role change or termination."
+          ],
+          "recommendations": [
+            "Define mandatory, concrete physical access control mechanisms (e.g., electronic badge access, visitor sign-in logs, security cameras, locked server rooms) for all facilities housing electronic information systems.",
+            "Assign specific roles (e.g., Facility Security Officer) responsible for managing physical access controls, maintaining access lists, and conducting periodic reviews.",
+            "Implement mandatory logging and periodic audit of facility access records, including visitor logs, with defined review frequency and accountability.",
+            "Change permissive 'may be implemented' language to mandatory 'shall be implemented' for all addressable implementation specifications, or document formal risk-based justifications for not implementing specific specifications.",
+            "Establish procedures that integrate physical access revocation with workforce termination and role-change processes referenced in the workforce security section.",
+            "Define measurable metrics (e.g., percentage of access reviews completed on time, number of unauthorized access incidents) and conduct regular assessments of physical security effectiveness."
+          ]
+        },
+        {
+          "control_id": "164.310(b)",
+          "control_name": "Workstation Use",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy restates the regulatory requirement language for workstation use almost verbatim but lacks specific, actionable details about what proper functions are permitted, how they should be performed, or what physical attributes of workstation surroundings are required. Supporting elements like employee training and general use guidelines exist but do not specifically address workstation use controls.",
+          "evidence": [
+            "Workstation use. Policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access electronic Information.",
+            "Employees are responsible for exercising good judgment regarding the reasonableness of personal use. Individual departments are responsible for creating guidelines concerning personal use of Internet / Intranet / Extranet systems.",
+            "All employees that have access to Information or work with systems that handle Information should receive adequate training for handling and disposal of such Information.",
+            "For security and network maintenance purposes, authorized individuals within Provider may monitor equipment, systems and network traffic at any time."
+          ],
+          "gaps": [
+            "No specific enumeration of proper functions to be performed on workstations or classes of workstations",
+            "No description of the manner in which workstation functions are to be performed (e.g., procedures for accessing ePHI, restrictions on concurrent activities)",
+            "No specification of physical attributes required for workstation surroundings (e.g., screen positioning, privacy screens, restricted viewing areas, location requirements)",
+            "No classification of workstations by type or class with corresponding use requirements",
+            "No defined restrictions on activities prohibited at workstations (e.g., downloading unauthorized software, personal browsing on workstations with ePHI access)",
+            "No mention of remote workstation or telecommuting use requirements and physical environment expectations"
+          ],
+          "recommendations": [
+            "Develop a detailed workstation use policy that explicitly defines permitted and prohibited functions for each class of workstation that accesses ePHI",
+            "Specify physical environment requirements for workstations, including screen positioning to prevent unauthorized viewing, use of privacy screens, and minimum physical security standards for workstation locations",
+            "Create workstation classifications (e.g., clinical workstations, administrative workstations, remote/home workstations) with tailored use procedures for each class",
+            "Define specific procedures for how authorized functions should be performed, such as login/logout protocols, session timeout requirements, and clean desk/screen policies",
+            "Address remote and mobile workstation use with requirements for physical surroundings (e.g., private workspace, secured location) and acceptable use in public or shared spaces",
+            "Establish monitoring and enforcement mechanisms with defined metrics to verify compliance with workstation use policies"
+          ]
+        },
+        {
+          "control_id": "164.310(c)",
+          "control_name": "Workstation Security",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 1,
+          "score_rationale": "The policy acknowledges the requirement for workstation security and restates the HIPAA language about physical safeguards to restrict access to authorized users, but it provides no specific implementation details, procedures, or concrete physical safeguard measures for workstations.",
+          "evidence": [
+            "Workstation security. Physical safeguards for all workstations that access electronic Information, to restrict access to authorized users.",
+            "Workstation use. Policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access electronic Information."
+          ],
+          "gaps": [
+            "No specific physical safeguards are defined (e.g., cable locks, privacy screens, secured rooms, positioning of monitors away from public view, locked offices)",
+            "No procedures for securing workstations in public or shared areas",
+            "No mention of physical access controls specific to workstation locations (e.g., badge access, locked rooms)",
+            "No defined accountability or roles responsible for implementing and monitoring workstation physical security",
+            "No metrics or monitoring mechanisms to verify compliance with workstation security requirements",
+            "Policy merely restates the regulatory language without providing actionable implementation guidance"
+          ],
+          "recommendations": [
+            "Develop detailed workstation security procedures specifying concrete physical safeguards such as cable locks, privacy screens, automatic screen locks, secured office areas, and positioning requirements for monitors",
+            "Classify workstations by location type (private office, shared space, clinical area, remote/home) and define appropriate physical safeguards for each category",
+            "Implement periodic physical security audits of workstation locations to verify compliance with safeguard requirements",
+            "Assign responsibility to specific roles (e.g., facility security officer, IT department) for implementing and monitoring workstation physical security",
+            "Document and maintain an inventory of all workstations that access ePHI along with the physical safeguards applied to each"
+          ]
+        },
+        {
+          "control_id": "164.310(d)(1)",
+          "control_name": "Device and Media Controls",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges the device and media controls requirement and outlines the key components (disposal, re-use, tracking, backup before movement), but it reads as a high-level framework statement rather than a fully developed, actionable set of procedures with defined roles, processes, and accountability measures.",
+          "evidence": [
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information into and out of a facility, and the movement of these items within the facility.",
+            "Policies and procedures to address the final disposition of electronic Information, and/or the hardware or electronic media on which it is stored.",
+            "Procedures for removal of electronic Information from electronic media before the media are made available for re-use.",
+            "A record of the movements of hardware and electronic media and any person responsible therefor.",
+            "A retrievable, exact copy of electronic Information, when needed, before movement of equipment."
+          ],
+          "gaps": [
+            "No detailed, operational procedures describing how hardware and media receipt and removal are actually performed (e.g., chain-of-custody forms, approval workflows, sanitization methods)",
+            "Tracking of hardware and media movements is listed as optional ('may be implemented') rather than required, weakening accountability",
+            "No defined roles or responsibilities for who authorizes, performs, and verifies media receipt, removal, disposal, or sanitization",
+            "No reference to specific sanitization standards (e.g., NIST SP 800-88) or approved destruction methods",
+            "No metrics, monitoring, or audit mechanisms to verify compliance with device and media control procedures",
+            "No procedures specifically addressing portable devices, removable media (USB drives, external hard drives), or off-site transport scenarios",
+            "The policy uses 'electronic Information' rather than explicitly referencing ePHI, creating potential ambiguity in applicability"
+          ],
+          "recommendations": [
+            "Develop detailed, step-by-step operational procedures for the receipt, removal, transfer, and disposal of hardware and electronic media containing ePHI, including required approval workflows and chain-of-custody documentation",
+            "Make hardware and media movement tracking a required (not optional) control, with a centralized asset/media tracking log that is regularly audited",
+            "Assign specific roles and responsibilities (e.g., IT asset manager, security officer) for authorizing and overseeing media controls",
+            "Reference and adopt a recognized media sanitization standard such as NIST SP 800-88 and document approved methods for clearing, purging, and destroying media",
+            "Establish regular audits and metrics (e.g., percentage of disposed media with documented sanitization, inventory reconciliation frequency) to monitor compliance and drive continuous improvement",
+            "Include explicit procedures for portable and removable media, including encryption requirements for media transported off-site"
+          ]
+        },
+        {
+          "control_id": "164.312(a)(1)",
+          "control_name": "Access Control",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy restates the HIPAA access control requirement and identifies key implementation specifications (unique user identification, emergency access procedures, automatic logoff, encryption), but it lacks specificity in how these controls are actually implemented, measured, and enforced, reading more as a restatement of regulatory language than an actionable policy.",
+          "evidence": [
+            "Access control. Technical policies and procedures for electronic information systems that maintain electronic Information to allow access only to those persons or software programs that have been granted appropriate access rights.",
+            "A unique name and/or number for identifying and tracking user identity.",
+            "Procedures for obtaining necessary electronic Information during an emergency.",
+            "Electronic procedures that terminate an electronic session after a predetermined time of inactivity.",
+            "A mechanism to encrypt and decrypt electronic Information.",
+            "Policies and procedures for granting access to electronic Information, for example, through access to a workstation, transaction, program, process, or other mechanism.",
+            "Procedures for terminating access to electronic Information under appropriate circumstances, such as, for example, when the employment of a company employee ends."
+          ],
+          "gaps": [
+            "No specific technical implementation details are provided (e.g., what authentication mechanisms, what access control models such as RBAC are used, what systems enforce access rights).",
+            "No defined session timeout thresholds for automatic logoff.",
+            "No specification of encryption standards or algorithms to be used.",
+            "No defined process for periodic access reviews or recertification of access rights.",
+            "No metrics, monitoring, or accountability mechanisms for measuring access control effectiveness.",
+            "The policy uses permissive language ('may be implemented') for several addressable specifications without documenting rationale for any that are not implemented.",
+            "No mention of multi-factor authentication or password complexity requirements.",
+            "Emergency access procedures are referenced but not defined with specificity (e.g., break-glass procedures, logging, post-incident review)."
+          ],
+          "recommendations": [
+            "Develop detailed access control procedures specifying the technical mechanisms used (e.g., RBAC, LDAP/AD integration, MFA requirements, password policies) rather than restating regulatory text.",
+            "Define specific automatic logoff timeout values for different system types and risk levels.",
+            "Specify encryption standards (e.g., AES-256 at rest, TLS 1.2+ in transit) and document where encryption is applied.",
+            "Establish a formal periodic access review and recertification process with defined frequency (e.g., quarterly) and responsible parties.",
+            "Document a formal emergency access (break-glass) procedure including authorization, logging, and post-incident review requirements.",
+            "For each addressable implementation specification marked as 'may be implemented,' document whether it is implemented and, if not, provide the risk-based rationale and any equivalent alternative measures.",
+            "Implement metrics and reporting for access control effectiveness (e.g., number of orphaned accounts, access review completion rates, failed authentication attempts)."
+          ]
+        },
+        {
+          "control_id": "164.312(b)",
+          "control_name": "Audit Controls",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges audit controls by restating the HIPAA requirement language and references reviewing audit logs and access reports, but it lacks specific implementation details such as what systems are logged, log retention periods, tools used, review frequency, and accountability for audit log examination.",
+          "evidence": [
+            "Audit controls. Hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic Information.",
+            "Procedures to regularly review records of Information system activity, such as audit logs, access reports, and security incident tracking reports.",
+            "procedures for monitoring log-in attempts and reporting discrepancies"
+          ],
+          "gaps": [
+            "No specification of which hardware, software, or procedural mechanisms are implemented for audit logging",
+            "No defined log retention periods or storage requirements",
+            "No defined frequency or formal process for reviewing audit logs",
+            "No identification of specific information systems subject to audit controls",
+            "No defined roles or accountability for who performs audit log reviews",
+            "No metrics or KPIs to measure the effectiveness of audit controls",
+            "No mention of log integrity protections (e.g., tamper-evident logging, centralized log management)",
+            "No procedures for responding to anomalies detected during audit log reviews"
+          ],
+          "recommendations": [
+            "Develop a detailed audit logging standard specifying which systems, applications, and data repositories require logging, what events must be captured (e.g., access, modifications, deletions, failed login attempts), and what data elements each log entry must contain",
+            "Implement centralized log management (e.g., SIEM) with tamper-evident controls and define minimum log retention periods (e.g., 6 years per HIPAA retention requirements)",
+            "Establish a formal audit log review schedule with assigned responsible parties and documented procedures for escalating anomalies",
+            "Define measurable metrics such as percentage of systems with logging enabled, average time to review logs, and number of anomalies detected and resolved",
+            "Integrate audit control monitoring into the organization's broader risk management and continuous improvement processes"
+          ]
+        },
+        {
+          "control_id": "164.312(c)(1)",
+          "control_name": "Integrity",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges the integrity requirement by referencing policies and procedures to protect electronic information from improper alteration or destruction, and mentions electronic mechanisms to corroborate integrity. However, the language is largely declaratory and lacks specific implementation details, defined mechanisms (e.g., hashing, checksums, digital signatures), or measurable processes.",
+          "evidence": [
+            "Integrity. Policies and procedures to protect electronic Information from improper alteration or destruction. This safeguard may be implemented by electronic mechanisms to corroborate that electronic Information has not been altered or destroyed in an unauthorized manner.",
+            "Provider will take steps to identify and assess internal and external risks to the security, confidentiality, and integrity of Information that could result in the unauthorized access, disclosure, misuse, alteration, destruction or other compromise of such Information.",
+            "An accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic Information.",
+            "Procedures to create and maintain retrievable exact copies of electronic Information."
+          ],
+          "gaps": [
+            "No specific electronic mechanisms are identified for integrity verification (e.g., hashing algorithms, checksums, digital signatures, version control).",
+            "The integrity safeguard uses permissive language ('may be implemented') rather than mandatory language, making it unclear whether corroboration mechanisms are actually required or deployed.",
+            "No defined procedures for monitoring or detecting improper alteration or destruction of ePHI in real-time or on a scheduled basis.",
+            "No metrics, accountability assignments, or monitoring processes specific to integrity controls are defined.",
+            "No mention of database integrity controls, audit trails for data modifications, or file integrity monitoring tools."
+          ],
+          "recommendations": [
+            "Implement and document specific integrity verification mechanisms such as cryptographic hashing (SHA-256), digital signatures, or file integrity monitoring (FIM) tools for ePHI at rest and in transit.",
+            "Change the language from 'may be implemented' to mandatory requirements specifying that electronic corroboration mechanisms must be deployed for all systems containing ePHI.",
+            "Define procedures for periodic integrity checks, including frequency, responsible parties, and escalation processes when unauthorized alterations are detected.",
+            "Deploy database audit logging that tracks all create, update, and delete operations on ePHI records with timestamps and user identification.",
+            "Establish measurable metrics for integrity controls (e.g., number of integrity violations detected, time to detection, percentage of systems with FIM deployed) and assign accountability to the Coordinator for regular reporting."
+          ]
+        },
+        {
+          "control_id": "164.312(d)",
+          "control_name": "Person or Entity Authentication",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 1,
+          "score_rationale": "The policy mentions person or entity authentication as a safeguard requirement in a single bullet point but provides no specific procedures, mechanisms, or implementation details for verifying identity. Multi-factor authentication is not addressed at all.",
+          "evidence": [
+            "Person or entity authentication. Procedures to verify that a person or entity seeking access to electronic Information is the one claimed.",
+            "A unique name and/or number for identifying and tracking user identity.",
+            "procedures for creating, changing, and safeguarding passwords"
+          ],
+          "gaps": [
+            "No specific authentication procedures or mechanisms are defined (e.g., password complexity requirements, biometrics, tokens, certificates)",
+            "Multi-factor authentication is not mentioned or addressed anywhere in the policy",
+            "No description of authentication methods used for different access scenarios (remote access, privileged access, system-to-system)",
+            "No procedures for verifying entity (as opposed to person) authentication such as device or application authentication",
+            "No defined standards for authentication strength or escalation based on risk level",
+            "No monitoring or metrics for authentication failures or anomalies beyond a brief mention of monitoring log-in attempts"
+          ],
+          "recommendations": [
+            "Develop detailed authentication procedures specifying approved methods for verifying identity (e.g., passwords, smart cards, biometrics, digital certificates)",
+            "Implement and document multi-factor authentication requirements, particularly for remote access, privileged accounts, and access to ePHI",
+            "Define password policies including complexity, length, expiration, and history requirements",
+            "Establish entity authentication procedures for system-to-system and application-to-application communications",
+            "Implement account lockout policies and monitoring for failed authentication attempts with defined thresholds and response procedures",
+            "Document risk-based authentication tiers that align authentication strength with the sensitivity of the data and systems being accessed"
+          ]
+        },
+        {
+          "control_id": "164.312(e)(1)",
+          "control_name": "Transmission Security",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges transmission security as a required safeguard and references both integrity controls and encryption as implementation options, but the language is permissive ('may be implemented,' 'whenever deemed appropriate') rather than prescriptive, and lacks specific technical standards, protocols, or mandatory requirements for protecting ePHI in transit.",
+          "evidence": [
+            "Transmission security. Technical security measures to guard against unauthorized access to electronic Information that is being transmitted over an electronic communications network.",
+            "Security measures to ensure that electronically transmitted electronic Information is not improperly modified without detection until disposed of.",
+            "A mechanism to encrypt electronic Information whenever deemed appropriate.",
+            "The assessment, at a minimum, must include employee training and management, information systems (including network and software design, as well as information processing, storage, transmission and disposal), and detecting, preventing, and responding to attacks."
+          ],
+          "gaps": [
+            "No specification of encryption standards or protocols (e.g., TLS 1.2+, IPsec, AES-256) required for transmission security",
+            "Encryption is optional ('whenever deemed appropriate') rather than required for ePHI transmission, with no documented criteria for when encryption is deemed appropriate",
+            "No identification of specific transmission channels requiring protection (e.g., email, VPN, wireless, APIs, cloud integrations)",
+            "No defined procedures for managing and monitoring transmission security controls",
+            "No metrics, monitoring, or accountability mechanisms for measuring transmission security effectiveness",
+            "No specific mention of electronic protected health information (ePHI) \u2014 the policy generically references 'electronic Information'",
+            "No guidance on prohibiting or securing unsecured transmission methods (e.g., unencrypted email, FTP)"
+          ],
+          "recommendations": [
+            "Establish mandatory encryption requirements for all ePHI transmissions, specifying minimum acceptable protocols and cipher suites (e.g., TLS 1.2 or higher, AES-256)",
+            "Define and document specific criteria for when encryption is required versus optional, based on a formal risk assessment of transmission channels",
+            "Enumerate all transmission channels used to send or receive ePHI and assign specific security controls to each",
+            "Implement integrity verification mechanisms (e.g., checksums, digital signatures) for ePHI transmitted over electronic networks",
+            "Establish monitoring and logging procedures for transmission security events, with defined metrics and periodic review",
+            "Replace permissive 'may be implemented' language with mandatory requirements where risk assessments indicate the need for transmission protections"
+          ]
+        },
+        {
+          "control_id": "164.314(a)(1)",
+          "control_name": "Business Associate Contracts",
+          "family": "Organizational Requirements",
+          "framework_id": "hipaa",
+          "maturity_score": 0,
+          "score_rationale": "The policy document contains no mention of business associate contracts, business associate agreements (BAAs), or any requirements for establishing contracts or arrangements with third parties that handle ePHI. The policy focuses entirely on the organization's internal information security program.",
+          "evidence": [],
+          "gaps": [
+            "No mention of business associate contracts or business associate agreements (BAAs)",
+            "No requirements for obtaining satisfactory assurances from business associates regarding ePHI safeguarding",
+            "No procedures for identifying business associates or determining when a BAA is required",
+            "No defined contract provisions requiring business associates to implement appropriate safeguards for ePHI",
+            "No requirements for business associates to report security incidents or breaches",
+            "No provisions addressing termination of business associate relationships or return/destruction of ePHI",
+            "No process for monitoring or managing business associate compliance with contractual obligations",
+            "No reference to subcontractor requirements for business associates"
+          ],
+          "recommendations": [
+            "Develop and implement a formal Business Associate Agreement (BAA) policy that defines when BAAs are required and what provisions must be included per 164.314(a)(2)",
+            "Create a standardized BAA template that includes required HIPAA provisions such as permitted uses and disclosures of ePHI, safeguarding requirements, breach notification obligations, and termination procedures",
+            "Establish a business associate inventory/registry to track all entities that create, receive, maintain, or transmit ePHI on behalf of the organization",
+            "Implement a process for periodic review and renewal of BAAs to ensure ongoing compliance",
+            "Define procedures for monitoring business associate compliance and addressing non-compliance, including contract termination provisions",
+            "Include requirements for business associates to ensure their subcontractors also agree to appropriate safeguards for ePHI"
+          ]
+        },
+        {
+          "control_id": "164.316(a)",
+          "control_name": "Policies and Procedures",
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy demonstrates a formal, documented approach to implementing written policies and procedures across administrative, technical, and physical safeguard domains, with a designated Coordinator responsible for designing, implementing, and maintaining them in writing. However, there is limited evidence of formal review cycles, version control, metrics for measuring policy effectiveness, or a continuous improvement process.",
+          "evidence": [
+            "The Coordinator will design, implement, and maintain in writing, the administrative, technical, and physical safeguards necessary to control the risks identified through risk assessment, and will regularly monitor the effectiveness of such safeguards.",
+            "Safeguards are to be designed and implemented in accordance with the nature and scope of company activities and the sensitivity of the Information at issue.",
+            "Security management process. Policies and procedures to prevent, detect, contain, and correct security violations.",
+            "Workforce security. Policies and procedures to ensure that all company employees have appropriate access to electronic Information and to prevent any unauthorized company employees from obtaining access to electronic Information.",
+            "Security incident procedures. Policies and procedures to address security incidents.",
+            "Contingency plan. Policies and procedures for responding to an emergency or other occurrence that damages systems that contain electronic Information.",
+            "Device and media controls. Policies and procedures that govern the receipt and removal of hardware and electronic media that contain electronic Information."
+          ],
+          "gaps": [
+            "No explicit requirement for periodic review and update of policies and procedures (e.g., annual review cycle or triggered by significant changes)",
+            "No mention of version control, document management, or change tracking for policies and procedures",
+            "No defined retention period for policies and procedures or their historical versions as required by 164.316(b)",
+            "No metrics or KPIs defined to measure the effectiveness or compliance with policies and procedures",
+            "No explicit process for ensuring policies remain current with evolving regulatory requirements or organizational changes",
+            "No evidence of a formal policy approval process or governance structure beyond the Coordinator role"
+          ],
+          "recommendations": [
+            "Establish a formal policy lifecycle management process that includes periodic review (at least annually), approval workflows, version control, and change documentation",
+            "Implement a document management system to maintain current and historical versions of all security policies and procedures with retention for at least six years per HIPAA requirements",
+            "Define specific metrics to measure policy compliance and effectiveness, such as policy acknowledgment rates, audit findings related to policy gaps, and training completion rates",
+            "Create a policy governance committee or formalize the approval chain beyond the Coordinator to include senior leadership oversight",
+            "Add explicit triggers for policy review and update, such as regulatory changes, security incidents, organizational changes, or technology changes",
+            "Develop a master policy index that maps each HIPAA standard and implementation specification to the corresponding organizational policy and procedure"
+          ]
+        },
+        {
+          "control_id": "164.316(b)(1)",
+          "control_name": "Documentation",
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy is maintained in written form with a clear effective date and version supersession language, demonstrating some documentation practices. However, there is no explicit requirement for a 6-year retention period for documentation, nor are there defined procedures for managing the lifecycle of policies and related compliance documentation.",
+          "evidence": [
+            "Effective May 3, 2023. This Written Information Security Policy supersedes and replaces all prior versions.",
+            "Written Information Security Policy",
+            "It is the policy of Provider to comply, and to require its employees to comply, with all applicable federal, state, and local laws and regulations, as well as Provider's policies and procedures, governing information security, confidentiality, and privacy."
+          ],
+          "gaps": [
+            "No explicit 6-year document retention requirement for policies, procedures, and related compliance documentation",
+            "No defined process for tracking documentation creation dates or dates when documents were last in effect",
+            "No document retention schedule or records management procedures specified",
+            "No procedures for maintaining availability of historical versions of policies and procedures",
+            "No designation of responsibility for documentation management and retention oversight"
+          ],
+          "recommendations": [
+            "Add an explicit documentation retention policy requiring all HIPAA-related policies, procedures, actions, activities, and assessments to be retained for a minimum of 6 years from creation or last effective date",
+            "Implement a document management system or formal records management process that tracks version history, creation dates, effective dates, and retirement dates for all compliance documentation",
+            "Establish a documentation retention schedule that covers all categories required by the HIPAA Security Rule (policies, procedures, risk assessments, training records, incident reports, etc.)",
+            "Assign a designated role (e.g., Privacy/Security Officer or Compliance Manager) responsible for overseeing documentation retention and ensuring compliance with the 6-year requirement",
+            "Implement periodic audits of documentation retention practices to verify compliance and completeness"
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-19T19:50:58.122905",
+  "status": "completed"
+}

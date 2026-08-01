@@ -1,0 +1,276 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : Scott & Scott Written-Information-Security-Policy.pdf
+Assessment JSON: grc_report_93eb72b6.json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-07-02 18:59 UTC
+Frameworks     : csa_ccm
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.844 / 1.000  (Good)
+================================================================================
+Controls evaluated: 25
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.872  [#################...]  Good
+  Evidence Relevance      0.641  [#############.......]  Needs Improvement
+  Score Consistency       0.829  [#################...]  Good
+  Gap Completeness        0.848  [#################...]  Good
+  Recommendation Quality  0.877  [##################..]  Good
+  Evidence Groundedness   1.000  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: CSA Cloud Controls Matrix
+Quality Score: 0.844  [#################...]  Good
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.872  [#################...]
+  Evidence Relevance      0.641  [#############.......]
+  Score Consistency       0.829  [#################...]
+  Gap Completeness        0.848  [#################...]
+  Recommendation Quality  0.877  [##################..]
+  Evidence Groundedness   1.000  [####################]
+
+  Family: Application and Interface Security  (3 controls)  Quality: 0.811  Good
+  --------------------------------------------------------------------------------
+  AIS-01  |  Application and Interface Security Policy  |  Maturity: 0 (Not Implemented)  |  Quality: 0.842 (Good)
+    Faithfulness              0.950  The rationale and gaps are internally consistent and do not assert facts contradicted by any evidence; since no evidence quotes were retrieved, there is no basis for contradiction, and the score of 0 is honestly grounded in the absence of relevant policy content.
+    Evidence Relevance        0.500  No evidence quotes were provided at all, which means the retrieval step either returned nothing relevant or returned content that was correctly excluded as irrelevant; while the absence itself is informative, it limits the ability to assess relevance meaningfully and suggests the RAG system may not have surfaced any usable excerpts.
+    Score Consistency         0.900  A maturity score of 0 is logically consistent with the complete absence of any retrieved evidence addressing application security, and the rationale clearly explains why no credit can be awarded.
+    Gap Completeness          0.850  The gaps comprehensively cover the core requirements of the control (policy documentation, SDLC, API/interface security, testing, approval/maintenance cycles, secure coding), though they could additionally address third-party application security requirements and supply-chain considerations that the control implicitly demands.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to each identified gap, covering policy creation, secure coding, API security, and governance cycles, though they lack prioritization or timelines that would make implementation guidance more actionable.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  AIS-02  |  Application Security Baseline Requirements  |  Maturity: 0 (Not Implemented)  |  Quality: 0.767 (Acceptable)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as generic risk assessment and infrastructure language with no application security specifics, and the gaps do not contradict the evidence quotes; however, quote [2] mentions 'software design' and 'information processing,' which marginally touches application scope, yet the rationale dismisses any application-relevance entirely without acknowledgment.
+    Evidence Relevance        0.200  Both quotes are generic risk and information-systems boilerplate with no direct relevance to application security baselines, OWASP, secure coding, or application categories, making them largely unhelpful for assessing this specific control.
+    Score Consistency         0.850  A score of 0 is well-justified given that neither evidence quote addresses application security baselines, OWASP Top 10, or secure development practices, and the rationale clearly explains the complete absence of relevant policy content.
+    Gap Completeness          0.820  The gaps comprehensively cover the major requirements of the control—OWASP Top 10, application categorization, secure SDLC, coding standards, and specific application-level controls—though they could additionally note the absence of third-party or vendor application security requirements and penetration testing mandates.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete examples (SAST/DAST, OWASP Top 10, application classification framework, SDLC integration), with only minor room for improvement in specifying timelines or ownership responsibilities.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+  AIS-04  |  Application Security Metrics  |  Maturity: 1 (Initial)  |  Quality: 0.825 (Good)
+    Faithfulness              0.950  The rationale and gaps accurately reflect what the evidence shows — generic, high-level security language with no application-specific remediation process, metrics, or SLAs — and no claims are made that contradict the cited quotes.
+    Evidence Relevance        0.350  The cited quotes are generic risk management and patching boilerplate that only tangentially relate to application security vulnerability remediation, metrics, and SLAs; none of the excerpts directly address application-layer security controls, SDLC processes, or SLA frameworks as required by AIS-04.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only generic, high-level policy language with no application-specific remediation process, automation, metrics, or SLAs, indicating minimal initial-level coverage of the control requirements.
+    Gap Completeness          0.880  The gaps are specific, well-articulated, and cover the major requirements of AIS-04 (remediation process, automation, metrics, SLAs, application-layer distinction); a minor omission is the lack of mention of integration with SDLC/DevSecOps pipelines as a gap distinct from tooling.
+    Recommendation Quality    0.920  Recommendations are specific, actionable, and directly tied to each identified gap — including concrete SLA timeframes, named metric types (MTTR, vulnerability density), and specific tooling references (SAST, DAST, SCA, CI/CD gates) — making them highly implementable.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Business Continuity Management  (2 controls)  Quality: 0.824  Good
+  --------------------------------------------------------------------------------
+  BCR-01  |  Business Continuity Management Policy  |  Maturity: 2 (Developing)  |  Quality: 0.820 (Good)
+    Faithfulness              0.780  Most rationale claims are supported by the evidence, but the specific assertion that testing is listed as 'may be implemented' (optional language) is not directly verifiable from any of the five quoted excerpts, which only state 'procedures for periodic testing and revision' without the optional qualifier — this key claim underpinning the score lacks an evidential basis in the provided quotes.
+    Evidence Relevance        0.720  Several quotes (1, 2, 3, 4) are genuinely relevant to BCM/contingency planning requirements, but quote 5 is broad cybersecurity boilerplate that only tangentially mentions business continuity, and none of the quotes directly address the control's core requirements of formal approval, communication, or annual mandatory testing.
+    Score Consistency         0.750  A score of 2 is reasonable given that BCM elements exist only as sub-components of a broader policy without formal standalone structure or mandatory annual testing, though the evidence does show multiple contingency-related procedures that arguably justify a score at the lower end of 'defined' rather than purely 'initial.'
+    Gap Completeness          0.820  The gaps are comprehensive and well-targeted, correctly identifying missing mandatory testing, standalone policy approval, communication plan, roles/responsibilities, and RTOs/RPOs; however, the gap claiming optional testing language ('may be implemented') is not substantiated by the quoted evidence, slightly undermining accuracy.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly map to each identified gap — including standalone policy development, mandatory testing language change, formal review cycles, communication plans, and BIA integration — with only minor boilerplate in the metrics/reporting suggestion.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  BCR-03  |  Business Continuity Testing  |  Maturity: 1 (Initial)  |  Quality: 0.828 (Good)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence only contains vague references to 'periodic testing and revision' without specifics, and none of the gaps are directly contradicted by the evidence quotes, though evidence quote [4] about annual program review is only tangentially related to BC/DR testing and the rationale could have been more precise in distinguishing it.
+    Evidence Relevance        0.550  Quote [1] is directly relevant, quote [2] is marginally relevant as it addresses emergency mode continuity, but quotes [3] and [4] are largely off-topic — quote [3] conflates BC/DR with intrusion detection and quote [4] addresses general program review rather than BC/DR testing specifically.
+    Score Consistency         0.820  A score of 1 is appropriate given that the evidence shows only a single vague mention of periodic testing with no defined procedures, intervals, or update processes, which aligns well with a minimal/ad hoc maturity level.
+    Gap Completeness          0.880  The gaps are comprehensive and well-targeted, covering test types, frequency, result documentation, roles, success criteria, and remediation tracking — all genuinely absent from the evidence — though a gap around communication and notification procedures during BC/DR tests could also have been noted.
+    Recommendation Quality    0.870  Recommendations are specific, actionable, and directly map to each identified gap, including concrete examples like test types, RTO metrics, and a remediation tracker, though they could be slightly more tailored to the organization's existing 'Coordinator' role structure referenced in the policy.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Change Control and Configuration Management  (2 controls)  Quality: 0.775  Acceptable
+  --------------------------------------------------------------------------------
+  CCC-01  |  Change Management Policy  |  Maturity: 1 (Initial)  |  Quality: 0.763 (Acceptable)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as tangential and lacking a formal change management policy; all gap claims are consistent with the absence of relevant content in the evidence quotes, and no gaps contradict what the evidence actually states.
+    Evidence Relevance        0.150  The four evidence quotes address physical security alterations, facility repairs, access control, and annual program review — none directly address change management for applications, systems, infrastructure, or configurations, making them largely irrelevant to the control requirement.
+    Score Consistency         0.800  A score of 1 is appropriate given that the evidence only contains vague, tangential references with no formal change management policy or procedures present, though a score of 0 could also be argued since none of the quotes meaningfully address the control.
+    Gap Completeness          0.900  The gaps are comprehensive, accurately identifying the absence of workflows, risk assessment, rollback procedures, change categorization, CAB, post-implementation review, testing requirements, communication protocols, and metrics, covering virtually all key requirements of a mature change management control.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to the identified gaps — covering policy development, lifecycle definition, CAB establishment, categorization, rollback procedures, risk integration, KPIs, and communication — though they are somewhat standard ITIL-style recommendations without tailoring to the organization's specific context evident in the evidence.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  CCC-04  |  Unauthorized Change Protection  |  Maturity: 2 (Developing)  |  Quality: 0.787 (Acceptable)
+    Faithfulness              0.820  The rationale accurately characterizes the evidence as generic safeguards lacking explicit change management procedures, and the gaps do not contradict the evidence quotes; however, the rationale slightly overstates the coverage of 'integrity protections' and 'workforce security' as foundational change-protection elements when the evidence quotes are more narrowly scoped to electronic information confidentiality rather than asset change management.
+    Evidence Relevance        0.450  The cited evidence quotes are largely generic information security safeguards (access controls, audit logs, sanctions, termination procedures) that only tangentially relate to the specific control requirement of restricting and detecting unauthorized addition, removal, update, and management of organization assets—none of the quotes directly address change management, asset inventory, or configuration control.
+    Score Consistency         0.720  A score of 2 is defensible given the weak and indirect relevance of the evidence to the control's specific requirements, though one could argue a score of 1 is more appropriate since none of the evidence quotes actually demonstrate any change management capability, making 'foundational elements' a generous interpretation.
+    Gap Completeness          0.850  The gaps comprehensively cover the major requirements of the control—change management process, detection mechanisms, approval workflows, baseline configuration management, and monitoring—with no obvious omissions and no gaps contradicted by the evidence, though the gap about 'metrics and accountability mechanisms' is somewhat vague and overlaps with monitoring.
+    Recommendation Quality    0.880  The recommendations are specific, actionable, and directly map to each identified gap—naming concrete tools (FIM, CMDB), processes (approval workflows, separation of duties), and measurement approaches (mean time to detect, audit compliance)—with minimal boilerplate language.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+
+  Family: Cryptography, Encryption and Key Management  (3 controls)  Quality: 0.888  Good
+  --------------------------------------------------------------------------------
+  CEK-01  |  Encryption and Key Management Policy  |  Maturity: 1 (Initial)  |  Quality: 0.863 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect the limited evidence provided; the characterization of encryption as 'optional' is a reasonable inference from 'may be implemented' language typical in such contexts, and no claims are made that contradict the evidence quotes.
+    Evidence Relevance        0.550  The first quote is marginally relevant as it references an encryption mechanism, but both quotes are generic access control and transmission security boilerplate rather than substantive encryption or key management policy content directly addressing CEK-01's requirements.
+    Score Consistency         0.900  A score of 1 out of 5 is well-justified given that the evidence shows only incidental, non-dedicated mentions of encryption with no key management content whatsoever, correctly reflecting near-absent maturity.
+    Gap Completeness          0.930  The gaps are comprehensive and accurately capture all major requirements of CEK-01 that are absent from the evidence, including key lifecycle management, standards, roles, and the policy lifecycle (establish, document, approve, communicate, evaluate, maintain), with no gaps contradicted by the evidence.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to the identified gaps, including concrete examples such as HSMs for key storage and defined key lifecycle stages, though they could further specify timelines or responsible parties to enhance actionability.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+  CEK-03  |  Data Encryption  |  Maturity: 1 (Initial)  |  Quality: 0.915 (Excellent)
+    Faithfulness              0.950  All claims in the rationale and gaps are directly supported by the evidence quotes, which clearly show permissive language ('should be considered,' 'may be implemented,' 'recommends') and absence of algorithm/key-length specifications; no rationale claims contradict or overreach the evidence.
+    Evidence Relevance        0.820  The quotes are relevant to encryption practices and directly relate to the control's requirements for data at rest and in transit, though none address data in use, and the quotes are fairly high-level rather than policy-depth; they are nonetheless genuinely on-topic for CEK-03.
+    Score Consistency         0.900  A score of 1/5 is well-justified given that the evidence shows only non-mandatory, vague encryption mentions with no specified algorithms, key lengths, or coverage of all three data states, representing an ad hoc rather than managed posture.
+    Gap Completeness          0.920  The gaps comprehensively cover all major deficiencies — missing mandatory language, absent algorithm and key-length specifications, no data-in-use coverage, no key management, and no compliance monitoring — with no gaps contradicted by the evidence and no obvious omissions.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly tied to each identified gap (e.g., prescribing AES-256/TLS 1.2+, key lifecycle management, framework alignment), though the suggestion to align with NIST SP 800-175B is slightly generic and not explicitly linked to a specific gap.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  CEK-04  |  Encryption Algorithm  |  Maturity: 1 (Initial)  |  Quality: 0.887 (Good)
+    Faithfulness              0.920  The rationale accurately reflects the permissive language found in the evidence quotes ('should be considered,' 'whenever deemed appropriate') and correctly notes the absence of specific algorithms or FIPS references; no claims are made that contradict or go beyond what the evidence states, though the rationale mentions 'may be implemented' which does not appear in any quoted evidence.
+    Evidence Relevance        0.720  The quotes confirm encryption is mentioned in the policy and are relevant to the general topic of data protection, but they are high-level and generic, failing to address the control's specific requirements for named algorithms, key lengths, or FIPS alignment, making them only partially relevant to CEK-04's precise requirements.
+    Score Consistency         0.900  A score of 1 is well-justified given that the evidence shows only vague, optional references to encryption with no algorithm specifications, no FIPS alignment, and no mandatory language, which aligns with an initial/ad hoc maturity level.
+    Gap Completeness          0.880  The gaps comprehensively cover the major deficiencies—missing algorithm specifications, absent FIPS references, optional language, no key length requirements, no at-rest vs. in-transit distinction, and no review process—though the inclusion of 'may be implemented' as a gap is slightly unsupported since that phrase does not appear in the evidence quotes.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap, including named algorithms (AES-256, TLS 1.2+), explicit FIPS 140-2/3 mandates, language remediation, and governance processes, with only minor boilerplate in the audit/compliance monitoring suggestion.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Governance, Risk and Compliance  (3 controls)  Quality: 0.892  Good
+  --------------------------------------------------------------------------------
+  GRC-01  |  Governance Program  |  Maturity: 2 (Developing)  |  Quality: 0.855 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely faithful to the evidence; however, the gap claiming 'no mention of how security policies are communicated, approved, or ratified by senior leadership' slightly conflicts with evidence [1] showing the Coordinator reports to the CEO and evidence [4] showing periodic status reports to presumably senior leadership, though board-level approval is indeed absent.
+    Evidence Relevance        0.780  The evidence quotes are relevant in demonstrating foundational governance elements (Coordinator, risk assessment, periodic review, reporting) but are primarily drawn from a compliance-oriented program rather than a strategic governance framework, making them only partially relevant to the control's requirement for business-objective alignment.
+    Score Consistency         0.820  A score of 2 is reasonably consistent with the evidence showing foundational but compliance-focused governance elements and the numerous significant gaps identified; the evidence demonstrates repeatable processes but not a strategically aligned governance program, which aligns with a low-to-developing maturity rating.
+    Gap Completeness          0.800  The gaps are comprehensive and capture most key missing elements (business alignment, governance structure, metrics, policy lifecycle, ERM integration), though the gap about senior leadership communication is partially contradicted by evidence [1] and [4], and no gap addresses stakeholder accountability or ownership beyond the single Coordinator.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap (governance charter, committee formation, policy lifecycle, KPIs, framework adoption, ERM integration), with sufficient detail to guide implementation rather than offering generic boilerplate advice.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  GRC-03  |  Cybersecurity Training  |  Maturity: 2 (Developing)  |  Quality: 0.850 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely grounded in the evidence; however, the gap claiming 'no mention of onboarding training for new hires' is a legitimate inference from absence, and the gap about 'no mention of training delivery methods or platforms' goes slightly beyond what the control requires and is not directly contradicted by evidence, but overall claims derive from what the quotes actually state.
+    Evidence Relevance        0.820  Most quotes directly address a security awareness training program for employees, coordinator responsibilities, and training topics, which are relevant to the control; however, quote [5] is fragmentary and lacks sufficient context to be meaningfully useful, and quote [4] is narrowly scoped to fund-transfer employees rather than the broader training program.
+    Score Consistency         0.800  A score of 2 is reasonable given that the policy acknowledges training exists and names responsible parties but lacks frequency, tracking, mandatory language, and update processes — consistent with a basic/initial maturity level with significant gaps remaining.
+    Gap Completeness          0.780  The gaps comprehensively cover the key control requirements of frequency, tracking, and content updates, and correctly flag the permissive 'may be implemented' language; however, the gap about training delivery methods/platforms is not a stated control requirement and adds noise, while the assessment could have more explicitly noted the absence of documented evidence that training is actually conducted (not just planned).
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to each identified gap — including LMS implementation, replacing permissive language, defining frequency, annual content review, and accountability measures — though the suggestion to tie training to access provisioning, while good practice, goes slightly beyond what the identified gaps strictly require.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  GRC-05  |  Intellectual Property  |  Maturity: 0 (Not Implemented)  |  Quality: 0.970 (Excellent)
+    Faithfulness              1.000  The rationale and gaps are fully consistent with the absence of evidence quotes — no claims are fabricated or contradicted, and the assessment correctly notes that all retrieved excerpts address unrelated security controls.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is accurate and appropriate given that the retrieved policy excerpts were entirely off-topic for the Intellectual Property control requirement.
+    Score Consistency         1.000  A score of 0 is fully justified when no relevant evidence exists in the policy document and the rationale clearly explains the complete absence of IP-related content.
+    Gap Completeness          0.900  The gaps comprehensively cover the key requirements of the control — IP ownership, software licensing, third-party agreements, asset tracking, and copyright guidance — though a gap around employee departure procedures (e.g., IP assignment enforcement upon offboarding) could have been noted.
+    Recommendation Quality    0.920  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete programs like SAM and onboarding IP agreements, with only minor room for improvement such as specifying audit frequency or tooling for license management.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+
+  Family: Identity and Access Management  (4 controls)  Quality: 0.836  Good
+  --------------------------------------------------------------------------------
+  IAM-01  |  Identity and Access Management Policy  |  Maturity: 2 (Developing)  |  Quality: 0.795 (Acceptable)
+    Faithfulness              0.780  Most rationale claims are grounded in the evidence, but the gap asserting 'aspirational language (may be implemented)' is not supported by any of the quoted evidence excerpts, and the claim about 'no role-based access control' goes slightly beyond what the evidence can confirm or deny.
+    Evidence Relevance        0.720  The quotes are broadly relevant to IAM but are largely high-level procedural statements covering authorization, reviews, and termination; they do not specifically address least-privilege enforcement, approval workflows, or evaluation cycles that are central to the control requirement, making several quotes only tangentially relevant.
+    Score Consistency         0.700  A score of 2 is defensible given that multiple core control elements (least-privilege, formal approval, communication plan, evaluation cycle) are unaddressed, though the evidence does show foundational IAM procedures exist, which could arguably support a 3; the score is slightly conservative but not unreasonable.
+    Gap Completeness          0.750  The gaps cover most key requirements such as least-privilege, approval, communication, and evaluation cycles, but the 'aspirational language' gap is unsubstantiated by the cited evidence, and the RBAC/KPI gaps, while valid concerns, go beyond what the control strictly requires and dilute focus.
+    Recommendation Quality    0.820  Recommendations are specific and actionable, directly mapping to identified gaps (e.g., defining approvers, setting review cadence, mandating language changes), though the KPI and RBAC recommendations are somewhat beyond the core control scope and could be more tightly scoped to the IAM-01 requirement.
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+  IAM-02  |  Strong Authentication  |  Maturity: 1 (Initial)  |  Quality: 0.875 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect what the evidence quotes contain — the claims about weak passwords, absence of MFA, and lack of privileged-access differentiation are all consistent with the quoted text; the one minor imprecision is characterising Evidence [1]'s 'encryption technologies' as referencing encryption rather than stronger authentication, which is a fair and defensible reading.
+    Evidence Relevance        0.720  Evidence [1] and [3] are broadly relevant as authentication policy statements, but Evidence [4] (account lockout) addresses availability/brute-force protection rather than authentication strength, and Evidence [2] (password policy) is only tangentially relevant to strong/MFA requirements — together they show the policy's general authentication posture but do not directly address the control's core MFA and privileged-access requirements.
+    Score Consistency         0.880  A score of 1 is well-justified given that the evidence shows only rudimentary, generic authentication language with no MFA, no privileged-access controls, and a weak password policy — the multiple substantive gaps align logically with a near-baseline maturity level.
+    Gap Completeness          0.850  The gaps are comprehensive and cover MFA absence, weak password policy, lack of privileged-account differentiation, missing cloud-specific controls, and missing modern authentication standards; a minor omission is the lack of explicit mention of session management, re-authentication requirements, and identity lifecycle controls for privileged users that the control implicitly requires.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to identified gaps — citing NIST SP 800-63B, FIDO2, conditional access, and IdP solutions — though the suggestion to implement a centralised IdP, while sound, is slightly broader in scope than what the identified gaps strictly require.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  IAM-05  |  Least Privilege  |  Maturity: 2 (Developing)  |  Quality: 0.845 (Good)
+    Faithfulness              0.880  The rationale accurately reflects what the evidence shows — access control procedures, appropriate access, and termination — and correctly notes the absence of explicit least privilege language; however, the claim about 'establishing and reviewing user access rights' is only weakly supported (evidence [1] mentions 'review' but not a formal periodic review process), making the rationale slightly overstate the evidence.
+    Evidence Relevance        0.720  The quotes are tangentially relevant — they cover access control broadly (appropriate access, termination, authorization) — but none directly address least privilege, minimum necessary access, or regular revocation of unnecessary permissions, meaning the evidence speaks to general IAM rather than the specific least-privilege requirement.
+    Score Consistency         0.800  A score of 2 is reasonably consistent with evidence that shows partial, procedural-level access controls exist but lacks explicit least privilege, defined review frequency, and revocation processes; the score correctly reflects early/developing maturity without over- or under-inflating.
+    Gap Completeness          0.820  The gaps comprehensively capture the key deficiencies — no explicit least privilege principle, no review schedule, no revocation process, no metrics, and no RBAC — though they could additionally note the absence of privileged/administrative account-specific controls or just-in-time access considerations that are standard least-privilege expectations.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to each identified gap (least privilege policy, quarterly reviews, RBAC, assigned accountability, metrics), though they remain somewhat generic in not specifying tooling, timelines for implementation, or how to handle legacy/inherited permissions.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  IAM-08  |  User Access Provisioning  |  Maturity: 2 (Developing)  |  Quality: 0.828 (Good)
+    Faithfulness              0.820  The rationale and gaps are largely grounded in the evidence quotes, but the gap claiming 'no explicit requirement to record or log all access provisioning' is partially contradicted by Evidence [5], which explicitly mentions 'establish, document, review, and modify a user's right of access,' implying some documentation/recording requirement exists.
+    Evidence Relevance        0.780  Most quotes are directly relevant to user access provisioning (authorization, termination, modification of access rights), though Evidence [1] and [2] are somewhat generic policy-level statements that do not directly address the specific provisioning process workflow required by the control.
+    Score Consistency         0.800  A score of 2 is reasonably consistent with the evidence, which shows policy-level intent and some procedural elements exist but lacks formal workflow, audit trails, and communication mechanisms; however, Evidence [5]'s explicit mention of documenting and modifying access rights could arguably support a score of 3.
+    Gap Completeness          0.720  The gaps cover the most critical missing elements (workflow, audit trail, communication), but the gap about 'no explicit requirement to record' is partially contradicted by Evidence [5], and the gaps about automated provisioning tools and SLAs go beyond the control's core requirements, adding noise while missing a more precise gap around formal approval/authorization workflow documentation.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to the identified gaps, including concrete details like timestamps, approvers, justification fields, and KPI examples, though the recommendation about automated provisioning tools addresses a gap not strictly required by the control.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Logging and Monitoring  (3 controls)  Quality: 0.852  Good
+  --------------------------------------------------------------------------------
+  LOG-01  |  Logging and Monitoring Policy  |  Maturity: 1 (Initial)  |  Quality: 0.857 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely consistent with the evidence quotes, which show only fragmented, ad hoc references to logging; however, the claim that 'no dedicated formally documented logging and monitoring policy exists' is an inference beyond what the quotes alone can confirm, as the quotes may be excerpts from a larger policy document.
+    Evidence Relevance        0.720  The three quotes are genuinely related to logging and monitoring concepts (audit logs, audit controls, login monitoring), but they are brief, high-level excerpts that only partially address the control's requirement to define events logged and log management procedures, and none directly addresses the full scope of the control.
+    Score Consistency         0.820  A score of 1/5 is broadly appropriate given that the evidence shows only scattered, high-level references without a structured policy framework, though a score of 2 could also be justified since there are at least three distinct, relevant procedural mentions rather than a complete absence of coverage.
+    Gap Completeness          0.880  The gaps are comprehensive and well-enumerated, covering retention, protection, lifecycle, roles, SIEM, metrics, and policy governance, accurately reflecting what the thin evidence fails to demonstrate; no significant control requirements appear to have been missed.
+    Recommendation Quality    0.870  Recommendations are specific and directly tied to the identified gaps (e.g., defining loggable event categories, establishing retention periods, implementing integrity controls, defining KPIs), though the final recommendation to 'integrate logging requirements into the broader risk management framework' is somewhat generic and not directly tied to a specific gap.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  LOG-05  |  Audit Log Monitoring  |  Maturity: 2 (Developing)  |  Quality: 0.855 (Good)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence quotes state — acknowledging review procedures, audit controls, login monitoring, and incident response — and the gaps correctly identify what is absent from the evidence, though the gap about 'no mention of detecting/responding to attacks' is slightly undermined by evidence quote [4] which references detecting, preventing, and responding to attacks.
+    Evidence Relevance        0.780  Evidence quotes [1] and [3] are directly relevant to audit log monitoring, and [4] partially addresses the response requirement, but quote [2] is a generic definition of audit controls that adds limited specificity to the control's requirements around pattern detection and alerting.
+    Score Consistency         0.820  A score of 2 is reasonably consistent with the evidence showing procedural awareness and some monitoring elements but lacking specifics on alerting, baselines, and response timelines — though a score of 2 versus 3 is debatable given that four evidence quotes collectively demonstrate a moderate foundation.
+    Gap Completeness          0.800  The gaps comprehensively cover the most critical missing elements (baselines, automated alerting, response SLAs, monitoring frequency), but the gap about SIEM tools and KPIs, while useful, goes beyond what the control strictly requires and the gap about timely response partially overlaps with what evidence quote [4] implies about responding to incidents.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap — including concrete examples like alert response times (15 minutes, 1 hour), specific metrics (MTTD, MTTR), and integration with existing incident procedures — making them genuinely useful rather than generic boilerplate.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  LOG-08  |  Auditability  |  Maturity: 1 (Initial)  |  Quality: 0.845 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely faithful to the evidence; however, evidence quote [3] about integrity policies could be seen as partially addressing audit log protection, yet the assessment treats unauthorized access protections as entirely absent, which is a minor overreach since [3] does reference protection from improper alteration.
+    Evidence Relevance        0.620  Quote [1] is relevant as it confirms audit controls exist, quote [2] is relevant to audit log review, but quote [3] is a generic integrity definition not specifically tied to audit log retention or protection, making it only tangentially relevant to this control's requirements.
+    Score Consistency         0.820  A score of 1 is reasonably consistent with the evidence, which shows only high-level mentions of audit controls with no defined retention periods, specific compliance requirements, or explicit protections—though a score of 1 rather than 2 is defensible given the significant gaps identified.
+    Gap Completeness          0.880  The gaps comprehensively cover the control's requirements including retention periods, compliance documentation, access controls, secure storage, and accountability, though the gap around audit log integrity could have acknowledged that quote [3] provides at least a general integrity policy foundation.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly tied to each identified gap, including concrete examples such as HIPAA/PCI-DSS references, write-once storage, cryptographic hashing, and role assignment, making them well above generic boilerplate.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Security Incident Management  (2 controls)  Quality: 0.848  Good
+  --------------------------------------------------------------------------------
+  SEF-01  |  Incident Management Policy  |  Maturity: 2 (Developing)  |  Quality: 0.842 (Good)
+    Faithfulness              0.820  The rationale and gaps are largely grounded in what the evidence shows or omits; however, the claim that there is 'no formal approval, communication, or distribution process' is a reasonable inference from absence, and the Coordinator role (evidence [4]) is correctly noted as limited, but the rationale slightly overstates coherence of the policy by implying a structured lifecycle exists when evidence only shows fragmented statements.
+    Evidence Relevance        0.720  Evidence [1] and [2] are directly relevant to incident management policy requirements, [3] is tangentially relevant via incident tracking, but [4] (Coordinator training responsibility) and [5] (detecting/preventing attacks in a contingency context) are only peripherally related to the specific control requirement of establishing a formal incident management policy with defined roles.
+    Score Consistency         0.780  A score of 2 is reasonably consistent with the evidence, which shows high-level acknowledgment of incident procedures but lacks formal structure, defined roles, evaluation cycles, and communication plans; however, given the breadth and severity of the identified gaps (seven significant gaps), a score of 1–2 border case is arguable and 2 is defensible but slightly generous.
+    Gap Completeness          0.850  The gaps are comprehensive and well-articulated, covering roles, classification, approval, review cycles, escalation, metrics, and post-incident review; a minor omission is the lack of explicit mention of the absence of documented 'apply' and 'communicate' mechanisms for distributing the policy to staff, and no gap addresses testing or exercising of incident response procedures.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and tightly mapped to the identified gaps (IRT formation, classification framework, post-incident review, metrics, regulatory notifications), with concrete examples like annual review cycles and MTTD/MTTR metrics, though they could be further strengthened by referencing applicable frameworks (e.g., NIST SP 800-61) or specifying regulatory notification timeframes relevant to the organization's context.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  SEF-03  |  Incident Reporting  |  Maturity: 1 (Initial)  |  Quality: 0.853 (Good)
+    Faithfulness              0.880  The rationale and gaps accurately reflect what the evidence shows — high-level procedures without specifics — though the gap mentioning 'no identification of specific regulatory frameworks' and 'roles and responsibilities beyond the Coordinator' introduces details (e.g., a 'Coordinator' role) not substantiated by any of the three evidence quotes.
+    Evidence Relevance        0.720  Quote [1] is directly relevant to incident response procedures, but quotes [2] and [3] are more tangentially related — [2] covers broader contingency/business continuity and [3] covers audit log review — neither directly addresses the control's core requirement of incident response communications, stakeholder notification, or regulatory reporting timeframes.
+    Score Consistency         0.850  A score of 1/5 is well-justified given that the evidence shows only high-level mentions of incident procedures with no defined response plan, no communication requirements, no regulatory obligations, and no timeframes, which collectively represent a very immature posture consistent with an initial/ad-hoc level.
+    Gap Completeness          0.800  The gaps are largely comprehensive and accurate, correctly identifying missing communications plans, regulatory notification requirements, timeframes, and severity classification, but the gap referencing 'roles beyond the Coordinator' is unsupported by the evidence and represents an introduced assumption rather than a genuine gap derived from policy content.
+    Recommendation Quality    0.870  Recommendations are specific, actionable, and well-aligned with the identified gaps — including concrete regulatory timeframes (72-hour GDPR), stakeholder categories, severity classification, and tabletop exercises — though the recommendation about defining roles 'beyond the Coordinator' inherits the unsupported assumption from the corresponding gap.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Threat and Vulnerability Management  (3 controls)  Quality: 0.848  Good
+  --------------------------------------------------------------------------------
+  TVM-01  |  Antivirus and Anti-malware  |  Maturity: 1 (Initial)  |  Quality: 0.867 (Good)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence shows — ad hoc recommendations rather than formal requirements — and the gaps are broadly supported by what is absent from the quotes; however, Evidence [1] ('Always run the only the most current Provider recommended anti-virus software') does partially address keeping definitions current, yet the gap claims there is 'no defined schedule or requirement for keeping malware definitions/signatures current,' which slightly overstates the absence since currency is implicitly addressed.
+    Evidence Relevance        0.820  Most quotes (1–4) are directly relevant to antivirus/anti-malware practices, though Evidence [5] is a vague procedural reference to 'guarding against malicious software' that adds little specificity to the control requirement and borders on generic boilerplate.
+    Score Consistency         0.800  A score of 1 is defensible given the informal, fragmented nature of the evidence and the absence of comprehensive program requirements, though the multiple relevant quotes (real-time AV use, email scanning, disinfection procedures) arguably edge the policy toward a 2, making a score of 1 slightly deflated.
+    Gap Completeness          0.850  The gaps are thorough and cover the major missing elements (deployment scope, update schedules, scan frequencies, centralized management, incident response), but the gap about 'no defined schedule for keeping definitions current' is partially contradicted by Evidence [1], and the gap about advanced EDR/behavioral analysis goes beyond the baseline control requirement, making it somewhat aspirational rather than strictly required by TVM-01.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to each identified gap (e.g., daily definition updates, real-time plus weekly scans, centralized dashboards, malware-specific IR procedures), though the EDR/behavioral detection recommendation addresses a gap that exceeds the control's stated baseline requirements.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  TVM-02  |  Vulnerability Management  |  Maturity: 1 (Initial)  |  Quality: 0.830 (Good)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as scattered and lacking a formal program; all gap claims are consistent with what the evidence does and does not show, though the assertion of 'scattered references' is a mild interpretive leap given the brevity of the quotes.
+    Evidence Relevance        0.550  Quotes [1] and [2] are broad risk-management boilerplate with only tangential relevance to vulnerability management, quote [5] about email scanning is peripheral to the control's core requirement, and only quotes [3] and [4] speak directly to vulnerability remediation activities.
+    Score Consistency         0.800  A score of 1 is reasonable given the evidence shows only fragmented, informal references to patching and risk assessment with no structured vulnerability management program, aligning well with a 'initial/ad-hoc' maturity level.
+    Gap Completeness          0.900  The gaps are comprehensive and accurately capture the major missing elements required by the control—scanning, SLAs, tracking, metrics, prioritization, threat intelligence, and roles—with no gaps contradicted by evidence, though the gap about roles is slightly vague given no role information appears in evidence.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to each identified gap (e.g., concrete SLA timeframes, named tools/methodologies like DAST/SAST, defined scanning frequencies), with minimal generic boilerplate.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  TVM-03  |  Vulnerability Remediation  |  Maturity: 1 (Initial)  |  Quality: 0.847 (Good)
+    Faithfulness              0.900  The rationale accurately characterizes the evidence as ad hoc and lacking formal structure; no claims are made that contradict the evidence quotes, though the reference to a 'general Coordinator role' in gaps is not substantiated by any of the cited evidence quotes.
+    Evidence Relevance        0.550  Quotes [1] and [2] are tangentially relevant to patching/remediation, but quotes [3] and [4] are generic risk assessment boilerplate that do not specifically address vulnerability remediation processes or SLAs, diluting the evidence's direct relevance to TVM-03.
+    Score Consistency         0.850  A score of 1 is well-justified given that the evidence shows only two brief, informal patching mentions with no formal process, severity classification, or SLAs defined, which aligns with an ad hoc/initial maturity level.
+    Gap Completeness          0.880  The gaps are comprehensive and accurately capture the major requirements of TVM-03 that are absent from the evidence, including SLAs, severity classification, scanning methodology, tracking, and exception handling; the only minor issue is the unsupported 'Coordinator role' reference, but no obvious control requirements are missed.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete SLA timeframes, scanning frequencies, role definitions, and exception process design, making them highly practical and targeted.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================
