@@ -1,0 +1,788 @@
+{
+  "assessment_id": "5f408af6-6b4d-47aa-b4e7-b1b8842cd874",
+  "document_id": "754d310b89e4498f92be9cf7a98d2dbc",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "nist_800_53"
+  ],
+  "overall_posture_score": 2.48,
+  "framework_results": [
+    {
+      "framework_id": "nist_800_53",
+      "framework_name": "NIST SP 800-53",
+      "overall_score": 2.48,
+      "family_scores": [
+        {
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "average_score": 2.76,
+          "control_count": 4,
+          "weight": 1.5
+        },
+        {
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "average_score": 3.0,
+          "control_count": 3,
+          "weight": 1.0
+        },
+        {
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "average_score": 3.0,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "average_score": 3.0,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 3,
+          "weight": 1.5
+        },
+        {
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "average_score": 2.31,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "average_score": 2.5,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "average_score": 2.0,
+          "control_count": 2,
+          "weight": 1.4
+        },
+        {
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "average_score": 2.48,
+          "control_count": 2,
+          "weight": 1.4
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "AC-1",
+          "control_name": "Access Control Policy and Procedures",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents a formal access control approach, identifies roles and responsibilities, addresses compliance, and broadly describes the purpose and scope. However, it lacks detailed procedures for implementing access controls and mechanisms for policy dissemination and review.",
+          "evidence": [
+            "\"Authorized user access must be limited to only information necessary for the performance of required tasks.\" (Excerpt 4)",
+            "\"ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.\" (Excerpt 4)",
+            "\"The CPO has the following responsibilities: ... Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training...\" (Excerpt 1)",
+            "\"Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need; Conducts quarterly reviews and validations of system users\u2019 accounts...\" (Excerpt 3)",
+            "\"Complies with the requirements of FISMA and related policies, procedures, standards, and guidelines, including: ... \" (Excerpt 5)"
+          ],
+          "gaps": [
+            "No comprehensive procedures detailing how access control policies are to be implemented organization-wide.",
+            "Limited information on dissemination and periodic review of the access control policy.",
+            "Metrics for monitoring, measuring, and continuous improvement of the access control process are not defined.",
+            "Policy does not explicitly state processes for updating policy and procedures based on lessons learned or changes in risk."
+          ],
+          "recommendations": [
+            "Develop and document step-by-step procedures for implementing and enforcing access controls throughout the organization.",
+            "Establish and describe methods for disseminating the access control policy to stakeholders and for ensuring awareness.",
+            "Define responsibilities and processes for periodic review and updating of the access control policy and related procedures.",
+            "Implement mechanisms for monitoring, measuring, and reporting the effectiveness of access controls, with a process for continuous improvement."
+          ]
+        },
+        {
+          "control_id": "AC-2",
+          "control_name": "Account Management",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines responsible roles, account authorization, periodic reviews, and privilege determination, but lacks explicit metrics, conditions for group membership, and formalized monitoring or continuous improvement processes.",
+          "evidence": [
+            "PO Executive ... has centralized responsibility for the establishment, maintenance, and enforcement of the information security program and policy for all information systems within the PO or business component.",
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;"
+          ],
+          "gaps": [
+            "Policy does not explicitly address conditions for group membership.",
+            "Lacks formal metrics or continuous monitoring to measure effectiveness of account management.",
+            "Does not describe processes for handling dormant or orphaned accounts.",
+            "Does not specify procedures for documenting types of accounts (e.g., service, privileged, standard)."
+          ],
+          "recommendations": [
+            "Define and document conditions for group membership and types of accounts (e.g., user, service, privileged).",
+            "Establish metrics and logging to monitor account management effectiveness and compliance.",
+            "Include periodic reviews for dormant or orphaned accounts and processes for prompt de-provisioning.",
+            "Integrate account management with risk management processes and provide for continuous improvement."
+          ]
+        },
+        {
+          "control_id": "AC-3",
+          "control_name": "Access Enforcement",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents access enforcement by mandating least privilege, periodic access reviews, use of federal standards, and integration with security plans. However, there is little evidence of ongoing monitoring, enforcement metrics, or continuous improvement processes.",
+          "evidence": [
+            "t) Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "u) Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;",
+            "l) Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);",
+            "p) In coordination with the ISSO, ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;",
+            "\"Authorized user access must be limited to only information necessary for the performance of required tasks.\"",
+            "\"Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;\""
+          ],
+          "gaps": [
+            "No mention of enforcement metrics or how compliance with access policies is monitored and measured.",
+            "No requirement for continuous review and improvement processes for access enforcement.",
+            "No description of the process for handling violations or unauthorized access detected.",
+            "Limited details on real-time or automated access enforcement capabilities beyond periodic reviews and automation references."
+          ],
+          "recommendations": [
+            "Establish and document metrics for monitoring access control enforcement and compliance (e.g., report on access review completion rates, unauthorized access attempts).",
+            "Integrate continuous improvement mechanisms, such as regular policy updates based on incidents or audit findings.",
+            "Define a process for real-time detection and response to unauthorized access within the policy.",
+            "Clarify the use of technical enforcement mechanisms (e.g., automated access provisioning/deprovisioning, logging, and monitoring tools)."
+          ]
+        },
+        {
+          "control_id": "AC-17",
+          "control_name": "Remote Access",
+          "family": "Access Control",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains scattered elements referencing authorization, access reviews, and connection requirements, but lacks explicit, comprehensive documentation of remote access usage restrictions, detailed configuration requirements, and formal implementation guidance specific to remote access. There is no clear evidence of a requirement for remote access authorization prior to enabling connections.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance...",
+            "Obtains appropriate interconnection security agreements (ISAs) or memoranda of understanding (MOUs) prior to connecting with other systems and/or sharing sensitive data/information;",
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance...",
+            "Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;",
+            "Ensures that all PO information systems obtain an initial authorization to operate (ATO) and maintains a valid ATO throughout the information system lifecycle;",
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols."
+          ],
+          "gaps": [
+            "No specific documentation or guidance found describing remote access usage restrictions.",
+            "Absent detailed remote access configuration/connection requirements (e.g., VPN, MFA, session timeout).",
+            "Lacks process defining implementation guidance explicitly for remote access.",
+            "No explicit requirement in the policy excerpts to authorize individual remote access prior to connection."
+          ],
+          "recommendations": [
+            "Develop and document specific remote access usage restrictions (e.g., who can use remote access, approved use cases).",
+            "Establish and publish technical configuration and connection requirements for remote access (e.g., mandatory use of VPN, encryption, multi-factor authentication, session timeouts).",
+            "Define a formal process for authorizing remote access prior to granting it, including role-based approval workflows.",
+            "Create and disseminate clear implementation guidance for all stakeholders regarding secure and compliant remote access.",
+            "Regularly review and update remote access policies and controls to align with current risk assessments and federal requirements."
+          ]
+        },
+        {
+          "control_id": "AT-1",
+          "control_name": "Security Awareness and Training Policy",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes the requirement for security awareness and training, defines responsibilities at multiple levels, and mandates compliance, but lacks explicit formal documentation of a dedicated training policy and associated procedures, as well as evidence of dissemination mechanisms.",
+          "evidence": [
+            "\"All users have the responsibility to protect ED\u2019s information and information systems from unauthorized access...by complying with the information security requirements maintained in this Policy, ED CIO Cybersecurity Instructions and Standards. The responsibilities of users include but are not limited to: a) Comply with all cybersecurity training and awareness requirements by the required due date, and role based training commensurate with their roles and responsibilities as needed;\" (Excerpt 5)",
+            "\"Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.\" (Excerpt 2)",
+            "\"Ensures that information system users required cybersecurity training is tracked;\" (Excerpt 4)"
+          ],
+          "gaps": [
+            "No standalone, formal security awareness and training policy document or clear procedures are described.",
+            "Dissemination methods for the policy and procedures are not explicitly detailed.",
+            "No metrics or accountability for measuring training effectiveness or compliance are included."
+          ],
+          "recommendations": [
+            "Develop and document a dedicated security awareness and training policy and procedures, outlining processes, frequency, compliance mechanisms, and roles.",
+            "Establish clear dissemination procedures to ensure all stakeholders are formally notified of training requirements and updates.",
+            "Implement metrics and accountability measures to monitor completion rates, effectiveness, and ongoing compliance to raise maturity."
+          ]
+        },
+        {
+          "control_id": "AT-2",
+          "control_name": "Security Awareness Training",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires completion of cybersecurity training and awareness for all users, supervisors are held accountable for ensuring training is completed, and there is mention of tracking and monitoring training. However, the policy does not specify that training content is updated annually or explicitly require training upon major changes as stated in the requirement.",
+          "evidence": [
+            "Comply with all cybersecurity training and awareness requirements by the required due date, and role based training commensurate with their roles and responsibilities as needed.",
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Ensures that information system users required cybersecurity training is tracked."
+          ],
+          "gaps": [
+            "No explicit requirement to update security awareness training content annually.",
+            "No clear mandate for security awareness training to be delivered upon significant changes affecting user responsibilities or the risk environment."
+          ],
+          "recommendations": [
+            "Add policy language that mandates annual review and update of security awareness training content.",
+            "Include explicit requirement that security awareness training be provided to users when changes in systems, policies, or risk posture warrant it.",
+            "Document metrics or procedures for monitoring completion rates and effectiveness of security awareness training."
+          ]
+        },
+        {
+          "control_id": "AT-3",
+          "control_name": "Role-Based Security Training",
+          "family": "Awareness and Training",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires role-based security training for personnel based on assigned roles, and assigns responsibility for ensuring completion and tracking. However, it does not specify that training is provided before authorization or triggered by role changes, nor does it detail how training content is kept current, measured, or improved.",
+          "evidence": [
+            "Comply with all cybersecurity training and awareness requirements by the required due date, and role based training commensurate with their roles and responsibilities as needed;",
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Tracks all information security education and awareness training conducted for personnel and contractors, as appropriate;",
+            "Ensures ... all users on their contracts comply with Federal and ED guidance for personnel security and background investigation requirements, and have taken security and awareness training before granting access to ED\u2019s systems and information;"
+          ],
+          "gaps": [
+            "Does not explicitly state that role-based training is required before authorization or upon role assignment/change for all security roles.",
+            "Lacks detail on required training content per role and periodicity for refresher training.",
+            "No requirements or processes for reviewing, updating, or improving training content.",
+            "Missing metrics or methods for monitoring effectiveness or completion rates beyond tracking."
+          ],
+          "recommendations": [
+            "Explicitly require that personnel assigned to security roles complete role-based training prior to authorization and when roles/responsibilities change.",
+            "Define required content and scope for each security role's training and set retraining frequency.",
+            "Implement processes for periodic review and update of role-based training materials.",
+            "Develop and track metrics for training completion and effectiveness, and establish accountability for enforcement."
+          ]
+        },
+        {
+          "control_id": "AU-2",
+          "control_name": "Audit Events",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy includes some references to privileged function auditing and general system monitoring but does not formally define processes for determining or coordinating audit events, nor requirements for rationale when events are not auditable.",
+          "evidence": [
+            "Prevents non-privileged users from executing privileged functions and audit the execution of such function.",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;"
+          ],
+          "gaps": [
+            "No formal process is described for determining which events are auditable within information systems.",
+            "The policy does not explicitly require coordination of the audit function across the organization.",
+            "There is no stated requirement to provide or document rationales for events considered not auditable."
+          ],
+          "recommendations": [
+            "Establish a formal process for identifying and reviewing auditable events for all information systems, referencing NIST SP 800-53 requirements directly.",
+            "Document responsibility for coordinating audit event selection, involving key stakeholders such as system owners, ISSOs, and the CISO.",
+            "Add a requirement to explicitly document and justify any instances where audit events are determined not to be technically feasible or necessary."
+          ]
+        },
+        {
+          "control_id": "AU-9",
+          "control_name": "Protection of Audit Information",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy explicitly mentions limiting system access, enforcing separation of duties, least privilege, and access reviews, but it does not specifically address the protection of audit information and tools or integrity verification for audit data. References to NIST SP 800-53 and general security safeguards provide partial coverage, but key requirements (such as the protection of audit logs and tools) are not directly mentioned in relation to audit information.",
+          "evidence": [
+            "\"Limits information system access to authorized users, processes actions on behalf of authorized users, or devices...\" (Excerpt 3)",
+            "\"Separates the duties of individuals to reduce the risk of malicious activity without collusion;\" (Excerpt 3)",
+            "\"Enforces the concept of separation of duties by ensuring that no single individual has control...\" (Excerpt 1 and 3)",
+            "\"Employs the principle of least privilege, including for specific security functions and privileged accounts;\" (Excerpt 3)",
+            "\"Limits information system access to the types of transactions and functions that authorized users are permitted to execute;\" (Excerpt 3)",
+            "\"Protect information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide for their confidentiality, integrity, and availability;\" (Excerpt 4)"
+          ],
+          "gaps": [
+            "No explicit mention of protecting audit logs, records, or audit tools from unauthorized access, modification, or deletion.",
+            "No references to automated integrity verification mechanisms for audit information.",
+            "Does not specify additional restrictions for accessing or modifying audit data compared to general system data."
+          ],
+          "recommendations": [
+            "Update policy to explicitly require the protection of audit logs and audit tools from unauthorized access, modification, and deletion.",
+            "Mandate integrity verification methods (e.g., cryptographic hashes or log monitoring solutions) for audit information.",
+            "Describe organizational processes for restricting and monitoring all access and changes to audit information and tools.",
+            "Clearly assign responsibility and accountability for audit data protection to specified roles in the policy."
+          ]
+        },
+        {
+          "control_id": "AU-12",
+          "control_name": "Audit Record Generation",
+          "family": "Audit and Accountability",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references follow NIST SP 800-53 guidance and updates to system documentation, but does not explicitly mention audit record generation, selection of auditable events, or established processes for generating audit records at defined locations.",
+          "evidence": [
+            "Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;"
+          ],
+          "gaps": [
+            "The policy lacks explicit instructions for generating audit records for defined auditable events.",
+            "There is no mention of allowing authorized personnel to select auditable events.",
+            "No process or requirement is stated for generating audit records at defined locations."
+          ],
+          "recommendations": [
+            "Update the policy to include explicit requirements for generating audit records for defined auditable events.",
+            "Define a process that allows authorized personnel to select specific auditable events.",
+            "Specify requirements for audit record generation at defined locations within information systems.",
+            "Establish clear roles and procedures for monitoring and managing audit record generation."
+          ]
+        },
+        {
+          "control_id": "CA-2",
+          "control_name": "Security Assessments",
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy outlines formal responsibilities for conducting security assessments at defined intervals, maintaining documentation, and updating security plans, but does not explicitly address the development of a security assessment plan or systematic reporting to authorized officials.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that all IT programs within the PO are properly resourced so that cybersecurity is fully incorporated throughout the program lifecycle;",
+            "Ensures that all PO information systems obtain an initial authorization to operate (ATO) and maintains a valid ATO throughout the information system lifecycle;",
+            "Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department\u2019s critical operations, at no less than every three years or when significant changes occur to the system/network;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting."
+          ],
+          "gaps": [
+            "No explicit requirement for developing and implementing a formal security assessment plan.",
+            "Assessment frequency is set to at least every three years or upon significant changes, but not clearly defined for more regular or risk-based intervals.",
+            "No direction for producing formal security assessment reports.",
+            "Lacks clear procedures for providing assessment results to authorized officials."
+          ],
+          "recommendations": [
+            "Establish and document a requirement for the development and implementation of formal security assessment plans for all systems.",
+            "Define and require the production of security assessment reports following each assessment.",
+            "Specify that assessment results must be distributed to authorized officials in a timely manner.",
+            "Incorporate more frequent or risk-based assessment intervals, not just the minimum three-year or change-based triggers.",
+            "Implement processes for tracking and measuring completion and quality of security assessments, integrating them with risk management practices."
+          ]
+        },
+        {
+          "control_id": "CA-7",
+          "control_name": "Continuous Monitoring",
+          "family": "Security Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines and documents a continuous monitoring strategy, assigns roles and responsibilities, and describes key activities such as ongoing assessment, configuration management, and reporting. However, it does not reference formal metrics, automated monitoring processes, or continuous improvement mechanisms, which are required at higher maturity levels.",
+          "evidence": [
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO; (Excerpt 1, g)",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates; (Excerpt 2, e)",
+            "The ISO is formally designated by the PO and is responsible for the development, implementation, management, operation, security, associated security documentation, and continuous monitoring of assigned information systems (Excerpt 3)",
+            "Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM); (Excerpt 5, a)"
+          ],
+          "gaps": [
+            "No policy language specifying use of continuous (e.g., automated/real-time) monitoring technologies.",
+            "Lacks mention of defined performance metrics/measures and periodic management review of the monitoring program.",
+            "Does not detail processes for integrating monitoring results with organizational risk management or for regular program improvement based on monitoring results."
+          ],
+          "recommendations": [
+            "Incorporate requirements for automated and real-time monitoring of security controls and configuration changes.",
+            "Define how monitoring results will be measured, reported, and reviewed using specific metrics and organizational accountability.",
+            "Integrate continuous monitoring findings with risk management activities and define a process for using monitoring outcomes to improve the program over time."
+          ]
+        },
+        {
+          "control_id": "CM-2",
+          "control_name": "Baseline Configuration",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines baseline configuration requirements, mandates alignment with federal guidance, assigns responsibilities, and indicates review/update cycles, but lacks explicit metrics, continuous improvement, or detailed integration with risk management.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);",
+            "Reviews information system documentation and the information system itself at least annually. If a major change/upgrade to the system occurs, the documentation would require updating for the information system as required in ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting."
+          ],
+          "gaps": [
+            "No explicit mention of baseline configuration under formal configuration control (e.g., change control board, approval workflow).",
+            "No detailed requirement for configuration change tracking, metrics, or monitoring effectiveness.",
+            "No clear integration of baseline configuration management with ongoing risk management activities.",
+            "No statement about continuous improvement processes for configuration management."
+          ],
+          "recommendations": [
+            "Explicitly require that baseline configurations are maintained under formal configuration control, including change approval processes.",
+            "Define metrics for reviewing, updating, and monitoring baseline configurations and establish accountability for these processes.",
+            "Integrate baseline configuration management with risk assessment and mitigation activities to ensure alignment with risk posture.",
+            "Add provisions for periodic evaluation and improvement of the configuration management process, including lessons learned and integration with organization-wide risk management."
+          ]
+        },
+        {
+          "control_id": "CM-6",
+          "control_name": "Configuration Settings",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes the requirement to follow Federal system security configuration guidance and documents configuration settings, but does not explicitly mandate the most restrictive mode consistent with operational requirements or detail monitoring and continuous improvement processes.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11...)",
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;"
+          ],
+          "gaps": [
+            "Policy does not explicitly state that configuration settings must be set to the most restrictive mode consistent with operational requirements.",
+            "No mention of systematic monitoring or defined metrics to evaluate configuration setting compliance.",
+            "Continuous improvement and integration with risk management activities are not described."
+          ],
+          "recommendations": [
+            "Update policy language to mandate that configuration settings are established at the most restrictive mode consistent with operational needs.",
+            "Establish procedures and metrics for regularly monitoring configuration compliance and enforcing configuration baselines.",
+            "Integrate configuration management processes with risk management and continuous improvement activities to reach higher maturity."
+          ]
+        },
+        {
+          "control_id": "CM-8",
+          "control_name": "Information System Component Inventory",
+          "family": "Configuration Management",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy assigns responsibility for maintaining up-to-date inventories of information systems/assets, requires documentation in a central repository, and mandates regular updates and reviews, but does not specify the inventory's defined content elements or its relationship to system boundaries in detail.",
+          "evidence": [
+            "d) Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system; (Excerpt 4)",
+            "l) Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting. (Excerpt 4)",
+            "a) ... updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM); (Excerpt 2)",
+            "aa) ... conducting quarterly reviews of applications or systems; and updating the data and information from quarterly reviews into ED\u2019s selected central cybersecurity repository (currently CSAM) (Excerpt 5)"
+          ],
+          "gaps": [
+            "The policy does not explicitly define required inventory fields (e.g., hardware, software, owner, location, etc.).",
+            "There is no clear direction that the inventory must be consistent with the authorization boundary.",
+            "No mention of how inventory accuracy is validated, nor metrics or audit processes related to inventory completeness/up-to-dateness."
+          ],
+          "recommendations": [
+            "Explicitly list required elements that must be captured in the inventory (e.g., unique identifier, type, owner, location, system/component relationships, status, etc.) that align with NIST requirements.",
+            "Reference the requirement for inventories to be consistent with each information system's defined authorization boundary.",
+            "Establish processes or requirements for routine validation, auditing, and reconciliation of inventory data for accuracy and completeness.",
+            "Define key metrics for inventory management and assign accountability for ongoing inventory accuracy."
+          ]
+        },
+        {
+          "control_id": "IA-2",
+          "control_name": "Identification and Authentication (Organizational Users)",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references unique identification, PIV card issuance (which enables multi-factor authentication), user account privilege assignment, and periodic access reviews. However, it does not directly and comprehensively describe authentication requirements, enforcement of MFA specifically for privileged accounts, or processes for systems acting on behalf of users.",
+          "evidence": [
+            "Plans, develops, implements, evaluates, and operates ED\u2019s Identity Document (ID) media program and the U.S. Government Personal Identity Verification (PIV) card program;",
+            "Ensures that individuals meet ED\u2019s personnel security requirements as well as HSPD-12 requirements for issuing U.S. Government PIV ID;",
+            "Grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;"
+          ],
+          "gaps": [
+            "No explicit requirement for unique identification and authentication of all organizational users and processes acting on their behalf.",
+            "No formal statement that multi-factor authentication is required for network access to privileged accounts.",
+            "Lacks detailed authentication process (including technical implementation, enforcement, and monitoring).",
+            "Does not cover system processes acting on behalf of users."
+          ],
+          "recommendations": [
+            "Explicitly require unique identification and authentication for all organizational users and for processes acting on behalf of users.",
+            "Define and mandate the use of multi-factor authentication for all network access to privileged accounts in policy, referencing FIPS and NIST standards.",
+            "Clarify and document technical and procedural requirements for authentication (including password, PIV, MFA enforcement, account management, and periodic access revalidations).",
+            "Include accountability and monitoring mechanisms to ensure compliance with the identification and authentication requirements."
+          ]
+        },
+        {
+          "control_id": "IA-5",
+          "control_name": "Authenticator Management",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses some elements of authenticator management, such as use of FIPS-compliant passwords and PINs, periodic system/user reviews, and assignment of roles for oversight, but lacks detailed procedures for verification of identity, initial authenticator content establishment, and explicit restrictions on authenticators (e.g., minimum password complexity, token/certificate lifecycle management).",
+          "evidence": [
+            "based authenticators, and personal identification numbers (PIN) and passwords that are compliant with FIPS publications;",
+            "Ensures that system users and support personnel receive the requisite security training;",
+            "Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;",
+            "Ensures, through coordination with EDSOC, that all of ED\u2019s systems are in compliance with cybersecurity policy"
+          ],
+          "gaps": [
+            "No explicit requirement or process for verifying user identity before issuing authenticators.",
+            "Absence of detailed procedures for establishing initial authenticator content or lifecycle management for passwords, tokens, and certificates.",
+            "No clear enforcement criteria for authenticator restrictions beyond FIPS compliance\u2014missing specifics on complexity, expiration, or revocation.",
+            "Not addressed: procedures for lost/revoked authenticators and documentation of authenticator issuance."
+          ],
+          "recommendations": [
+            "Define and document a formal process for identity verification prior to authenticator issuance.",
+            "Include explicit criteria and lifecycle procedures for passwords, tokens, and certificates (e.g., complexity, expiration, renewal, and revocation).",
+            "Introduce recurring metrics and monitoring (e.g., authenticator issuance, failures, revocation rates) with accountability roles.",
+            "Clarify procedures for lost, stolen, or compromised authenticators, including incident management and user notification requirements.",
+            "Integrate authenticator management processes with overall risk management and auditing routines."
+          ]
+        },
+        {
+          "control_id": "IA-8",
+          "control_name": "Identification and Authentication (Non-Organizational Users)",
+          "family": "Identification and Authentication",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions identification, authentication, and use of FIPS-compliant credentials, as well as roles related to security for non-organizational users (e.g., contracts with requirements), but does not clearly define formal processes to uniquely identify and authenticate non-organizational users or processes acting on their behalf.",
+          "evidence": [
+            "Establishes and provides processes and procedures for the validation of personnel clearances in support of Logical Access Control (LAC).",
+            "Ensures that all acquisitions, procurements and outsourcing efforts contain the appropriate information security requirement provisions and clauses that are consistent with ED policy;",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);"
+          ],
+          "gaps": [
+            "No explicit requirement or process for uniquely identifying and authenticating non-organizational users or processes acting on their behalf.",
+            "No coverage of procedures for non-organizational user identity proofing, registration, or periodic review.",
+            "No defined roles or accountability for managing non-organizational user credentials.",
+            "Lack of monitoring or metrics regarding non-organizational user authentication effectiveness."
+          ],
+          "recommendations": [
+            "Formally define requirements and procedures for the unique identification and authentication of non-organizational users, including third parties and external applications.",
+            "Specify processes for identity proofing, credential issuance, review, and deprovisioning for non-organizational users.",
+            "Assign responsibility and accountability for managing non-organizational user authentication.",
+            "Include requirements for logging, monitoring, and periodic review of non-organizational user accounts and authentication activities.",
+            "Integrate the management of non-organizational user authentication into overall risk management and continuous improvement processes."
+          ]
+        },
+        {
+          "control_id": "IR-1",
+          "control_name": "Incident Response Policy and Procedures",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy discusses incident response roles and references compliance with incident response procedures but lacks a comprehensive, formalized documentation of an incident response policy covering purpose, scope, and the breadth of procedural elements required for a mature implementation.",
+          "evidence": [
+            "\"Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;\"",
+            "\"Information security is an enterprise-wide and individual responsibility that is shared by Senior Agency Officials, all ED managers and staff...\"",
+            "\"Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC)...\""
+          ],
+          "gaps": [
+            "No explicit, centralized incident response policy statement covering purpose, scope, and intent.",
+            "Incident response roles and responsibilities are scattered and do not constitute a cohesive policy section.",
+            "No mention of a standardized dissemination mechanism for the incident response policy and procedures.",
+            "Lacks specific reference to compliance requirements and enforcement mechanisms for incident response.",
+            "Procedural requirements (detection, analysis, containment, eradication, recovery, lessons learned) are not detailed."
+          ],
+          "recommendations": [
+            "Develop and publish a unified Incident Response Policy document that explicitly addresses purpose, organizational scope, roles, responsibilities, and compliance expectations.",
+            "Document and disseminate detailed incident response procedures that cover all lifecycle phases (preparation, detection/analysis, containment, eradication, recovery, lessons learned).",
+            "Establish an organization-wide dissemination plan to ensure all personnel are aware of and have access to the incident response policy and procedures.",
+            "Define metrics and accountability mechanisms to ensure compliance and track effectiveness of incident response activities.",
+            "Incorporate regular review and updating of incident response policies and procedures based on testing, metrics, and evolving threats."
+          ]
+        },
+        {
+          "control_id": "IR-4",
+          "control_name": "Incident Handling",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy acknowledges incident reporting and response procedures and assigns related responsibilities, but lacks explicit detail and formal processes for all phases of incident handling (preparation, detection, analysis, containment, eradication, and recovery), nor evidence of coordination with contingency planning.",
+          "evidence": [
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;",
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer\u2019s Representative (COR) if applicable;"
+          ],
+          "gaps": [
+            "No formalized descriptions or procedures for incident handling phases: preparation, detection, analysis, containment, eradication, and recovery.",
+            "No evidence of integration or coordination between incident handling and contingency planning activities.",
+            "No clear accountability or mention of monitoring, metrics, or continuous improvement for incident handling.",
+            "Lack of reference to post-incident activities such as lessons learned or reporting beyond initial notification."
+          ],
+          "recommendations": [
+            "Define formal, documented incident handling processes covering all stages: preparation, detection, analysis, containment, eradication, and recovery.",
+            "Establish explicit coordination mechanisms with contingency planning and continuity of operations procedures.",
+            "Embed monitoring, metrics, and accountability for incident handling performance.",
+            "Include post-incident reviews and lessons learned activities to improve future response capabilities."
+          ]
+        },
+        {
+          "control_id": "IR-6",
+          "control_name": "Incident Reporting",
+          "family": "Incident Response",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal requirements for personnel and supervisors to report suspected security incidents through defined channels (e.g., ISSO, EDSOC) and outlines responsibilities for incident reporting. However, it lacks detail on escalation, timelines, specific reporting to all defined authorities, and metrics for measuring compliance.",
+          "evidence": [
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer\u2019s Representative (COR) if applicable;",
+            "Notifies the ED CISO (FSA CISO included for FSA systems), ISSO and EDSOC of actual or suspected computer-security incidents, including PII and Protected Health Information (PHI) breaches;",
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;",
+            "Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision;"
+          ],
+          "gaps": [
+            "No explicit mention of required reporting timelines for incident notification.",
+            "Lacks specific procedures for reporting to all defined authorities (beyond internal contacts).",
+            "Does not define metrics or mechanisms for monitoring/reporting compliance with incident reporting.",
+            "Does not reference continued improvement or risk integration for incident reporting.",
+            "No details on escalation, communication flow, or what constitutes a reportable incident in some contexts."
+          ],
+          "recommendations": [
+            "Incorporate defined timelines for incident reporting to specified authorities.",
+            "Detail an escalation and communication process for different types of incidents, including external reporting requirements.",
+            "Define and implement metrics to measure timeliness and completeness of incident reporting.",
+            "Integrate periodic review and continuous improvement processes based on incident reporting performance.",
+            "Clarify what constitutes a reportable incident and ensure all personnel are aware of reporting obligations."
+          ]
+        },
+        {
+          "control_id": "RA-3",
+          "control_name": "Risk Assessment",
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents a process for risk assessments, requires assessments to address likelihood and magnitude of harm, and mandates at least triennial updates or after major changes. However, it lacks consistent evidence of ongoing monitoring, defined metrics, or integration with enterprise risk management.",
+          "evidence": [
+            "\"Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems ... at no less than every three years or when significant changes occur to the system/network;\" (Excerpt 2)",
+            "\"Identifies residual risk and provides justification for AO risk decisions;\" (Excerpt 1)",
+            "\"Ensures that periodic FISMA formal performance measure metrics reporting (quarterly and annually) are completed on time;\" (Excerpt 1)",
+            "\"Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.\" (Excerpt 4)"
+          ],
+          "gaps": [
+            "No mention of risk assessment being integrated into continuous risk management or organizational risk posture updates.",
+            "No evidence of metrics being used to measure risk assessment process effectiveness.",
+            "No requirement for ongoing monitoring or continuous improvement of the risk assessment process."
+          ],
+          "recommendations": [
+            "Establish regular (preferably annual) risk assessment intervals, not just every three years or upon major changes.",
+            "Integrate risk assessment results into organizational risk management and decision-making processes.",
+            "Define and use metrics to monitor the effectiveness and timeliness of risk assessments.",
+            "Implement a process for continuous improvement of the risk assessment program, including lessons learned after incidents."
+          ]
+        },
+        {
+          "control_id": "RA-5",
+          "control_name": "Vulnerability Scanning",
+          "family": "Risk Assessment",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references continuous monitoring, patch management, and general vulnerability remediation processes, but lacks explicit detail on defined scanning frequencies, specific tool requirements, systematic analysis of scan results, and structured vulnerability information sharing.",
+          "evidence": [
+            "\"Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;\"",
+            "\"Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;\"",
+            "\"In support of the ISO, ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching;\"",
+            "\"Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department\u2019s selected central cybersecurity repository (currently CSAM);\"",
+            "\"The ISO... ensures that identified security vulnerabilities, policy, [are addressed]...\""
+          ],
+          "gaps": [
+            "No explicit requirement for scanning all organizational systems at defined regular frequencies.",
+            "No mention of what vulnerability scanning tools must be used or how they are selected and maintained.",
+            "Does not detail a process for systematic analysis of scan reports to identify, triage, and categorize vulnerabilities.",
+            "No clear requirement to share vulnerability information or scan results with relevant stakeholders.",
+            "No metric-driven measurement or monitoring of the scanning process."
+          ],
+          "recommendations": [
+            "Add a policy statement requiring all systems to be scanned for vulnerabilities at a defined minimum frequency (e.g., monthly, quarterly, or after major changes).",
+            "Define the types of approved vulnerability scanning tools and their maintenance requirements.",
+            "Document a formal process for reviewing, categorizing, and prioritizing scan findings, including responsible parties.",
+            "Mandate sharing of vulnerability information and scan results with relevant stakeholders (such as system owners, affected users, and management) in a timely manner.",
+            "Establish metrics to monitor the effectiveness and timeliness of vulnerability scanning and remediation efforts."
+          ]
+        },
+        {
+          "control_id": "SC-7",
+          "control_name": "Boundary Protection",
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references requirements for network security, risk assessment, interconnection security agreements, and following federal/NIST guidance, but lacks explicit details on boundary monitoring, control of communications at system boundaries, implementation of subnetworks for public components, and requires improvement in specifying managed interfaces for external connections.",
+          "evidence": [
+            "Ensures agreements are in place with internal and external entities when information systems share services, assets, or information and that the appropriate security contracting language are incorporated in each IT contract under their purview; (Excerpt 5)",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (Excerpt 3)",
+            "Obtains appropriate interconnection security agreements (ISAs) or memoranda of understanding (MOUs) prior to connecting with other systems and/or sharing sensitive data/information; (Excerpt 3)",
+            "References NIST SP 800-41 Revision 1, Guidelines on Firewalls and Firewall Policy (Excerpt 4)"
+          ],
+          "gaps": [
+            "No explicit mention of monitoring and controlling communications at both external and key internal boundaries.",
+            "Lacks clear requirements for implementing subnetworks (such as DMZs) for publicly accessible components.",
+            "Does not specify that all connections to external networks must occur only through managed interfaces.",
+            "Does not outline metrics or oversight mechanisms for boundary protection."
+          ],
+          "recommendations": [
+            "Add explicit policy language requiring active monitoring and control of communications at all external and key internal network boundaries.",
+            "Define requirements and processes for establishing subnetworks (DMZs) segregating publicly accessible systems from internal networks.",
+            "Mandate that all external network connections occur exclusively through managed interfaces such as firewalls or gateways.",
+            "Establish metrics for the effectiveness of boundary controls, assign accountability, and require regular assessment and reporting.",
+            "Reference relevant NIST boundary protection controls directly and clarify expectations for compliance."
+          ]
+        },
+        {
+          "control_id": "SC-28",
+          "control_name": "Protection of Information at Rest",
+          "family": "System and Communications Protection",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy references the need to protect confidentiality and integrity through authorized access and mandates information protection per federal standards, but does not explicitly require encryption for information at rest or describe clear technical implementation details for both encryption and access controls. References to NIST/FIPS are general and do not provide actionable requirements within the policy.",
+          "evidence": [
+            "Protect information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide for their confidentiality, integrity, and availability...",
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "FIPS PUB 140-2, Security Requirements for Cryptographic Modules"
+          ],
+          "gaps": [
+            "No explicit requirement for encryption of information at rest.",
+            "No description of required encryption algorithms, key management processes, or circumstances under which encryption is mandatory.",
+            "No specifics on technical access control implementations relevant to stored information (e.g., role-based, least privilege).",
+            "No mention of monitoring or auditing the effectiveness of these protections."
+          ],
+          "recommendations": [
+            "Explicitly require encryption of information at rest using FIPS 140-2 validated cryptographic modules.",
+            "Define required access controls for stored data, such as use of least privilege, role-based access, and periodic review of access rights.",
+            "Include implementation guidance for key management and what data classifications require encryption.",
+            "Add provisions for monitoring and periodic auditing of encryption and access controls to ensure effectiveness."
+          ]
+        },
+        {
+          "control_id": "SI-2",
+          "control_name": "Flaw Remediation",
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires timely flaw remediation (e.g., patching, POA&M tracking), integration with configuration/change management, and reporting, but lacks explicit requirements for testing updates and detailed coordination with configuration management activities. Metrics and continuous improvement elements are missing.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Ensures that information security notices and advisories are distributed to appropriate ED and contractor personnel and that vendor-issued security patches are expeditiously installed;",
+            "Ensures requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;"
+          ],
+          "gaps": [
+            "No explicit requirement to test software updates related to flaw remediation before deployment.",
+            "Insufficient detail on how flaw remediation is incorporated into configuration management beyond general references to change management.",
+            "No mention of metrics, monitoring or continuous improvement processes for flaw remediation."
+          ],
+          "recommendations": [
+            "Explicitly require that all security patches and software updates are tested in a representative environment prior to deployment.",
+            "Detail how flaw remediation activities, including identification, reporting, and correction of flaws, must be formally incorporated into change/configuration management processes.",
+            "Establish metrics to monitor the timeliness and effectiveness of flaw remediation activities, and require periodic review and improvement of remediation processes."
+          ]
+        },
+        {
+          "control_id": "SI-3",
+          "control_name": "Malicious Code Protection",
+          "family": "System and Information Integrity",
+          "framework_id": "nist_800_53",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions adherence to cybersecurity requirements and continuous monitoring but does not explicitly detail malicious code protection mechanisms, their deployment at entry and exit points, or automated updates and centralized management.",
+          "evidence": [
+            "Ensures that ISOs adhere to cybersecurity requirements for all of ED\u2019s cybersecurity policies;",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures applicable portions of this policy are included in any user agreement necessary to gain access to ED information systems, services or ED data, which may include signed Non-Disclosure Agreements, Access Agreements, and appropriate Rules of Behavior;",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required"
+          ],
+          "gaps": [
+            "No explicit mention of malicious code (e.g., antivirus, anti-malware) protection mechanisms.",
+            "No requirements stated for deployment at entry and exit points.",
+            "No description of automated update mechanisms for these protections.",
+            "No requirement for centralized management of malicious code protection."
+          ],
+          "recommendations": [
+            "Update the policy to specify the implementation of malicious code protection mechanisms (e.g., antivirus/anti-malware) at all entry and exit points.",
+            "Include requirements for automated updates to malicious code protection tools to ensure timely threat coverage.",
+            "Define centralized management procedures for malicious code protection, including regular monitoring and reporting.",
+            "Document accountability and metrics for the effectiveness of malicious code protections within the policy."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-04T21:43:09.616958",
+  "status": "completed"
+}

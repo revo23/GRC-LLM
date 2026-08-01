@@ -1,0 +1,479 @@
+{
+  "assessment_id": "7700b511-e185-4601-b800-6880e379dfde",
+  "document_id": "754d310b89e4498f92be9cf7a98d2dbc",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "ftc_safeguards"
+  ],
+  "overall_posture_score": 2.68,
+  "framework_results": [
+    {
+      "framework_id": "ftc_safeguards",
+      "framework_name": "FTC Safeguards Rule",
+      "overall_score": 2.68,
+      "family_scores": [
+        {
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.77,
+          "control_count": 4,
+          "weight": 1.4
+        },
+        {
+          "family": "Risk Assessment",
+          "framework_id": "ftc_safeguards",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.66,
+          "control_count": 9,
+          "weight": 1.4
+        },
+        {
+          "family": "Vendor Oversight",
+          "framework_id": "ftc_safeguards",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.1
+        },
+        {
+          "family": "Incident Response",
+          "framework_id": "ftc_safeguards",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.3
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "FTC-1",
+          "control_name": "Qualified Individual",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally designates the CIO as the Senior Accountable Official for IT Risk Management and the CISO as responsible for developing and maintaining the information security program. However, explicit statements about authority, resources, and expertise requirements are not detailed.",
+          "evidence": [
+            "The ED CIO is the designated Senior Accountable Official for IT Risk Management. The CIO is the person formally authorized to assume responsibility for operating a system at an acceptable level of risk.",
+            "Designates a senior ED Information Security Officer to develop and maintain an agency-wide ISP in accordance with FISMA 2014, and carries out the CIO\u2019s responsibilities for the ISP.",
+            "The ISSM supports the ED CISO in the execution of ED\u2019s ISP. The ISSM serves as the liaison and primary point of contact and coordination between PO personnel responsible for cybersecurity activities and the ED CISO for IT security matters."
+          ],
+          "gaps": [
+            "No explicit language confirming that the designated individual possesses sufficient authority, resources, and expertise as required by the FTC Safeguards Rule.",
+            "Lacks a formal outline of how the organization evaluates or ensures the qualifications and empowerment of the designated individual."
+          ],
+          "recommendations": [
+            "Add language to explicitly state that the qualified individual responsible for the information security program has sufficient authority, resources, and expertise to oversee, implement, and enforce the program.",
+            "Document a process for evaluating and maintaining the qualifications, resource allocation, and empowerment of the designated individual to ensure compliance with FTC requirements."
+          ]
+        },
+        {
+          "control_id": "FTC-2",
+          "control_name": "Risk Assessment",
+          "family": "Risk Assessment",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a formal, documented risk assessment process that addresses risk identification, safeguard implementation, user access controls, training, and system monitoring, but lacks evidence of continuous improvement, defined metrics, or proactive risk-based adjustments.",
+          "evidence": [
+            "Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department\u2019s critical operations, at no less than every three years or when significant changes occur to the system/network;",
+            "Ensures that system users and support personnel receive the requisite security training;",
+            "Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;",
+            "Drafts Privacy Threshold Analyses (PTAs) and PIAs ... as required under the E-Government Act of 2002;",
+            "Manages personnel, assets, data, and information, and physical security matters within the PO;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting."
+          ],
+          "gaps": [
+            "No mention of continuous monitoring or improvement practices for safeguards based on updated risk assessments.",
+            "No evidence of established metrics or regular measurement of safeguard effectiveness.",
+            "No explicit reference to risk-based adjustments or integration with a broader risk management framework.",
+            "Reactive rather than proactive detection and response to attacks is described; process for incident detection/response could be further detailed."
+          ],
+          "recommendations": [
+            "Establish and track measurable metrics for risk assessment activities and safeguard effectiveness.",
+            "Formally document a process for regular review and continuous improvement of safeguards tied to risk assessment outcomes.",
+            "Integrate risk assessment and mitigation activities into the broader organizational risk management framework.",
+            "Enhance policy language to clarify detection and response procedures, ensuring proactive monitoring and rapid incident response are incorporated.",
+            "Increase frequency of risk assessments or introduce automated/continuous risk monitoring where feasible."
+          ]
+        },
+        {
+          "control_id": "FTC-3.1",
+          "control_name": "Access Controls",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents access control objectives, including limiting access, enforcing least privilege, separation of duties, and role-based access, but lacks measurable metrics, centralized monitoring evidence, and clarity about enforcement or ongoing review.",
+          "evidence": [
+            "\"Limits information system access to authorized users, processes actions on behalf of authorized users, or devices (including other information systems);\"",
+            "\"Limits information system access to the types of transactions and functions that authorized users are permitted to execute;\"",
+            "\"Employs the principle of least privilege, including for specific security functions and privileged accounts;\"",
+            "\"Reinforces the concept of separation of duties by ensuring that no single individual has control of any critical process in its entirety per NIST SP 800-53 (as amended);\"",
+            "\"Uses non-privileged accounts or roles when accessing non-security functions, and; Prevents non-privileged users from executing privileged functions and audit the execution of such function.\""
+          ],
+          "gaps": [
+            "No mention of ongoing review or monitoring of access controls for effectiveness.",
+            "Lack of defined metrics to measure compliance with access control policies.",
+            "No explicit requirement for periodic access recertification or removal of access for terminated users.",
+            "Unclear processes for physical access restriction.",
+            "Lack of explicit integration of access management into risk management or continuous improvement."
+          ],
+          "recommendations": [
+            "Establish and document regular monitoring and auditing of access controls with defined accountability.",
+            "Define and track metrics for policy compliance, such as number of unauthorized access attempts or timely deprovisioning.",
+            "Implement and describe a periodic access review/recertification process.",
+            "Clearly specify procedures for managing physical access to customer information.",
+            "Integrate access control processes with broader risk management and continuous improvement efforts."
+          ]
+        },
+        {
+          "control_id": "FTC-3.2",
+          "control_name": "Inventory and Classification",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes documented responsibilities for maintaining an information asset inventory and mandates FIPS 199-based data classification, but lacks details on inventory completeness, frequency, methods, and explicit customer information tracking. There is no clear, formalized classification procedure for all data based on sensitivity.",
+          "evidence": [
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "Signs off that system security designations are appropriately determined prior to system acquisition/procurement in accordance with FIPS 199 security categorization;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;"
+          ],
+          "gaps": [
+            "No explicit requirement to track where all customer information is stored, transmitted, or processed across all repositories and data flows.",
+            "No direct reference to data classification processes covering all forms of data, only mentions FIPS 199 for information systems.",
+            "Lacks specification of how data inventories are kept up-to-date, validation frequency, responsible parties, and process for capturing non-system (e.g., paper/third-party) data locations.",
+            "No mention of how data inventory and classification dovetail with ongoing risk assessment or process improvement."
+          ],
+          "recommendations": [
+            "Institute a formal, organization-wide data inventory process specifically covering all customer information and mapping its storage, processing, and transmission locations, including third-party solutions.",
+            "Document and implement a data classification policy applicable to all forms of customer data and aligned with sensitivity, not just system-level (FIPS 199) categories.",
+            "Define roles, responsibilities, and review schedule for inventory and classification updates, with required validation and reconciliation steps.",
+            "Integrate inventory maintenance and classification with risk management processes and continuous improvement cycles."
+          ]
+        },
+        {
+          "control_id": "FTC-3.3",
+          "control_name": "Encryption",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references industry standards like FIPS 140-2 and NIST guidance, and mentions the need to protect information systems, but it lacks explicit statements requiring encryption for customer information at rest and in transit, and does not define a key management process.",
+          "evidence": [
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes.",
+            "NIST SP 800-53 Revision 4, Recommended Security Controls for Federal Information Systems",
+            "FIPS PUB 140-2, Security Requirements for Cryptographic Modules",
+            "Protect information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide for their confidentiality, integrity, and availability"
+          ],
+          "gaps": [
+            "No explicit statement requiring encryption of customer information at rest and in transit using industry-standard encryption.",
+            "No reference to data-specific encryption requirements for customer information.",
+            "No description of a key management process or responsibilities.",
+            "No metrics or monitoring processes for encryption implementation."
+          ],
+          "recommendations": [
+            "Add a clear policy statement requiring industry-standard encryption for customer information held or transmitted by the organization, both at rest and in transit.",
+            "Define and document a formal encryption key management process in the policy.",
+            "Assign key management responsibilities and require periodic review of encryption controls.",
+            "Establish monitoring and reporting requirements to ensure encryption and key management are properly implemented and maintained."
+          ]
+        },
+        {
+          "control_id": "FTC-3.4",
+          "control_name": "Secure Development Practices",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal responsibilities for secure development, ongoing vulnerability management, and system security monitoring, but lacks explicit secure code practices and details on application security testing methodologies.",
+          "evidence": [
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;",
+            "Ensuring that all security related documentation for their systems are updated according to applicable guidance and standards;",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department\u2019s selected central cybersecurity repository"
+          ],
+          "gaps": [
+            "No explicit secure coding or development standards for in-house application development.",
+            "No mention of specific techniques or processes for secure application coding, code reviews, or developer training in secure development.",
+            "Security testing of applications (static/dynamic testing, penetration testing) is not directly addressed or required in the policy language."
+          ],
+          "recommendations": [
+            "Define and document secure coding standards and ensure developers are trained on secure development practices.",
+            "Mandate code review or application security testing (e.g., static/dynamic analysis, penetration testing) for in-house developed applications as part of the development lifecycle.",
+            "Integrate vulnerability scanning and remediation processes specifically for custom developed applications, not just deployed systems.",
+            "Establish periodic audits to ensure secure development practices are followed and include measures for accountability and reporting."
+          ]
+        },
+        {
+          "control_id": "FTC-3.5",
+          "control_name": "Multifactor Authentication",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references various NIST and federal guidelines related to identity management and access controls, including the use of PIV credentials, but does not explicitly mandate multifactor authentication (MFA) for all access to information systems with customer information, nor does it describe the process for exceptions or approval by the qualified individual.",
+          "evidence": [
+            "\u2022 NIST SP 800-63 Rev 3, Digital Identity Guidelines",
+            "\u2022 NIST SP 800-116, A Recommendation for the Use of PIV Credentials in Physical Access Control Systems (PACS)",
+            "\"Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);\"",
+            "\"Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;\""
+          ],
+          "gaps": [
+            "No explicit requirement for multifactor authentication for all individuals accessing systems with customer information.",
+            "No documentation of a process for the 'qualified individual' to approve alternative controls in writing.",
+            "No details concerning how MFA is enforced, monitored, or exceptions managed."
+          ],
+          "recommendations": [
+            "Explicitly require multifactor authentication for access to any information system containing customer information in the policy.",
+            "Define and document a process for the qualified individual to approve reasonably equivalent or stronger alternative controls in writing.",
+            "Describe implementation, monitoring, and enforcement mechanisms for MFA, including metrics and frequency of review.",
+            "Clarify how users (including external partners) are brought under MFA controls and how exceptions are documented and tracked."
+          ]
+        },
+        {
+          "control_id": "FTC-3.6",
+          "control_name": "Secure Disposal of Data",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references general information protection and disposal responsibilities but lacks explicit procedures or details for secure data disposal and does not specify methods or formats for disposal. Requirements for developing and implementing disposal policies are implied but not formally defined.",
+          "evidence": [
+            "\"Provide adequate security for all information created, collected, processed, stored, transmitted, disseminated, or disposed of by or on behalf of the agency, to include Federal information residing in contractor information systems and networks.\" (Excerpt 2)",
+            "\"Each agency shall develop, document, and implement an agency-wide information security program to provide information security for the information and information systems that support the operations and assets of the agency...\" (Excerpt 3)"
+          ],
+          "gaps": [
+            "No explicit policy statement or procedural guidance for the secure disposal of customer information in any format.",
+            "No definition of approved methods for secure data disposal (e.g., shredding, wiping, degaussing).",
+            "No mandate for periodic review or enforcement of secure disposal practices.",
+            "No roles or accountability for secure disposal activities specified."
+          ],
+          "recommendations": [
+            "Develop and document clear procedures for the secure disposal of customer information in all formats (physical and electronic).",
+            "Define approved methods and standards for data disposal (e.g., NIST SP 800-88 for electronic media).",
+            "Assign roles and responsibilities for secure disposal to relevant staff (e.g., Information System Owners, IT personnel).",
+            "Include requirements for periodic training and review of disposal practices.",
+            "Implement monitoring and reporting mechanisms to ensure compliance with secure disposal requirements."
+          ]
+        },
+        {
+          "control_id": "FTC-3.7",
+          "control_name": "Change Management",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents change management responsibilities, requires notification and review of major changes, and integration of cybersecurity controls, but lacks explicit process steps for risk evaluations and pre-implementation reviews.",
+          "evidence": [
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;",
+            "Notifies the ED CISO of any major changes to existing information systems or when planning the development of new information systems;",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "Ensures that ISOs adhere to cybersecurity requirements for all of ED\u2019s cybersecurity policies;"
+          ],
+          "gaps": [
+            "Policy does not explicitly require risk evaluation of changes prior to implementation.",
+            "No detailed procedures mentioned for conducting thorough pre-implementation reviews.",
+            "No mention of metrics or monitoring/accountability mechanisms for change management effectiveness.",
+            "Continuous improvement or feedback mechanisms for the change management process are not addressed."
+          ],
+          "recommendations": [
+            "Update the change management policy to require formal risk assessments and documented reviews before implementing system changes.",
+            "Define explicit change review steps, including impact analysis on customer data protection, in written procedures.",
+            "Establish metrics and set accountability for the effectiveness of change management (e.g., number of changes evaluated, incidents post-change).",
+            "Integrate a continuous improvement cycle, periodically reviewing and refining the change management process based on operational experience and incident post-mortems."
+          ]
+        },
+        {
+          "control_id": "FTC-3.8",
+          "control_name": "Monitoring and Testing",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires continuous monitoring, system reviews, and periodic FISMA reporting but does not clearly specify annual penetration testing or biannual vulnerability assessments as required by the control. Monitoring responsibilities are assigned and referenced, but quantitative measures and continuous improvement processes are not evident.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;",
+            "Ensuring that all security related documentation for their systems are updated according to applicable guidance and standards;",
+            "Ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching;",
+            "Ensures that periodic FISMA formal performance measure metrics reporting (quarterly and annually) are completed on time and entered into ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department\u2019s critical operations, at no less than every three years or when significant changes occur to the system/network;"
+          ],
+          "gaps": [
+            "No explicit requirement for annual penetration testing.",
+            "No explicit requirement for biannual vulnerability assessments.",
+            "No defined metrics for measuring the effectiveness of monitoring and testing processes.",
+            "No mention of continuous improvement or integration with risk management for the monitoring program."
+          ],
+          "recommendations": [
+            "Add explicit requirements to perform annual penetration testing on all relevant systems.",
+            "Include policy language requiring biannual vulnerability assessments in accordance with control requirements.",
+            "Define metrics and accountability for evaluating the effectiveness of monitoring activities.",
+            "Establish a process for integrating monitoring and testing results into the organization's ongoing risk management and continuous improvement life cycle."
+          ]
+        },
+        {
+          "control_id": "FTC-4",
+          "control_name": "Employee Training",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy contains formal requirements for security and privacy training, including role-based training, and assigns responsibility to supervisors to ensure completion. However, details on training updates, frequency, content, and measurement of program effectiveness are not addressed.",
+          "evidence": [
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Comply with all cybersecurity training and awareness requirements by the required due date, and role based training commensurate with their roles and responsibilities as needed."
+          ],
+          "gaps": [
+            "No information on regular updates or periodic review of training programs.",
+            "No description of training content or how it is tailored to staff who handle customer information.",
+            "No evidence of measuring training effectiveness or monitoring compliance rates.",
+            "No explicit mention of refresher training or training frequency."
+          ],
+          "recommendations": [
+            "Establish a formal schedule for updating and reviewing security awareness training programs to ensure content remains current.",
+            "Define and document training content specifically for personnel handling customer information as required by the FTC.",
+            "Implement mechanisms to measure training effectiveness (e.g., post-training assessments, tracking completion rates).",
+            "Include explicit requirements in the policy for periodic refresher training (e.g., annually) and mechanisms to monitor compliance."
+          ]
+        },
+        {
+          "control_id": "FTC-5",
+          "control_name": "Service Provider Oversight",
+          "family": "Vendor Oversight",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires inclusion of security safeguards in contracts, involvement of appropriate stakeholders, and ongoing monitoring by Contracting Officer Representatives. However, it does not prescribe a comprehensive process for periodic monitoring and continuous improvement with defined metrics.",
+          "evidence": [
+            "Ensures that all acquisitions, procurements and outsourcing efforts contain the appropriate information security requirement provisions and clauses that are consistent with ED policy;",
+            "Ensures that appropriate Service Level Agreements (SLAs) and underpinning contracts have been defined that clearly set out for the department a description of the service and the measure for monitoring of the service;",
+            "Ensures that supply chain, system, network, performance, and cybersecurity requirements are included in contract language and delivered;",
+            "Ensures the CISO, SAOP, and ISSOs are consulted during contract development and that the latest information security and privacy contract language is included in all contracts, as applicable;",
+            "Validates that all PIV and information security related contract language is incorporated into all acquisitions under their purview;",
+            "Initiates and monitors background investigations and ensure that all users on their contracts comply with Federal and ED guidance for personnel security and background investigation requirements, and have taken security and awareness training before granting access to ED\u2019s systems and information;",
+            "Agencies shall describe the responsibilities of service providers in relevant agreements with the service providers."
+          ],
+          "gaps": [
+            "The policy does not detail a specific, repeatable process or frequency for periodic monitoring or assessment of service provider safeguards.",
+            "It lacks explicit requirements for reviewing ongoing effectiveness of service provider controls or a metric-driven approach to oversight.",
+            "No reference to corrective actions or escalation process if providers do not meet requirements."
+          ],
+          "recommendations": [
+            "Define and document a regular schedule and process for periodic monitoring and reassessment of service provider information security controls.",
+            "Establish metrics and require documented evidence of service providers\u2019 compliance with safeguards.",
+            "Include requirements for CAPAs (Corrective and Preventative Actions) and escalation procedures in the event service providers fail to meet contractual security obligations.",
+            "Integrate service provider oversight activities into the organization's broader risk management framework."
+          ]
+        },
+        {
+          "control_id": "FTC-6",
+          "control_name": "Program Updates",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy specifies formal review, update, and continuous monitoring requirements triggered by testing results, major changes, and operational shifts, but lacks clear details on adjusting the program comprehensively or integrating feedback from risk analyses outside the IT environment.",
+          "evidence": [
+            "\"reviews information system documentation and the information system itself at least annually. If a major change/upgrade to the system occurs, the documentation would require updating\" (Excerpt 1)",
+            "\"Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;\" (Excerpt 2)",
+            "\"Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;\" (Excerpt 3)",
+            "\"Notifies the ED CISO of any major changes to existing information systems or when planning the development of new information systems;\" (Excerpt 3)",
+            "\"reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM);\" (Excerpt 5)"
+          ],
+          "gaps": [
+            "Does not specify a mechanism for adjusting the broader information security program itself based on testing, monitoring, operational, or business changes (focuses mostly on system-level updates).",
+            "Lacks explicit mention of evaluating and adjusting the program for circumstances 'that may have a material impact' beyond system or project changes.",
+            "Does not describe metrics or accountability for tracking program adjustments or effectiveness.",
+            "No reference to integration of risk analysis outputs outside IT systems (e.g., business process changes, third-party risk impacts)."
+          ],
+          "recommendations": [
+            "Establish a formal process to periodically reassess and update the entire information security program in response to testing/monitoring results, operational changes, and material business impacts\u2014not just at the system level.",
+            "Document procedures to ensure program-level updates are considered and tracked, including those stemming from third-party arrangements, mergers, or changes in business strategy.",
+            "Incorporate metrics for measuring effectiveness of program updates and assign clear accountability for overseeing changes.",
+            "Explicitly include requirements to review risk analyses from across the organization and adjust security controls/program accordingly."
+          ]
+        },
+        {
+          "control_id": "FTC-7",
+          "control_name": "Incident Response Plan",
+          "family": "Incident Response",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy references incident reporting and response in compliance with organizational and federal procedures, and identifies roles, but does not provide a detailed, documented incident response plan covering goals, internal processes, communication strategies, or remediation and documentation practices.",
+          "evidence": [
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;",
+            "Aligns the FSA cybersecurity operations center capabilities to actively monitor and respond to FSA related cyber incidents in coordination with the EDSOC.",
+            "The ISO ... is responsible for the development, implementation, management, operation, security, associated security documentation, and continuous monitoring of assigned information systems ..."
+          ],
+          "gaps": [
+            "No written incident response plan is presented or summarized within the policy.",
+            "Lacks explicit description of incident response goals, specific roles and responsibilities, and step-by-step processes for handling incidents.",
+            "No mention of internal escalation or coordination processes, communication strategies (internal or external), or post-incident remediation and documentation requirements.",
+            "No reference to how incident response effectiveness is measured or improved over time."
+          ],
+          "recommendations": [
+            "Develop and document a formal, organization-wide incident response plan as part of the policy framework.",
+            "Include clearly defined incident response goals, roles and responsibilities (including incident handlers, coordinators, and communicators).",
+            "Describe the internal incident response workflow: detection, analysis, containment, eradication, recovery, and post-incident follow-up, with supporting checklists or procedures.",
+            "Establish and communicate incident reporting, escalation protocols, and notification communications (both internal and external, e.g., regulators or affected parties).",
+            "Define requirements for documenting all incidents and post-incident analysis to drive process improvements.",
+            "Regularly review and update the incident response plan based on lessons learned and evolving threats, integrating with organizational risk management."
+          ]
+        },
+        {
+          "control_id": "FTC-8",
+          "control_name": "Board Reporting",
+          "family": "Information Security Program",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 2,
+          "score_rationale": "The policy documents that there are information security reporting mechanisms, references to compliance with federal legislation (such as FISMA), and an obligation to provide periodic reporting. However, it lacks explicit requirements for a Qualified Individual to provide an annual status report to the board or equivalent governing body on the overall security program and material matters.",
+          "evidence": [
+            "In support of the ISO, ensure that periodic FISMA formal performance measure metrics reporting (quarterly and annually) are completed on time and entered into ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "The Policy is based on legislative, statutory and executive directive requirements that include Federal laws and regulations, ... FISMA ...",
+            "Authority and functions of the Director and the Secretary, Part (a), Subpart (2) requires agencies: 'to identify and provide information security protections commensurate with the risk and magnitude of the harm resulting from the unauthorized access, use, disclosure, disruption, modification, or destruction of\u2014'"
+          ],
+          "gaps": [
+            "No explicit requirement for the Qualified Individual to report directly to the board of directors or equivalent governing body.",
+            "No clear mandate that the overall status of the information security program and material matters be presented to the governing body at least annually.",
+            "Lack of defined process, metrics, or documentation for board-level information security reporting."
+          ],
+          "recommendations": [
+            "Amend the policy to clearly designate a Qualified Individual responsible for preparing and presenting an annual report on the overall information security program and material issues to the board or equivalent governing body.",
+            "Specify the required contents of the annual report, including performance metrics, risk assessments, and major incidents.",
+            "Define the process and timeline for preparing, reviewing, and delivering the report to ensure board-level accountability and oversight."
+          ]
+        },
+        {
+          "control_id": "FTC-9",
+          "control_name": "Customer Information Safeguards",
+          "family": "Safeguards Implementation",
+          "framework_id": "ftc_safeguards",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal, documented requirements for safeguarding customer information throughout its lifecycle, referencing integration of privacy and security safeguards, NIST standards, and lifecycle coverage, but lacks clear evidence of metrics, monitoring, or defined accountability structures for continuous measurement and improvement.",
+          "evidence": [
+            "Excerpt 4: 'all ED stakeholders, including Business Owners and Information System Security Officers (ISSOs), to implement adequate information security and privacy safeguards to protect all ED information.'",
+            "Excerpt 5: 'Ensures that privacy is addressed throughout the life cycle of ED\u2019s information system, and that Federal privacy requirements are incorporated into the agency\u2019s enterprise architecture...'",
+            "Excerpt 2: 'Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes.'",
+            "Excerpt 5: 'Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training, and working with OCIO to integrate safeguards for asset, information and data protection and system security;'",
+            "Excerpt 5: 'Evaluates compliance of ED\u2019s systems against the current version of NIST SP 800-53 privacy controls and notifying the ED CISO and other appropriate authorities of instances of non-compliance.'"
+          ],
+          "gaps": [
+            "No explicit mention of ongoing measurement, monitoring, or metrics to assess the effectiveness of information safeguards.",
+            "Limited details on continuous improvement processes for the safeguards.",
+            "No specific procedures for transmission and disposal of customer data identified.",
+            "Accountability for non-compliance is only referenced in broad terms, without defined processes or assigned roles.",
+            "Does not specify regular review or risk-based updates of safeguards."
+          ],
+          "recommendations": [
+            "Define and implement metrics and monitoring mechanisms to assess the effectiveness of safeguards throughout the customer information lifecycle.",
+            "Include detailed procedures addressing secure collection, storage, use, transmission, and disposal of customer information.",
+            "Establish a process for regular review and risk-based updates to safeguard measures.",
+            "Clarify accountability by assigning roles for monitoring compliance and responding to non-compliance.",
+            "Incorporate requirements for continual improvement based on audit findings or incident response outcomes."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-05T21:26:25.610611",
+  "status": "completed"
+}
