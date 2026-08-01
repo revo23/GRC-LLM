@@ -1,0 +1,661 @@
+{
+  "assessment_id": "e20524d1-b8d0-4ac5-8459-02bb3faee0f8",
+  "document_id": "754d310b89e4498f92be9cf7a98d2dbc",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "pci_dss"
+  ],
+  "overall_posture_score": 2.34,
+  "framework_results": [
+    {
+      "framework_id": "pci_dss",
+      "framework_name": "PCI DSS",
+      "overall_score": 2.34,
+      "family_scores": [
+        {
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "average_score": 2.39,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "average_score": 2.0,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "average_score": 2.26,
+          "control_count": 4,
+          "weight": 1.3
+        },
+        {
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "average_score": 3.22,
+          "control_count": 4,
+          "weight": 1.4
+        },
+        {
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "average_score": 1.69,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "average_score": 2.48,
+          "control_count": 2,
+          "weight": 1.2
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "PCI-1.1",
+          "control_name": "Network Security Controls: Processes and Mechanisms",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents clearly define roles and responsibilities for installing and maintaining network security controls and reference regular reviews, though some specifics such as the 12-month review cycle for configurations are only implied and not explicit. Coverage of measurable processes and direct configuration review metrics is missing.",
+          "evidence": [
+            "System/Network/Website Administrator ... Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range...",
+            "Each information system will be assigned at least one ISSO ... reviewing at least annually and updating the information system and information system documentation as required...",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance...",
+            "Conducts assessments of the risk and magnitude of the harm ... at no less than every three years or when significant changes occur to the system/network;"
+          ],
+          "gaps": [
+            "No explicit statement that network security control configurations themselves are reviewed at least once every 12 months.",
+            "Does not specify measurable metrics or methods for ensuring network security controls remain effective between reviews.",
+            "Lacks clear documentation of feedback or continuous improvement mechanisms and integration with centralized risk management beyond compliance with FISMA/NIST cycles."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require a review of network security control configurations at least every 12 months, not just system documentation.",
+            "Define and document metrics or accountability mechanisms for the review and maintenance of network security controls.",
+            "Incorporate requirements for continuous improvement, such as regular lessons-learned sessions or feedback loops into the risk management process.",
+            "Clarify the distinction between general control evaluation and specific configuration review for network security control devices and mechanisms."
+          ]
+        },
+        {
+          "control_id": "PCI-1.2",
+          "control_name": "Network Security Controls Configuration",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "Policy references general network security configurations and limiting access, but does not explicitly mandate restricting inbound and outbound traffic only to necessary flows or address default denial of all other traffic, leaving implementation details unclear.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance)",
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range",
+            "Coordinates with the CIO, CISO, and ISSO to ensure compliance with control family requirements"
+          ],
+          "gaps": [
+            "Does not specifically require restricting inbound and outbound network traffic to only necessary flows",
+            "No explicit policy to deny all other traffic by default",
+            "Lacks detailed guidance on maintenance and review of firewall and network security control configurations",
+            "No mention of ongoing monitoring or auditing of network traffic against approved baseline"
+          ],
+          "recommendations": [
+            "Add explicit language requiring inbound and outbound network traffic to be restricted to only that which is necessary for business functions, with all other traffic denied by default.",
+            "Define formal processes for reviewing and updating network security control configurations, including audits and periodic reviews.",
+            "Include requirements for documenting allowed traffic flows and regularly validating that only necessary traffic is permitted.",
+            "Establish accountability and metrics for monitoring network traffic and enforcement of the deny-all-else principle."
+          ]
+        },
+        {
+          "control_id": "PCI-1.3",
+          "control_name": "Network Access to the Cardholder Data Environment",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains general requirements for restricting network access and references compliance with NIST SP 800-53, but does not explicitly prohibit direct public access to the cardholder data environment or provide detailed requirements for network segmentation and control enforcement.",
+          "evidence": [
+            "Access to all ED information must be limited based on a least-privilege approach and a need-to-know basis.",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance.",
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "Provides ED guidance and establishes security control assessment procedures for the implementation of privacy controls as specified in the current version of NIST SP 800-53."
+          ],
+          "gaps": [
+            "The policy does not explicitly prohibit direct public access between the internet and cardholder data environment components.",
+            "There are no specific requirements for network segmentation or access control lists between the CDE and other networks.",
+            "There is no mention of firewall configurations, DMZs, or other network design elements that would enforce the required restrictions.",
+            "No details are provided about ongoing monitoring or enforcement mechanisms for network access restrictions specific to the CDE."
+          ],
+          "recommendations": [
+            "Explicitly state in policy that direct public access between the internet and any component in the cardholder data environment is strictly prohibited.",
+            "Define specific technical and process requirements for network segmentation, including the use of firewalls, DMZs, and access control lists, to isolate the CDE from public and internal networks.",
+            "Include requirements for ongoing monitoring and validation of network access restrictions to the CDE.",
+            "Reference PCI DSS network security requirements in addition to NIST guidance, and ensure regular review and update of controls."
+          ]
+        },
+        {
+          "control_id": "PCI-2.1",
+          "control_name": "Default Passwords and Security Parameters",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references following federal and NIST security configuration guidelines, and general secure configuration responsibilities are assigned, but there is no explicit requirement to change all vendor-supplied defaults or to remove/disable unnecessary default accounts.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);",
+            "NIST SP 800-53 Revision 4, Recommended Security Controls for Federal Information Systems, including updates as of 1/15/2014, 2013",
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;"
+          ],
+          "gaps": [
+            "No explicit policy direction to change all vendor default passwords or settings.",
+            "No explicit requirement to remove or disable unnecessary default accounts.",
+            "No specific or formal process described for secure configuration or verification of secure baselines.",
+            "No mention of regular monitoring or metrics regarding secure configuration compliance."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require changing all vendor-supplied default passwords and disabling/removing default accounts before systems are placed into production.",
+            "Define a formal process for secure configuration management, including regular verification against secure baselines.",
+            "Include monitoring and periodic review processes to ensure compliance with secure configuration requirements.",
+            "Assign accountability and reporting for ensuring default security parameters are addressed."
+          ]
+        },
+        {
+          "control_id": "PCI-2.2",
+          "control_name": "System Components Configured and Managed Securely",
+          "family": "Network Security",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy contains formal, documented processes that address secure configuration, management, and maintenance of system components, referencing compliance with Federal and NIST guidance, but lacks clear metrics, ongoing measurement, or explicit requirements for standard development and continuous improvement.",
+          "evidence": [
+            "\"Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);\"",
+            "\"System Developer and Maintenance Administrators ... Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes; ... Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration.\"",
+            "\"Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM);\"",
+            "\"Implements proper system backups and patch management processes;\""
+          ],
+          "gaps": [
+            "No explicit requirement for developing baseline secure configuration standards for all system components is stated; it only references following external guidance.",
+            "No detailed, organization-specific configuration standard development, approval, or periodic update process is documented.",
+            "There is no evidence of defined metrics, measurement, or ongoing monitoring of adherence to configuration standards.",
+            "Continuous improvement activities, such as integration with enterprise risk management or lessons learned for configuration, are not described."
+          ],
+          "recommendations": [
+            "Formalize the development, documentation, and periodic review of baseline secure configuration standards for all system components.",
+            "Define and implement metrics and monitoring to measure adherence to configuration standards.",
+            "Establish a process for continuous improvement and integration of configuration management with organizational risk management.",
+            "Document clear responsibilities and processes for reviewing, updating, and approving configuration standards."
+          ]
+        },
+        {
+          "control_id": "PCI-3.1",
+          "control_name": "Stored Account Data is Kept to Minimum",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy makes several references to minimizing and protecting PII/SPII and integrating privacy/security controls based on NIST guidelines, but it lacks explicit mention of cardholder data retention limits and concrete, defined processes for minimizing stored account data.",
+          "evidence": [
+            "\u2026shares only the minimum PII from ED systems and applications that is necessary and relevant for the purposes it was originally collected.",
+            "Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training, and working with OCIO to integrate safeguards for asset, information and data protection and system security;",
+            "Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;"
+          ],
+          "gaps": [
+            "No explicit mention of 'cardholder data' or procedures relevant to PCI DSS stored account data.",
+            "No defined or documented minimum retention periods or explicit instructions for secure deletion/destruction of stored account data.",
+            "No specific mechanisms are described for limiting the storage of account data to the minimum necessary.",
+            "Does not assign roles or responsibilities for enforcing account data minimization."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly reference cardholder data and PCI DSS requirements regarding stored account data.",
+            "Define and document processes and mechanisms for retention and secure deletion of cardholder/account data with clear minimum required.",
+            "Assign responsibility and accountability for ensuring and reviewing cardholder data minimization.",
+            "Establish periodic reviews or audits to verify compliance with cardholder data storage and retention policies."
+          ]
+        },
+        {
+          "control_id": "PCI-3.4",
+          "control_name": "Access to Cardholder Data is Restricted",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses access restrictions based on need-to-know and least-privilege principles and broadly mandates information protection, but there is no explicit mention of PAN data nor required technical measures (like encryption or tokenization) to render stored account numbers unreadable.",
+          "evidence": [
+            "Access to all ED information must be limited based on a least-privilege3 approach and a need-to-know basis.",
+            "All ED information must be protected from unauthorized access, use, disclosure, duplication, modification, diversion, or destruction\u2014whether accidental or intentional\u2014in order to maintain confidentiality, integrity, and availability.",
+            "This Policy defines the structure under which ED protects and controls access to EDs information and information systems.",
+            "The security and privacy controls that provide this protection must meet Federal requirements with additional risk-based and business-driven control implementation achieved through a defense-in-depth2 security structure."
+          ],
+          "gaps": [
+            "No explicit mention of Primary Account Numbers (PAN) or cardholder data and specific handling requirements.",
+            "No requirement or reference to rendering PAN unreadable (e.g., via encryption, truncation, or tokenization).",
+            "No technical controls described for the protection of stored account data as specified by PCI 3.4.",
+            "No documented process ensuring that cardholder data access is periodically reviewed and justified according to business need."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly address cardholder data and Primary Account Numbers (PAN), clarifying protection and storage requirements.",
+            "Require technical controls to render PAN unreadable wherever stored, such as strong encryption or tokenization, aligning with PCI DSS 3.4.",
+            "Define and document processes for regular access reviews, ensuring continued alignment with business need-to-know for stored account data.",
+            "Include references to compliance with PCI DSS requirements and ensure integration of PCI standards into technical and operational procedures."
+          ]
+        },
+        {
+          "control_id": "PCI-3.5",
+          "control_name": "Primary Account Number (PAN) Security",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references applicable federal standards (such as FIPS 140-2 for cryptographic modules) and assigns responsibilities for data protection and OS security controls, but it does not explicitly require that strong cryptography be used to render the PAN unreadable or specifically describe how PAN must be secured at rest.",
+          "evidence": [
+            "\u2022 FIPS PUB 140-2, Security Requirements for Cryptographic Modules",
+            "Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;",
+            "Ensures that sensitivity and criticality levels have been established for their systems and data in accordance with FIPS and NIST standards and guidelines;"
+          ],
+          "gaps": [
+            "No explicit mention of PAN or requirements specific to payment card data.",
+            "No direct policy mandate that PAN must be rendered unreadable via strong cryptography wherever stored.",
+            "No description of cryptographic methods, key management practices, or explicit coverage of PCI DSS requirements.",
+            "No process for ensuring compliance with cryptographic protection as part of normal operation."
+          ],
+          "recommendations": [
+            "Explicitly define PAN and mandate that it be rendered unreadable wherever stored using strong, standards-based cryptography (e.g., as required by PCI DSS).",
+            "Reference or incorporate specific procedures and cryptographic techniques (such as encryption or tokenization) for PAN data.",
+            "Develop and document a process for key management and cryptographic operations aligned with PCI DSS.",
+            "Include regular compliance reviews and technical validation to ensure PAN is always protected as required."
+          ]
+        },
+        {
+          "control_id": "PCI-4.1",
+          "control_name": "Strong Cryptography During Transmission",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references relevant NIST and FIPS standards and mandates compliance with federal regulations for cryptographic protections during transmission, but it lacks explicit, detailed processes and mechanisms for ensuring strong cryptography is used for cardholder data transmitted over public networks.",
+          "evidence": [
+            "\u2022 NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations, 2014",
+            "\u2022 FIPS PUB 140-2, Security Requirements for Cryptographic Modules",
+            "This Policy requires all ED stakeholders, including Business Owners and Information System Security Officers (ISSOs), to implement adequate information security and privacy safeguards to protect all ED information."
+          ],
+          "gaps": [
+            "No explicit definition or requirements stating that strong cryptography must be used for cardholder data during transmission over open, public networks.",
+            "No documented process or mechanism for selecting, configuring, or monitoring cryptographic protocols and ciphers.",
+            "No mention of ongoing monitoring or validation that cryptographic controls are properly implemented for data-in-transit."
+          ],
+          "recommendations": [
+            "Add a specific policy statement requiring the use of strong cryptography (e.g., TLS 1.2 or higher, FIPS 140-2 validated modules) for all cardholder data transmissions over public networks.",
+            "Define clear procedures for selecting, implementing, and periodically reviewing cryptographic protocols and configurations.",
+            "Establish ongoing monitoring and assessment activities to validate that strong cryptography is consistently enforced during transmission of cardholder data."
+          ]
+        },
+        {
+          "control_id": "PCI-4.2",
+          "control_name": "PAN Secured During Transmission",
+          "family": "Cardholder Data Protection",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references secure protocol usage and federal cryptographic standards but lacks explicit, formal requirements for strong cryptography protecting PAN during transmission, acceptance of only trusted keys/certificates, and enforced secure protocol configurations.",
+          "evidence": [
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance.",
+            "FIPS PUB 140-2, Security Requirements for Cryptographic Modules"
+          ],
+          "gaps": [
+            "No explicit requirement to protect PANs with strong cryptography during transmission.",
+            "No formal process to ensure only trusted keys and certificates are accepted.",
+            "No clear mandate for protocols to support only secure versions/configurations, nor specifics on which protocols are allowed.",
+            "No reference to monitoring or testing cryptographic configuration for effectiveness."
+          ],
+          "recommendations": [
+            "Add specific policy language requiring PAN to be encrypted with strong cryptography (e.g., TLS 1.2 or higher) during transmission.",
+            "Formally specify that only trusted keys/certificates (e.g., valid CAs, proper certificate validation) are permitted.",
+            "Define allowable secure protocols and configurations, and prohibit outdated/insecure versions (e.g., SSL, TLS 1.0/1.1).",
+            "Establish procedures for periodic review and verification of cryptographic configurations and certificate trust chains.",
+            "Integrate automated testing or monitoring to ensure ongoing enforcement of these requirements."
+          ]
+        },
+        {
+          "control_id": "PCI-5.1",
+          "control_name": "Anti-malware Processes",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references general cybersecurity responsibilities, continuous monitoring, FISMA metrics, and NIST SP 800-53 controls, but does not specifically define anti-malware processes, deployment requirements, or document exceptions for systems not at risk.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;",
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;"
+          ],
+          "gaps": [
+            "Anti-malware is not explicitly addressed; there is no mention of processes or solutions for malware protection.",
+            "No clear requirement for anti-malware deployment on all components.",
+            "No process to document and justify systems that are exempt from anti-malware protections."
+          ],
+          "recommendations": [
+            "Explicitly state and require that anti-malware solutions must be deployed and maintained on all systems unless they are documented as not at risk.",
+            "Define processes for evaluating system risk and documenting exemptions from anti-malware controls.",
+            "Detail responsibilities for monitoring, updating, and responding to anti-malware alerts in the policy."
+          ]
+        },
+        {
+          "control_id": "PCI-5.3",
+          "control_name": "Anti-malware Mechanisms Active and Maintained",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy demonstrates monitoring, patching, and alignment to NIST standards, but it lacks specific, explicit mandates for anti-malware solutions, update frequencies, scan requirements, and mechanisms for ongoing maintenance and monitoring of anti-malware solutions.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;",
+            "Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required..."
+          ],
+          "gaps": [
+            "No explicit requirement for anti-malware software to be installed and active on systems.",
+            "No mention of regular updates to anti-malware signatures or software.",
+            "No requirement for periodic/systematic malware scans.",
+            "No specification of how anti-malware solutions are monitored and maintained.",
+            "No evidence of defined metrics, accountability, or reporting specific to anti-malware activity."
+          ],
+          "recommendations": [
+            "Amend policy to explicitly require installation and activation of anti-malware solutions on all relevant systems.",
+            "Specify mandatory, regular updates of anti-malware signatures and software.",
+            "Establish and require routine malware scanning on systems, documenting frequency and methods.",
+            "Define monitoring processes for anti-malware solution health and detection events, with clear accountability.",
+            "Set measurable metrics for anti-malware coverage, update compliance, and scan completion; report on these regularly."
+          ]
+        },
+        {
+          "control_id": "PCI-6.2",
+          "control_name": "Bespoke and Custom Software Developed Securely",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references general secure development practices, responsibilities, and NIST standards, but it lacks explicit requirements for secure coding guidelines, consistent reference to OWASP Top 10, and prescribed software security activities throughout the SDLC.",
+          "evidence": [
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;",
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;",
+            "Ensures the requirements are adequately planned and addressed in all aspects of system architecture, including reference models, segment and solution architectures, and information systems that support the missions and business processes;",
+            "NIST SP 800-53 Revision 4, Recommended Security Controls for Federal Information Systems...",
+            "NIST SP 800-160, Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems, 2018"
+          ],
+          "gaps": [
+            "No explicit policy requirement to adhere to secure coding guidelines or explicitly reference the OWASP Top 10 vulnerabilities.",
+            "No detailed mandates for secure coding practices as part of the software development lifecycle (SDLC).",
+            "No mention of mandatory code review, static/dynamic testing focused on vulnerability identification, or developer security training on current threats.",
+            "No direct requirement or process for continuous improvement or integration with risk management specific to secure software development."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly require adherence to secure coding standards and guidelines, such as those addressing the OWASP Top 10 vulnerabilities.",
+            "Define and document specific secure software development lifecycle (SSDLC) processes, including requirements for code reviews and security testing.",
+            "Mandate recurring developer training on secure coding and current software vulnerabilities.",
+            "Integrate regular metrics and accountability for secure development, such as defect/vulnerability tracking, remediation timelines, and third-party code review.",
+            "Establish a process for periodic policy review and continuous improvement based on evolving security threats and lessons learned from incidents."
+          ]
+        },
+        {
+          "control_id": "PCI-6.3",
+          "control_name": "Security Vulnerabilities Identified and Addressed",
+          "family": "Vulnerability Management",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal processes for identifying vulnerabilities, tracking security weaknesses, and ensuring patches are applied within timelines specified by policy or government directives, but it does not explicitly mandate patching of critical vulnerabilities within 30 days or consistently define metrics and monitoring for vulnerability management.",
+          "evidence": [
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy; (Excerpt 1)",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates; (Excerpt 1)",
+            "This includes actions directed by the DHS, which issues 'Binding Operational Directives' (BODs), that mandate reporting requirements by the Department for remediating critical vulnerabilities; (Excerpt 1)",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department\u2019s selected central cybersecurity repository (currently CSAM); (Excerpt 1)",
+            "Ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching; (Excerpt 1 and 2)"
+          ],
+          "gaps": [
+            "No explicit policy statement that critical patches must be installed within 30 days.",
+            "Does not clearly define regular vulnerability scanning or specific processes for ongoing vulnerability identification.",
+            "No mention of metrics, monitoring, or accountability mechanisms for vulnerability management.",
+            "Policy relies on external directives for patch timelines without setting internal default standards."
+          ],
+          "recommendations": [
+            "Amend the policy to explicitly require that critical patches are installed within 30 days of release.",
+            "Define regular, proactive vulnerability scanning processes and assign clear roles for vulnerability identification and remediation.",
+            "Establish and document metrics for vulnerability management, including patching timeframes and compliance reporting.",
+            "Integrate regular reviews or audits of vulnerability management activities to measure effectiveness and accountability."
+          ]
+        },
+        {
+          "control_id": "PCI-7.1",
+          "control_name": "Access Control Processes",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 4,
+          "score_rationale": "The policy formally defines access restrictions based on business need, least privilege, and regular review, and assigns accountable roles for their enforcement. Processes are established, semi-regular reviews are mandated, and integration with Federal/NIST guidance is documented, but there is limited evidence of continuous improvement or fine-tuned risk feedback into access management.",
+          "evidence": [
+            "\"Limits information system access to authorized users, processes actions on behalf of authorized users, or devices...\" (Excerpt 1)",
+            "\"Limits information system access to the types of transactions and functions that authorized users are permitted to execute...\" (Excerpt 1)",
+            "\"Employs the principle of least privilege, including for specific security functions and privileged accounts...\" (Excerpt 1)",
+            "\"Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;\" (Excerpt 4)",
+            "\"Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;\" (Excerpt 4)",
+            "\"Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO;\" (Excerpt 4)",
+            "\"Tracks all information security education and awareness training conducted for personnel and contractors, as appropriate;\" (Excerpt 1)",
+            "\"Ensures automated information security and privacy capabilities are integrated and deployed as required...\" (Excerpt 3)",
+            "\"NIST SP 800-53 Revision 4, Recommended Security Controls for Federal Information Systems...\" (Excerpt 5)"
+          ],
+          "gaps": [
+            "No explicit requirement or evidence of continuous improvement or dynamic risk-based adjustment of access rights.",
+            "Limited detail on how metrics are collected or used to monitor and refine access controls beyond standard NIST review cycles.",
+            "No description of integration with organizational risk management feedback loops or formalized access recertification triggers based on events."
+          ],
+          "recommendations": [
+            "Implement a process for continuous monitoring and improvement of access controls, leveraging collected metrics and incident lessons learned.",
+            "Integrate access review and recertification triggers based on significant risk changes or access anomalies.",
+            "Document and periodically review how monitoring results, audit findings, and risk assessments feed back into updating and optimizing access control processes."
+          ]
+        },
+        {
+          "control_id": "PCI-7.2",
+          "control_name": "Access to System Components and Data",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 4,
+          "score_rationale": "The policy clearly defines access control processes, adheres to least-privilege principles, assigns responsibility, requires periodic review, and references standards (NIST, FIPS), indicating managed and monitored implementation, but lacks explicit evidence of continuous improvement or integration with broader risk management.",
+          "evidence": [
+            "Access to all ED information must be limited based on a least-privilege3 approach and a need-to-know basis.",
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;",
+            "Employs the principle of least privilege, including for specific security functions and privileged accounts;",
+            "Limits information system access to authorized users, processes actions on behalf of authorized users, or devices (including other information systems);",
+            "Separates the duties of individuals to reduce the risk of malicious activity without collusion;",
+            "Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO;"
+          ],
+          "gaps": [
+            "No explicit mention of continuous improvement or integration of access controls with overall risk management.",
+            "Metrics or performance monitoring for access management effectiveness are not clearly defined in the excerpts.",
+            "No specific instructions for the ongoing adaptation of access controls to emerging risks or threats."
+          ],
+          "recommendations": [
+            "Establish and document metrics to measure the effectiveness of access control policies and processes.",
+            "Integrate access control management with the organization's risk management and continuous improvement processes.",
+            "Provide clear guidance for updating access control mechanisms in response to emerging risks, audit findings, or technological changes."
+          ]
+        },
+        {
+          "control_id": "PCI-8.2",
+          "control_name": "User Identification and Authentication",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines roles responsible for user identification, PIV issuance, and use of FIPS-compliant authenticators, and refers to identity standards. However, it lacks explicit requirements for unique user IDs and comprehensive lifecycle management processes for user accounts.",
+          "evidence": [
+            "Ensures that individuals meet ED\u2019s personnel security requirements as well as HSPD-12 requirements for issuing U.S. Government PIV ID;",
+            "Establishes and provides processes and procedures for the validation of personnel clearances in support of Logical Access Control (LAC).",
+            "Implements PIV card hardware",
+            "Utilize PIV based authentication approaches",
+            "Reference to NIST SP 800-63 Rev 3, Digital Identity Guidelines"
+          ],
+          "gaps": [
+            "No explicit mention of assigning unique IDs to each user and administrator.",
+            "Missing detailed account lifecycle management processes (e.g., creation, modification, disabling, deletion).",
+            "No clear indication of management over both user and privileged accounts throughout account lifecycle."
+          ],
+          "recommendations": [
+            "Add explicit policy language mandating unique user IDs for all accounts, including administrators.",
+            "Document and enforce formal account lifecycle processes, covering creation, modification, review, disabling, and deletion.",
+            "Define accountability and regular review mechanisms for user and privileged account management."
+          ]
+        },
+        {
+          "control_id": "PCI-8.4",
+          "control_name": "Multi-Factor Authentication (MFA)",
+          "family": "Access Control",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references PIV cards, FIPS, NIST guidance, and relevant OMB memoranda that imply MFA and secure identity management, but it lacks explicit requirements for MFA for all non-console administrative and remote access to the cardholder data environment. There is no direct mention of MFA processes or enforcement for PCI scope.",
+          "evidence": [
+            "Excerpt 4: 'Plans, develops, implements, evaluates, and operates ED\u2019s Identity Document (ID) media program and the U.S. Government Personal Identity Verification (PIV) card program;'",
+            "Excerpt 5: References to OMB M-11-11 and OMB M-14-03, which include Federal identity and strong authentication requirements.",
+            "Excerpt 1: References to NIST SP 800-63, Digital Identity Guidelines.",
+            "Excerpt 3: 'Establishes and provides processes and procedures for the validation of personnel clearances in support of Logical Access Control (LAC).'"
+          ],
+          "gaps": [
+            "No explicit policy statement requiring MFA for all non-console administrative access and all remote network access to the cardholder data environment.",
+            "Policy does not define MFA processes, technology standards, or user requirements specifically for in-scope (PCI) systems.",
+            "Lacks controls or procedures specifying how MFA is enforced and monitored for cardholder data environment access."
+          ],
+          "recommendations": [
+            "Add a clear, explicit policy statement mandating MFA for all non-console administrative access and all remote access to the cardholder data environment.",
+            "Document the technical and process requirements for MFA methods, referencing PCI DSS and industry best practices.",
+            "Assign accountability for enforcement and regular review of MFA controls within the cardholder data environment.",
+            "Update relevant sections to include procedures for monitoring, reviewing, and continuously improving MFA implementation as part of risk management."
+          ]
+        },
+        {
+          "control_id": "PCI-10.2",
+          "control_name": "Audit Logs Capture User Activities",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions auditing privileged function execution and general account management, but it lacks explicit language requiring audit logs of all individual user access to cardholder data and a comprehensive approach to monitoring user activities as required by PCI-10.2.",
+          "evidence": [
+            "\"Prevents non-privileged users from executing privileged functions and audit the execution of such function.\" (Excerpt 5)",
+            "\"Limits information system access to authorized users, processes actions on behalf of authorized users, or devices...\" (Excerpt 1)",
+            "\"Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access...\" (Excerpt 3)"
+          ],
+          "gaps": [
+            "The policy does not explicitly require logging of all individual user access to cardholder data.",
+            "There is no mention of logging all relevant user activities as specified by PCI-10.2 (e.g., access attempts, changes, deletions).",
+            "Requirements for security event log retention, review, and forensic analysis capability are not addressed.",
+            "No detailed reference to anomaly detection through audit logs is present."
+          ],
+          "recommendations": [
+            "Explicitly require the logging of all user access\u2014including successful and failed attempts\u2014to cardholder data.",
+            "Expand audit log requirements to include all specified user activities as outlined in PCI-10.2: access, creation, modification, deletion, and other relevant actions.",
+            "Mandate retention, protection, and regular review of audit logs, including processes for forensic analysis and anomaly detection.",
+            "Define responsibilities and processes for monitoring, reporting, and responding to potential suspicious activity detected in logs."
+          ]
+        },
+        {
+          "control_id": "PCI-10.6",
+          "control_name": "Time Synchronization Mechanisms",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 1,
+          "score_rationale": "The policy references general federal/NIST requirements for system security and protection against unauthorized modification, but it does not specifically mention time synchronization mechanisms, their implementation, or the protection of time data.",
+          "evidence": [
+            "Protect information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide for their confidentiality, integrity, and availability; (Excerpt 4)",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance; (Excerpt 2)",
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range (Excerpt 3)",
+            "Various references to NIST Special Publications and FIPS standards, including some (e.g., NIST SP 800-53) that address time synchronization (Excerpts 1 and 5)"
+          ],
+          "gaps": [
+            "No explicit mention of time synchronization technology or mechanisms in policy.",
+            "No requirement to use consistent and correct time across systems.",
+            "No direct statement on the protection of time data from unauthorized modification.",
+            "No designation of accountability or monitoring specific to time synchronization.",
+            "No processes/guidance for keeping time synchronization technology current."
+          ],
+          "recommendations": [
+            "Add a dedicated section that mandates implementation, configuration, and maintenance of time synchronization mechanisms (e.g., NTP) for all relevant systems.",
+            "Specify requirements to use reliable, approved time sources and implement consistent/correct time across all systems.",
+            "Define technical and administrative controls to protect time service configurations and logs from unauthorized changes.",
+            "Assign responsibility for monitoring time synchronization and validating time integrity at regular intervals.",
+            "Reference relevant NIST standards, such as NIST SP 800-53 (AU-8), and map policy requirements to these controls."
+          ]
+        },
+        {
+          "control_id": "PCI-10.7",
+          "control_name": "Failures Detected and Reported",
+          "family": "Monitoring and Testing",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy requires incident reporting and continuous monitoring, and mandates roles to assess performance of security controls and respond to incidents. However, it lacks specific detail on how failures of critical controls are detected, reported, and responded to, and there is no mention of log management tools or explicit review processes.",
+          "evidence": [
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;",
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range;",
+            "Manages personnel, assets, data, and information, and physical security matters within the PO;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting."
+          ],
+          "gaps": [
+            "The policy does not specify how failures of critical security controls are detected.",
+            "No mechanism or process for reporting failures of controls is detailed beyond generic incident reporting.",
+            "Log management tools and systematic log review procedures are not mentioned.",
+            "The policy does not describe promptness of response to detected failures or detail timelines.",
+            "Continuous improvement or monitoring of these processes is not articulated."
+          ],
+          "recommendations": [
+            "Explicitly document procedures for detection of failures in critical security controls, including criteria, tools, and responsible parties.",
+            "Define processes for prompt reporting of detected failures, including alerting workflows and escalation steps.",
+            "Include requirements for the use of log management tools and regular log reviews to facilitate identification and investigation of control failures.",
+            "Establish and track metrics on the detection, reporting, and response process to enable monitoring and improvement.",
+            "Integrate continuous improvement feedback into the process by regularly reviewing incidents or failures and updating procedures as needed."
+          ]
+        },
+        {
+          "control_id": "PCI-12.1",
+          "control_name": "Comprehensive Information Security Policy",
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a comprehensive information security program and references annual reviews and maintenance, but does not explicitly state that the overarching information security policy itself is reviewed and updated at least annually. Accountability and responsibilities are defined, but monitoring and continuous improvement are not documented.",
+          "evidence": [
+            "reviews information system documentation and the information system itself at least annually. If a major change/upgrade to the system occurs, the documentation would require updating for the information system as required in ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems. ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP.",
+            "Ensures that information security management processes and technical requirements are integrated with ED strategic, operational, and budgetary planning processes.",
+            "Ensures that senior ED officials provide information security that is consistent with the ISP for the information and information systems that support the operations and assets under their control."
+          ],
+          "gaps": [
+            "There is no explicit statement that the main information security policy is reviewed at least every 12 months.",
+            "The process for updating the policy based on new risks or requirements is not clearly defined.",
+            "No mention of a mechanism for communicating policy updates broadly to stakeholders.",
+            "No evidence of tracking, metrics, or continuous improvement practices around the policy itself."
+          ],
+          "recommendations": [
+            "Add a clear requirement within the policy to review and update the comprehensive information security policy at least once every 12 months, or as required by significant changes.",
+            "Document and formalize the process for triggering policy updates in response to emerging risks, regulatory change, or incident learnings.",
+            "Establish and document a communication process to ensure all stakeholders are notified of policy updates.",
+            "Incorporate monitoring and metrics to track policy compliance and drive continuous improvement."
+          ]
+        },
+        {
+          "control_id": "PCI-12.3",
+          "control_name": "Risks Identified, Evaluated, and Managed",
+          "family": "Information Security Policy",
+          "framework_id": "pci_dss",
+          "maturity_score": 2,
+          "score_rationale": "The policy references risk assessments (at least every three years or upon major changes) and residual risk identification, but lacks evidence of a formal, documented, and consistently applied annual risk assessment process specifically for the cardholder data environment as required by PCI-12.3.",
+          "evidence": [
+            "Excerpt 1: 'reviews information system documentation and the information system itself at least annually ... Identifies residual risk and provides justification for AO risk decisions;'",
+            "Excerpt 5: 'Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, ... at no less than every three years or when significant changes occur to the system/network;'"
+          ],
+          "gaps": [
+            "No explicit requirement to perform a formal risk assessment at least annually specifically for the cardholder data environment.",
+            "Lacks detailed description of the documented risk assessment process (who conducts it, required elements, methodology, action tracking).",
+            "No indication of regular evaluation and management (i.e., tracking, mitigation, or acceptance) of risks identified."
+          ],
+          "recommendations": [
+            "Update policy to mandate a formal, documented risk assessment process specifically covering the cardholder data environment, aligning specifically with PCI DSS expectations.",
+            "Specify that risk assessments must occur at least annually, in addition to when significant changes occur.",
+            "Detail the process, responsible parties, methods for risk evaluation, and how risks are managed, tracked, and re-assessed.",
+            "Document how risk assessment findings are reported, actioned, and linked to planned security improvements."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T19:49:40.115438",
+  "status": "completed"
+}

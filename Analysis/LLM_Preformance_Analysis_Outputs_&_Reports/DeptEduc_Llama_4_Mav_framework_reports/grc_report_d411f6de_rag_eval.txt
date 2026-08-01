@@ -1,0 +1,276 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : 2023-cybersecurity-policy.pdf
+Assessment JSON: grc_report_d411f6de.json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-07-14 01:14 UTC
+Frameworks     : csa_ccm
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.762 / 1.000  (Acceptable)
+================================================================================
+Controls evaluated: 25
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.812  [################....]  Good
+  Evidence Relevance      0.512  [##########..........]  Poor
+  Score Consistency       0.724  [##############......]  Acceptable
+  Gap Completeness        0.739  [###############.....]  Acceptable
+  Recommendation Quality  0.797  [################....]  Acceptable
+  Evidence Groundedness   0.987  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: CSA Cloud Controls Matrix
+Quality Score: 0.762  [###############.....]  Acceptable
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.812  [################....]
+  Evidence Relevance      0.512  [##########..........]
+  Score Consistency       0.724  [##############......]
+  Gap Completeness        0.739  [###############.....]
+  Recommendation Quality  0.797  [################....]
+  Evidence Groundedness   0.987  [####################]
+
+  Family: Application and Interface Security  (3 controls)  Quality: 0.735  Acceptable
+  --------------------------------------------------------------------------------
+  AIS-01  |  Application and Interface Security Policy  |  Maturity: 3 (Defined)  |  Quality: 0.640 (Needs Improvement)
+    Faithfulness              0.720  The rationale's claim that the policy 'assigns responsibilities and covers planning, delivery, support' is broadly supported by the evidence quotes, but the assertion that 'formal, defined processes' exist for application security is somewhat overstated given the evidence quotes focus on system authorization, POA&M, and procurement rather than application security processes specifically; the gaps are not contradicted by the evidence.
+    Evidence Relevance        0.350  The five evidence quotes primarily address system authorization (ATO), POA&M tracking, change management, and IT procurement, which are only tangentially related to application and interface security policy establishment, documentation, approval, and communication as required by AIS-01.
+    Score Consistency         0.450  A score of 3 (defined/managed) is inflated given that the evidence quotes do not directly demonstrate application security policy documentation, approval, communication, or evaluation processes—the evidence is largely about system authorization and procurement, which would more accurately support a score of 1–2.
+    Gap Completeness          0.600  The gaps correctly identify missing approval, communication, evaluation, and continuous improvement elements, but miss other obvious control requirements such as the absence of any documented application security-specific procedures, lack of evidence for policy application/enforcement mechanisms, and no mention of interface security specifically.
+    Recommendation Quality    0.720  The recommendations are reasonably specific and directly address each identified gap (approval process, stakeholder training, review cycles, feedback mechanisms), though they remain somewhat generic and could be strengthened by referencing specific roles, timelines, or frameworks relevant to the organization's context.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  AIS-02  |  Application Security Baseline Requirements  |  Maturity: 2 (Developing)  |  Quality: 0.817 (Good)
+    Faithfulness              0.920  The rationale accurately reflects what the evidence shows — general security requirements and NIST alignment without application-category-specific baselines or OWASP mentions — and the gaps do not contradict any evidence quotes.
+    Evidence Relevance        0.550  The cited quotes address general information security requirements and NIST control integration, which are only tangentially related to application security baseline requirements by category and have no direct bearing on OWASP Top 10 compliance, making them only partially relevant to this specific control.
+    Score Consistency         0.800  A score of 2 is reasonably consistent with evidence that shows general security integration processes but lacks any application-category-specific baselines or OWASP references, indicating partial/ad hoc compliance rather than a defined baseline program.
+    Gap Completeness          0.780  The gaps correctly identify the absence of categorized baselines, OWASP Top 10 requirements, and maintenance processes, but miss other obvious control requirements such as documentation standards, applicability to third-party/acquired applications, and secure development lifecycle integration specific to application security.
+    Recommendation Quality    0.850  Recommendations are specific and directly address each identified gap — categorized baselines, OWASP integration, and a review process — though they could be further strengthened by referencing specific frameworks or timelines for implementation.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  AIS-04  |  Application Security Metrics  |  Maturity: 2 (Developing)  |  Quality: 0.748 (Acceptable)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence shows (patch management, monitoring, POA&M tracking) and correctly notes the absence of explicit SLAs and application-specific metrics; no claims contradict the evidence, though the rationale slightly overstates the degree of formalization implied by evidence [2] and [4] which do reference specific timeframes for patching.
+    Evidence Relevance        0.450  Most evidence quotes relate to general patch management, continuous monitoring, and procurement requirements rather than to application security metrics or automated remediation processes specifically required by AIS-04; only quotes [2], [4], and partially [6] are tangentially relevant, while quotes [3], [5], [7], and [8] are largely generic policy boilerplate with minimal direct relevance to this control.
+    Score Consistency         0.700  A score of 2 is reasonably consistent with the evidence, which shows partial vulnerability management processes (patching timelines, POA&M tracking) but no application-specific metrics or SLAs; however, a score of 1 could also be justified given how little of the evidence directly addresses AIS-04's specific requirements.
+    Gap Completeness          0.720  The identified gaps correctly capture the missing SLAs, application security metrics, and automation requirements, but miss the control's explicit requirement to 'define and implement a process' for application vulnerability remediation as a formalized workflow distinct from generic patch management, and do not note the absence of severity-based prioritization for application vulnerabilities.
+    Recommendation Quality    0.800  Recommendations are specific and directly address the identified gaps, including concrete examples like vulnerability age metrics, severity-based SLAs, and CI/CD pipeline automation; they could be marginally improved by referencing integration with the existing POA&M/CSAM system already evidenced in the policy.
+    Evidence Groundedness     1.000  8/8 quotes located in PDF
+
+
+  Family: Business Continuity Management  (2 controls)  Quality: 0.742  Acceptable
+  --------------------------------------------------------------------------------
+  BCR-01  |  Business Continuity Management Policy  |  Maturity: 1 (Initial)  |  Quality: 0.758 (Acceptable)
+    Faithfulness              0.920  The rationale accurately reflects what the evidence quotes state — they cover general security policy governance and monitoring but not BCM — and the gaps do not contradict any evidence quote, making the assessment largely faithful.
+    Evidence Relevance        0.200  The three quotes address general information security policy maintenance, continuous security monitoring, and security documentation updates, none of which directly address business continuity management, disaster recovery, or BCM testing requirements specified by the control.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only tangential general-governance language with no BCM-specific content, correctly reflecting minimal maturity rather than zero (since some governance infrastructure exists) or higher.
+    Gap Completeness          0.800  The gaps comprehensively capture the missing BCM elements (policy, planning, testing, evaluation, communication, maintenance), though they could be slightly more specific about missing approval workflows and roles/responsibilities for BCM as required by the control.
+    Recommendation Quality    0.780  Recommendations are reasonably specific and directly address the identified gaps (dedicated BCM policy, annual testing mandate, communication/training, risk integration), though the last recommendation about statutory compliance is somewhat generic and could be tied more precisely to the identified gaps.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  BCR-03  |  Business Continuity Testing  |  Maturity: 1 (Initial)  |  Quality: 0.725 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence quotes contain — general references to NIST controls, continuous monitoring, and documentation updates — without overstating or fabricating claims, though the leap that NIST SP 800-53 references imply nothing about BC testing is slightly inferential.
+    Evidence Relevance        0.150  The three evidence quotes address NIST control applicability, continuous security monitoring, and documentation updates, none of which directly address business continuity or disaster recovery testing procedures, making them largely tangential to BCR-03's specific requirements.
+    Score Consistency         0.800  A score of 1 is reasonably consistent with evidence that only obliquely touches the control through generic NIST references and documentation maintenance, with no explicit BC/DR testing content, though a score of 0 could also be justified given the complete absence of relevant evidence.
+    Gap Completeness          0.750  The three identified gaps correctly capture the core missing elements (testing procedures, testing intervals, and plan updates post-testing), but miss other common BCR-03 requirements such as defined test types (tabletop, simulation, full exercise), stakeholder roles in testing, and communication of test results.
+    Recommendation Quality    0.800  The recommendations are specific and directly address each identified gap — defining procedures, specifying intervals with concrete examples, and mandating documentation of lessons learned — though they could be further strengthened by referencing specific NIST CP control families or suggesting integration with existing SSP processes already mentioned in the evidence.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Change Control and Configuration Management  (2 controls)  Quality: 0.752  Acceptable
+  --------------------------------------------------------------------------------
+  CCC-01  |  Change Management Policy  |  Maturity: 2 (Developing)  |  Quality: 0.773 (Acceptable)
+    Faithfulness              0.780  The rationale and gaps are mostly grounded in the evidence, but the claim that 'Key process steps and control activities are implied' is a reasonable inference; however, the gap about 'No assignment of roles and responsibilities specific to managing and approving changes' is partially contradicted by Evidence [3] which shows ISO roles are mentioned, and Evidence [1] implies notification responsibilities exist.
+    Evidence Relevance        0.520  Evidence [1] and [2] are marginally relevant to change management (notification of major changes, documentation updates), but Evidence [3] and [4] are generic cybersecurity governance/resourcing statements that do not directly address change management policy requirements such as approval workflows, change logs, or risk assessment of changes.
+    Score Consistency         0.720  A score of 2 is reasonably consistent with the weak and indirect evidence presented — the policy touches on change-related activities (notification, documentation updates) but lacks a formal, comprehensive change management framework, justifying a below-average score.
+    Gap Completeness          0.800  The gaps are comprehensive and accurately capture missing elements such as approval processes, change logs, post-implementation review, and policy review cycles, though the gap about 'no assignment of roles' slightly overstates the absence given that ISO responsibilities are referenced in the evidence.
+    Recommendation Quality    0.820  Recommendations are specific, actionable, and directly mapped to the identified gaps (e.g., defining submission/approval steps, assigning roles, establishing change logs and post-implementation reviews), though they remain somewhat high-level and could benefit from referencing specific frameworks like ITIL or NIST SP 800-128 for greater precision.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  CCC-04  |  Unauthorized Change Protection  |  Maturity: 3 (Defined)  |  Quality: 0.730 (Acceptable)
+    Faithfulness              0.780  The rationale accurately reflects what the evidence shows (formal processes, defined roles, reviews) and correctly notes the absence of explicit detection/prevention mechanisms, but the evidence quotes only partially support claims about 'defined roles' and 'change management requirements' as several quotes relate to access control rather than change management specifically.
+    Evidence Relevance        0.450  Several evidence quotes (3, 4, 5) address access control, account reviews, least privilege, and separation of duties rather than directly addressing unauthorized change detection or prevention of asset modification, making them only tangentially relevant to the specific control requirement.
+    Score Consistency         0.650  A score of 3 is somewhat inflated given that the evidence quotes are largely about access control and configuration guidance rather than unauthorized change protection specifically, and none of the quotes demonstrate actual detection or prevention mechanisms central to this control's requirement.
+    Gap Completeness          0.700  The gaps correctly identify missing detection/prevention mechanisms and automated technical controls, but miss obvious requirements such as asset inventory management, formal unauthorized change incident response procedures, and rollback/remediation processes for detected unauthorized changes.
+    Recommendation Quality    0.800  Recommendations are specific and actionable (file integrity monitoring, configuration management tools, metrics tracking) and directly address the identified gaps, though the suggestion to review processes based on incident trends is somewhat generic and could be more precisely tied to a specific gap.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Cryptography, Encryption and Key Management  (3 controls)  Quality: 0.719  Acceptable
+  --------------------------------------------------------------------------------
+  CEK-01  |  Encryption and Key Management Policy  |  Maturity: 1 (Initial)  |  Quality: 0.695 (Needs Improvement)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes contain no direct mention of encryption or key management, and the gaps are consistent with what is absent from the cited evidence; the minor deduction is because the rationale infers the policy relies on NIST/FIPS without the evidence explicitly confirming encryption-specific guidance is required under those standards.
+    Evidence Relevance        0.250  The three evidence quotes are generic policy boilerplate referencing PIV integration, NIST SP 800-53 privacy controls, and legislative references — none directly address encryption algorithms, key management processes, or cryptographic key protection as required by CEK-01.
+    Score Consistency         0.800  A maturity score of 1 is appropriate given the complete absence of encryption and key management specific content in the evidence, with only tangential references to NIST/FIPS frameworks that could imply some baseline awareness, justifying a minimal rather than zero score.
+    Gap Completeness          0.780  The gaps comprehensively cover the major missing elements (lifecycle management, responsibilities, key protection, continuous improvement), but miss some specific CEK-01 requirements such as cryptographic algorithm standards, key escrow/recovery procedures, and audit logging for cryptographic operations.
+    Recommendation Quality    0.820  Recommendations are specific, actionable, and directly tied to the identified gaps, covering lifecycle, roles, access controls, and compliance monitoring; they could be further strengthened by referencing concrete standards like NIST SP 800-57 for key management guidance rather than broadly citing NIST and FIPS.
+    Evidence Groundedness     0.667  2/3 quotes located in PDF  [WARNING: possible hallucinated citations]
+
+  CEK-03  |  Data Encryption  |  Maturity: 2 (Developing)  |  Quality: 0.830 (Good)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence shows (references to secure protocols and standards like NIST/FIPS) and correctly notes the absence of explicit encryption requirements; however, citing FIPS PUB 140-2 as evidence without it explicitly mandating encryption in the policy slightly overstates what the quote demonstrates.
+    Evidence Relevance        0.650  The evidence quotes are tangentially related—FIPS 140-2 and NIST 800-52 are relevant standards for cryptography, and secure protocol limits relate to data in transit—but none of the quotes constitute explicit policy requirements for encryption at rest, in use, or with specified algorithms, making them weak rather than direct evidence for CEK-03.
+    Score Consistency         0.780  A score of 2 is reasonably consistent with the evidence, which shows only indirect references to encryption standards rather than explicit policy mandates; the multiple significant gaps (at rest, in use, algorithms, key management) support a low score, though a score of 1 might arguably be more appropriate given how little direct encryption requirement is evidenced.
+    Gap Completeness          0.850  The gaps comprehensively cover the major missing elements required by CEK-03—encryption at rest, in use, algorithm/key length specifics, and key management—though the fifth gap about accountability and metrics, while valid, goes slightly beyond the core control requirement and could be more precisely tied to the control's language.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly address each identified gap, including concrete examples like AES-256 and TLS 1.2/1.3, key lifecycle management, and accountability assignment, making them genuinely useful for remediation rather than generic boilerplate.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  CEK-04  |  Encryption Algorithm  |  Maturity: 2 (Developing)  |  Quality: 0.633 (Needs Improvement)
+    Faithfulness              0.620  The rationale correctly notes the FIPS 140-2 reference but then claims the policy 'does not formally state' FIPS 140-2/3 alignment while evidence quote [1] explicitly cites 'FIPS PUB 140-2, Security Requirements for Cryptographic Modules,' creating a partial contradiction; the gap claiming 'no direct mandate for alignment with FIPS 140-2/3' is also undermined by evidence [1], making some gap statements unfaithful to the evidence.
+    Evidence Relevance        0.380  Evidence quote [1] is directly relevant as it cites FIPS 140-2, but quotes [2] and [3] are generic boilerplate about security integration and approved protocols respectively, with neither specifically addressing encryption algorithm requirements for data at rest or in transit.
+    Score Consistency         0.550  A score of 2 is somewhat defensible given the weak and indirect evidence, but the presence of an explicit FIPS 140-2 citation in evidence [1] arguably warrants a slightly higher score, while the near-absence of algorithm-specific encryption requirements for storage and transit could support it; the score is roughly consistent but the rationale's internal contradictions weaken confidence.
+    Gap Completeness          0.600  The gap claiming no mandate for FIPS 140-2/3 alignment is partially contradicted by evidence [1], reducing accuracy; meanwhile, genuinely missing elements such as specific algorithm enumeration (e.g., AES-256, RSA, SHA-2), key management requirements, and handling of legacy/deprecated algorithms are not identified as gaps.
+    Recommendation Quality    0.650  The recommendations are reasonably actionable and address most identified gaps, but they remain somewhat generic (e.g., 'define monitoring and metrics') without specifying which algorithms to mandate, referencing NIST SP 800-175B or concrete algorithm selection criteria, or distinguishing between data-at-rest versus data-in-transit controls.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Governance, Risk and Compliance  (3 controls)  Quality: 0.794  Acceptable
+  --------------------------------------------------------------------------------
+  GRC-01  |  Governance Program  |  Maturity: 3 (Defined)  |  Quality: 0.820 (Good)
+    Faithfulness              0.780  The rationale's claim about formal governance structures, role assignments, and alignment with laws is well-supported by evidence quotes, but the gap asserting no continuous improvement process is partially contradicted by evidence quote [3], which references a 'continuous monitoring strategy' that implies ongoing visibility and could relate to program improvement.
+    Evidence Relevance        0.820  All four quotes are relevant to governance program establishment—covering centralized authority, enterprise-wide policy mandates, monitoring strategy, and regulatory alignment—though quote [3] is more specific to continuous monitoring than to governance program alignment with business objectives.
+    Score Consistency         0.800  A score of 3 is reasonable given the evidence shows defined roles, policy frameworks, and regulatory alignment but lacks explicit metrics, periodic review processes, and integration with risk management, making a mid-range score logically consistent with the evidence strength and identified gaps.
+    Gap Completeness          0.700  The gaps appropriately identify missing metrics, continuous improvement, and periodic review processes, but the gap claiming no continuous monitoring integration is weakened by evidence quote [3], and the gaps omit control-specific requirements such as explicit documented alignment mechanisms between security strategy and business objectives or stakeholder accountability structures.
+    Recommendation Quality    0.820  Recommendations are specific and directly tied to identified gaps (metrics definition, periodic review process, alignment documentation, risk management integration), though they remain somewhat high-level and would benefit from concrete implementation details such as suggested review cadences or example metric categories.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  GRC-03  |  Cybersecurity Training  |  Maturity: 3 (Defined)  |  Quality: 0.858 (Good)
+    Faithfulness              0.850  The rationale accurately reflects what the evidence states regarding training requirements and tracking, and the gaps about missing content updates and continuous improvement are not contradicted by any evidence quote, making the assessment largely faithful, though the claim about 'tracking by role' is a slight overreach of what Evidence [3] explicitly states.
+    Evidence Relevance        0.900  All three evidence quotes are directly relevant to the control's requirements—covering personnel training obligations, supervisory enforcement, and tracking—addressing the core elements of a security awareness training program.
+    Score Consistency         0.800  A score of 3 is reasonable given that the evidence demonstrates training requirements, supervisory accountability, and tracking are present, but content update processes, metrics, and continuous improvement mechanisms are absent, which aligns with a mid-level maturity rating.
+    Gap Completeness          0.750  The gaps correctly identify missing content update processes, metrics, and continuous improvement linkages, but omit an explicit gap around the absence of documented training program structure or curriculum details, and the gap about 'frequency of training' partially overlaps with what the evidence implies without being fully explored.
+    Recommendation Quality    0.850  The recommendations are specific and directly tied to each identified gap—covering content review cycles, metrics, accountability, feedback loops, and risk integration—though the suggestion to integrate with risk management, while valid, is somewhat generic and could be more concretely actionable with specific integration touchpoints.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  GRC-05  |  Intellectual Property  |  Maturity: 2 (Developing)  |  Quality: 0.703 (Acceptable)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence as general/indirect rather than IP-specific, and the gaps correctly identify absent IP/licensing content; no claims contradict what the quotes actually state, though the rationale slightly overstates the relevance of the asset inventory quote to IP protection.
+    Evidence Relevance        0.250  The three quoted excerpts address SLA management, procurement security clauses, and asset inventory maintenance — none of which directly address intellectual property rights or software licensing compliance, making them largely tangential to the specific control requirement.
+    Score Consistency         0.650  A score of 2 is somewhat defensible given that the evidence shows only weak, indirect relevance (procurement clauses could loosely encompass licensing), but the near-total absence of any IP or licensing language arguably warrants a score of 1, making the score slightly inflated.
+    Gap Completeness          0.720  The gaps correctly capture the most critical absences (explicit IP policy, licensing procedures, audit/monitoring, accountability), but miss additional common requirements such as open-source software license management, handling of third-party IP in vendor contracts, and employee IP ownership provisions.
+    Recommendation Quality    0.750  Recommendations are reasonably specific and map directly to each identified gap, but they remain somewhat generic (e.g., 'update policies to explicitly include provisions') without specifying concrete mechanisms like license tracking tools, software asset management (SAM) systems, or specific audit cadences.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+  Family: Identity and Access Management  (4 controls)  Quality: 0.807  Good
+  --------------------------------------------------------------------------------
+  IAM-01  |  Identity and Access Management Policy  |  Maturity: 3 (Defined)  |  Quality: 0.823 (Good)
+    Faithfulness              0.780  Most rationale claims are grounded in the evidence (least privilege, quarterly reviews, OIG audits), but the assertion that the policy covers 'communication' and 'maintaining policies' as explicit requirements is only partially supported — evidence [2] references an enterprise-wide ISP broadly, and the gap claiming communication processes are undescribed slightly contradicts the implication of evidence [3] which mentions training and access determination processes.
+    Evidence Relevance        0.820  Evidence quotes [1], [3], and [4] are directly relevant to IAM control requirements including least privilege, access reviews, and access control procedures, while [2] is fairly generic policy boilerplate and [5] relates to OIG audit oversight which is tangentially relevant but not core to IAM policy establishment and enforcement.
+    Score Consistency         0.800  A score of 3 is reasonable given that the evidence demonstrates documented policies, least-privilege enforcement, quarterly access reviews, and separation of duties, while genuinely lacking explicit metrics, continuous improvement processes, and detailed communication procedures — the balance of evidence strength and gaps is consistent with a mid-range maturity score.
+    Gap Completeness          0.720  The gaps identify meaningful absences (metrics, continuous improvement, communication detail, formal update procedures), but miss some obvious IAM control requirements such as absence of evidence on approval workflows for access requests, identity lifecycle management (provisioning/deprovisioning), and multi-factor authentication requirements that the control broadly implies.
+    Recommendation Quality    0.820  Recommendations are largely specific and actionable (e.g., defining metrics with examples, formal review cycles tied to risk changes, communication process details), and each maps to an identified gap, though the recommendation to 'integrate with broader risk management framework' is somewhat generic and could be more precisely scoped to IAM-specific risk linkages.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  IAM-02  |  Strong Authentication  |  Maturity: 2 (Developing)  |  Quality: 0.728 (Acceptable)
+    Faithfulness              0.720  The rationale's claim that PIV-based authentication is referenced for privileged users is supported by Excerpt 2, and the reference to NIST SP 800-63 is supported by Excerpt 1, but the assertion that 'coverage is inconsistent and lacks specific formal processes or monitoring mechanisms' goes somewhat beyond what the sparse evidence quotes actually demonstrate — the quotes are too brief to confirm or deny process completeness.
+    Evidence Relevance        0.550  Excerpt 2 (PIV-based authentication) is directly relevant to strong authentication for privileged access, but Excerpt 1 is only a bibliographic reference with no substantive policy content, and Excerpt 4 references general configuration guidance and identity management roadmaps rather than specific MFA or authentication enforcement requirements.
+    Score Consistency         0.650  A score of 2 is plausible given the thin and indirect evidence (a standards reference, a brief PIV mention, and a configuration guidance citation), but the evidence is so sparse that it barely supports even a score of 2 — a score of 1 might be equally defensible, making the 2 slightly generous.
+    Gap Completeness          0.700  The gaps correctly identify the absence of explicit MFA mandates for cloud services and lack of enforcement/monitoring mechanisms, which are core control requirements, but they miss other obvious requirements such as authentication for non-privileged users, session management, and specific cloud service scope definitions.
+    Recommendation Quality    0.750  The recommendations are reasonably specific and directly address the identified gaps (explicit MFA mandate, documented processes, accountability), though they remain somewhat generic and could be strengthened by referencing specific frameworks, timelines, or implementation tools relevant to the cloud context.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  IAM-05  |  Least Privilege  |  Maturity: 3 (Defined)  |  Quality: 0.880 (Good)
+    Faithfulness              0.900  The rationale accurately reflects what the evidence quotes state regarding least privilege and supporting controls, and the identified gaps (lack of review frequency and revocation procedures) are not contradicted by any of the evidence quotes, making the assessment largely faithful.
+    Evidence Relevance        0.850  All four evidence quotes are directly relevant to the least privilege control requirement, covering the principle itself, access limitations, separation of duties, and functionality restrictions, though none address the review and revocation sub-requirement, leaving that aspect unsupported by evidence.
+    Score Consistency         0.800  A score of 3 is reasonable given that the evidence clearly documents the least privilege principle and supporting controls but lacks any evidence of the access review and revocation requirements, which are explicit parts of the control; a score of 2 could also be defensible given the significant gap in half the control requirement.
+    Gap Completeness          0.850  The gaps accurately capture the missing review frequency, revocation procedures, and accountability mechanisms, but could additionally note the absence of any evidence addressing privileged account-specific review processes or automated mechanisms for detecting and removing stale permissions.
+    Recommendation Quality    0.880  The recommendations are specific, actionable, and directly tied to the identified gaps, including a concrete schedule suggestion, formal revocation process, assigned responsibility, and metrics tracking, making them well-targeted and practical.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  IAM-08  |  User Access Provisioning  |  Maturity: 3 (Defined)  |  Quality: 0.795 (Acceptable)
+    Faithfulness              0.820  The rationale and gaps are broadly consistent with the evidence, but the claim that authorization is covered is only weakly supported by evidence [1] (which describes privilege determination, not a formal authorization workflow), and the gap about 'no explicit formal process' is reasonably inferred rather than directly contradicted by the evidence.
+    Evidence Relevance        0.650  Evidence [1] and [2] are directly relevant to access provisioning, but [3] (security training), [4] (PIV/contract language in acquisitions), and [5] (informing Personnel Security of contractor changes) are only tangentially related to user access provisioning as defined by the control requirement.
+    Score Consistency         0.720  A score of 3 is somewhat generous given that only two of five evidence quotes directly address provisioning requirements and significant gaps remain in recording, formal workflow, and communication; a score of 2–3 is defensible but leans toward the higher end given the limited direct evidence.
+    Gap Completeness          0.780  The gaps correctly identify missing formal workflow, logging, and communication requirements, but miss that evidence [5] (informing Personnel Security of contractor changes) partially addresses communication, and the gap list does not address the absence of evidence for provisioning for different user types (e.g., temporary, privileged, or third-party users) which the control implicitly requires.
+    Recommendation Quality    0.800  Recommendations are specific and directly tied to the identified gaps (formal workflow, logging, communication), though the final recommendation to integrate with risk and change management processes is somewhat generic and not clearly derived from any identified gap.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Logging and Monitoring  (3 controls)  Quality: 0.737  Acceptable
+  --------------------------------------------------------------------------------
+  LOG-01  |  Logging and Monitoring Policy  |  Maturity: 2 (Developing)  |  Quality: 0.742 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes show only high-level references to NIST compliance, continuous monitoring strategy, and responsibilities without specific logging procedures, and the gaps do not contradict the evidence; however, the rationale slightly overstates 'annual reviews' as logging-specific when the evidence refers to general information system reviews.
+    Evidence Relevance        0.300  The four evidence quotes address general NIST SP 800-53 compliance, continuous monitoring strategy, ISO adherence to cybersecurity policies, and privacy control evaluation—none directly addresses logging event definitions, log management procedures, or logging-specific policy requirements central to LOG-01.
+    Score Consistency         0.650  A score of 2 is defensible given that the evidence shows only tangential, high-level references to monitoring and compliance frameworks with no specific logging procedures, though a score of 1 could also be justified given how weakly the evidence maps to the control's specific requirements.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements required by the control—event definitions, log management lifecycle, approval/communication processes, metrics, and effectiveness testing—with no gaps contradicted by the evidence, though a gap around log retention periods and specific log format/integrity requirements could have been more explicitly called out.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete examples such as user access and administrative action logging, formal approval processes, and periodic testing, making them practically useful rather than generic boilerplate.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  LOG-05  |  Audit Log Monitoring  |  Maturity: 2 (Developing)  |  Quality: 0.770 (Acceptable)
+    Faithfulness              0.820  The rationale and gaps are largely consistent with the evidence, which shows only general continuous monitoring and incident response language without specific audit log monitoring requirements; however, the rationale slightly overstates certainty about what the policy lacks given that the evidence excerpts may be partial representations of the full policy.
+    Evidence Relevance        0.550  The evidence quotes address general continuous monitoring and incident response capabilities but none specifically reference audit log monitoring, alert thresholds, or pattern-based detection, making them only tangentially relevant to the specific LOG-05 control requirement.
+    Score Consistency         0.750  A score of 2 is reasonable given that the evidence demonstrates some continuous monitoring and incident response framework exists (supporting above a 0–1 range) but lacks any explicit audit log monitoring, alerting, or timely response specifics required by the control, making a low-mid score appropriate.
+    Gap Completeness          0.720  The gaps correctly identify missing elements such as explicit audit log monitoring, automated alerts, and response timelines, but miss other obvious control requirements like log retention considerations, defined baselines for 'typical patterns,' and integration with a SIEM or log aggregation tool.
+    Recommendation Quality    0.780  The recommendations are reasonably specific and directly address the identified gaps (e.g., defining thresholds, specifying response timeframes, requiring baseline comparisons), though they remain somewhat high-level and could be strengthened by referencing specific implementation mechanisms such as SIEM tooling or concrete SLA timelines.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  LOG-08  |  Auditability  |  Maturity: 2 (Developing)  |  Quality: 0.700 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes do not explicitly address audit log retention or specific protections, and the gaps are consistent with what the evidence shows; however, the score rationale slightly overstates the policy's relevance by implying these general compliance references partially satisfy the control when they are only tangentially related.
+    Evidence Relevance        0.250  The cited evidence quotes address general NIST compliance, procurement security clauses, system configuration, and PII protection, none of which directly address audit log retention periods, audit log protection, or auditability requirements as specified by LOG-08.
+    Score Consistency         0.550  A score of 2 is somewhat generous given that none of the four evidence quotes directly address audit log retention or protection; the evidence is only tangentially related and would more logically support a score of 1, reflecting minimal or ad-hoc compliance rather than a repeatable process.
+    Gap Completeness          0.750  The gaps correctly identify the major missing elements (retention periods, documentation, access protection, responsibilities), but miss additional control requirements such as integrity protection of audit logs (e.g., tamper-evidence or immutability), backup and recovery of audit logs, and procedures for monitoring or alerting on audit log failures.
+    Recommendation Quality    0.800  The recommendations are specific, actionable, and directly tied to each identified gap, though they could be further strengthened by referencing concrete regulatory frameworks (e.g., NARA schedules, OMB Circular A-130) or specifying technical controls like SIEM integration or write-once storage for log integrity.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Security Incident Management  (2 controls)  Quality: 0.729  Acceptable
+  --------------------------------------------------------------------------------
+  SEF-01  |  Incident Management Policy  |  Maturity: 3 (Defined)  |  Quality: 0.703 (Acceptable)
+    Faithfulness              0.720  The rationale's claim that the policy 'establishes, documents, and communicates' incident management procedures is partially supported by evidence, but quotes [1]–[3] only show reporting chains and references to external procedures rather than directly evidencing a fully documented incident management policy; the gap about missing approval workflows is somewhat speculative given evidence [4] and [5] hint at a policy framework structure.
+    Evidence Relevance        0.550  Quotes [1] and [3] are directly relevant to incident management roles and reporting, but quotes [4] and [5] are generic policy framework boilerplate that do not specifically address incident management policy requirements, and quote [2] is more about compliance oversight than incident response per se.
+    Score Consistency         0.650  A score of 3 is somewhat generous given that the evidence only shows references to external procedures and reporting chains rather than directly demonstrating a documented, approved, and maintained incident management policy with defined roles and responsibilities; a score of 2 might be more defensible given the limited direct evidence.
+    Gap Completeness          0.600  The gaps correctly identify missing evaluation and continuous improvement elements, but fail to note the absence of direct evidence for core control requirements such as explicitly documented incident response procedures, defined escalation processes, and formal approval of the incident management policy itself — all fundamental to the control requirement.
+    Recommendation Quality    0.700  Recommendations are reasonably specific and actionable (e.g., tracking resolution time, integrating lessons learned), and they directly address the identified gaps, though they remain somewhat generic and could be more tailored to the ED-specific organizational context and the referenced EDSOC/ISSO roles.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  SEF-03  |  Incident Reporting  |  Maturity: 2 (Developing)  |  Quality: 0.755 (Acceptable)
+    Faithfulness              0.780  The rationale accurately reflects that the evidence shows only references to existing procedures and reporting responsibilities without detailing a formal plan or timelines, but the gap claiming 'no explicit assignment of accountability' is partially contradicted by Evidence [2], which does assign reporting responsibilities to specific roles (supervisor, ISSO, EDSOC, CO, COR).
+    Evidence Relevance        0.650  Both quotes are relevant to incident reporting in a general sense, but they are brief procedural references that do not substantively address the control's core requirements around formal response plans, stakeholder communications, or regulatory notification timeframes, limiting their depth of relevance.
+    Score Consistency         0.720  A score of 2 is reasonably consistent with evidence that shows only high-level references to existing procedures and role-based reporting without a documented incident response plan or timeframe details, though the evidence of named responsible parties and a referenced procedure document could arguably support a slightly higher score.
+    Gap Completeness          0.700  The gaps capture key missing elements (formal plan, stakeholder/regulatory communication timelines, metrics), but the gap claiming 'no explicit assignment of accountability' is weakened by Evidence [2] naming specific roles, and the gaps miss mentioning the absence of incident classification criteria, testing/exercising of the response plan, or post-incident review processes that the control implicitly requires.
+    Recommendation Quality    0.680  Recommendations are generally actionable and tied to the identified gaps, but the GDPR 72-hour example feels generic and not contextually grounded in the ED-specific regulatory environment, and the suggestions lack specificity about how to integrate monitoring mechanisms or who should own the plan development.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+
+  Family: Threat and Vulnerability Management  (3 controls)  Quality: 0.806  Good
+  --------------------------------------------------------------------------------
+  TVM-01  |  Antivirus and Anti-malware  |  Maturity: 1 (Initial)  |  Quality: 0.797 (Acceptable)
+    Faithfulness              0.850  The rationale accurately characterizes the evidence quotes as general/indirect references to security controls and monitoring without asserting unsupported facts, though the claim about 'automated information security and privacy capabilities' (evidence [4]) being irrelevant to antivirus is a reasonable inference rather than a direct contradiction.
+    Evidence Relevance        0.350  The cited quotes address continuous monitoring strategy, SSP validation, NIST control selection, and automated capabilities — none directly address antivirus/anti-malware configuration, definition updates, or scanning, making them only tangentially relevant to the specific control requirement.
+    Score Consistency         0.900  A score of 1 is well-justified given that the evidence contains only generic policy language with no explicit mention of antivirus/anti-malware technologies, definitions, or scanning — the minimal score reflects appropriately weak and indirect evidence.
+    Gap Completeness          0.800  The gaps comprehensively cover the core control requirements (deployment, definition currency, regular scans, accountability), though they could also mention the lack of coverage for specific asset types (e.g., endpoints vs. servers) or exception/exclusion handling for assets where antivirus may not be applicable.
+    Recommendation Quality    0.880  Recommendations are specific and actionable, directly tied to each identified gap, including concrete details like 'at least weekly' scan frequency and automatic definition updates, though specifying a definition update frequency (e.g., daily or within 24 hours of release) would further strengthen the mandate recommendation.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  TVM-02  |  Vulnerability Management  |  Maturity: 3 (Defined)  |  Quality: 0.812 (Good)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence shows (roles, patching requirements, POA&M tracking), and the gaps are largely consistent with what is absent from the quotes, though the claim about 'integration with risk management beyond basic compliance' is slightly overstated given the evidence does show some risk-tracking via POA&M and CSAM.
+    Evidence Relevance        0.720  Quotes [2], [5], and [6] are directly relevant to vulnerability management (patching timelines, weakness tracking, POA&M), while quotes [1], [3], and [4] are more tangentially related—continuous monitoring, documentation updates, and procurement language are supportive but do not directly address vulnerability identification, tracking, or remediation processes.
+    Score Consistency         0.780  A score of 3 is reasonable given evidence of defined roles, patching requirements, and POA&M-based tracking, but the absence of scanning methods, metrics, and program-level oversight noted in the gaps arguably supports a score closer to 2, making 3 slightly generous though defensible.
+    Gap Completeness          0.750  The gaps correctly identify missing elements like metrics, scanning tools, program oversight, and continuous improvement, but miss other obvious control requirements such as vulnerability prioritization/severity classification, defined remediation SLAs beyond patching, and coverage of third-party or supply chain vulnerabilities.
+    Recommendation Quality    0.800  Recommendations are specific and map directly to each identified gap (e.g., metrics for timeliness, designated program owner, standardized scanning tools), though they remain somewhat high-level and would benefit from referencing specific frameworks (e.g., NIST SP 800-40, CVSS scoring) to improve actionability.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+  TVM-03  |  Vulnerability Remediation  |  Maturity: 3 (Defined)  |  Quality: 0.808 (Good)
+    Faithfulness              0.820  The rationale's claims about role assignment and timeline adherence are supported by evidence quotes [1] and [2], and the gaps about missing SLAs and metrics are not contradicted by any evidence; however, the rationale's mention of 'formally assigns roles and responsibilities' is only weakly supported by the cited quotes, which focus on actions rather than role definitions.
+    Evidence Relevance        0.650  Quotes [1] and [2] are directly relevant to vulnerability remediation and patching SLAs, but quotes [3], [4], and [5] are generic policy statements about backups, continuous monitoring, and NIST control applicability that do not directly address the specific requirement of severity-based vulnerability remediation with defined SLAs.
+    Score Consistency         0.780  A score of 3 is reasonable given that there is evidence of patching processes and timeline compliance requirements but notable gaps in explicit SLA definitions, severity-based prioritization, and metrics, which collectively prevent a higher score and are consistent with a mid-level maturity.
+    Gap Completeness          0.750  The gaps correctly identify missing SLAs, risk-based prioritization, and metrics, but omit an obvious requirement: the absence of any defined vulnerability scanning or identification process, which is foundational to 'identifying and remediating' vulnerabilities as stated in the control requirement.
+    Recommendation Quality    0.850  Recommendations are specific and directly tied to each identified gap (e.g., defining SLAs by severity tier, formalizing risk-based triage, establishing metrics with accountability), though the continuous improvement recommendation is somewhat generic and could be more prescriptive about review frequency or mechanisms.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================

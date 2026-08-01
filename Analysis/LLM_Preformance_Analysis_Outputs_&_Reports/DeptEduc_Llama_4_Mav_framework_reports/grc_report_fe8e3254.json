@@ -1,0 +1,573 @@
+{
+  "assessment_id": "fe8e3254-fe7c-483c-b8f4-00f5cc9839a6",
+  "document_id": "754d310b89e4498f92be9cf7a98d2dbc",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "hipaa"
+  ],
+  "overall_posture_score": 2.45,
+  "framework_results": [
+    {
+      "framework_id": "hipaa",
+      "framework_name": "HIPAA Security Rule",
+      "overall_score": 2.45,
+      "family_scores": [
+        {
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 2.64,
+          "control_count": 8,
+          "weight": 1.4
+        },
+        {
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 1.74,
+          "control_count": 4,
+          "weight": 1.2
+        },
+        {
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "average_score": 2.4,
+          "control_count": 5,
+          "weight": 1.5
+        },
+        {
+          "family": "Organizational Requirements",
+          "framework_id": "hipaa",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.1
+        },
+        {
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.2
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "164.308(a)(1)",
+          "control_name": "Security Management Process",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy provides formal, well-documented procedures for risk assessment, defines roles and responsibilities for risk management, and mandates regular security reviews and implementation of security controls; however, evidence of continuous risk monitoring, specific metrics, and integration with an ongoing risk management/improvement process is limited.",
+          "evidence": [
+            "\"Ensures, through coordination with EDSOC, that all of ED\u2019s systems are in compliance with cybersecurity policy and reports the status to the ED CISO, Authorizing Official (AO/CIO) and ISSO\" (Excerpt 1)",
+            "\"Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture\" (Excerpt 3)",
+            "\"Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems... at no less than every three years or when significant changes occur\" (Excerpt 4)",
+            "\"Ensures that system weaknesses are captured in the Plan of Action and Milestones (POA&M) and are entered into ED\u2019s selected Central Cybersecurity Repository\" (Excerpt 4)",
+            "\"ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems\" (Excerpt 5)"
+          ],
+          "gaps": [
+            "No explicit requirement for conducting risk assessments more frequently than every three years or after significant changes.",
+            "Lacks detailed procedures or metrics for continuously monitoring, measuring, and improving the effectiveness of security controls.",
+            "Does not describe integration of security/risk findings with a formal risk management or continuous improvement cycle.",
+            "Limited mention of specific accountability, measurement, or tracking of corrective action effectiveness."
+          ],
+          "recommendations": [
+            "Require and document more frequent risk assessments (e.g., annual or as part of an ongoing risk management process).",
+            "Define specific security metrics and measurement procedures to monitor and evaluate control effectiveness.",
+            "Integrate risk assessment and mitigation steps with the broader enterprise risk management and continuous improvement program.",
+            "Assign clear accountability for remediation of identified risks and require tracking and reporting on corrective actions and their outcomes."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(2)",
+          "control_name": "Assigned Security Responsibility",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy references several security roles (ISSO, CISO, OCIO, PO Executive) with partial assignment of responsibilities related to security policy but does not clearly identify a single security official responsible for the overall development and implementation of all security policies and procedures as required by the control.",
+          "evidence": [
+            "Ensures that an ISO and ISSO are designated for each PO information system and the ISSO designations are sent to the ED CISO for approval; (Excerpt 5)",
+            "The PO Executive has centralized responsibility for the establishment, maintenance, and enforcement of the information security program and policy for all information systems within the PO or business component. (Excerpt 5)",
+            "The Secretary is responsible for: a) Delegating information security responsibilities to the Deputy Secretary. (Excerpt 3)",
+            "Seeks attestation from the appropriate COR, ISSO or CISO as the subject matter experts that the identified security requirements are consistent with department policy. (Excerpt 2)"
+          ],
+          "gaps": [
+            "No explicit identification of a single designated security official for the organization as a whole.",
+            "No clear statement that the CISO (or another role) is responsible for the overall development and implementation of all security policies and procedures entity-wide."
+          ],
+          "recommendations": [
+            "Update the policy to explicitly name the organization\u2019s security official (e.g., Chief Information Security Officer or similar title) as responsible for the development and implementation of all information security policies and procedures.",
+            "Clearly document this responsibility in alignment with regulatory requirements, specifying their authority and accountability organization-wide."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(3)",
+          "control_name": "Workforce Security",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires least-privilege access, user role enforcement, personnel screening, and security training for all users prior to system access, covering most requirements, but lacks evidence of ongoing monitoring or regular review of access rights.",
+          "evidence": [
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "Access to all ED information must be limited based on a least-privilege approach and a need-to-know basis.",
+            "All users have the responsibility to protect ED\u2019s information and information systems from unauthorized access, use, disclosure, disruption, modification, and destruction by complying with the information security requirements maintained in this Policy.",
+            "Ensures duties responsible for ED personnel security are outlined in Contracting Officer Representative letters.",
+            "Initiates and monitors background investigations and ensure that all users on their contracts comply with Federal and ED guidance for personnel security and background investigation requirements, and have taken security and awareness training before granting access to ED\u2019s systems and information."
+          ],
+          "gaps": [
+            "No mention of periodic review or revalidation of user access rights.",
+            "Does not describe processes for promptly removing access when workforce members leave or change roles.",
+            "Lacks specifics on ongoing monitoring or auditing user access.",
+            "Does not elaborate on procedures for documenting or approving access requests."
+          ],
+          "recommendations": [
+            "Establish and document procedures for periodic review and revalidation of user access rights.",
+            "Define processes for immediate removal or adjustment of access when workforce members change roles or terminate employment.",
+            "Implement ongoing monitoring and auditing of access to electronic protected health information.",
+            "Specify approval workflow and documentation requirements for user access requests."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(4)",
+          "control_name": "Information Access Management",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents establish formal requirements for authorizing access to electronic protected health information (ePHI) including least privilege, need-to-know, and documentation processes, but lack evidence of consistent monitoring, measurement, and integration with risk management for continuous improvement.",
+          "evidence": [
+            "\"Access to all ED information must be limited based on a least-privilege approach and a need-to-know basis.\"",
+            "\"Authorized user access must be limited to only information necessary for the performance of required tasks.\"",
+            "\"Ensures applicable portions of this policy are included in any user agreement necessary to gain access to ED information systems, services or ED data, which may include signed Non-Disclosure Agreements, Access Agreements, and appropriate Rules of Behavior;\"",
+            "\"Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training, and working with OCIO to integrate safeguards for asset, information and data protection and system security;\"",
+            "\"Reviews and approves all ED Privacy Impact Assessments (PIAs) Privacy Threshold Analyses (PTA)s and System of Records Notices (SORNs)...\""
+          ],
+          "gaps": [
+            "No explicit mention of ongoing monitoring or evaluation of access authorizations.",
+            "Lacks defined metrics or accountability structures for tracking compliance with access authorization procedures.",
+            "No clear integration with risk management processes for continual improvement.",
+            "Limited detail on revocation or modification processes for user access as roles/needs change."
+          ],
+          "recommendations": [
+            "Establish procedures for regular review and monitoring of user access rights and authorizations.",
+            "Define measurable metrics and assign accountability for compliance with access authorization processes.",
+            "Integrate access management decisions and outcomes with broader risk management activities.",
+            "Document and formalize processes for timely revocation or adjustment of access based on personnel changes or evolving business needs.",
+            "Periodic audits and reporting on information access practices to support continuous improvement."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(5)",
+          "control_name": "Security Awareness and Training",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy demonstrates some elements of required training and assignment of responsibilities for ensuring training compliance, but it lacks clear, comprehensive documentation of a formal security awareness and training program, and does not specifically mention malicious software protection, log-in monitoring, or password management training.",
+          "evidence": [
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Ensures that information system users required cybersecurity training is tracked.",
+            "Ensures that information security notices and advisories are distributed to appropriate ED and contractor personnel and that vendor-issued security patches are expeditiously installed."
+          ],
+          "gaps": [
+            "No explicit description of a structured security awareness and training program for all workforce members, including management.",
+            "No specific mention of training content covering protection from malicious software, log-in monitoring, or password management.",
+            "No evidence of periodic or refresher training requirements.",
+            "Does not address metrics for measuring training effectiveness or mechanisms for accountability.",
+            "No mention of content updates or a process for continuous improvement of the training program."
+          ],
+          "recommendations": [
+            "Establish and document a formal security awareness and training program covering all members of the workforce, including management.",
+            "Ensure training explicitly addresses protection from malicious software, log-in monitoring, and password management.",
+            "Define periodic/refresher training requirements and maintain records of completion.",
+            "Implement methods to measure training effectiveness, such as quizzes or simulated phishing exercises.",
+            "Include processes for updating training materials to address emerging threats and lessons learned."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(6)",
+          "control_name": "Security Incident Procedures",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy clearly establishes responsibility for reporting and responding to security incidents and references formal procedures but does not provide specific details on the procedures for incident identification, mitigation, or post-incident activities. Evidence of accountability and some linkage to incident response processes exist, but comprehensive formalization and ongoing improvement are lacking.",
+          "evidence": [
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer\u2019s Representative (COR) if applicable;",
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;",
+            "Information security is an enterprise-wide and individual responsibility...",
+            "Ensures continuous monitoring of the information system\u2019s security is performed...",
+            "Notifies the ED CISO of any major changes to existing information systems..."
+          ],
+          "gaps": [
+            "Policy does not explicitly define the steps for identifying, responding to, and mitigating security incidents.",
+            "Lacks details about incident classification, escalation procedures, or communication protocols.",
+            "No mention of incident analysis, documentation, lessons learned, or continuous improvement processes.",
+            "No defined metrics or monitoring of the effectiveness of the incident response process."
+          ],
+          "recommendations": [
+            "Document specific procedures for identifying and triaging security incidents, including communication and escalation protocols.",
+            "Incorporate mitigation strategies and requirements for containment, eradication, and recovery within the incident response policy.",
+            "Establish requirements for incident logging, post-incident reviews, and incorporation of lessons learned.",
+            "Define clear metrics and accountability for tracking incident response effectiveness and integrate ongoing measurement/improvement processes."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(7)",
+          "control_name": "Contingency Plan",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy references risk assessments, criticality analysis, and alignment with NIST SP 800-53, but lacks explicit, comprehensive procedures for contingency planning elements such as data backup, disaster recovery, emergency mode operations, regular testing, and full application criticality analysis.",
+          "evidence": [
+            "Ensures that sensitivity and criticality levels have been established for their systems and data in accordance with FIPS and NIST standards and guidelines;",
+            "Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department\u2019s critical operations, at no less than every three years or when significant changes occur to the system/network;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;"
+          ],
+          "gaps": [
+            "No explicit mention of a documented data backup plan or backup process for systems containing ePHI.",
+            "No reference to a formal disaster recovery plan or strategy.",
+            "No procedures for emergency mode operation for protecting and securing ePHI during crisis.",
+            "No evidence of regular testing and revision of contingency plans.",
+            "Application criticality analysis is mentioned but not described as a structured, repeatable process.",
+            "No defined roles, responsibilities, or notification requirements specific to contingency operations."
+          ],
+          "recommendations": [
+            "Develop and document a contingency plan including data backup, disaster recovery, and emergency mode operations procedures specific to ePHI systems.",
+            "Define and implement regular testing and revision intervals for the contingency plan.",
+            "Include detailed requirements for the frequency and retention of backups and for verifying integrity and restoration.",
+            "Establish clear roles, responsibilities, and notification/communication requirements for contingency events.",
+            "Formally require and describe a documented applications criticality analysis process.",
+            "Integrate contingency plan effectiveness metrics and assign accountability for ongoing management and improvement."
+          ]
+        },
+        {
+          "control_id": "164.308(a)(8)",
+          "control_name": "Evaluation",
+          "family": "Administrative Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes requirements for periodic reviews, continuous monitoring, and alignment with security standards, but lacks explicit language requiring both technical and non-technical evaluations specifically for measuring compliance with the Security Rule, and does not describe formal metrics or continuous improvement processes.",
+          "evidence": [
+            "reviews information system documentation and the information system itself at least annually.",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP)",
+            "Ensures that periodic FISMA formal performance measure metrics reporting (quarterly and annually) are completed on time",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization"
+          ],
+          "gaps": [
+            "No clear statement on performing both technical and non-technical evaluations specifically to assess compliance with the Security Rule.",
+            "Lack of requirement for documented evaluation procedures or formal evaluation reports.",
+            "No explicit specification of evaluating effectiveness of security policies and procedures beyond compliance reporting.",
+            "No reference to continual improvement based on evaluation results."
+          ],
+          "recommendations": [
+            "Explicitly require both technical and non-technical evaluations to measure the extent to which security policies and procedures meet Security Rule requirements.",
+            "Define a formal evaluation process, including procedures, responsible parties, frequency, and reporting requirements.",
+            "Ensure evaluation activities include an assessment of the effectiveness of controls and identify gaps or weaknesses for remediation.",
+            "Integrate a feedback loop for continual improvement based on evaluation findings and close identified compliance gaps."
+          ]
+        },
+        {
+          "control_id": "164.310(a)(1)",
+          "control_name": "Facility Access Controls",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy demonstrates some awareness of physical access control needs and references limiting access and personnel screening, but lacks specific, formal procedures for controlling, monitoring, and documenting facility access to systems housing electronic information. The policy focuses on general access and privilege controls but does not detail how physical access is formally managed, monitored, or reviewed for facilities.",
+          "evidence": [
+            "\"Access to all ED information must be limited based on a least-privilege3 approach and a need-to-know basis. OFO-O: 5-101 will determine personnel security screening requirements for contractor employees who will require access to ED information, data, IT systems, and/or ED facilities or space.\"",
+            "\"Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;\"",
+            "\"Information security is an enterprise-wide and individual responsibility...that is shared by...all other users of ED information and information systems.\""
+          ],
+          "gaps": [
+            "No formal, documented procedures for granting, monitoring, or revoking physical access to facilities housing electronic systems.",
+            "No mention of visitor management, access logs, or monitoring physical entry points.",
+            "Does not address contingency access (e.g., emergency procedures for facility access control).",
+            "No assignment of accountability for physical security administration.",
+            "No specific metrics or review processes for measuring the effectiveness of physical access controls."
+          ],
+          "recommendations": [
+            "Establish and document formal procedures for granting, monitoring, and revoking physical facility access, including visitor management and access recordkeeping.",
+            "Define roles and accountability for managing physical access to information system facilities.",
+            "Include requirements for periodic review/audit of facility access logs and controls.",
+            "Address contingency and emergency access scenarios in the policy.",
+            "Develop metrics to monitor and assess the effectiveness of physical access controls."
+          ]
+        },
+        {
+          "control_id": "164.310(b)",
+          "control_name": "Workstation Use",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses security requirements and responsibilities for system configurations and access, but lacks explicit, detailed guidance on proper workstation functions, usage practices, and physical environment attributes as necessary for HIPAA compliance.",
+          "evidence": [
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance...",
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO...",
+            "Ensures applicable portions of this policy are included in any user agreement necessary to gain access to ED information systems, services or ED data, which may include signed Non-Disclosure Agreements, Access Agreements, and appropriate Rules of Behavior;"
+          ],
+          "gaps": [
+            "Policy does not specify the proper functions to be performed at individual workstations.",
+            "Policy does not define how workstation functions are to be performed (usage rules, procedures).",
+            "No description of physical attributes or controls related to workstation surroundings (e.g. placement, physical access, environmental security)."
+          ],
+          "recommendations": [
+            "Create a dedicated Workstation Use policy section that defines permitted workstation functions, usage procedures, and security expectations.",
+            "Specify physical workstation placement, environmental safeguards, and access controls to ensure the protection of sensitive information.",
+            "Include usage guidelines addressing prohibited behaviors (e.g. downloading unauthorized software, connecting to unsecured networks).",
+            "Implement regular workstation audits and user training to enforce compliance with workstation use policy."
+          ]
+        },
+        {
+          "control_id": "164.310(c)",
+          "control_name": "Workstation Security",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses general physical security and access restrictions for information systems and PII, referencing least-privilege and administrative safeguards, but lacks explicit, detailed requirements for physical controls specific to workstations accessing ePHI. No direct mention of workstation placement, physical protection measures, or tailored safeguards for ePHI was found.",
+          "evidence": [
+            "\"All ED information must be protected from unauthorized access, use, disclosure, duplication, modification, diversion, or destruction\u2014whether accidental or intentional \u2014 in order to maintain confidentiality, integrity, and availability.\" (Excerpt 2)",
+            "\"In coordination with the ISSO, ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;\" (Excerpt 4)",
+            "\"Access to all ED information must be limited based on a least-privilege approach and a need-to-know basis.\" (Excerpt 2)"
+          ],
+          "gaps": [
+            "The policy does not specify physical workstation security safeguards (e.g., workstation placement, workstation locks/cable locks, restricted physical access areas for workstations with ePHI).",
+            "No mention of procedures for securing unattended workstations or monitoring physical access to workstations accessing ePHI.",
+            "Does not explicitly distinguish requirements for electronic protected health information (ePHI) versus general PII.",
+            "Lacks assignment of specific roles responsible for enforcing physical workstation security."
+          ],
+          "recommendations": [
+            "Add explicit requirements for physical placement and protection of workstations accessing ePHI (e.g., locked offices, privacy screens, workstation cable locks).",
+            "Define procedures for securing unattended workstations (e.g., auto-locking, physical log-off requirements).",
+            "Clarify distinction and scope by referencing protected health information (PHI/ePHI) needs directly.",
+            "Assign specific responsibility for enforcing and monitoring workstation physical security to designated personnel (e.g., Facilities, ISSO).",
+            "Incorporate routine physical security assessments and monitoring for areas with workstations accessing ePHI."
+          ]
+        },
+        {
+          "control_id": "164.310(d)(1)",
+          "control_name": "Device and Media Controls",
+          "family": "Physical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 1,
+          "score_rationale": "The policy hints at data and privacy protection responsibilities but does not specifically address the receipt and removal of hardware or electronic media containing ePHI or define procedures for these actions, as required by the control.",
+          "evidence": [
+            "Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training, and working with OCIO to integrate safeguards for asset, information and data protection and system security; (Excerpt 5)",
+            "Ensures that privacy is addressed throughout the life cycle of ED\u2019s information system, and that Federal privacy requirements are incorporated into the agency\u2019s enterprise architecture to ensure that risk is addressed... (Excerpt 5)",
+            "Implements proper system backups and patch management processes; (Excerpt 3)"
+          ],
+          "gaps": [
+            "No mention of formal procedures for the physical receipt or removal of hardware or electronic media that may contain ePHI.",
+            "No requirements or guidance regarding authorization, logging, tracking, or secure handling of devices/media when entering or leaving facilities.",
+            "No provisions for verifying or documenting chain of custody for devices/media containing ePHI."
+          ],
+          "recommendations": [
+            "Develop and document procedures that explicitly govern the secure receipt and removal of hardware and electronic media containing ePHI into and out of facilities.",
+            "Specify required authorizations, logging, and documentation processes for device/media movement.",
+            "Define chain of custody requirements, and ensure compliance is tracked and periodically reviewed."
+          ]
+        },
+        {
+          "control_id": "164.312(a)(1)",
+          "control_name": "Access Control",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy articulates formal, documented procedures for limiting system access and assigning responsibility, referencing NIST controls and requiring least-privilege, but lacks explicit detail about technical enforcement, monitoring, and ongoing metric-driven management of access controls.",
+          "evidence": [
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range and utilize PIV based authentication approaches;",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;",
+            "C) Ensures applicable portions of this policy are included in any user agreement necessary to gain access to ED information systems, services or ED data, which may include signed Non-Disclosure Agreements, Access Agreements, and appropriate Rules of Behavior."
+          ],
+          "gaps": [
+            "Policy does not explicitly describe how access is technically enforced (e.g., via access control lists, role-based controls, or automated provisioning/deprovisioning).",
+            "Lacks detail about procedures for regularly reviewing or auditing user access, including removal of access when no longer needed.",
+            "No mention of monitoring access logs or the use of metrics to manage access control effectiveness.",
+            "Software/program access versus individual user access is not fully differentiated or addressed."
+          ],
+          "recommendations": [
+            "Define explicit technical enforcement mechanisms (e.g., role-based access control, mandatory periodic review of access rights).",
+            "Implement and document procedures for regular access audits and immediate removal of access when roles change or employment terminates.",
+            "Establish processes for ongoing monitoring and measuring of access control effectiveness, including use of security metrics.",
+            "Include requirements for controlling and auditing software/programmatic access to ePHI in addition to individual users."
+          ]
+        },
+        {
+          "control_id": "164.312(b)",
+          "control_name": "Audit Controls",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy references the integration of NIST SP 800-53 controls, periodic system reviews, and the responsibilities of developers and administrators regarding the implementation of security capabilities. However, there is no explicit mention of audit logging, the examination of audit logs, or requirements for the recording and review of system activity related to ePHI.",
+          "evidence": [
+            "Provides ED guidance and establishes security control assessment procedures for the implementation of privacy controls as specified in the current version of NIST SP 800-53, Security Controls and Assessment Procedures for Federal Information Systems and Organizations;",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;",
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range"
+          ],
+          "gaps": [
+            "No explicit requirement for hardware, software, or procedural mechanisms that record and examine system activity.",
+            "No mention of audit log retention, review schedules, or responsible personnel.",
+            "No guidance on protection or integrity of audit logs to ensure that records of activity cannot be altered or deleted."
+          ],
+          "recommendations": [
+            "Add explicit requirements for enabling and maintaining audit logs for all information systems that contain or use ePHI.",
+            "Define responsibilities and procedures for regular review and analysis of audit logs to detect unauthorized or inappropriate activity.",
+            "Incorporate requirements for protecting audit logs from tampering, unauthorized access, and ensure appropriate retention periods.",
+            "Align policy language directly with HIPAA Audit Controls expectations in addition to NIST SP 800-53 references, specifying mechanisms to 'record and examine activity in information systems.'"
+          ]
+        },
+        {
+          "control_id": "164.312(c)(1)",
+          "control_name": "Integrity",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions protecting information integrity as a high-level requirement and references the use of NIST SP 800-53 controls, but it does not specifically document electronic mechanisms or detailed processes for detecting improper alteration or destruction of ePHI.",
+          "evidence": [
+            "Protect information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide for their confidentiality, integrity, and availability;",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required;",
+            "Provides ED guidance and establishes security control assessment procedures for the implementation of privacy controls as specified in the current version of NIST SP 800-53, Security Controls and Assessment Procedures for Federal Information Systems and Organizations;"
+          ],
+          "gaps": [
+            "No explicit mention of electronic mechanisms to detect improper alteration or destruction of ePHI, such as audit trails, file integrity monitoring, or checksums.",
+            "Policy does not clearly define accountability or metrics for monitoring integrity controls.",
+            "No description of procedures for regular review of integrity safeguards or response to detected integrity incidents."
+          ],
+          "recommendations": [
+            "Explicitly require and describe the implementation of electronic mechanisms, such as audit logging, file integrity monitoring, and checksums, to corroborate the integrity of ePHI.",
+            "Define roles and responsibilities for monitoring, reviewing, and responding to ePHI integrity incidents.",
+            "Introduce measurable metrics and regular reporting to demonstrate effectiveness of integrity controls.",
+            "Document procedures for regularly testing and updating integrity mechanisms, and ensure integration with overall risk management processes."
+          ]
+        },
+        {
+          "control_id": "164.312(d)",
+          "control_name": "Person or Entity Authentication",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents reference multiple forms of authentication, including password and PIN standards, PIV approaches, and compliance with NIST identity guidelines, indicating formal procedures. However, explicit requirements for multi-factor authentication and detailed verification steps for person/entity authentication are not clearly documented.",
+          "evidence": [
+            "based authenticators, and personal identification numbers (PIN) and passwords that are compliant with FIPS publications;",
+            "Ensures automated information security and privacy capabilities are integrated and deployed as required and use PIV based approaches wherever possible;",
+            "Establishes and provides processes and procedures for the validation of personnel clearances in support of Logical Access Control (LAC).",
+            "NIST SP 800-63 Rev 3, Digital Identity Guidelines"
+          ],
+          "gaps": [
+            "No explicit mandate for multi-factor authentication for all users where feasible.",
+            "Lacking detailed procedures to verify identity beyond references to PIV, PIN, and password standards.",
+            "No clear accountability or ongoing monitoring measures for authentication effectiveness."
+          ],
+          "recommendations": [
+            "Formally require and document multi-factor authentication processes for all users accessing electronic protected health information, where feasible.",
+            "Develop clear, detailed procedures for verifying identities and entities\u2014including step-by-step guidance for authentication and periodic review.",
+            "Establish metrics and assign accountability for monitoring authentication effectiveness, including regular audits of access controls and authentication logs."
+          ]
+        },
+        {
+          "control_id": "164.312(e)(1)",
+          "control_name": "Transmission Security",
+          "family": "Technical Safeguards",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy references limiting connections to secure protocols and following NIST guidance, but lacks explicit requirements for technical measures (e.g., encryption) to protect ePHI during transmission and does not detail implementation or monitoring processes.",
+          "evidence": [
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "Ensures agreements are in place with internal and external entities when information systems share services, assets, or information and that the appropriate security contracting language are incorporated in each IT contract under their purview;",
+            "NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport"
+          ],
+          "gaps": [
+            "No explicit mention of encryption or specific technical safeguards for ePHI in transit.",
+            "Does not require or describe implementation of technologies such as TLS, VPN, or other encryption methods.",
+            "Lacks a formal process for assessing, monitoring, or auditing the effectiveness of transmission security controls.",
+            "No assignment of responsibility or defined metrics for transmission security."
+          ],
+          "recommendations": [
+            "Explicitly require encryption (e.g., TLS 1.2 or higher) for all transmissions of ePHI or other sensitive data over electronic networks.",
+            "Define clear technical standards and protocols (such as use of VPNs, secure email, encrypted file transfer) to protect information in transit.",
+            "Establish a process for regularly reviewing and updating approved secure protocols in accordance with industry and NIST standards.",
+            "Assign accountability for monitoring and auditing transmission security controls.",
+            "Integrate these requirements into security awareness and staff training."
+          ]
+        },
+        {
+          "control_id": "164.314(a)(1)",
+          "control_name": "Business Associate Contracts",
+          "family": "Organizational Requirements",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal, documented requirements for including information security and privacy provisions in contracts with business associates and service providers. However, it lacks explicit language regarding the specific safeguarding of ePHI and satisfactory assurance mechanisms required by HIPAA.",
+          "evidence": [
+            "Ensures that supply chain, system, network, performance, and cybersecurity requirements are included in contract language and delivered;",
+            "Ensures the CISO, SAOP, and ISSOs are consulted during contract development and that the latest information security and privacy contract language is included in all contracts, as applicable;",
+            "Ensures that all acquisitions, procurements and outsourcing efforts contain the appropriate information security requirement provisions and clauses that are consistent with ED policy;",
+            "Agencies shall describe the responsibilities of service providers in relevant agreements with the service providers.",
+            "Provide adequate security for all information created, collected, processed, stored, transmitted, disseminated, or disposed of by or on behalf of the agency, to include Federal information residing in contractor information systems and networks."
+          ],
+          "gaps": [
+            "No explicit mention of ePHI (electronic Protected Health Information) or its specific protection requirements.",
+            "No clear requirement for 'satisfactory assurances' from business associates as mandated by HIPAA.",
+            "Missing details regarding the actual process of executing and monitoring Business Associate Agreements and any reference to HIPAA-specific obligations."
+          ],
+          "recommendations": [
+            "Revise the policy to explicitly reference ePHI and HIPAA Business Associate Agreement requirements, ensuring that language addresses the satisfactory assurance mandate.",
+            "Add a requirement to include specific clauses outlining duties for safeguarding ePHI in all contracts with business associates.",
+            "Define processes for verifying and monitoring compliance with the terms of the Business Associate contracts, including periodic review and confirmation of security obligations."
+          ]
+        },
+        {
+          "control_id": "164.316(a)",
+          "control_name": "Policies and Procedures",
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "maturity_score": 3,
+          "score_rationale": "The policy provides a comprehensive framework for written policies and procedures, clearly assigning responsibilities, outlining requirements, and referencing coverage of standards and security practices. However, there is no explicit reference to ongoing monitoring of policy effectiveness or continuous improvement processes.",
+          "evidence": [
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems. ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP.",
+            "Ensures that ISOs adhere to cybersecurity requirements for all of ED\u2019s cybersecurity policies;",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "Conduct their daily operational tasks and work with proper security diligence and adhere to all applicable guidance disseminated under the ISP."
+          ],
+          "gaps": [
+            "No evidence of defined metrics or ongoing measurement of policy effectiveness.",
+            "No formal process for periodically reviewing and updating policies and procedures.",
+            "Continuous improvement or integration with overall risk management process is not addressed."
+          ],
+          "recommendations": [
+            "Define and implement a regular review schedule for all security policies and procedures to ensure they remain current and effective.",
+            "Establish metrics to measure policy effectiveness and compliance.",
+            "Incorporate a continuous improvement process tied to risk management outcomes, including capturing lessons learned and updating policies accordingly."
+          ]
+        },
+        {
+          "control_id": "164.316(b)(1)",
+          "control_name": "Documentation",
+          "family": "Policies and Procedures",
+          "framework_id": "hipaa",
+          "maturity_score": 2,
+          "score_rationale": "The policy mandates documentation of information system security practices and acknowledges agency responsibilities to document and maintain security programs, but it does not specify retention requirements or formally link documentation practices to a 6-year retention period as required by the control.",
+          "evidence": [
+            "Follows the guidance in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53... reviews information system documentation and the information system itself at least annually.",
+            "Each agency shall develop, document, and implement an agency-wide information security program...",
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes."
+          ],
+          "gaps": [
+            "Policy does not explicitly address retaining documentation for a minimum of 6 years.",
+            "Policy lacks clear requirements regarding the format (written/electronic), management, or archival of documentation.",
+            "No specific evidence of procedures for updating or maintaining the documentation after it is no longer in effect."
+          ],
+          "recommendations": [
+            "Add a clear policy statement requiring all compliance documentation to be maintained in written form.",
+            "Explicitly mandate retention of documentation for at least 6 years from the date of creation or last in effect.",
+            "Define procedures for documentation management, including how updates, archiving, and disposal should be handled in compliance with retention requirements.",
+            "Assign accountability for documentation maintenance and retention monitoring."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T19:48:52.563415",
+  "status": "completed"
+}

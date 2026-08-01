@@ -1,0 +1,742 @@
+{
+  "assessment_id": "b6d8b036-5983-45cd-8dd9-bff713bbf4a7",
+  "document_id": "754d310b89e4498f92be9cf7a98d2dbc",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "iso_27001"
+  ],
+  "overall_posture_score": 2.53,
+  "framework_results": [
+    {
+      "framework_id": "iso_27001",
+      "framework_name": "ISO/IEC 27001",
+      "overall_score": 2.53,
+      "family_scores": [
+        {
+          "family": "Information Security Policies",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.2
+        },
+        {
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.1
+        },
+        {
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.67,
+          "control_count": 3,
+          "weight": 1.0
+        },
+        {
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "average_score": 2.06,
+          "control_count": 3,
+          "weight": 1.2
+        },
+        {
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "average_score": 2.7,
+          "control_count": 3,
+          "weight": 1.5
+        },
+        {
+          "family": "Cryptography",
+          "framework_id": "iso_27001",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.0,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "average_score": 2.52,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Supplier Relationships",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.0
+        },
+        {
+          "family": "Information Security Incident Management",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 1,
+          "weight": 1.3
+        },
+        {
+          "family": "Business Continuity Management",
+          "framework_id": "iso_27001",
+          "average_score": 2.0,
+          "control_count": 1,
+          "weight": 1.2
+        },
+        {
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "average_score": 3.0,
+          "control_count": 2,
+          "weight": 1.1
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "A.5.1",
+          "control_name": "Policies for Information Security",
+          "family": "Information Security Policies",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy documents reveal a formal, documented approach to defining, approving, publishing, and communicating information security policies, with established accountability and mandatory training. However, evidence of systematic metrics, regular monitoring, and continuous improvement is lacking.",
+          "evidence": [
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP.",
+            "The ISP will communicate overall ED cybersecurity policy, instructions, and supporting practices to assist senior ED officials and Business/Information/ System Owners...",
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Ensures agreements are in place with internal and external entities when information systems share services, assets, or information and that the appropriate security contracting language are incorporated in each IT contract under their purview."
+          ],
+          "gaps": [
+            "No clear evidence that policy approval process by top management/c-suite is formalized and documented.",
+            "Limited details on how policies are communicated to external parties beyond employees.",
+            "No indication of regular review cycles or continuous improvement mechanisms.",
+            "No explicit monitoring or measurement of policy effectiveness beyond FISMA performance metric reporting."
+          ],
+          "recommendations": [
+            "Document and reference the formal approval process for information security policies by executive management.",
+            "Establish and describe methods for communicating security policies to relevant external parties (e.g., contractors, vendors).",
+            "Define review cycles and processes for policy update and improvement based on lessons learned and new risks.",
+            "Implement and document metrics or KPIs to measure the effectiveness of policy communication and compliance."
+          ]
+        },
+        {
+          "control_id": "A.6.1",
+          "control_name": "Internal Organization",
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy provides a formal, documented allocation of information security responsibilities for key roles and addresses contact with authorities through mentions of coordination and reporting obligations, but it lacks explicit, detailed provisions for segregation of duties and ongoing engagement with special interest groups.",
+          "evidence": [
+            "\"The responsibilities of supervisors are inclusive...Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision; and Ensure personnel...complete all required information security training...\" (Excerpt 1)",
+            "\"The Secretary is responsible for: delegating information security responsibilities to the Deputy Secretary.\" (Excerpt 1)",
+            "\"Ensures that ISOs and ISSOs within the PO have the necessary knowledge, skills, and abilities to perform their respective roles...Manages personnel, assets, data, and information, and physical security matters within the PO...Notifies the ED CISO of any major changes...\" (Excerpt 2)",
+            "\"Each information system will be assigned at least one ISSO...ISSOs are responsible for ensuring an appropriate security posture is maintained for their assigned information systems...The key responsibilities of the ISSO include: Follows the guidance found in ED\u2019s Common Controls Catalog... reviewing at least annually and updating...\" (Excerpt 3)",
+            "\"Serves as the primary point of contact for coordination of cybersecurity matters for their assigned systems...Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures...This includes actions directed by the DHS, which issues 'Binding Operational Directives'...\" (Excerpt 5)"
+          ],
+          "gaps": [
+            "Explicit requirements for segregation of duties are not clearly defined or referenced in the policy.",
+            "Procedures for maintaining contact with authorities (beyond incident reporting) and with special interest groups are not fully described.",
+            "Continuous improvement or formal accountability and measurement metrics for these processes are not evident.",
+            "The allocation of responsibilities for all possible functions (e.g., review of segregation of duties, who maintains external contacts) is not comprehensive."
+          ],
+          "recommendations": [
+            "Add explicit policy statements requiring segregation of duties and define processes to regularly review and enforce them.",
+            "Detail procedures and assign responsibilities for regular engagement with authorities and relevant special interest groups, including participation in industry or governmental initiatives.",
+            "Establish and document metrics/accountabilities to measure implementation of these requirements and facilitate continuous improvement.",
+            "Ensure the policy maps all core information security responsibilities to responsible persons/roles for comprehensive coverage."
+          ]
+        },
+        {
+          "control_id": "A.6.2",
+          "control_name": "Mobile Devices and Teleworking",
+          "family": "Organization of Information Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy references authoritative NIST and OMB guidance relevant to mobile devices and teleworking, and outlines broad security responsibilities, but does not explicitly detail formal processes or specific measures to manage the unique risks introduced by mobile devices or telework.",
+          "evidence": [
+            "NIST SP 800-46 Revision 1, Guide to Enterprise Telework and Remote Access Security, 2009",
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "All ED managers and staff...must adhere to all applicable guidance disseminated under the ISP."
+          ],
+          "gaps": [
+            "No explicit policy statements or formal processes specifically addressing the management of risks from mobile devices and teleworking.",
+            "No mention of technical or procedural controls (e.g., device encryption, secure VPN usage, remote access controls) tailored to mobile or telework scenarios.",
+            "No defined process for approving, monitoring, or reviewing mobile device or telework access.",
+            "No assignment of accountability or ongoing monitoring related specifically to mobile and telework risks."
+          ],
+          "recommendations": [
+            "Develop and document a dedicated policy section addressing security risks and required controls for mobile device use and teleworking.",
+            "Specify technical controls (e.g., encryption, VPN, multifactor authentication) required for remote and mobile access.",
+            "Establish formal approval and monitoring processes for teleworking and mobile device usage.",
+            "Assign clear accountability and incorporate ongoing review/monitoring activities related to mobile and teleworking security.",
+            "Integrate telework/mobile risks and measures into risk management and continuous improvement processes."
+          ]
+        },
+        {
+          "control_id": "A.7.1",
+          "control_name": "Prior to Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally requires and assigns responsibility for personnel background investigations in accordance with Federal and ED guidance but lacks detailed procedures and explicit reference to ensuring checks are conducted specifically in accordance with relevant laws, regulations, and ethics for all employees and contractors.",
+          "evidence": [
+            "OFO-O: 5-101 will determine personnel security screening requirements for contractor employees who will require access to ED information, data, IT systems, and/or ED facilities or space.",
+            "Ensures duties responsible for ED personnel security are outlined in Contracting Officer Representative letters.",
+            "Initiates and monitors background investigations and ensure that all users on their contracts comply with Federal and ED guidance for personnel security and background investigation requirements, and have taken security and awareness training before granting access to ED\u2019s systems and information.",
+            "The Policy directs all ED employees, contractors, and users that are authorized with access to ED information systems, or systems operated or maintained on behalf of ED, or ED information."
+          ],
+          "gaps": [
+            "The policy does not explicitly state that background verification checks must be carried out for all candidates (including non-contractors) prior to employment.",
+            "Lack of explicit reference to ensuring compliance with all relevant local laws, regulations, and ethics beyond federal guidance.",
+            "No description of procedures or types of checks to be performed, or clear applicability to all employment types (e.g., temporary, permanent, contractor).",
+            "No mention of how to handle potential findings from background checks or alignment with ethical considerations."
+          ],
+          "recommendations": [
+            "Update the policy to require background verification checks for all candidates for employment\u2014including all types of staff and contractors\u2014prior to employment.",
+            "Explicitly require that all background checks comply with relevant laws, regulations, and ethical considerations, not just federal guidance.",
+            "Define the scope, timing, and types of checks to be performed, referencing applicable legal/regulatory frameworks.",
+            "Document procedures for handling results of background checks and for ensuring ongoing compliance as laws and regulations change."
+          ]
+        },
+        {
+          "control_id": "A.7.2",
+          "control_name": "During Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally assigns responsibility for information security to all employees, supervisors, and contractors, requires adherence to guidance, and details mandatory training. However, it lacks specifics on ongoing monitoring of compliance and defined metrics or continuous improvement mechanisms.",
+          "evidence": [
+            "\"Information security is an enterprise-wide and individual responsibility that is shared by Senior Agency Officials, all ED managers and staff, Business/ Information/System Owners, IT professionals, and all other users of ED information and information systems.\" (Excerpt 3)",
+            "\"Conduct their daily operational tasks and work with proper security diligence and adhere to all applicable guidance disseminated under the ISP.\" (Excerpt 5)",
+            "\"Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.\" (Excerpt 5)",
+            "\"Ensures that system users and support personnel receive the requisite security training;\" (Excerpt 4)",
+            "\"all personnel are held accountable for complying with the agency-wide information security program.\" (Excerpt 2)"
+          ],
+          "gaps": [
+            "No description of how compliance with security policies and procedures is actively monitored or enforced during employment.",
+            "Lack of defined accountability mechanisms beyond initial responsibility assignment.",
+            "No mention of metrics, continuous improvement, or ongoing verification of employee and contractor adherence after training."
+          ],
+          "recommendations": [
+            "Define and document mechanisms for ongoing monitoring and enforcement of employee and contractor compliance with security policies (e.g., periodic audits, active supervision, or checklists).",
+            "Establish clear accountability and escalation procedures for employees or contractors found not complying with information security requirements.",
+            "Introduce metrics to measure adherence to security policies and procedures, and require regular reporting to management.",
+            "Implement periodic refresher training and compliance reviews for all personnel."
+          ]
+        },
+        {
+          "control_id": "A.7.3",
+          "control_name": "Termination and Change of Employment",
+          "family": "Human Resource Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy provides some general statements about responsibilities and disciplinary actions, but does not specifically define, communicate, or enforce post-employment information security duties. Key requirements for ensuring that responsibilities remain after termination or role changes are not addressed.",
+          "evidence": [
+            "\"Violation of this policy provided herein may result in disciplinary and/or legal action.\" (Excerpt 3)",
+            "\"All users have the responsibility to protect ED\u2019s information and information systems from unauthorized access, use, disclosure, disruption, modification, and destruction by complying with the information security requirements maintained in this Policy...\" (Excerpt 4)",
+            "\"Supervisors... Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision...\" (Excerpt 1)"
+          ],
+          "gaps": [
+            "Responsibilities and duties that remain valid after termination or change of employment are not explicitly defined.",
+            "No process for communicating post-employment obligations (such as confidentiality or data return) to departing users.",
+            "No measures described for enforcement of ongoing obligations after employment ends or changes.",
+            "Absence of acknowledgement or offboarding process ensuring understanding of continuing obligations."
+          ],
+          "recommendations": [
+            "Document clear post-employment information security responsibilities (e.g., confidentiality, non-disclosure) in the policy.",
+            "Establish and include a formal process for communicating continuing obligations to employees and contractors before termination or organizational changes.",
+            "Implement enforcement mechanisms and require written acknowledgement of post-employment duties.",
+            "Integrate information security offboarding procedures including reminders of ongoing responsibilities in exit processes."
+          ]
+        },
+        {
+          "control_id": "A.8.1",
+          "control_name": "Responsibility for Assets",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal roles and responsibilities for asset management, mandates maintenance of asset inventories, and describes continuous monitoring, but lacks detail on processes for identification and ongoing inventory maintenance.",
+          "evidence": [
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system;",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "PO Executive ... centralized responsibility for the establishment, maintenance, and enforcement of the information security program and policy for all information systems within the PO or business component.",
+            "ISSOs are responsible for ensuring an appropriate security posture is maintained for their assigned information systems."
+          ],
+          "gaps": [
+            "Policy does not specify systematic processes or methods for identifying all asset types (hardware, software, data, etc.) associated with information processing facilities.",
+            "No clear, detailed requirements for how inventories are to be kept current (e.g., update frequency, responsible parties for asset inventory maintenance).",
+            "No mention of integration between asset inventories and risk management or monitoring for completeness and accuracy."
+          ],
+          "recommendations": [
+            "Define a detailed, repeatable process for identifying and categorizing all assets related to information processing facilities, including templates or forms to be used.",
+            "Specify how and how often asset inventories must be updated and assign explicit accountability to roles for inventory maintenance.",
+            "Integrate asset inventory maintenance with risk management and continuous improvement processes, including periodic audits for completeness and accuracy."
+          ]
+        },
+        {
+          "control_id": "A.8.2",
+          "control_name": "Information Classification",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy references security and privacy requirements, risk analyses, categorization, and compliance with federal laws, but lacks explicit, organization-wide processes for information classification based on legal requirements, value, criticality, and sensitivity, or clear definitions of classification levels.",
+          "evidence": [
+            "Signs off that system security designations are appropriately determined prior to system acquisition/procurement in accordance with FIPS 199 security categorization;",
+            "Implements ED\u2019s privacy program, including coordinating policy development, providing outreach and training, and working with OCIO to integrate safeguards for asset, information and data protection and system security;",
+            "Ensures ED systems or applications that currently disseminate data for any purpose are capable of extracting data by pre-approved categories;",
+            "Provides ED guidance and establishes security control assessment procedures for the implementation of privacy controls as specified in the current version of NIST SP 800-53, Security Controls and Assessment Procedures for Federal Information Systems and Organizations;",
+            "Ensures agreements are in place with internal and external entities when information systems share services, assets, or information and that the appropriate security contracting language are incorporated in each IT contract under their purview;"
+          ],
+          "gaps": [
+            "No defined, organization-wide classification scheme for information assets based specifically on legal requirements, value, criticality, and sensitivity.",
+            "No clear assignment of responsibilities and processes for labeling or handling classified information.",
+            "Process for classification, reclassification, or review of classification decisions is not articulated.",
+            "No indication of user training and awareness specific to classification schemes."
+          ],
+          "recommendations": [
+            "Establish and document an organization-wide information classification policy that defines classification levels (e.g., Public, Internal, Confidential, Restricted) based on legal, business, and risk criteria.",
+            "Specify roles and responsibilities for classifying, reviewing, and approving information classification.",
+            "Implement processes for labeling assets, communicating handling requirements, and periodically reviewing classification decisions.",
+            "Provide mandatory training and awareness for all staff on information classification procedures and requirements.",
+            "Integrate the classification scheme into all relevant business, IT, and contracting processes."
+          ]
+        },
+        {
+          "control_id": "A.8.3",
+          "control_name": "Media Handling",
+          "family": "Asset Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 1,
+          "score_rationale": "The policy provides general references to information security, asset management, and adherence to Federal/NIST guidelines, but it contains no explicit procedures or references to the management, control, handling, or classification-based protection of removable media.",
+          "evidence": [
+            "The requirements of this Circular apply to management activities concerning all information resources in any medium (unless otherwise noted), including paper and electronic information.",
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system;",
+            "Ensures agreements are in place with internal and external entities when information systems share services, assets, or information...",
+            "Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;"
+          ],
+          "gaps": [
+            "No explicit media handling procedures or controls for removable media are defined.",
+            "Policy does not require or describe classification-based protection or management of removable media.",
+            "No mention of secure transfer, storage, destruction, or re-use processes for removable media.",
+            "No description of acceptable use, accountability, or tracking of removable media.",
+            "Lack of reference to encryption or sanitation of media in accordance with data classification."
+          ],
+          "recommendations": [
+            "Develop and document specific procedures for removable media management, including receipt, use, storage, transport, reuse, and disposal.",
+            "Integrate requirements for media handling based on data classification levels.",
+            "Mandate encryption and secure erasure/destruction of media containing sensitive or classified data.",
+            "Implement logging and tracking requirements for issuance, movement, and disposition of removable media.",
+            "Ensure training and awareness about removable media risks and media handling procedures is provided to all staff."
+          ]
+        },
+        {
+          "control_id": "A.9.1",
+          "control_name": "Business Requirements of Access Control",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes and documents access control requirements grounded in business and information security needs, referencing federal requirements, minimal privilege, and integration into contracts and systems; however, regular review or update processes for the policy are not explicitly described.",
+          "evidence": [
+            "\"Authorized user access must be limited to only information necessary for the performance of required tasks.\" (Excerpt 2)",
+            "\"Business/Information/System Owners ... to implement adequate information security and privacy safeguards to protect all ED information.\" (Excerpt 4)",
+            "\"Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;\" (Excerpt 1)",
+            "\"Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes;\" (Excerpt 1)",
+            "\"ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP.\" (Excerpt 2)"
+          ],
+          "gaps": [
+            "The policy does not explicitly mandate or describe regular periodic review and update of the access control policy based on changing business or security requirements.",
+            "There is limited clarity on how business needs are specifically used to determine and tailor access controls per system or role.",
+            "No explicit reference to metrics or procedures for monitoring the effectiveness of the access control policy."
+          ],
+          "recommendations": [
+            "Explicitly define a schedule and responsibility for periodic review and update of the access control policy (e.g., annually or upon significant business changes).",
+            "Describe a formal process whereby business and security requirements are gathered and directly mapped to access control decisions.",
+            "Establish and reference metrics or procedures for evaluating the effectiveness of access controls and incorporating feedback from reviews.",
+            "Document how exceptions or changes to access controls are requested, justified, and reviewed to ensure continued alignment with business requirements."
+          ]
+        },
+        {
+          "control_id": "A.9.2",
+          "control_name": "User Access Management",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal processes for assigning and reviewing user access rights, enforcing least privilege and separation of duties, and restricting privileged access, but lacks details on user registration and de-registration steps as well as specific accountability and monitoring metrics.",
+          "evidence": [
+            "t) Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "u) Conducts quarterly reviews and validations of system users\u2019 accounts to ensure the continued need for access to a system;",
+            "s) Employs the principle of least privilege, including for specific security functions and privileged accounts;",
+            "u) Prevents non-privileged users from executing privileged functions and audit the execution of such function.",
+            "Reinforces the concept of separation of duties by ensuring that no single individual has control of any critical process in its entirety per NIST SP 800-53 (as amended);"
+          ],
+          "gaps": [
+            "No explicit definition or procedural steps for user registration and de-registration, including onboarding and account termination requirements.",
+            "Absence of documented accountability or specific metrics for monitoring effectiveness of user access management.",
+            "Privileged access management is covered in principle but lacks detail about processes for periodic review, re-validation, and revocation."
+          ],
+          "recommendations": [
+            "Add a detailed procedure outlining formal user registration and de-registration steps, including onboarding and termination.",
+            "Define and document accountability roles and measurable metrics for user access reviews and privileged account management.",
+            "Expand privileged access management to include periodic audits, review processes, and formal revocation procedures for privileged accounts."
+          ]
+        },
+        {
+          "control_id": "A.9.4",
+          "control_name": "System and Application Access Control",
+          "family": "Access Control",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses general access controls, PIV-based authentication, and some requirements for limiting access and enforcing least privilege. However, it lacks explicit requirements for secure log-on procedures and password management systems, particularly regarding password complexity, quality, and interactive features.",
+          "evidence": [
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range and utilize PIV based authentication approaches;",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);",
+            "Limits information system access to authorized users, processes actions on behalf of authorized users, or devices (including other information systems);",
+            "Employs the principle of least privilege, including for specific security functions and privileged accounts;"
+          ],
+          "gaps": [
+            "No explicit mention of secure log-on procedures for systems and applications.",
+            "Password management practices, including requirements for password complexity, quality, periodic change, and interactive password management, are not addressed.",
+            "Lack of details on how password quality is ensured (e.g., minimum length, character requirements, prevention of password reuse).",
+            "No coverage of failed login attempts, lockout, or session management."
+          ],
+          "recommendations": [
+            "Develop and document specific requirements for secure log-on procedures for all systems and applications.",
+            "Implement explicit, detailed password management policies including complexity, change frequency, reuse, and interactive setup (e.g., user creation/reset, checks for password quality).",
+            "Describe technical controls to prevent brute force attacks, such as account lockout after failed login attempts.",
+            "Incorporate relevant references to NIST SP 800-63 and other guidance directly in the operational policy, not just in a reference list.",
+            "Institute periodic monitoring and reviews to ensure log-on and password management controls are effective and kept current with evolving threat and compliance landscapes."
+          ]
+        },
+        {
+          "control_id": "A.10.1",
+          "control_name": "Cryptographic Controls",
+          "family": "Cryptography",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy references cryptographic standards and mandates secure protocols, but lacks an explicit, formal policy on the use of cryptographic controls and key management lifecycle requirements. Key elements are present through guidance reference, but direct, comprehensive coverage is missing.",
+          "evidence": [
+            "Page 27: References FIPS PUB 140-2, Security Requirements for Cryptographic Modules and FIPS 186, Digital Signature Standard",
+            "Page 26: Lists NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations",
+            "Page 24: Limits connections to publicly accessible Federal websites and web services to approved secure protocols"
+          ],
+          "gaps": [
+            "No explicit policy described for the use and selection of cryptographic controls.",
+            "No policy statements addressing the protection, management, or lifecycle of cryptographic keys.",
+            "No assignment of roles or accountability for cryptographic or key management.",
+            "No mention of requirements for periodic review or continuous improvement specific to cryptographic controls."
+          ],
+          "recommendations": [
+            "Develop and formally document a standalone policy section on the use of cryptographic controls, including scope, requirements, and responsibilities.",
+            "Include explicit requirements for the protection, management, and lifecycle of cryptographic keys.",
+            "Assign and document accountability for cryptographic controls and key management.",
+            "Define processes for periodic review and improvement of cryptographic control standards, including referencing the latest industry standards and guidelines.",
+            "Provide awareness and training on the policy for all stakeholders involved in encryption or key management."
+          ]
+        },
+        {
+          "control_id": "A.11.1",
+          "control_name": "Secure Areas",
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy references the need to protect sensitive and critical information, mentions physical, administrative, and technical controls, and alludes to the use of certified facilities and layered defenses, but does not clearly define security perimeters or provide detailed, consistent guidance on establishing and managing secure areas.",
+          "evidence": [
+            "\"Ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;\" (Excerpt 2)",
+            "\"Processes systems at facilities that are certified at a level of security equal to or higher than the security level designated for their system;\" (Excerpt 5)",
+            "\"The Principle of Defense-in-Depth is an information security strategy integrating people, technology, and operations capabilities to establish variable barriers across multiple layers and missions of the organization.\" (Excerpt 3)"
+          ],
+          "gaps": [
+            "The policy does not explicitly define 'security perimeters' or outline a formal process for their establishment and maintenance.",
+            "There is no clear requirement to physically demarcate areas that contain sensitive/critical information or enforce secure boundaries.",
+            "Responsibilities and procedures for managing, monitoring, or reviewing secure areas and their access controls are not detailed or assigned."
+          ],
+          "recommendations": [
+            "Explicitly define the concept and requirements for security perimeters in the policy, including their purpose, characteristics, and the need to physically or logically separate sensitive/critical areas.",
+            "Develop and document procedures for establishing, documenting, maintaining, and periodically reviewing secure areas and the security perimeters that protect them.",
+            "Assign clear roles and accountability for managing and monitoring secure areas, and require regular review of perimeter effectiveness.",
+            "Reference or align with relevant NIST SP 800-53 controls (e.g., PE-2, PE-3) to ensure coverage of physical and environmental protection expectations."
+          ]
+        },
+        {
+          "control_id": "A.11.2",
+          "control_name": "Equipment Security",
+          "family": "Physical and Environmental Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy contains some elements related to equipment protection and unauthorized access, mostly via access control, least privilege, and physical security for information systems and personnel. However, it lacks explicit, comprehensive requirements for siting hardware, environmental threat mitigation, and direct physical protection measures for equipment.",
+          "evidence": [
+            "All ED information must be protected from unauthorized access, use, disclosure, duplication, modification, diversion, or destruction\u2014whether accidental or intentional \u2014 in order to maintain confidentiality, integrity, and availability.",
+            "Access to all ED information must be limited based on a least-privilege approach and a need-to-know basis.",
+            "Ensures duties responsible for ED personnel security are outlined in Contracting Officer Representative letters.",
+            "In coordination with the ISSO, ensures proper physical, administrative, and technical controls are in place to protect PII if found in the system;"
+          ],
+          "gaps": [
+            "No explicit policy language on equipment siting to reduce risk from environmental threats or hazards (e.g., placement considerations, fire/flood protection).",
+            "No direct mention of physical protection of equipment (e.g., locked server rooms, surveillance).",
+            "Lacks requirements for specific controls to reduce opportunities for unauthorized physical access to equipment.",
+            "No reference to periodic reviews of physical protection measures or risk assessments of equipment location."
+          ],
+          "recommendations": [
+            "Add explicit requirements to site critical equipment (e.g., servers, network devices) in locations protected from environmental threats (fire, flood, temperature, etc.).",
+            "Specify physical controls such as restricted access, surveillance, and environmental monitoring for critical equipment housing areas.",
+            "Mandate periodic review of equipment physical security and environment-related risks.",
+            "Define roles and responsibilities for implementation and oversight of equipment security, including facility management and IT.",
+            "Require documentation and regular validation of physical and environmental protections for sensitive equipment."
+          ]
+        },
+        {
+          "control_id": "A.12.1",
+          "control_name": "Operational Procedures and Responsibilities",
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy includes references to the need for system documentation, change notifications, and process responsibilities but lacks explicit, comprehensive procedures for operating procedure documentation and the control of system changes. Availability of documented procedures to users who need them is not clearly addressed.",
+          "evidence": [
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "Notifies the ED CISO of any major changes to existing information systems or when planning the development of new information systems;",
+            "Follows the guidance in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53 and NIST SP 800-63, reviews information system documentation and the information system itself at least annually.",
+            "Ensures that security plans and authorization documentation for their system(s) and network(s) are developed and kept current for their system;"
+          ],
+          "gaps": [
+            "No explicit requirement that operating procedures themselves are documented, version-controlled, and made available to all users who need them.",
+            "No clear process or controls for managing, reviewing, and approving changes to systems.",
+            "No mention of communicating changes or ensuring users are informed of updates to procedures.",
+            "Monitoring and continuous improvement of operational procedures and the change management process is not described."
+          ],
+          "recommendations": [
+            "Establish a formal process requiring all operating procedures to be documented, version-controlled, and regularly reviewed.",
+            "Specify that operating procedures must be made accessible to all relevant users who need them to perform their roles.",
+            "Define and document a standardized system change management process, including approval, testing, implementation, and communication steps.",
+            "Introduce metrics or monitoring of compliance with operational and change management procedures.",
+            "Provide ongoing training to ensure users are aware of current procedures and changes impacting their responsibilities."
+          ]
+        },
+        {
+          "control_id": "A.12.6",
+          "control_name": "Technical Vulnerability Management",
+          "family": "Operations Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes formal processes for obtaining vulnerability information, evaluating exposure, and ensuring timely application of patches and mitigations, with references to POA&M management, mandatory reporting, and continuous monitoring. However, the policy lacks evidence of quantitative metrics, regular process measurement, and continuous improvement.",
+          "evidence": [
+            "Ensures that actions are taken to respond and complies within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching;",
+            "Ensures continuous monitoring of the information system\u2019s security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates;",
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy;",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization;",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Ensures provision of adequate funding to implement the security requirements that fall within the management authority of the ISO;"
+          ],
+          "gaps": [
+            "No evidence of proactive vulnerability intelligence feeds or sources being monitored beyond external directives (e.g., vendor advisories, open vulnerability databases).",
+            "No mention of defined metrics or KPIs to measure the effectiveness or timeliness of vulnerability management.",
+            "No reference to periodic maturity assessments or lessons learned/improvement cycles for the vulnerability management process."
+          ],
+          "recommendations": [
+            "Formalize the process for gathering vulnerability intelligence from multiple sources (e.g., vendor bulletins, threat intel feeds, vulnerability databases) and regularly document how vulnerabilities are identified.",
+            "Define and monitor metrics (e.g., mean time to patch, number of outstanding critical vulnerabilities) to assess and demonstrate the effectiveness and timeliness of the vulnerability management process.",
+            "Establish a periodic review and continuous improvement mechanism for the vulnerability management process, including lessons learned from incidents or missed SLAs.",
+            "Document roles and responsibilities for evaluating risk exposure from new vulnerabilities and the process for prioritizing mitigations according to asset criticality."
+          ]
+        },
+        {
+          "control_id": "A.13.1",
+          "control_name": "Network Security Management",
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy defines formal responsibilities, references NIST guidance, and requires the implementation of security controls, but lacks explicit details on network management mechanisms, monitoring, and service level definitions.",
+          "evidence": [
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "The responsibilities of the ED System Developer and Maintainer must include but are not limited to...Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;",
+            "ISSOs are responsible for ensuring an appropriate security posture is maintained for their assigned information systems. The ISSO is the principal advisor on all technical matters involving information system security.",
+            "Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually...",
+            "ED has an obligation under Federal Law and from the White House (Executive Branch) mandate to define and operate an effective cybersecurity program.",
+            "References to NIST SP 800-41 Revision 1, Guidelines on Firewalls and Firewall Policy, 2009."
+          ],
+          "gaps": [
+            "No explicit mention of network segmentation, firewall management, or intrusion detection/prevention.",
+            "Service levels for network management and security mechanisms for specific network technologies are not detailed.",
+            "No evidence of monitoring or metrics for network management activities.",
+            "Policy does not specify how network controls are measured, monitored, or improved."
+          ],
+          "recommendations": [
+            "Add explicit requirements for network segmentation, firewall management, and use of intrusion detection/prevention systems.",
+            "Define measurable service levels and security mechanisms for network management.",
+            "Include monitoring and metrics to evaluate the effectiveness of network security controls.",
+            "Establish accountability and continuous improvement processes for network security management."
+          ]
+        },
+        {
+          "control_id": "A.13.2",
+          "control_name": "Information Transfer",
+          "family": "Communications Security",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy mentions the need to protect information transfer and references adherence to NIST and federal requirements, but lacks specific, formalized transfer procedures, defined controls, or details about monitoring and accountability. Some mention of agreements for information sharing is present, but detailed procedures and continuous improvement are missing.",
+          "evidence": [
+            "\"Ensures agreements are in place with internal and external entities when information systems share services, assets, or information and that the appropriate security contracting language are incorporated in each IT contract under their purview;\" (Excerpt 3)",
+            "\"Provide adequate security for all information created, collected, processed, stored, transmitted, disseminated, or disposed of by or on behalf of the agency, to include Federal information residing in contractor information systems and networks.\" (Excerpt 4)",
+            "\"ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.\" (Excerpt 2)",
+            "\"Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes;\" (Excerpt 1)"
+          ],
+          "gaps": [
+            "No detailed, formal procedures for information transfer (e.g., requirements for encryption, classification, approved methods).",
+            "Absence of specific controls or step-by-step processes for all types of communication facilities.",
+            "No mention of monitoring, metrics, or continuous improvement related to information transfer processes.",
+            "No clear assignment of accountability or defined metrics for information transfer security."
+          ],
+          "recommendations": [
+            "Develop and document formal policies and procedures outlining secure methods for information transfer over all communication facilities, including technical controls (e.g., encryption, secure file transfer protocols).",
+            "Define specific requirements for internal and external data transfers, including approval, logging, and monitoring processes.",
+            "Establish metrics and regular monitoring to ensure compliance and effectiveness of information transfer controls.",
+            "Assign clear roles and responsibilities for the oversight and management of information transfer security.",
+            "Implement periodic reviews and updates of transfer procedures to address emerging threats and integrate them into the broader risk management process."
+          ]
+        },
+        {
+          "control_id": "A.15.1",
+          "control_name": "Information Security in Supplier Relationships",
+          "family": "Supplier Relationships",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy clearly establishes the need for information security requirements to be included in supplier contracts and provides accountability and process details for contracting roles. However, it lacks explicit detail on documented agreement of these requirements with suppliers themselves and on-life-cycle management or metrics.",
+          "evidence": [
+            "Ensures that supply chain, system, network, performance, and cybersecurity requirements are included in contract language and delivered;",
+            "Ensures the CISO, SAOP, and ISSOs are consulted during contract development and that the latest information security and privacy contract language is included in all contracts, as applicable;",
+            "Ensures that all acquisitions, procurements and outsourcing efforts contain the appropriate information security requirement provisions and clauses that are consistent with ED policy;",
+            "Ensures that appropriate Service Level Agreements (SLAs) and underpinning contracts have been defined that clearly that clearly set out for the department a description of the service and the measure for monitoring of the service;",
+            "Ensures, in coordination with CORs and acquisition personnel, that cybersecurity is addressed in all IT-related procurements and contracts through appropriate language in requirements documents;"
+          ],
+          "gaps": [
+            "No explicit process for reaching and documenting supplier agreement to the security requirements.",
+            "Does not specifically address how requirements are maintained or updated throughout the relationship life cycle.",
+            "Lacks detail on how measurement, monitoring, or enforcement of supplier compliance is conducted beyond initial contract inclusion."
+          ],
+          "recommendations": [
+            "Define and document a formal process to ensure that suppliers explicitly acknowledge and agree to information security requirements prior to contract execution.",
+            "Include guidance to periodically review, update, and re-affirm supplier security requirements throughout the relationship duration.",
+            "Establish metrics and accountability mechanisms for monitoring supplier compliance with agreed security controls."
+          ]
+        },
+        {
+          "control_id": "A.16.1",
+          "control_name": "Management of Information Security Incidents",
+          "family": "Information Security Incident Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes responsibilities and refers to formal procedures for incident reporting and response, with defined roles for reporting, coordination, and escalation. However, the evidence lacks detail on incident response process steps, metrics, or mechanisms ensuring a quick, effective, and orderly response.",
+          "evidence": [
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer\u2019s Representative (COR) if applicable;",
+            "Supervisors...Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision;",
+            "Reports and responds to cybersecurity incidents in accordance with ED\u2019s Information Security Incident Response and Reporting Procedures;"
+          ],
+          "gaps": [
+            "Policy does not specify detailed procedures or steps for an orderly and effective incident response.",
+            "No mention of metrics, performance measurement, or quality checks for the incident response process.",
+            "No description of regular updates or continuous improvement for incident handling.",
+            "Limited evidence of integration with risk management or lessons learned procedures."
+          ],
+          "recommendations": [
+            "Incorporate a high-level summary of the incident response process, including classification, investigation, containment, eradication, and recovery steps.",
+            "Add requirements for tracking, measuring, and reporting on incident response performance metrics (e.g., response times).",
+            "Define accountabilities and regular review procedures to ensure continuous improvement.",
+            "Describe how lessons learned from incidents are documented and integrated into risk management practices.",
+            "Reference or append the Information Security Incident Response and Reporting Procedures."
+          ]
+        },
+        {
+          "control_id": "A.17.1",
+          "control_name": "Information Security Continuity",
+          "family": "Business Continuity Management",
+          "framework_id": "iso_27001",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes general expectations, references to NIST/FISMA processes, and responsibilities related to information security; however, it lacks explicit determination of information security continuity requirements and specific processes for ensuring continuity in adverse situations.",
+          "evidence": [
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO;",
+            "Conducts assessments of the risk and magnitude of the harm that would result from unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department\u2019s critical operations, at no less than every three years or when significant changes occur to the system/network;",
+            "Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting."
+          ],
+          "gaps": [
+            "Policy does not explicitly define how the organization determines its requirements for information security continuity.",
+            "Lacks mention of business impact analysis, continuity planning processes, or procedures for ensuring continuity of information security management specifically during adverse situations.",
+            "No reference to testing, maintaining, or improving information security continuity plans.",
+            "No explicit linkage between risk assessments and continuity management requirements."
+          ],
+          "recommendations": [
+            "Develop and document a process for identifying and determining information security continuity requirements, including engaging stakeholders and conducting business impact analyses.",
+            "Integrate specific information security continuity measures and responsibilities within business continuity and disaster recovery planning.",
+            "Establish and document procedures to enact, test, and regularly review information security continuity plans during adverse situations.",
+            "Define metrics, testing schedules, and accountability mechanisms to monitor and improve information security continuity management."
+          ]
+        },
+        {
+          "control_id": "A.18.1",
+          "control_name": "Compliance with Legal and Contractual Requirements",
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy explicitly references relevant legislative, regulatory, and contractual requirements and outlines roles for keeping requirements updated and incorporated into contracts, but lacks clear, formalized procedures for continuously identifying, documenting, and updating these requirements.",
+          "evidence": [
+            "The Policy is based on legislative, statutory and executive directive requirements that include Federal laws and regulations, Presidential Directives and Executive Orders, Federal IT Acquisition Reform Act (FITARA), FISMA, the National Institute of Standards and Technology (NIST) Special Publications (SP) 800 series, the NIST Federal Information Processing Standards (FIPS), and Office of Management and Budget (OMB) memoranda.",
+            "Ensures that supply chain, system, network, performance, and cybersecurity requirements are included in contract language and delivered;",
+            "Ensures the CISO, SAOP, and ISSOs are consulted during contract development and that the latest information security and privacy contract language is included in all contracts, as applicable;",
+            "ISO responsibilities include: Follows the guidance in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53 and NIST SP 800-63, reviews information system documentation and the information system itself at least annually.",
+            "Ensures the requirements are adequately planned and addressed in all aspects of system architecture, including reference models, segment and solution architectures, and information systems that support the missions and business processes;"
+          ],
+          "gaps": [
+            "No formalized process for regularly identifying new legislative, regulatory, and contractual requirements.",
+            "No explicit mechanism or procedure for updating and maintaining documentation of such requirements.",
+            "No clear assignment of accountability for ensuring requirements remain current beyond general references to roles.",
+            "No description of monitoring or metrics for compliance with requirements."
+          ],
+          "recommendations": [
+            "Define and document a formal process for ongoing identification of relevant external requirements, including roles and responsibilities.",
+            "Establish a mechanism for regularly updating and maintaining documentation of legislative, regulatory, and contractual requirements.",
+            "Assign clear accountability for monitoring compliance and updating requirements.",
+            "Implement metrics and review procedures to ensure requirements are measured and kept current."
+          ]
+        },
+        {
+          "control_id": "A.18.2",
+          "control_name": "Information Security Reviews",
+          "family": "Compliance",
+          "framework_id": "iso_27001",
+          "maturity_score": 3,
+          "score_rationale": "The policy mandates regular security reviews and annual documentation updates, but lacks explicit requirements for independent review and does not clearly define metrics or continuous improvement mechanisms.",
+          "evidence": [
+            "Ensures current system inventories, system-level security plans, security reviews, corrective action plans, security authorization packages, and similar cybersecurity documents are developed, maintained, and posted to ED\u2019s system of record for FISMA reporting.",
+            "The key responsibilities of the ISSO include: a) Follows the guidance found in ED\u2019s Common Controls Catalog and the current version of NIST SP 800-53, reviewing at least annually and updating the information system and information system documentation as required into ED\u2019s selected central cybersecurity repository (currently CSAM);",
+            "Coordinates with other senior ED officials and core and essential enterprise cybersecurity programs (e.g., FICAM, HSPD-12, etc.), for reporting annually to the agency head on the effectiveness of the agency information security program, including progress of remedial actions;"
+          ],
+          "gaps": [
+            "No explicit requirement for independent, third-party or functionally independent internal reviews of the information security program.",
+            "Lack of defined metrics or procedures for monitoring the effectiveness or outcomes of the reviews.",
+            "No mention of continuous improvement or integration with a broader risk management framework."
+          ],
+          "recommendations": [
+            "Establish a formal process for independent (e.g., external auditor or uninvolved internal function) periodic reviews of the information security program.",
+            "Define metrics and accountability structures to ensure security review findings are tracked and addressed.",
+            "Integrate review results into risk management and continuous improvement cycles."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-29T19:38:24.067001",
+  "status": "completed"
+}
