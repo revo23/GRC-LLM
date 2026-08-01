@@ -1,0 +1,820 @@
+{
+  "assessment_id": "a4c7eff6-f8bf-4768-9dd3-43de395b29f9",
+  "document_id": "14a64b0ebb934094ac393c3251ac1efe",
+  "document_name": "2023-cybersecurity-policy.pdf",
+  "frameworks_assessed": [
+    "csa_ccm"
+  ],
+  "overall_posture_score": 1.22,
+  "framework_results": [
+    {
+      "framework_id": "csa_ccm",
+      "framework_name": "CSA Cloud Controls Matrix",
+      "overall_score": 1.22,
+      "family_scores": [
+        {
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "average_score": 1.32,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "average_score": 0.0,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.52,
+          "control_count": 2,
+          "weight": 1.2
+        },
+        {
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "average_score": 0.66,
+          "control_count": 3,
+          "weight": 1.4
+        },
+        {
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "average_score": 1.79,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "average_score": 2.23,
+          "control_count": 4,
+          "weight": 1.5
+        },
+        {
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "average_score": 0.35,
+          "control_count": 3,
+          "weight": 1.3
+        },
+        {
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.5,
+          "control_count": 2,
+          "weight": 1.3
+        },
+        {
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "average_score": 1.37,
+          "control_count": 3,
+          "weight": 1.4
+        }
+      ],
+      "control_results": [
+        {
+          "control_id": "AIS-01",
+          "control_name": "Application and Interface Security Policy",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes a broad enterprise-wide information security framework with defined roles (ISOs, ISSOs, System Developers) and addresses some application security elements such as secure development requirements, security integration into the SDLC, and interconnection agreements. However, there is no dedicated, formally documented application and interface security policy; application security guidance is scattered across general cybersecurity roles and responsibilities rather than being a standalone, comprehensive policy with defined evaluation, communication, and maintenance cycles.",
+          "evidence": [
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes",
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems. ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP.",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance",
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols",
+            "Obtains appropriate interconnection security agreements (ISAs) or memoranda of understanding (MOUs) prior to connecting with other systems and/or sharing sensitive data/information"
+          ],
+          "gaps": [
+            "No dedicated, standalone application and interface security policy document exists; application security requirements are embedded within broader cybersecurity and role-based policies",
+            "No explicit approval process defined specifically for application security policies and procedures",
+            "No defined cadence or process for periodic evaluation and review of application security policies specifically",
+            "No formal communication plan for disseminating application security policies to relevant stakeholders",
+            "Missing specific guidance on application security topics such as secure coding standards, application vulnerability management, API security, input validation, session management, and application security testing (SAST/DAST)",
+            "No metrics or KPIs defined for measuring application security policy effectiveness"
+          ],
+          "recommendations": [
+            "Develop a standalone Application and Interface Security Policy that consolidates all application security requirements, including secure coding standards, API security, input validation, authentication, session management, and third-party application controls",
+            "Establish a formal approval workflow for the application security policy involving designated senior leadership (e.g., CISO, AO) with documented sign-off",
+            "Define and implement a periodic review cycle (e.g., annual) for evaluating and updating the application security policy, with documented review outcomes",
+            "Create a communication and training plan to ensure all developers, system owners, and relevant stakeholders are aware of and trained on application security policy requirements",
+            "Integrate application security testing requirements (e.g., SAST, DAST, penetration testing) into the SDLC and document these in the policy",
+            "Define measurable metrics and accountability mechanisms (e.g., vulnerability remediation timelines, security testing coverage) to move toward a managed maturity level"
+          ]
+        },
+        {
+          "control_id": "AIS-02",
+          "control_name": "Application Security Baseline Requirements",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains general references to securing applications and systems, including identifying security requirements and following NIST SP 800-53 controls, but it does not establish, document, or maintain specific baseline requirements for securing different categories of applications, nor does it address the OWASP Top 10 vulnerabilities.",
+          "evidence": [
+            "Identifies, tailors, documents, and implements information security and privacy-related functional requirements necessary to protect ED information, information systems, missions, and business processes",
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration",
+            "Ensures NIST SP 800-53 (as amended) controls are appropriate to the system based on the FIPS 199 security categorization",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance"
+          ],
+          "gaps": [
+            "No documented baseline security requirements specific to different categories of applications (e.g., web applications, mobile applications, APIs, internal vs. external-facing)",
+            "No mention of OWASP Top 10 vulnerabilities or any equivalent application-specific vulnerability framework",
+            "No defined application security standards addressing common application-layer threats such as injection, broken authentication, cross-site scripting, or insecure deserialization",
+            "No formal process for maintaining and updating application security baselines as threat landscapes evolve",
+            "No categorization scheme for applications that would drive differentiated security baseline requirements"
+          ],
+          "recommendations": [
+            "Develop and formally document application security baseline requirements that address different application categories (web, mobile, API, cloud-native, etc.) with differentiated controls based on risk and exposure",
+            "Explicitly incorporate OWASP Top 10 vulnerabilities as a minimum baseline requirement for all web-facing applications, and mandate testing against these vulnerabilities during development and prior to deployment",
+            "Integrate application security baseline requirements into the SDLC, requiring secure coding standards, code reviews, and application security testing (SAST/DAST) aligned with the baselines",
+            "Establish a periodic review cycle (at least annually) to update application security baselines based on emerging threats, updated OWASP guidance, and lessons learned from incidents",
+            "Define metrics and accountability mechanisms to measure compliance with application security baselines across all application categories"
+          ]
+        },
+        {
+          "control_id": "AIS-04",
+          "control_name": "Application Security Metrics",
+          "family": "Application and Interface Security",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains scattered references to vulnerability patching timelines, FISMA metrics reporting, and POA&M tracking, but lacks a formally defined application security vulnerability remediation process, automation requirements, and specific application security metrics or SLAs as required by the control.",
+          "evidence": [
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy",
+            "In support of the ISO, ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching",
+            "In support of the ISO, ensure that periodic FISMA formal performance measure metrics reporting (quarterly and annually) are completed on time and entered into ED's selected central cybersecurity repository (currently CSAM)",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department's selected central cybersecurity repository (currently CSAM)",
+            "This includes actions directed by the DHS, which issues 'Binding Operational Directives' (BODs), that mandate reporting requirements by the Department for remediating critical vulnerabilities"
+          ],
+          "gaps": [
+            "No formally defined application security vulnerability remediation process with documented steps, roles, and workflows",
+            "No mention of automating remediation of application security vulnerabilities",
+            "No specific application security metrics (e.g., mean time to remediate, vulnerability density, percentage of critical vulnerabilities resolved) are defined",
+            "No application security SLAs are established with defined severity-based remediation timeframes",
+            "Patching timelines reference 'ED policy' but the specific timeframes and SLAs are not defined in this document",
+            "No distinction between infrastructure/system vulnerabilities and application-level security vulnerabilities",
+            "No integration of application security testing (SAST, DAST, SCA) results into the remediation process"
+          ],
+          "recommendations": [
+            "Develop a formal application security vulnerability remediation policy that defines the end-to-end process from discovery through verification of remediation",
+            "Define specific application security SLAs with severity-based remediation timeframes (e.g., Critical: 24-48 hours, High: 7 days, Medium: 30 days, Low: 90 days)",
+            "Establish measurable application security metrics such as mean time to remediate (MTTR), vulnerability recurrence rate, percentage of vulnerabilities remediated within SLA, and vulnerability density per application",
+            "Implement automated remediation capabilities where possible, such as automated dependency updates, automated WAF rule deployment, and CI/CD pipeline security gate enforcement",
+            "Integrate application security scanning tools (SAST, DAST, SCA) into the development pipeline with automated ticket creation and tracking for identified vulnerabilities",
+            "Create dashboards and regular reporting mechanisms for application security metrics tied to the central cybersecurity repository (CSAM) to enable continuous monitoring and improvement"
+          ]
+        },
+        {
+          "control_id": "BCR-01",
+          "control_name": "Business Continuity Management Policy",
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The provided policy excerpts focus entirely on cybersecurity roles, responsibilities, continuous monitoring, system authorization, and general information security program structure. There is no mention whatsoever of business continuity planning, business continuity management (BCM) policies, disaster recovery, or BCM plan testing.",
+          "evidence": [],
+          "gaps": [
+            "No documented business continuity management policy or procedures",
+            "No evidence of business continuity plan establishment, documentation, approval, communication, application, evaluation, or maintenance",
+            "No requirement for annual (or any frequency) testing of business continuity plans",
+            "No defined roles and responsibilities specific to business continuity planning",
+            "No integration of business continuity with risk management or incident response beyond cybersecurity incidents",
+            "No business impact analysis (BIA) or recovery time/point objectives referenced"
+          ],
+          "recommendations": [
+            "Develop and formally document a Business Continuity Management (BCM) policy that addresses establishment, documentation, approval, communication, application, evaluation, and maintenance of BC plans",
+            "Define roles and responsibilities for business continuity planning, including executive sponsorship and plan owners",
+            "Mandate annual testing of BCM plans (e.g., tabletop exercises, functional exercises, full-scale tests) with documented results and lessons learned",
+            "Integrate business continuity planning with the existing information security program and risk management framework",
+            "Establish a business impact analysis (BIA) process to identify critical business functions, recovery time objectives (RTOs), and recovery point objectives (RPOs)",
+            "Implement a review and update cycle for BCM plans, including after significant organizational changes or incidents"
+          ]
+        },
+        {
+          "control_id": "BCR-03",
+          "control_name": "Business Continuity Testing",
+          "family": "Business Continuity Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no mention of business continuity testing, disaster recovery testing, test procedures, planned test intervals, or updating plans based on test results. The documents focus entirely on cybersecurity roles, responsibilities, FISMA compliance, and general information security policy structure.",
+          "evidence": [],
+          "gaps": [
+            "No testing procedures established for business continuity plans",
+            "No testing procedures established for disaster recovery plans",
+            "No defined intervals or schedules for conducting BC/DR tests",
+            "No process for updating plans based on test results",
+            "No mention of business continuity or disaster recovery planning at all in the provided policy excerpts",
+            "No roles or responsibilities assigned for BC/DR testing",
+            "No defined test types (e.g., tabletop exercises, functional tests, full-scale exercises)"
+          ],
+          "recommendations": [
+            "Develop a dedicated Business Continuity and Disaster Recovery Testing Policy that defines testing procedures, scope, and objectives",
+            "Establish a testing schedule with planned intervals (e.g., annual full-scale tests, semi-annual tabletop exercises) aligned with NIST SP 800-34 guidance",
+            "Define roles and responsibilities for BC/DR test planning, execution, and evaluation",
+            "Implement a formal process for documenting test results, identifying gaps, and updating BC/DR plans based on lessons learned",
+            "Establish metrics to measure BC/DR test effectiveness and track remediation of identified deficiencies",
+            "Integrate BC/DR testing requirements into the existing cybersecurity policy framework and FISMA reporting processes"
+          ]
+        },
+        {
+          "control_id": "CCC-01",
+          "control_name": "Change Management Policy",
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only incidental references to change management\u2014such as notifying the CISO of major changes and updating documentation when a major change/upgrade occurs\u2014but does not establish, document, or communicate a formal change management policy or procedure for managing risks associated with applying changes to organization assets.",
+          "evidence": [
+            "Notifies the ED CISO of any major changes to existing information systems or when planning the development of new information systems;",
+            "If a major change/upgrade to the system occurs, the documentation would require updating for the information system as required in ED's selected central cybersecurity repository (currently CSAM);",
+            "Follows the guidance in ED's Common Controls Catalog and the current version of NIST SP 800-53 and NIST SP 800-63, reviews information system documentation and the information system itself at least annually."
+          ],
+          "gaps": [
+            "No dedicated change management policy or procedure is established, documented, approved, or communicated.",
+            "No defined process for requesting, reviewing, approving, testing, or implementing changes to applications, systems, infrastructure, or configurations.",
+            "No risk assessment process specifically tied to evaluating proposed changes before implementation.",
+            "No change advisory board (CAB) or equivalent approval authority defined for changes.",
+            "No classification of change types (standard, normal, emergency) or associated workflows.",
+            "No rollback or backout procedures defined for failed changes.",
+            "No metrics, monitoring, or evaluation mechanisms for the change management process.",
+            "No communication requirements for stakeholders affected by changes.",
+            "No periodic review or maintenance cycle for the change management policy itself."
+          ],
+          "recommendations": [
+            "Develop and formally approve a dedicated Change Management Policy that covers all asset types (applications, systems, infrastructure, configurations) and defines the full change lifecycle: request, risk assessment, approval, testing, implementation, verification, and closure.",
+            "Establish a Change Advisory Board (CAB) or equivalent governance body with defined roles, responsibilities, and authority for reviewing and approving changes.",
+            "Define change categories (standard, normal, emergency) with corresponding procedures, approval requirements, and documentation standards.",
+            "Incorporate mandatory risk assessments for proposed changes, including rollback/backout plans in case of failure.",
+            "Implement metrics and monitoring to evaluate the effectiveness of the change management process (e.g., unauthorized change rate, change success rate, change-related incidents).",
+            "Integrate the change management policy with the organization's broader risk management framework and continuous monitoring strategy.",
+            "Establish a periodic review cycle (at least annually) to evaluate and update the change management policy and procedures."
+          ]
+        },
+        {
+          "control_id": "CCC-04",
+          "control_name": "Unauthorized Change Protection",
+          "family": "Change Control and Configuration Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements related to unauthorized change protection\u2014including change management processes, separation of duties, least privilege, access reviews, configuration guidance, and risk assessments for unauthorized modification\u2014but lacks a dedicated, formal control specifically focused on detecting and preventing unauthorized changes to assets. The coverage is distributed across multiple role-based responsibilities without a unified unauthorized change protection framework.",
+          "evidence": [
+            "Ensures the requirements are effectively integrated into IT component products and information systems through purposeful security architecting, design, development, and configuration, following the ED change management processes",
+            "Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO",
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need",
+            "Conducts quarterly reviews and validations of system users' accounts to ensure the continued need for access to a system",
+            "Conducts assessments of the risk and magnitude of the harm that would result from the unauthorized access, use, disclosure, disruption, modification, or destruction of information and information systems that support the Department's critical operations, at no less than every three years or when significant changes occur to the system/network",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance",
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system",
+            "Notifies the ED CISO of any major changes to existing information systems or when planning the development of new information systems"
+          ],
+          "gaps": [
+            "No explicit control or mechanism for detecting unauthorized changes to organization assets (e.g., file integrity monitoring, configuration drift detection, change audit logging)",
+            "No formal process for preventing unauthorized addition or removal of assets beyond general access control principles",
+            "No defined automated alerting or response procedures when unauthorized changes are detected",
+            "Change management processes are referenced but not detailed\u2014no approval workflows, change advisory boards, or rollback procedures are described",
+            "No mention of baseline configurations against which unauthorized changes would be measured",
+            "No specific metrics or monitoring mechanisms to track unauthorized change attempts"
+          ],
+          "recommendations": [
+            "Implement and document a formal unauthorized change detection program including file integrity monitoring (FIM), configuration baseline management, and automated drift detection tools",
+            "Define and document a comprehensive change management policy with approval workflows, change advisory board processes, and rollback procedures for unauthorized or failed changes",
+            "Establish configuration baselines for all critical assets and implement automated tools to detect deviations from approved configurations",
+            "Implement audit logging and real-time alerting for unauthorized addition, removal, modification, or management of organization assets",
+            "Define metrics and KPIs for unauthorized change attempts, detection response times, and remediation effectiveness, and report these regularly to leadership",
+            "Integrate unauthorized change detection into the continuous monitoring strategy referenced in the policy to ensure ongoing visibility"
+          ]
+        },
+        {
+          "control_id": "CEK-01",
+          "control_name": "Encryption and Key Management Policy",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no mention of encryption policies, key management procedures, cryptographic controls, or protection of encryption keys. The documents focus on general information security governance, privacy, and FISMA compliance without addressing encryption or key management specifically.",
+          "evidence": [],
+          "gaps": [
+            "No documented encryption policy or procedures",
+            "No key management policy or lifecycle procedures (generation, distribution, storage, rotation, revocation, destruction)",
+            "No requirements for protecting encryption keys against disclosure and misuse",
+            "No defined cryptographic standards or approved algorithms",
+            "No roles and responsibilities assigned for encryption and key management",
+            "No process for evaluating and maintaining encryption and key management policies",
+            "No formal approval and communication process for encryption policies"
+          ],
+          "recommendations": [
+            "Develop and formally document a dedicated Encryption and Key Management Policy that defines approved cryptographic algorithms, key lengths, and protocols aligned with NIST SP 800-57 and FIPS 140-2/140-3",
+            "Establish key management lifecycle procedures covering key generation, distribution, storage, rotation, archival, revocation, and destruction",
+            "Define roles and responsibilities for key management activities, including key custodians and oversight responsibilities",
+            "Implement controls to protect encryption keys against unauthorized disclosure and misuse, including secure key storage mechanisms (e.g., HSMs) and access controls",
+            "Establish a review cycle (at least annually) for evaluating and updating encryption and key management policies and procedures",
+            "Integrate encryption and key management requirements into the existing ED cybersecurity policy framework and communicate them to all relevant stakeholders"
+          ]
+        },
+        {
+          "control_id": "CEK-03",
+          "control_name": "Data Encryption",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy references FIPS 140-2 (cryptographic module requirements), FIPS 186 (digital signatures), and NIST SP 800-52 (TLS guidelines) in its list of applicable standards, and mentions limiting connections to 'approved secure protocols,' but it does not define specific encryption requirements for data at rest, in transit, or in use, nor does it specify required algorithms or key lengths.",
+          "evidence": [
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols.",
+            "FIPS PUB 140-2, Security Requirements for Cryptographic Modules",
+            "FIPS 186, Digital Signature Standard",
+            "NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations, 2014"
+          ],
+          "gaps": [
+            "No explicit requirement for encrypting data at rest",
+            "No explicit requirement for encrypting data in transit beyond a generic reference to 'approved secure protocols'",
+            "No explicit requirement for encrypting data in use",
+            "No specification of required industry-standard encryption algorithms (e.g., AES-256, RSA-2048)",
+            "No specification of minimum key lengths for encryption",
+            "No defined process for selecting, implementing, and validating encryption controls across the organization",
+            "Referenced standards (FIPS 140-2, SP 800-52) are listed as applicable guidance but are not translated into actionable encryption policy requirements"
+          ],
+          "recommendations": [
+            "Develop a dedicated encryption policy or section that explicitly mandates encryption for data at rest, in transit, and in use with specific requirements for each state",
+            "Specify approved encryption algorithms (e.g., AES-256 for data at rest, TLS 1.2+ for data in transit) and minimum key lengths aligned with NIST SP 800-57 recommendations",
+            "Require FIPS 140-2 (or 140-3) validated cryptographic modules for all encryption implementations and define validation verification procedures",
+            "Establish monitoring and compliance mechanisms to verify encryption is properly implemented and maintained across all systems",
+            "Define roles and responsibilities for encryption management, including key management procedures aligned with CEK controls"
+          ]
+        },
+        {
+          "control_id": "CEK-04",
+          "control_name": "Encryption Algorithm",
+          "family": "Cryptography, Encryption and Key Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy references FIPS 140-2 and NIST SP 800-52 (TLS guidelines) in its list of applicable standards, and mentions limiting connections to 'approved secure protocols,' but does not define specific encryption algorithm requirements, specify approved algorithms for data at rest or in transit, or provide operational procedures for implementing FIPS 140-2/3 compliant cryptography.",
+          "evidence": [
+            "FIPS PUB 140-2, Security Requirements for Cryptographic Modules",
+            "NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations, 2014",
+            "Limits connections to publicly accessible Federal websites and web services to approved secure protocols."
+          ],
+          "gaps": [
+            "No specification of approved encryption algorithms (e.g., AES-256, RSA-2048) for protecting data at rest and in transit",
+            "No explicit requirement to use FIPS 140-2/3 validated cryptographic modules in operational systems",
+            "No policy language defining minimum key lengths, cipher suites, or cryptographic protocol versions",
+            "No distinction between encryption requirements for data in storage versus data in transit",
+            "No process for reviewing and updating approved encryption algorithms as standards evolve",
+            "No accountability or roles assigned for ensuring encryption compliance",
+            "No metrics or monitoring mechanisms to verify encryption implementation across systems"
+          ],
+          "recommendations": [
+            "Develop a dedicated encryption standard or policy section that specifies approved industry-accepted encryption algorithms (e.g., AES-256 for data at rest, TLS 1.2+ for data in transit) aligned with FIPS 140-2/3",
+            "Mandate the use of FIPS 140-2/3 validated cryptographic modules for all systems processing federal information and define verification procedures",
+            "Define minimum acceptable key lengths, cipher suites, and protocol versions, and prohibit deprecated algorithms (e.g., DES, RC4, SSL, TLS 1.0/1.1)",
+            "Assign roles and responsibilities (e.g., ISSO, system developers) for ensuring encryption standards are implemented and maintained",
+            "Establish a periodic review process to update approved algorithms based on evolving threats and updated NIST/FIPS guidance",
+            "Implement monitoring and reporting mechanisms to verify that deployed encryption meets policy requirements across all systems"
+          ]
+        },
+        {
+          "control_id": "GRC-01",
+          "control_name": "Governance Program",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a formal governance program with defined roles (PO Executive, ISO, ISSO, CISO), a structured policy framework aligned to strategic/operational/tactical levels, legislative authorization, accountability requirements, and continuous monitoring strategies. However, evidence of measured metrics, performance monitoring of the governance program itself, and continuous improvement mechanisms is lacking.",
+          "evidence": [
+            "ED must implement an Enterprise-wide ISP that provides policies, instructions, standards, and guidance to ensure the protection of its information and information systems.",
+            "The structure of this policy framework is illustrated in Figure 1 below. It illustrates a framework that fully supports the strategic, operational, and tactical level needs of the ED for all cybersecurity policy",
+            "The PO Executive has centralized responsibility for the establishment, maintenance, and enforcement of the information security program and policy for all information systems within the PO or business component.",
+            "It directs agency heads to ensure that: (1) information security management processes are integrated with budgetary planning; (2) senior agency officials, including chief information officers, carry out their information security responsibilities; and (3) all personnel are held accountable for complying with the agency-wide information security program.",
+            "Maintains an up-to-date listing of the information systems and assets, and information (data) under their control and maintains awareness of the cybersecurity risk posture of each information system",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO",
+            "Ensures that all IT programs within the PO are properly resourced so that cybersecurity is fully incorporated throughout the program lifecycle"
+          ],
+          "gaps": [
+            "No explicit statement of how the information security strategy is aligned with and supports specific business objectives beyond general mission references",
+            "No defined metrics or KPIs for measuring the effectiveness of the governance program",
+            "No documented periodic review cycle or continuous improvement process for the governance program itself",
+            "No evidence of a governance board or committee structure for oversight and strategic decision-making on information security matters",
+            "No documented process for regularly validating that security controls remain aligned with evolving business objectives"
+          ],
+          "recommendations": [
+            "Establish a formal Information Security Governance Board or Steering Committee with defined charter, membership, meeting cadence, and decision authority to ensure security strategy alignment with business objectives",
+            "Define and document specific KPIs and metrics for measuring governance program effectiveness, such as policy compliance rates, risk posture trends, and security investment alignment with business priorities",
+            "Implement a formal periodic review cycle (e.g., annual) for the governance program that includes assessment of alignment between security strategy and business objectives, with documented outcomes and improvement actions",
+            "Create an explicit mapping between business objectives and information security strategic goals to demonstrate and maintain alignment",
+            "Document a continuous improvement process for the governance program that incorporates lessons learned, audit findings, and changes in the threat landscape or business environment"
+          ]
+        },
+        {
+          "control_id": "GRC-03",
+          "control_name": "Cybersecurity Training",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes clear responsibilities for cybersecurity training compliance and tracking across multiple roles (all users, supervisors, ISSOs), including role-based training requirements. However, it lacks details on training program structure, content update cadence, completion metrics, and specific awareness program elements beyond stating requirements must be met.",
+          "evidence": [
+            "Comply with all cybersecurity training and awareness requirements by the required due date, and role based training commensurate with their roles and responsibilities as needed;",
+            "Ensures that information system users required cybersecurity training is tracked;",
+            "Ensure personnel under their direct supervision complete all required information security training, including privacy and Role Based Training (RBT), within the mandated timeframe as needed.",
+            "Ensures that ISOs and ISSOs within the PO have the necessary knowledge, skills, and abilities to perform their respective roles;"
+          ],
+          "gaps": [
+            "No description of a formal security awareness training program (curriculum, delivery method, frequency, onboarding vs. annual refresher)",
+            "No defined process or schedule for updating training content regularly",
+            "No specific completion tracking metrics, reporting mechanisms, or escalation procedures for non-compliance",
+            "No mention of training topics or content areas to be covered (e.g., phishing, social engineering, data handling)",
+            "No defined accountability for overall program ownership beyond distributed responsibilities across supervisors and ISSOs"
+          ],
+          "recommendations": [
+            "Develop and document a formal security awareness training program that specifies curriculum content, delivery methods (e.g., CBT, instructor-led), frequency (e.g., annual, onboarding within 10 days), and target audiences",
+            "Establish a centralized training management system with defined completion metrics, dashboards, and reporting cadence to leadership",
+            "Define a process and schedule (e.g., annual review) for updating training content to reflect emerging threats, lessons learned from incidents, and policy changes",
+            "Designate a single program owner (e.g., CISO or training coordinator) with explicit accountability for the overall training program lifecycle",
+            "Implement escalation procedures and consequences for personnel who fail to complete required training by mandated deadlines"
+          ]
+        },
+        {
+          "control_id": "GRC-05",
+          "control_name": "Intellectual Property",
+          "family": "Governance, Risk and Compliance",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no mention of intellectual property protection, software licensing management, or procedures to ensure proper use of licensed software and services. The documents focus entirely on cybersecurity roles, responsibilities, system authorization, and access controls.",
+          "evidence": [],
+          "gaps": [
+            "No policy or procedures for protecting organizational intellectual property rights",
+            "No software licensing management policy or procedures",
+            "No requirements for tracking or inventorying software licenses",
+            "No guidance on proper use of copyrighted materials or proprietary information",
+            "No procedures for ensuring compliance with software license agreements",
+            "No roles or responsibilities assigned for intellectual property or license management",
+            "No mention of open-source software usage policies or third-party license compliance"
+          ],
+          "recommendations": [
+            "Develop and implement a formal Intellectual Property Protection policy covering copyrights, trademarks, patents, and trade secrets relevant to the organization",
+            "Establish a Software Asset Management (SAM) program with procedures for procuring, tracking, and auditing software licenses across the organization",
+            "Create a software license inventory and implement tools for automated license tracking and compliance monitoring",
+            "Define roles and responsibilities for intellectual property management, including assignment of a designated owner for IP and licensing oversight",
+            "Incorporate intellectual property and licensing compliance requirements into procurement and contracting processes (e.g., within the Contracting Officer responsibilities already defined)",
+            "Develop training and awareness programs for employees on intellectual property rights, acceptable use of licensed software, and consequences of non-compliance",
+            "Establish periodic audit procedures to verify compliance with software licensing terms and intellectual property policies"
+          ]
+        },
+        {
+          "control_id": "IAM-01",
+          "control_name": "Identity and Access Management Policy",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 3,
+          "score_rationale": "The policy establishes a formal, documented framework for identity and access management with clear roles, responsibilities, least-privilege enforcement, quarterly access reviews, separation of duties, and alignment with federal standards (FIPS, NIST, FICAM). However, there is limited evidence of defined metrics, continuous monitoring of IAM effectiveness, or a formal evaluation and continuous improvement cycle for the IAM policies themselves.",
+          "evidence": [
+            "Authorized user access must be limited to only information necessary for the performance of required tasks.",
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "Conducts quarterly reviews and validations of system users' accounts to ensure the continued need for access to a system;",
+            "Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO;",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance);",
+            "Establishes and provides processes and procedures for the validation of personnel clearances in support of Logical Access Control (LAC).",
+            "ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP."
+          ],
+          "gaps": [
+            "No explicit formal approval process or review cycle documented for the IAM policy itself (e.g., annual review and re-approval).",
+            "No defined metrics or KPIs for measuring IAM policy effectiveness and compliance rates.",
+            "Limited evidence of a formal communication plan for disseminating IAM policies to all stakeholders beyond training requirements.",
+            "No documented process for continuous improvement or feedback loops to evaluate and update IAM procedures based on lessons learned or audit findings.",
+            "No explicit mention of automated provisioning/deprovisioning processes or identity lifecycle management procedures."
+          ],
+          "recommendations": [
+            "Establish a formal IAM policy review and approval cycle (e.g., annual) with documented sign-off by the CIO and CISO.",
+            "Define and track IAM-specific metrics such as percentage of accounts reviewed on schedule, time-to-deprovision for terminated users, and number of excess privilege findings.",
+            "Document a formal identity lifecycle management process covering provisioning, modification, periodic recertification, and deprovisioning of access.",
+            "Implement a formal communication plan to ensure IAM policies are disseminated to all employees, contractors, and special case communities upon onboarding and at regular intervals.",
+            "Integrate IAM policy evaluation into the organization's continuous improvement and risk management framework, including post-audit remediation tracking and trend analysis."
+          ]
+        },
+        {
+          "control_id": "IAM-02",
+          "control_name": "Strong Authentication",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy contains only indirect and minimal references to strong authentication. PIV-based authentication is mentioned once in passing for privileged administrators, but there is no formal, comprehensive policy defining MFA requirements, password complexity standards, or specific cloud service authentication mandates.",
+          "evidence": [
+            "Assesses the performance of security and privacy controls associated with the system/network or web service to ensure the residual risk is maintained within an acceptable range and utilize PIV based authentication approaches",
+            "Ensures that all IT systems under their purview are configured in accordance with most recent ED and Federal system security configuration guidance, and Federal CIO Council guidance (e.g., OMB M-11-11 and the Federal Identity Credential and Access Management Roadmap and Implementation Guidance)",
+            "NIST SP 800-63 Rev 3, Digital Identity Guidelines"
+          ],
+          "gaps": [
+            "No explicit policy requirement mandating multi-factor authentication (MFA) for all user access, especially cloud service access",
+            "No defined strong authentication standards (e.g., password complexity, token-based authentication, biometric requirements) beyond a brief mention of PIV",
+            "No differentiation of authentication requirements between privileged and non-privileged accounts",
+            "No specific policy language addressing authentication for cloud environments or remote access scenarios",
+            "No defined enforcement mechanisms, metrics, or monitoring for authentication compliance"
+          ],
+          "recommendations": [
+            "Develop a dedicated authentication policy section that explicitly mandates MFA for all users, with heightened requirements (e.g., phishing-resistant authenticators) for privileged access",
+            "Specify approved authentication mechanisms (PIV, FIDO2, hardware tokens, etc.) and map them to access tiers (standard users, privileged users, cloud administrators)",
+            "Include explicit requirements for MFA enforcement on all cloud service access, aligned with OMB M-22-09 (Zero Trust) and NIST SP 800-63 Rev 3 assurance levels",
+            "Define metrics and monitoring processes for authentication control effectiveness, such as percentage of accounts with MFA enabled and periodic compliance audits",
+            "Establish a process for periodic review and continuous improvement of authentication standards as threats and technology evolve"
+          ]
+        },
+        {
+          "control_id": "IAM-05",
+          "control_name": "Least Privilege",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 3,
+          "score_rationale": "The policy formally documents the principle of least privilege, separation of duties, use of non-privileged accounts for non-security functions, and prevention of privileged function execution by non-privileged users. However, the policy lacks explicit procedures for regular review of access rights and revocation of unnecessary permissions, which is a key element of the control requirement.",
+          "evidence": [
+            "Employs the principle of least privilege, including for specific security functions and privileged accounts;",
+            "Uses non-privileged accounts or roles when accessing non-security functions, and;",
+            "Prevents non-privileged users from executing privileged functions and audit the execution of such function.",
+            "Limits information system access to authorized users, processes actions on behalf of authorized users, or devices (including other information systems);",
+            "Limits information system access to the types of transactions and functions that authorized users are permitted to execute;",
+            "Reinforces the concept of separation of duties by ensuring that no single individual has control of any critical process in its entirety per NIST SP 800-53 (as amended);",
+            "Offering only the required functionality to each authorized user, so that no one can use functions that are not necessary."
+          ],
+          "gaps": [
+            "No documented process or defined frequency for regular review of access rights (e.g., periodic access recertification or entitlement reviews)",
+            "No explicit procedure for revoking unnecessary or excessive permissions when they are identified",
+            "No defined metrics, accountability mechanisms, or monitoring processes to measure the effectiveness of least privilege implementation",
+            "No mention of automated tools or workflows for access right reviews and privilege management"
+          ],
+          "recommendations": [
+            "Establish a formal access review policy with defined frequencies (e.g., quarterly or semi-annually) for recertifying user access rights, including privileged accounts",
+            "Implement documented procedures for timely revocation of unnecessary permissions upon role changes, transfers, or when access is no longer justified",
+            "Define metrics and accountability for least privilege compliance, such as tracking the number of excessive privileges identified and remediated per review cycle",
+            "Consider implementing automated access governance tools to support continuous monitoring and periodic access certification processes",
+            "Include specific guidance on role-based access control (RBAC) implementation to operationalize least privilege across all systems"
+          ]
+        },
+        {
+          "control_id": "IAM-08",
+          "control_name": "User Access Provisioning",
+          "family": "Identity and Access Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements of user access provisioning\u2014such as determining who should be granted access, applying least privilege, conducting quarterly account reviews, and requiring background checks and training before granting access\u2014but it lacks a formally defined, end-to-end provisioning process that explicitly covers authorization workflows, recording/logging of access changes, and communication of access changes to relevant stakeholders.",
+          "evidence": [
+            "Determines who should be granted access to the system and with what rights and privileges, and grants users the fewest possible privileges necessary for job performance in order to ensure privileges are based on a legitimate need;",
+            "Conducts quarterly reviews and validations of system users' accounts to ensure the continued need for access to a system;",
+            "Enforces the concept of separation of duties by ensuring that no single individual has control of the entirety of any critical process in coordination with the ISSO;",
+            "Initiates and monitors background investigations and ensure that all users on their contracts comply with Federal and ED guidance for personnel security and background investigation requirements, and have taken security and awareness training before granting access to ED's systems and information;",
+            "Informs Personnel Security Office of any change to contractor personnel."
+          ],
+          "gaps": [
+            "No formally defined, documented user access provisioning process or workflow that covers request, approval, implementation, and verification steps.",
+            "No explicit requirement to record and log all access provisioning and de-provisioning actions for audit purposes.",
+            "No defined process for communicating access changes to data owners, managers, or other relevant stakeholders when access is granted, modified, or revoked.",
+            "No mention of automated provisioning mechanisms or integration with identity management systems for tracking access changes.",
+            "No coverage of provisioning for access to organizationally owned or managed information assets beyond systems (e.g., data repositories, cloud services, shared resources)."
+          ],
+          "recommendations": [
+            "Develop and document a formal user access provisioning procedure that defines the end-to-end lifecycle: access request, authorization/approval, implementation, recording, and communication of changes.",
+            "Implement an access request and approval workflow system that records all provisioning actions, including who requested, who approved, what access was granted/modified/revoked, and when.",
+            "Establish formal notification mechanisms to communicate access changes to relevant stakeholders such as data owners, system owners, ISSOs, and managers.",
+            "Integrate the provisioning process with centralized identity and access management (IAM) tools to automate tracking, logging, and reporting of all access changes.",
+            "Extend the provisioning process scope to explicitly cover all organizationally owned or managed information assets, including cloud services, shared data repositories, and third-party applications."
+          ]
+        },
+        {
+          "control_id": "LOG-01",
+          "control_name": "Logging and Monitoring Policy",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no specific mention of logging and monitoring policies, procedures, or definitions of what events should be logged and how logs should be managed. While there is a brief reference to a 'continuous monitoring strategy' in Excerpt 3, this pertains to cybersecurity risk posture monitoring at the program level, not to event logging and log management.",
+          "evidence": [
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO"
+          ],
+          "gaps": [
+            "No documented logging and monitoring policy or procedures",
+            "No definition of what events should be logged (e.g., authentication events, access control events, system changes, privileged actions)",
+            "No log management requirements (retention periods, storage, protection, review frequency)",
+            "No definition of roles and responsibilities specific to logging and monitoring",
+            "No requirements for log review, analysis, or alerting processes",
+            "No approval, communication, or evaluation processes defined for logging policies",
+            "No guidance on centralized log collection or correlation (e.g., SIEM requirements)"
+          ],
+          "recommendations": [
+            "Develop and formally document a dedicated Logging and Monitoring Policy that defines what events must be logged across all information systems (e.g., authentication, authorization, system changes, privileged operations, data access)",
+            "Define log management requirements including retention periods, secure storage, integrity protection, and access controls for log data",
+            "Establish mandatory log review procedures with defined frequencies, responsible roles, and escalation processes",
+            "Specify requirements for centralized log collection, correlation, and automated alerting (e.g., SIEM integration)",
+            "Include a formal approval, communication, and periodic review/evaluation cycle for the logging and monitoring policy",
+            "Align the policy with NIST SP 800-53 AU (Audit and Accountability) control family requirements already referenced in the broader security framework"
+          ]
+        },
+        {
+          "control_id": "LOG-05",
+          "control_name": "Audit Log Monitoring",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy references continuous monitoring, a Security Operations Center (EDSOC), and incident reporting for suspected security issues, but lacks any specific requirements for audit log monitoring, pattern-based anomaly detection, alerting mechanisms, or timely response procedures tied to log analysis.",
+          "evidence": [
+            "Aligns the FSA cybersecurity operations center capabilities to actively monitor and respond to FSA related cyber incidents in coordination with the EDSOC.",
+            "Ensures continuous monitoring of the information system's security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates",
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer's Representative (COR) if applicable",
+            "Ensures that a PO-level asset, data, and information security continuous monitoring strategy is developed and implemented to enable ongoing visibility into the cybersecurity risk posture of each information system within the PO"
+          ],
+          "gaps": [
+            "No explicit requirement to monitor security audit logs for activity outside typical or expected patterns",
+            "No definition of baselines or typical activity patterns against which anomalies would be detected",
+            "No requirement to establish automated alerts for suspicious activity detected in audit logs",
+            "No defined timely response procedures or SLAs specifically for audit log-triggered alerts",
+            "No mention of log correlation, SIEM tools, or specific log analysis processes",
+            "No metrics or accountability mechanisms for measuring the effectiveness of log monitoring"
+          ],
+          "recommendations": [
+            "Develop a dedicated audit log monitoring policy that specifies requirements for collecting, centralizing, and analyzing security audit logs across all information systems",
+            "Define baseline activity patterns and establish automated alerting rules for deviations from expected behavior using a SIEM or equivalent tool",
+            "Establish specific response timeframes (SLAs) for investigating and responding to alerts generated from audit log anomalies",
+            "Assign explicit roles and responsibilities for audit log review, including frequency of review and escalation procedures",
+            "Implement metrics to track the effectiveness of log monitoring, such as mean time to detect (MTTD) and mean time to respond (MTTR) for log-based alerts",
+            "Integrate audit log monitoring requirements into the existing continuous monitoring strategy referenced in the policy"
+          ]
+        },
+        {
+          "control_id": "LOG-08",
+          "control_name": "Auditability",
+          "family": "Logging and Monitoring",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no specific provisions addressing audit log retention requirements, retention periods, or protection of audit logs from unauthorized access. While there are general references to NIST SP 800-53 compliance and security controls, none of the excerpts document or address the specific requirements of audit log retention and auditability.",
+          "evidence": [
+            "Follows the guidance in ED's Common Controls Catalog and the current version of NIST SP 800-53 and NIST SP 800-63, reviews information system documentation and the information system itself at least annually.",
+            "Prevents non-privileged users from executing privileged functions and audit the execution of such function."
+          ],
+          "gaps": [
+            "No identification or documentation of compliance requirements for audit log retention",
+            "No defined retention periods for audit logs",
+            "No documented procedures for protecting audit logs from unauthorized access, modification, or deletion",
+            "No policy language addressing audit log integrity or availability requirements",
+            "No roles or responsibilities assigned specifically for audit log management and retention",
+            "No reference to regulatory or legal requirements that drive audit log retention timelines (e.g., NARA records schedules, FISMA requirements)"
+          ],
+          "recommendations": [
+            "Develop and document a formal audit log retention policy that identifies all applicable compliance requirements (e.g., FISMA, NARA, OMB, NIST AU-family controls) and specifies minimum retention periods for each log type",
+            "Implement technical and administrative controls to protect audit logs from unauthorized access, modification, and deletion, including access controls, encryption, and integrity verification mechanisms",
+            "Assign explicit responsibilities for audit log retention management to designated roles (e.g., ISSO, System Owner) and include these in the policy",
+            "Establish monitoring and review processes to verify that audit logs are being retained for the required periods and that protection mechanisms are functioning as intended",
+            "Integrate audit log retention requirements into the system authorization and POA&M processes to ensure ongoing compliance tracking"
+          ]
+        },
+        {
+          "control_id": "SEF-01",
+          "control_name": "Incident Management Policy",
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy establishes a broad information security framework with defined roles and responsibilities relevant to incident management (ISSO, ISSM, EDSOC, supervisors), and references ED's 'Information Security Incident Response and Reporting Procedures.' However, the policy excerpts do not contain a dedicated, comprehensive incident management policy with defined incident lifecycle phases, escalation procedures, severity classifications, or specific evaluation and continuous improvement mechanisms.",
+          "evidence": [
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer's Representative (COR) if applicable",
+            "Reports and responds to cybersecurity incidents in accordance with ED's Information Security Incident Response and Reporting Procedures",
+            "Ensures, through coordination with EDSOC, that all of ED's systems are in compliance with cybersecurity policy and reports the status to the ED CISO, Authorizing Official (AO/CIO) and ISSO",
+            "Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision",
+            "ED must develop and maintain the information security policies and associated cybersecurity instructions for the ISP"
+          ],
+          "gaps": [
+            "No dedicated incident management policy with defined scope, objectives, and formal approval/communication process is documented in the excerpts",
+            "No incident classification or severity levels are defined",
+            "No incident response lifecycle phases (detection, analysis, containment, eradication, recovery, lessons learned) are documented",
+            "No escalation procedures or timelines for incident response are specified",
+            "No formal evaluation or continuous improvement process for the incident management policy is described",
+            "The referenced 'Information Security Incident Response and Reporting Procedures' document is not included \u2014 it is only referenced by name",
+            "No defined metrics or KPIs for measuring incident management effectiveness"
+          ],
+          "recommendations": [
+            "Develop and publish a standalone Incident Management Policy that covers the full incident response lifecycle, including detection, analysis, containment, eradication, recovery, and post-incident review",
+            "Define incident severity classifications and corresponding escalation paths with specific timelines",
+            "Formally document roles and responsibilities specific to incident response (e.g., incident commander, triage team, communications lead) beyond the general security roles already defined",
+            "Establish a formal review cycle for the incident management policy (e.g., annual review) with defined approval authority and communication plan",
+            "Incorporate metrics and KPIs for incident management (e.g., mean time to detect, mean time to respond, number of incidents by severity) and integrate reporting into governance processes",
+            "Include the full 'Information Security Incident Response and Reporting Procedures' within or alongside the overarching policy to ensure completeness and accessibility"
+          ]
+        },
+        {
+          "control_id": "SEF-03",
+          "control_name": "Incident Reporting",
+          "family": "Security Incident Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 1,
+          "score_rationale": "The policy references incident reporting responsibilities and refers to ED's Information Security Incident Response and Reporting Procedures, but does not itself define a security incident response plan, specify required timeframes for notification, identify specific stakeholders or regulatory bodies for communication, or outline the incident response process.",
+          "evidence": [
+            "Reports and responds to cybersecurity incidents in accordance with ED's Information Security Incident Response and Reporting Procedures;",
+            "Report any observed or suspected security issues to their supervisor, the ISSO, ED Security Operations Center (EDSOC), Contracting Officer (CO) and Contracting Officer's Representative (COR) if applicable;",
+            "Notify the appropriate information security point of contact of any potential information security circumstances that impact users under their supervision;"
+          ],
+          "gaps": [
+            "No defined security incident response plan is documented within this policy \u2014 it only references an external procedure document without detailing its contents",
+            "No specific timeframes for incident reporting to stakeholders or regulatory bodies are established",
+            "No identification of required regulatory bodies (e.g., US-CERT, Congress, OMB) or external stakeholder communication requirements",
+            "No escalation procedures or severity classification framework for incidents is described",
+            "No defined communication plan or templates for notifying affected parties",
+            "No post-incident review or lessons-learned process is described",
+            "No metrics or monitoring mechanisms for tracking incident response effectiveness"
+          ],
+          "recommendations": [
+            "Incorporate or directly reference with specificity the ED Information Security Incident Response and Reporting Procedures, including defined timeframes for reporting (e.g., US-CERT 1-hour notification requirement for major incidents)",
+            "Define a complete incident response lifecycle within the policy (preparation, detection, containment, eradication, recovery, lessons learned)",
+            "Explicitly identify all required regulatory and external stakeholder notification requirements (e.g., US-CERT, OMB, Congress, affected individuals for PII breaches) with specific timeframes",
+            "Establish an incident severity classification scheme that maps to escalation and communication requirements",
+            "Define metrics for measuring incident response plan effectiveness, such as mean time to detect, report, and remediate",
+            "Include requirements for periodic testing and updating of the incident response plan (e.g., tabletop exercises, after-action reviews)"
+          ]
+        },
+        {
+          "control_id": "TVM-01",
+          "control_name": "Antivirus and Anti-malware",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 0,
+          "score_rationale": "The policy excerpts contain no mention of antivirus, anti-malware, malware detection, malware prevention, definition updates, or regular scanning. The documents focus on organizational roles, responsibilities, references, and general cybersecurity governance without addressing endpoint protection controls.",
+          "evidence": [],
+          "gaps": [
+            "No requirement to deploy antivirus or anti-malware technologies on organizational assets",
+            "No requirement to keep malware definitions or signatures current",
+            "No requirement for regular or scheduled malware scans",
+            "No guidance on configuring antivirus/anti-malware tools (e.g., real-time protection, heuristic analysis)",
+            "No mention of centralized management or monitoring of anti-malware solutions",
+            "No procedures for responding to malware detections or quarantine actions"
+          ],
+          "recommendations": [
+            "Develop and publish a dedicated anti-malware policy or technical standard requiring antivirus/anti-malware deployment on all endpoints, servers, and other organizational assets",
+            "Mandate automatic and timely updates of malware signatures/definitions (e.g., at least daily)",
+            "Require regularly scheduled full-system scans in addition to real-time/on-access scanning",
+            "Establish centralized monitoring and alerting for malware detections with defined response procedures",
+            "Define metrics and accountability for anti-malware coverage rates, definition currency, and scan compliance to enable managed-level maturity"
+          ]
+        },
+        {
+          "control_id": "TVM-02",
+          "control_name": "Vulnerability Management",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy addresses several elements of vulnerability management\u2014such as patch installation timelines, POA&M tracking, compliance with DHS Binding Operational Directives, and continuous monitoring\u2014but it does not establish a formal, comprehensive vulnerability management program with defined scanning cadences, severity-based remediation SLAs, vulnerability tracking workflows, or program-level metrics.",
+          "evidence": [
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy",
+            "In support of the ISO, ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching; This includes actions directed by the DHS, which issues 'Binding Operational Directives' (BODs), that mandate reporting requirements by the Department for remediating critical vulnerabilities",
+            "Ensures that information security notices and advisories are distributed to appropriate ED and contractor personnel and that vendor-issued security patches are expeditiously installed",
+            "Ensures that system weaknesses are captured in the Plan of Action and Milestones (POA&M) and are entered into ED's selected Central Cybersecurity Repository (currently CSAM)",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department's selected central cybersecurity repository (currently CSAM)",
+            "Ensures continuous monitoring of the information system's security is performed and validates the information system against the System Security Plan (SSP) while managing and controlling any information system updates"
+          ],
+          "gaps": [
+            "No formal, documented vulnerability management program or policy establishing the program's scope, objectives, and governance structure",
+            "No defined vulnerability scanning requirements (e.g., scanning frequency, tools, scope of scans including infrastructure, applications, databases, containers)",
+            "No severity-based remediation timelines or SLAs (e.g., critical vulnerabilities remediated within X days, high within Y days)",
+            "No defined process for vulnerability identification beyond patching\u2014such as configuration assessments, code reviews, or penetration testing as part of the vulnerability management lifecycle",
+            "No metrics or KPIs defined for measuring vulnerability management program effectiveness (e.g., mean time to remediate, scan coverage percentage, aging vulnerabilities)",
+            "No documented risk acceptance or exception process specifically for vulnerabilities that cannot be remediated within required timelines",
+            "No mention of vulnerability prioritization methodology (e.g., CVSS scoring, asset criticality weighting, threat intelligence integration)"
+          ],
+          "recommendations": [
+            "Develop and publish a dedicated Vulnerability Management Program policy/procedure that defines program scope, governance, roles, scanning requirements, and remediation workflows",
+            "Establish mandatory vulnerability scanning cadences (e.g., weekly for critical systems, monthly for all systems) covering infrastructure, applications, and databases with approved scanning tools",
+            "Define severity-based remediation SLAs aligned with NIST and BOD requirements (e.g., critical: 15 days, high: 30 days, medium: 90 days, low: 180 days)",
+            "Implement a vulnerability prioritization methodology incorporating CVSS scores, asset criticality, threat intelligence, and exploitability factors",
+            "Define program-level KPIs and reporting requirements such as scan coverage, mean time to remediate, percentage of vulnerabilities remediated within SLA, and aging vulnerability trends",
+            "Establish a formal risk acceptance/exception process for vulnerabilities that cannot be remediated within prescribed timelines, requiring documented justification and compensating controls",
+            "Integrate vulnerability management with the existing continuous monitoring strategy and CSAM repository to provide a unified view of organizational vulnerability posture"
+          ]
+        },
+        {
+          "control_id": "TVM-03",
+          "control_name": "Vulnerability Remediation",
+          "family": "Threat and Vulnerability Management",
+          "framework_id": "csa_ccm",
+          "maturity_score": 2,
+          "score_rationale": "The policy assigns responsibility for vulnerability patching and references compliance with defined timeframes, DHS Binding Operational Directives, and ED policy, but it does not define specific severity-based SLAs, a structured remediation process, or metrics for tracking remediation performance.",
+          "evidence": [
+            "Ensures that security patches for all assigned information systems are installed within the timeframe identified by ED policy",
+            "In support of the ISO, ensures that actions are taken to respond and comply within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching; This includes actions directed by the DHS, which issues \"Binding Operational Directives\" (BODs), that mandate reporting requirements by the Department for remediating critical vulnerabilities",
+            "Ensures that information security notices and advisories are distributed to appropriate ED and contractor personnel and that vendor-issued security patches are expeditiously installed",
+            "Ensures that actions are taken to respond and complies within specified timelines for any government-wide or ED-wide directed action items related to vulnerability patching",
+            "Implements proper system backups and patch management processes",
+            "Assists their applicable System Owner in capturing all system weaknesses, policy and standard deviations in the POA&M and entering them into the Department's selected central cybersecurity repository (currently CSAM)"
+          ],
+          "gaps": [
+            "No defined severity classification scheme for vulnerabilities (e.g., critical, high, medium, low) with corresponding remediation SLAs",
+            "No explicit timeframes or SLA definitions for patching critical, high, or other severity vulnerabilities within the policy itself \u2014 it only references external 'ED policy' timeframes without specifying them",
+            "No documented vulnerability identification and scanning process (e.g., frequency of scans, tools used, scope)",
+            "No defined metrics or KPIs for measuring remediation effectiveness and timeliness",
+            "No escalation procedures for vulnerabilities that exceed remediation SLAs",
+            "No risk-based exception or deferral process for vulnerabilities that cannot be patched within SLA"
+          ],
+          "recommendations": [
+            "Define explicit severity-based SLAs within the policy (e.g., critical vulnerabilities patched within 15 days, high within 30 days, medium within 90 days)",
+            "Establish a formal vulnerability management process that includes regular scanning schedules, severity classification criteria, and remediation workflows",
+            "Implement metrics and reporting dashboards to track patch compliance rates, mean time to remediate by severity, and overdue vulnerabilities",
+            "Define an escalation process and accountability chain for vulnerabilities that exceed their remediation SLA",
+            "Create a formal risk acceptance and exception process for vulnerabilities that cannot be remediated within defined timeframes, requiring documented justification and compensating controls"
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-19T20:22:00.299400",
+  "status": "completed"
+}
