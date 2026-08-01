@@ -1,0 +1,224 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : 2023-cybersecurity-policy.pdf
+Assessment JSON: grc_report_0d5d4fe9.json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-06-30 21:32 UTC
+Frameworks     : hipaa
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.830 / 1.000  (Good)
+================================================================================
+Controls evaluated: 20
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.863  [#################...]  Good
+  Evidence Relevance      0.611  [############........]  Needs Improvement
+  Score Consistency       0.819  [################....]  Good
+  Gap Completeness        0.825  [################....]  Good
+  Recommendation Quality  0.862  [#################...]  Good
+  Evidence Groundedness   1.000  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: HIPAA Security Rule
+Quality Score: 0.830  [#################...]  Good
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.863  [#################...]
+  Evidence Relevance      0.611  [############........]
+  Score Consistency       0.819  [################....]
+  Gap Completeness        0.825  [################....]
+  Recommendation Quality  0.862  [#################...]
+  Evidence Groundedness   1.000  [####################]
+
+  Family: Administrative Safeguards  (8 controls)  Quality: 0.828  Good
+  --------------------------------------------------------------------------------
+  164.308(a)(1)  |  Security Management Process  |  Maturity: 3 (Defined)  |  Quality: 0.800 (Good)
+    Faithfulness              0.820  The rationale and gaps are mostly grounded in the evidence quotes, accurately noting the FISMA/NIST orientation and absence of ePHI references; however, the gap claiming no 'prevention, detection, containment, correction' workflow is slightly overstated since evidence [5] references enterprise-wide ISP policies and [4] references continuous monitoring, which partially address detection — though not as a defined violation-response workflow.
+    Evidence Relevance        0.650  Several quotes (e.g., [1] on risk assessments, [2] on POA&M, [4] on continuous monitoring) are meaningfully relevant to the Security Management Process control, but quotes [3] and [6] are more tangential (asset inventory and PII controls respectively) and do not directly address the control's core requirements around ePHI security violation prevention, detection, containment, and correction.
+    Score Consistency         0.780  A score of 3 is reasonable given that the policy demonstrates a structured security management framework with risk assessments, POA&M tracking, and continuous monitoring, but has significant gaps around ePHI-specific requirements; the score appropriately reflects partial but meaningful coverage without over- or under-stating maturity.
+    Gap Completeness          0.750  The gaps comprehensively identify the most critical missing elements (ePHI specificity, HIPAA risk analysis, violation lifecycle procedures), but the gap about 'no defined metrics or measurement processes' is somewhat vague and not directly required by the control text, while the gap about the three-year cycle somewhat contradicts evidence [1] which already acknowledges this limitation — making it partially redundant rather than adding new insight.
+    Recommendation Quality    0.800  Recommendations are generally specific and actionable, directly mapping to identified gaps (e.g., HIPAA-specific risk analysis, violation management lifecycle, ePHI-focused metrics), though the suggestion to 'integrate incident detection and response procedures' is somewhat generic and could be more precisely tied to the specific deficiency in the existing FISMA-based framework.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+  164.308(a)(2)  |  Assigned Security Responsibility  |  Maturity: 2 (Developing)  |  Quality: 0.773 (Acceptable)
+    Faithfulness              0.780  The rationale's claims about role hierarchy and FISMA orientation are reasonably supported by the evidence quotes, but the assertion that no single individual is designated is somewhat overstated given that evidence [2] shows the PO Executive has 'centralized responsibility' — the rationale does not fully reconcile this with the gap claim.
+    Evidence Relevance        0.620  The evidence quotes show security role assignments and delegation chains that are partially relevant to identifying a responsible security official, but they are drawn from a FISMA/federal IT security context rather than HIPAA, and none explicitly address HIPAA security policy development and implementation responsibility as required by 164.308(a)(2).
+    Score Consistency         0.720  A score of 2 is reasonable given that role structures and delegation exist (supporting above-zero maturity) but no explicit HIPAA-specific security official designation is present; however, evidence [2] describing 'centralized responsibility' for security program and policy could arguably support a slightly higher score, making 2 a mild underestimate.
+    Gap Completeness          0.700  The gaps correctly identify the absence of a named HIPAA security official and the FISMA vs. HIPAA framing issue, but they are somewhat redundant (gaps 1 and 3 essentially repeat the same point) and miss the requirement to assess whether the designation is documented and maintained over time as personnel change, which appears only superficially in recommendations rather than gaps.
+    Recommendation Quality    0.820  The recommendations are specific and actionable — designating a named individual, creating a standalone policy statement, defining scope and authority, and maintaining appointment documentation — directly addressing the identified gaps with concrete, implementable steps.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  164.308(a)(3)  |  Workforce Security  |  Maturity: 2 (Developing)  |  Quality: 0.812 (Good)
+    Faithfulness              0.780  The rationale and gaps are mostly grounded in the evidence, correctly identifying that the policy covers least-privilege and screening but lacks ePHI-specific procedures; however, the gap claiming 'no explicit termination procedures' is partially contradicted by Evidence [6] which shows contractor personnel changes are reported to Personnel Security Office, implying some offboarding process exists.
+    Evidence Relevance        0.720  Quotes [1], [2], [4], [5], and [6] are genuinely relevant to workforce access controls, but Quote [3] is generic data-protection boilerplate that does not specifically address workforce security management or access authorization procedures required by this control.
+    Score Consistency         0.800  A score of 2 is reasonably consistent with evidence showing foundational principles (least privilege, screening, personnel change notification) but lacking ePHI-specific authorization, clearance, and termination procedures; the evidence supports a developing but incomplete posture, making 2 defensible though arguably a borderline 2-3.
+    Gap Completeness          0.750  The gaps correctly identify the most critical missing elements (ePHI specificity, authorization/supervision, clearance, termination), but the gap about termination is overstated given Evidence [6] shows personnel changes are reported, and the gap about 'metrics/monitoring' goes beyond the core control requirement without acknowledging the partial coverage in Evidence [5].
+    Recommendation Quality    0.820  Recommendations are specific and directly mapped to the identified gaps (HIPAA's three addressable specifications, RBAC framework, periodic reviews, termination procedures), though the final recommendation about metrics and reporting is more aspirational than actionable and could benefit from concrete implementation guidance.
+    Evidence Groundedness     1.000  6/6 quotes located in PDF
+
+  164.308(a)(4)  |  Information Access Management  |  Maturity: 2 (Developing)  |  Quality: 0.800 (Good)
+    Faithfulness              0.820  The rationale accurately reflects the evidence—correctly noting that least privilege, need-to-know, and task-limited access principles are present but that specific ePHI authorization procedures are absent; however, the evidence (quote [5]) references 'PII' not 'ePHI' specifically, and the rationale's claim about absent role-based access controls is well-supported, making the assessment largely faithful with only minor overreach.
+    Evidence Relevance        0.550  The evidence quotes establish general information protection and least-privilege principles that are tangentially relevant, but none of them specifically address ePHI authorization workflows, HIPAA-specific access control requirements, or electronic protected health information at all—quote [5] references PII rather than ePHI, reducing direct relevance to this HIPAA control.
+    Score Consistency         0.780  A score of 2 is reasonable given that the evidence shows foundational access principles exist (justifying above 0–1) but lacks any ePHI-specific authorization procedures, workflows, or HIPAA alignment—the numerous substantive gaps support a score no higher than 2, making the rating logically consistent.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements including ePHI-specific authorization procedures, formal workflows, RBAC, periodic reviews, and explicit HIPAA sub-provision references; however, the gap analysis omits the absence of business associate access authorization procedures and does not flag the missing minimum necessary standard implementation specific to ePHI access decisions.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to identified gaps—including RBAC definitions, annual recertification cycles, formal approval workflows with audit trails, and explicit HIPAA sub-provision integration—with the only minor weakness being that the business associate recommendation is somewhat generic and not tied to a concrete implementation step.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  164.308(a)(5)  |  Security Awareness and Training  |  Maturity: 2 (Developing)  |  Quality: 0.817 (Good)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence shows (training tracking and responsibility assignment) without overstating, and the gaps correctly identify absences of specific content; however, claiming 'no documented security awareness and training program covering all workforce members' is slightly contradicted by Evidence [4] which indicates enterprise-wide shared responsibility and Evidence [1] which references required information security training for personnel.
+    Evidence Relevance        0.650  Evidence [1] and [2] are directly relevant to training requirements, but Evidence [3] addresses ISO/ISSO role-specific knowledge rather than the broader workforce awareness program, and Evidence [4] is generic policy boilerplate about shared responsibility that does not substantively address training content, log-in monitoring, malicious software, or password management.
+    Score Consistency         0.780  A score of 2 is reasonably consistent with evidence showing training tracking and mandate infrastructure exists but lacking all three specific required content areas (malicious software, log-in monitoring, password management), though the evidence base is thin enough that a score of 1 could also be defensible given the near-total absence of programmatic specifics.
+    Gap Completeness          0.800  The gaps comprehensively cover the three specific HIPAA-required training topics and structural program elements, but the gap about 'no metrics or effectiveness measurements' goes beyond the control's explicit requirements and the gap about 'no defined training program structure' partially overlaps with the first gap, introducing minor redundancy.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to identified gaps, including concrete examples like phishing simulations, role-based content, and metrics reporting; the only minor weakness is that the phishing simulation recommendation addresses a gap not explicitly stated in the control requirement, slightly diluting focus.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  164.308(a)(6)  |  Security Incident Procedures  |  Maturity: 2 (Developing)  |  Quality: 0.833 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely supported by the evidence quotes, which show only reporting responsibilities and a reference to an external document; however, claiming 'no metrics, monitoring, or accountability mechanisms' and 'no specific reference to HIPAA/PHI' goes slightly beyond what the evidence can confirm or deny, as the full policy scope is unknown.
+    Evidence Relevance        0.780  The three quotes are directly relevant to security incident procedures — covering reporting chains, incident response obligations, and supervisor notification — though they collectively demonstrate only the reporting/notification layer rather than the full control requirement of identification, response, and mitigation.
+    Score Consistency         0.800  A score of 2 is reasonably consistent with evidence that shows awareness-level reporting obligations and a reference to external procedures but lacks any defined response lifecycle, mitigation steps, or classification framework, placing the policy at an initial/developing maturity level.
+    Gap Completeness          0.750  The gaps comprehensively cover missing incident response lifecycle elements, detection mechanisms, mitigation, and classification, but the HIPAA/PHI-specific gap is speculative without knowing the policy's applicability scope, and the metrics/accountability gap, while valid for higher maturity, is somewhat peripheral to the core control requirement.
+    Recommendation Quality    0.820  Recommendations are specific and directly tied to identified gaps — including incorporating the referenced external document, defining severity levels and escalation paths, and documenting containment/eradication/recovery steps — though the metrics and HIPAA recommendations are conditionally relevant and slightly generic in framing.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  164.308(a)(7)  |  Contingency Plan  |  Maturity: 0 (Not Implemented)  |  Quality: 0.987 (Excellent)
+    Faithfulness              1.000  The rationale and gaps are entirely consistent with the absence of evidence quotes — no claims are made beyond what the lack of evidence supports, and no facts are asserted that contradict any cited material.
+    Evidence Relevance        1.000  There are no evidence quotes provided, which is appropriate given that no relevant policy excerpts were retrieved; the assessment correctly reflects this absence rather than citing irrelevant boilerplate.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with zero evidence of any contingency plan element being present across all five required implementation specifications.
+    Gap Completeness          0.950  The gaps comprehensively cover all five HIPAA-required contingency plan elements plus additional considerations like RTO/RPO and role assignments; a minor deduction is warranted because the gap around testing could more explicitly call out the required 'revision' component as a distinct gap.
+    Recommendation Quality    0.970  Recommendations are highly specific, actionable, and directly mapped to each identified gap, including concrete details such as backup frequency, offsite storage, encryption, RTOs/RPOs, annual testing cadence, and accountability assignment.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  164.308(a)(8)  |  Evaluation  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.850  The rationale and gaps accurately reflect that the evidence quotes show only FISMA/general IT security activities and lack HIPAA-specific evaluation requirements; however, the claim that there is 'no defined frequency' is slightly overstated since evidence [1] references at least annual reviews, though it does not map to HIPAA specifically.
+    Evidence Relevance        0.450  The cited evidence quotes relate to general FISMA reporting, continuous monitoring, and annual documentation reviews rather than to periodic technical and non-technical evaluations of HIPAA Security Rule compliance, making them only tangentially relevant to the specific control requirement.
+    Score Consistency         0.800  A score of 1 is broadly consistent with the assessment — the evidence shows only peripheral FISMA-oriented activities with no HIPAA-specific evaluation process, supporting a very low maturity score, though a score of 1 (vs. 0) is reasonable given the presence of some general periodic review activities.
+    Gap Completeness          0.820  The gaps comprehensively cover the missing HIPAA-specific evaluation elements including methodology, frequency, scope, change-triggered evaluations, and remediation tracking; the final gap correctly notes the FISMA orientation of the policy, though the gap about 'no defined frequency' slightly overstates given evidence [1] references annual reviews.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to the identified gaps — including concrete examples of technical and non-technical evaluation components, defined scheduling triggers, mapping to Security Rule specifications, and assessor independence — with minimal boilerplate.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Physical Safeguards  (4 controls)  Quality: 0.890  Good
+  --------------------------------------------------------------------------------
+  164.310(a)(1)  |  Facility Access Controls  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely faithful to the evidence; the evidence quotes are indeed general and lack facility-specific physical access controls, but quote [2] does reference 'physical controls' being ensured, which slightly undermines the claim that physical controls are entirely absent — the rationale acknowledges this by calling them 'general statements' rather than specific procedures.
+    Evidence Relevance        0.450  The evidence quotes are mostly generic information security principles (least privilege, unauthorized access protection) rather than facility-specific physical access control provisions; only quote [2] tangentially references physical controls and quote [3] touches on personnel screening for facility access, making the majority of evidence only peripherally relevant to this specific control.
+    Score Consistency         0.800  A maturity score of 1 is well-justified given that the evidence shows only general, non-specific references to physical controls with no dedicated facility access policies, procedures, or mechanisms — consistent with initial/ad hoc maturity where intent exists but implementation detail is absent.
+    Gap Completeness          0.880  The gaps are comprehensive and accurately identify the specific missing elements required by 164.310(a)(1) — physical mechanisms, access granting/revoking procedures, visitor management, audit logs, contingency procedures — though the gap about physical audit logs and emergency procedures, while valid, could note that quote [2] hints at some physical control oversight responsibility that partially addresses one concern.
+    Recommendation Quality    0.820  Recommendations are specific, actionable, and directly tied to identified gaps (e.g., card readers, biometrics, visitor sign-in logs, audit log review cadence), though the final recommendation about integrating physical access reviews into 'quarterly account review' references an internal process not established in the evidence, making it slightly unanchored.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  164.310(b)  |  Workstation Use  |  Maturity: 0 (Not Implemented)  |  Quality: 0.970 (Excellent)
+    Faithfulness              1.000  With no evidence quotes cited, all claims in the rationale and gaps are internally consistent and do not contradict any evidence; the rationale accurately reflects the absence of relevant policy excerpts without fabricating or misrepresenting anything.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is appropriate given that the retrieved policy excerpts contained nothing relevant to the workstation use control requirement, avoiding the inclusion of irrelevant boilerplate.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with the complete absence of any evidence addressing workstation use policies, procedures, or physical environment requirements.
+    Gap Completeness          0.900  The gaps comprehensively cover the three core HIPAA 164.310(b) elements—permitted functions, manner of performance, and physical surroundings—with appropriate specificity, though a minor gap exists in not explicitly noting the absence of documentation or workforce training obligations tied directly to this specific standard.
+    Recommendation Quality    0.920  Recommendations are specific, actionable, and directly map to each identified gap, including concrete examples such as screen positioning, privacy screens, workstation classification, and Rules of Behavior integration, with no generic filler advice.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  164.310(c)  |  Workstation Security  |  Maturity: 1 (Initial)  |  Quality: 0.817 (Good)
+    Faithfulness              0.920  The rationale accurately characterizes the evidence as general/high-level and correctly notes the absence of workstation-specific physical safeguards; no claims contradict or overstate what the quoted evidence actually says.
+    Evidence Relevance        0.350  The cited quotes are generic information-protection and least-privilege statements with no specific relevance to physical workstation safeguards (cable locks, screen positioning, secure areas), meaning they only tangentially touch the HIPAA 164.310(c) requirement.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only vague, tangentially related policy language with no workstation-specific physical safeguard provisions, which aligns with an 'initial/ad hoc' maturity level.
+    Gap Completeness          0.880  The gaps are comprehensive and specific, covering physical controls, workstation placement, portable devices, ePHI-specific language, and environmental distinctions; a minor omission is the lack of a gap around workforce training on workstation physical security procedures.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly tied to each identified gap (e.g., dedicated policy development, placement guidelines, portable device procedures, badge access, and inventory audits), though they could be slightly strengthened by referencing HIPAA-specific regulatory guidance or frameworks.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  164.310(d)(1)  |  Device and Media Controls  |  Maturity: 0 (Not Implemented)  |  Quality: 0.975 (Excellent)
+    Faithfulness              1.000  With no evidence quotes provided, the rationale and gaps make no unsupported claims about what evidence states — all assertions correctly reflect the absence of relevant policy excerpts, so there is no faithfulness violation.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is consistent with the rationale that no relevant excerpts were retrieved; there are no irrelevant or off-topic quotes to penalise.
+    Score Consistency         1.000  A score of 0 is fully consistent with the complete absence of any evidence addressing device and media controls, matching the lowest end of the maturity scale.
+    Gap Completeness          0.900  The gaps comprehensively cover the core requirements of 164.310(d)(1) — receipt, removal, tracking, sanitization/disposal, inventory, and role assignment — though a minor omission is the lack of explicit mention of data backup and accountability for media reuse as distinct procedural requirements under the broader device and media controls standard.
+    Recommendation Quality    0.950  Recommendations are specific, actionable, and directly tied to each identified gap, including concrete references such as NIST SP 800-88 for sanitization and approval workflows for media movement, with only marginal room for improvement in specifying implementation timelines or ownership.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+
+  Family: Technical Safeguards  (5 controls)  Quality: 0.792  Acceptable
+  --------------------------------------------------------------------------------
+  164.312(a)(1)  |  Access Control  |  Maturity: 2 (Developing)  |  Quality: 0.767 (Acceptable)
+    Faithfulness              0.720  The rationale and gaps are mostly grounded in the evidence, but several gaps (e.g., no RBAC/ABAC model, no access provisioning workflow, no periodic access review) go beyond what the evidence can confirm or deny, and the rationale correctly identifies the policy's limited scope without overstating what the evidence shows; however, Evidence [3] about privileged user responsibilities is vague and the rationale claims its absence of specificity without quoting what those responsibilities actually include, which is a minor overreach.
+    Evidence Relevance        0.650  Evidence [1] and [4] are directly relevant to access control requirements, but Evidence [2] (user agreements and NDAs), [3] (privileged user responsibilities without detail), and [5] (PIV integration in automated capabilities) are only tangentially related to the specific HIPAA 164.312(a)(1) requirement of allowing access only to authorized persons/programs on ePHI systems, making roughly half the evidence only loosely on-topic.
+    Score Consistency         0.700  A score of 2 is defensible given the policy shows awareness of least privilege and PIV authentication but lacks specific technical procedures; however, the presence of PIV-based authentication (a strong technical control) and defined privileged user responsibilities could arguably support a 3, making the score slightly deflated relative to the evidence strength.
+    Gap Completeness          0.750  The gaps comprehensively cover major HIPAA 164.312(a)(1) addressable specifications (unique user ID, emergency access, automatic logoff, encryption), but some gaps like 'no RBAC/ABAC explicitly defined' may be partially contradicted by Evidence [3] on privileged user roles, and the gap about encryption/decryption is more relevant to 164.312(a)(2)(iv) than the primary access control standard being assessed.
+    Recommendation Quality    0.780  Recommendations are specific and actionable, directly mapping to identified gaps (e.g., quarterly/semi-annual recertification cadence, emergency access audit trails), though the encryption/decryption recommendation addresses a control specification not central to 164.312(a)(1) and could be more precisely scoped to the access granting/revoking workflow gaps.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  164.312(b)  |  Audit Controls  |  Maturity: 1 (Initial)  |  Quality: 0.813 (Good)
+    Faithfulness              0.950  The rationale and gaps accurately reflect what the evidence quotes show — general compliance evaluation, FISMA metrics, and annual documentation reviews — without overstating or misrepresenting the quoted text, and the conclusion that no specific audit control mechanisms are described is consistent with the evidence provided.
+    Evidence Relevance        0.300  The three evidence quotes (NIST SP 800-53 compliance evaluation, FISMA metrics reporting, and annual documentation review) are only tangentially related to implementing audit controls for ePHI-containing systems and do not directly address hardware, software, or procedural mechanisms for recording and examining system activity as required by the control.
+    Score Consistency         0.850  A maturity score of 1 is appropriate given that the evidence shows only peripheral, general compliance and reporting activities with no direct provisions for audit logging mechanisms, which aligns with a largely absent or ad-hoc implementation level.
+    Gap Completeness          0.900  The gaps are comprehensive and accurately capture all major requirements of the control that are absent from the evidence, including event specification, log review procedures, retention, integrity protection, role assignments, and ePHI-specific references, with no gaps contradicted by the evidence.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap (e.g., defining auditable events, specifying HIPAA-aligned 6-year retention, deploying SIEM, assigning explicit roles), though the suggestion to deploy SIEM could be slightly more nuanced regarding feasibility assessment before prescribing a specific tool class.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  164.312(c)(1)  |  Integrity  |  Maturity: 1 (Initial)  |  Quality: 0.833 (Good)
+    Faithfulness              0.920  The rationale accurately characterizes the evidence as high-level and general, and does not overstate or misrepresent what the quotes say; all gap claims about absent specifics are consistent with the broad, non-ePHI-specific language in the evidence quotes.
+    Evidence Relevance        0.450  The three quotes are generic information-security boilerplate covering confidentiality, integrity, and availability broadly, with no specific reference to ePHI, HIPAA, or concrete integrity mechanisms; they touch on 'integrity' only tangentially and do not directly address the control's requirement for ePHI-specific alteration/destruction protections.
+    Score Consistency         0.850  A score of 1 is appropriate given that only vague, high-level language exists with no ePHI-specific procedures or electronic integrity mechanisms, reflecting a minimal/ad-hoc state that is consistent with the weak evidence and numerous substantive gaps identified.
+    Gap Completeness          0.880  The gaps are comprehensive and well-enumerated, covering policies/procedures, electronic mechanisms, integrity tools, database controls, audit trails, and periodic checks; a minor omission is the lack of mention of backup/recovery integrity verification and chain-of-custody considerations for ePHI destruction.
+    Recommendation Quality    0.900  Recommendations are specific, actionable, and directly mapped to each identified gap (e.g., FIM tools, cryptographic hashing, database transaction logging, audit trail specifics), though they could be slightly strengthened by referencing HIPAA-specific implementation guidance or prioritization order.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  164.312(d)  |  Person or Entity Authentication  |  Maturity: 1 (Initial)  |  Quality: 0.782 (Acceptable)
+    Faithfulness              0.780  The rationale accurately reflects that evidence quotes only fragmentarily mention PIV, tokens, PINs, and passwords without formal ePHI procedures, but the gap claiming 'no explicit requirement or policy for MFA' is slightly in tension with evidence [1] and [2] which do reference PIV-based approaches and token-based authenticators—components of MFA—though the rationale reasonably characterizes these as passing mentions rather than formal policy.
+    Evidence Relevance        0.520  Evidence [1] and [2] are tangentially relevant as they reference authentication mechanisms (PIV, tokens, PINs, passwords), but evidence [3] is about personnel clearance validation for LAC rather than identity verification for ePHI access, and evidence [4] is merely a reference citation with no substantive policy content, reducing overall relevance to the specific control requirement.
+    Score Consistency         0.720  A score of 1 is reasonably justified given that only fragmentary, non-procedural references to authentication exist and no formal ePHI-specific authentication procedures or explicit MFA policy are demonstrated, though the presence of PIV and token references could arguably support a score of 2, making 1 slightly deflated but defensible.
+    Gap Completeness          0.820  The gaps comprehensively cover the major missing elements—formal ePHI verification procedures, explicit MFA policy, authentication assurance levels, entity authentication, failure/lockout handling, and operationalization of NIST SP 800-63—with no obvious omissions, though the gap about authentication failures/lockouts goes somewhat beyond the strict control requirement and could be considered a minor overreach.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to identified gaps—including mapping NIST SP 800-63 AALs to data classification, defining mutual TLS for entity authentication, and specifying MFA factor types—though the final recommendation on monitoring metrics addresses a broader operational concern not strictly mandated by the control requirement.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  164.312(e)(1)  |  Transmission Security  |  Maturity: 1 (Initial)  |  Quality: 0.767 (Acceptable)
+    Faithfulness              0.820  The rationale accurately reflects that the evidence quotes only tangentially address transmission security (public websites and a NIST reference), and the gaps do not contradict the evidence; however, the claim that NIST SP 800-52 is merely a 'reference' is slightly understated since its citation could imply some policy intent toward TLS, though no ePHI-specific requirement is explicitly stated.
+    Evidence Relevance        0.350  Both quotes are only marginally relevant to protecting ePHI in transit — the first addresses publicly accessible Federal websites generically (not ePHI specifically), and the second is an incomplete citation of a NIST guideline title with no accompanying policy obligation, making neither quote directly responsive to the HIPAA transmission security control requirement.
+    Score Consistency         0.800  A score of 1 out of 5 is reasonable given that the evidence provides only peripheral, generic references to secure protocols with no explicit ePHI transmission security requirements, reflecting an ad-hoc or minimal policy posture consistent with the lowest meaningful maturity tier.
+    Gap Completeness          0.780  The gaps comprehensively cover key missing elements (encryption mandate, protocol standards, integrity controls, channel-specific requirements, monitoring, and internal vs. external distinction), though they could additionally note the absence of any risk assessment process for unencrypted transmission scenarios or workforce training on transmission security procedures.
+    Recommendation Quality    0.850  Recommendations are specific and actionable — citing TLS 1.2 minimum, message authentication codes, channel-specific controls, and an exceptions process with compensating controls — and are directly tied to each identified gap, though they could be further strengthened by referencing applicable HIPAA-specific implementation specifications or timelines for remediation.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+
+  Family: Organizational Requirements  (1 controls)  Quality: 0.838  Good
+  --------------------------------------------------------------------------------
+  164.314(a)(1)  |  Business Associate Contracts  |  Maturity: 1 (Initial)  |  Quality: 0.838 (Good)
+    Faithfulness              0.950  The rationale and gaps accurately reflect what the evidence quotes contain — general IT security contracting language with no HIPAA-specific provisions — and no claims are made that contradict or go beyond the cited evidence.
+    Evidence Relevance        0.450  The evidence quotes address general federal IT security contracting requirements (acquisitions, SLAs, supply chain security) but none specifically address HIPAA Business Associate Agreements, ePHI safeguarding, or business associate relationships, making them only tangentially relevant to this HIPAA-specific control.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows general contracting security provisions exist (preventing a score of 0) but none address HIPAA BAA requirements specifically, which aligns well with the identified gaps and rationale.
+    Gap Completeness          0.900  The gaps comprehensively cover the major HIPAA BAA requirements missing from the evidence — including BAA identification, required contractual provisions, ePHI references, subcontractor flow-down, and compliance monitoring — with only minor omissions such as the HIPAA requirement for BAAs to address the business associate's use of subcontractors who are also business associates per 45 CFR 164.314(a)(2).
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to identified gaps — including BAA templates with required HIPAA provisions, integration with contracting workflows, periodic compliance monitoring, and a centralized BAA inventory — though they could be further strengthened by referencing specific HIPAA regulatory citations or remediation timelines.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Policies and Procedures  (2 controls)  Quality: 0.807  Good
+  --------------------------------------------------------------------------------
+  164.316(a)  |  Policies and Procedures  |  Maturity: 4 (Managed)  |  Quality: 0.803 (Good)
+    Faithfulness              0.780  The rationale accurately reflects what the evidence shows (structured ISP, roles, monitoring, POA&Ms), but the claim about 'continuous improvement cycles not prominently featured' is a mild overreach since the evidence does reference continuous monitoring and corrective action plans; gaps about absent HIPAA-specific references are legitimately inferred rather than contradicted by evidence.
+    Evidence Relevance        0.720  The evidence quotes demonstrate the existence of a written policy framework and maintenance obligations, which are directly relevant to the control's requirement for written policies and procedures, but several quotes (e.g., [4], [6], [7]) are focused on FISMA/NIST system-level documentation rather than the general policy-and-procedure maintenance requirement of 164.316(a), making them only partially on-point.
+    Score Consistency         0.700  A score of 4 out of 5 is somewhat inflated given that the policy is entirely FISMA/NIST-oriented with no explicit HIPAA coverage, which is the very standard being assessed; the evidence supports a strong general policy framework but the absence of HIPAA-specific alignment is a significant gap that would more appropriately place the score at 2–3.
+    Gap Completeness          0.800  The gaps correctly identify the lack of HIPAA-specific references, absent review cadence, and no 'reasonable and appropriate' reassessment process, but miss the explicit requirement to document procedures (not just policies) and fail to note the absence of evidence that written documentation is maintained and accessible to relevant workforce members.
+    Recommendation Quality    0.820  Recommendations are specific and directly address each identified gap—particularly the HIPAA mapping, formal review cycle, and HIPAA-specific addendum—though the suggestion to 'implement a formal process to periodically assess' slightly restates the gap without providing concrete implementation detail (e.g., who owns the process, what triggers reassessment).
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+  164.316(b)(1)  |  Documentation  |  Maturity: 1 (Initial)  |  Quality: 0.810 (Good)
+    Faithfulness              0.850  The rationale and gaps accurately reflect what the evidence quotes do and do not state — the evidence shows documentation practices exist but the rationale correctly notes the absence of explicit written-form requirements and 6-year retention; no claims contradict the evidence, though the gap about 'version control and archival' goes slightly beyond what can be inferred from the quotes alone.
+    Evidence Relevance        0.550  The evidence quotes address general documentation and information security program requirements but are only tangentially relevant to the specific HIPAA control requirement of maintaining written policies/procedures and a 6-year retention period; none of the quotes directly address retention duration or the written-form compliance obligation.
+    Score Consistency         0.800  A score of 1 is reasonably consistent with the evidence, which shows some documentation practices exist (justifying above 0) but lacks any mention of the core requirements — written form mandate and 6-year retention — making a low score appropriate, though a score of 1–2 range is defensible.
+    Gap Completeness          0.780  The gaps comprehensively cover the key missing elements (written form requirement, 6-year retention, creation/in-effect date tracking, and version control), but miss one notable requirement: the control implies documentation must be available to those responsible for implementation, and there is no gap addressing accessibility or availability of records.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap — including designating a responsible party, establishing a formal retention policy with the exact 6-year timeframe, and implementing version control — making them well-targeted rather than generic boilerplate.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================

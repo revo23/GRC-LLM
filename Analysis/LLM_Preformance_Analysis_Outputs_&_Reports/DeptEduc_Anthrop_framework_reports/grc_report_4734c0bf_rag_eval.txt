@@ -1,0 +1,251 @@
+================================================================================
+GRC-LLM RAG Evaluation Report
+================================================================================
+PDF Document   : 2023-cybersecurity-policy.pdf
+Assessment JSON: grc_report_4734c0bf.json
+Evaluator Model: claude-sonnet-4-6
+Evaluation Date: 2026-07-02 18:22 UTC
+Frameworks     : pci_dss
+
+EVALUATION DIMENSIONS
+--------------------------------------------------------------------------------
+  Faithfulness              Claims in rationale/gaps are grounded in evidence quotes
+  Evidence Relevance        Evidence quotes are relevant to the specific control requirement
+  Score Consistency         Maturity score (0-5) is justified by evidence and rationale
+  Gap Completeness          Gaps accurately capture what is missing from the policy
+  Recommendation Quality    Recommendations are specific, actionable, and gap-targeted
+  Evidence Groundedness     Evidence quotes can be located in the original PDF (hallucination check)
+
+================================================================================
+OVERALL RAG QUALITY SCORE:  0.828 / 1.000  (Good)
+================================================================================
+Controls evaluated: 23
+
+Dimension                      Score  Bar (0→1)                 Label
+--------------------------------------------------------------------------------
+  Faithfulness            0.894  [##################..]  Good
+  Evidence Relevance      0.543  [###########.........]  Poor
+  Score Consistency       0.840  [#################...]  Good
+  Gap Completeness        0.840  [#################...]  Good
+  Recommendation Quality  0.865  [#################...]  Good
+  Evidence Groundedness   0.986  [####################]  Excellent
+
+================================================================================
+FRAMEWORK: PCI DSS
+Quality Score: 0.828  [#################...]  Good
+================================================================================
+
+  Dimension                      Score  Bar                     
+  --------------------------------------------------------------
+  Faithfulness            0.894  [##################..]
+  Evidence Relevance      0.543  [###########.........]
+  Score Consistency       0.840  [#################...]
+  Gap Completeness        0.840  [#################...]
+  Recommendation Quality  0.865  [#################...]
+  Evidence Groundedness   0.986  [####################]
+
+  Family: Network Security  (5 controls)  Quality: 0.779  Acceptable
+  --------------------------------------------------------------------------------
+  PCI-1.1  |  Network Security Controls: Processes and Mechanisms  |  Maturity: 1 (Initial)  |  Quality: 0.745 (Acceptable)
+    Faithfulness              0.820  The rationale and gaps are largely faithful to the evidence, correctly noting that the quotes address general security controls rather than network-specific processes; however, evidence [2] does reference an annual review requirement, and the gap claiming 'no explicit requirement for reviewing network security control configurations at least every 12 months' is partially contradicted by this annual documentation review clause, even though it is not network-security-specific.
+    Evidence Relevance        0.350  Most evidence quotes are generic policy statements about security controls assessment, documentation updates, and physical/administrative controls that do not specifically address installing and maintaining network security controls (firewalls, segmentation, IDS/IPS); only the NIST SP 800-41 reference directly pertains to network security, and it appears as a cited reference rather than an operationalized policy excerpt.
+    Score Consistency         0.780  A maturity score of 1 is reasonably consistent with the evidence, which shows only tangential and generic coverage of the control's requirements with no specific network security control processes or 12-month review mandates; however, the presence of some relevant references (annual review cadence, NIST 800-41, configuration guidance) could arguably support a score of 1–2, making 1 slightly conservative but defensible.
+    Gap Completeness          0.720  The gaps comprehensively cover the major missing elements (defined processes, 12-month review, roles/responsibilities, configuration baselines, change management), but miss some PCI DSS 1.1-specific requirements such as the need for network diagrams showing all connections to cardholder data environments and documentation of business justification for all network security control rules.
+    Recommendation Quality    0.800  Recommendations are specific, actionable, and directly tied to the identified gaps (dedicated policy, explicit 12-month review with sign-off, role assignments, configuration baselines, tracking metrics), though they could be further strengthened by referencing PCI DSS 1.1 specific artifacts like network diagrams and cardholder data flow documentation.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  PCI-1.2  |  Network Security Controls Configuration  |  Maturity: 1 (Initial)  |  Quality: 0.783 (Acceptable)
+    Faithfulness              0.920  The rationale and gaps accurately reflect the limited nature of the evidence quotes, correctly characterizing them as tangential to the specific control requirement without overstating or misrepresenting what the quotes contain.
+    Evidence Relevance        0.250  The cited evidence quotes are largely peripheral to PCI-1.2's specific requirement for network security control configuration with default-deny posture — references to secure protocol limits, access control principles, ISAs/MOUs, and risk assessment do not directly address firewall/ACL configuration or traffic restriction rules.
+    Score Consistency         0.850  A maturity score of 1 is well-justified given that the evidence shows only tangential, indirect references with no specific network security control configuration requirements, aligning appropriately with the weak evidence base and the extensive gaps identified.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements (default-deny, traffic documentation, ruleset review, network diagrams) required by PCI-1.2, though they could additionally note missing requirements around network segmentation between CDE and other networks and logging/alerting on denied traffic.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly mapped to the identified gaps, including concrete details like review frequency (every six months) and required documentation elements, though the final recommendation on responsibilities is slightly generic compared to the others.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  PCI-1.3  |  Network Access to the Cardholder Data Environment  |  Maturity: 1 (Initial)  |  Quality: 0.778 (Acceptable)
+    Faithfulness              0.920  The rationale accurately reflects that the evidence quotes are generic and lack CDE-specific content; all gaps are consistent with what the evidence does and does not state, with no unsupported factual claims introduced.
+    Evidence Relevance        0.200  The cited quotes address general defense-in-depth, least-privilege, protocol restrictions, and ISA agreements for a federal IT context, none of which specifically address CDE network access controls, firewall rules, or PCI DSS segmentation requirements central to this control.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence provides only tangentially related general security principles with no CDE-specific network access controls, aligning well with the rationale and extensive gaps identified.
+    Gap Completeness          0.820  The gaps comprehensively cover the major requirements of PCI-1.3 including CDE definition, DMZ architecture, segmentation, traffic restriction, and anti-spoofing, though the gap list could additionally call out missing requirements for stateful inspection, restricting outbound traffic from the CDE, and wireless network access controls.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap, including references to PCI DSS sub-requirements (1.3.1–1.3.7), DMZ architecture, firewall rule documentation, and periodic configuration reviews, making them clearly implementable.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+  PCI-2.1  |  Default Passwords and Security Parameters  |  Maturity: 1 (Initial)  |  Quality: 0.750 (Acceptable)
+    Faithfulness              0.850  The rationale and gaps are generally consistent with what the evidence shows — the evidence quotes are generic and do not mention vendor defaults, default accounts, or specific secure configuration baselines — but the score rationale slightly overstates the policy by implying NIST alignment implies some coverage, while the gaps correctly identify the absences without contradicting the evidence.
+    Evidence Relevance        0.250  The three evidence quotes address general IT configuration governance, change management, and patch management, but none is specifically relevant to the control's core requirements of changing vendor-supplied defaults, removing unnecessary default accounts, or defining secure configuration processes for default credentials.
+    Score Consistency         0.750  A score of 1 is reasonable given that the evidence shows only tangential, generic policy language with no specific coverage of vendor defaults or default account management, though one could argue a score of 0 is equally defensible given the complete absence of control-specific content.
+    Gap Completeness          0.800  The gaps comprehensively cover the main control requirements (changing default passwords, removing default accounts, secure configuration baselines, verification processes, and inventory management) without being contradicted by evidence, though a gap around documentation of retained default accounts and the specific PCI scope of 'all system components in the cardholder data environment' could have been more explicitly called out.
+    Recommendation Quality    0.850  The recommendations are specific, actionable, and directly tied to each identified gap — including referencing concrete frameworks like CIS Benchmarks and STIGs, automated scanning, and integration into existing change management — though they could be further strengthened by specifying timelines or ownership responsibilities.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  PCI-2.2  |  System Components Configured and Managed Securely  |  Maturity: 2 (Developing)  |  Quality: 0.840 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely supported by the evidence — the evidence shows only high-level configuration references without hardening specifics — though the claim that there is 'no mention of industry-accepted hardening standards' is slightly overstated given evidence [2] references NIST SP 800-53, which is a recognized framework, yet the rationale still fairly characterizes the lack of detailed baselines.
+    Evidence Relevance        0.720  Evidence [1] and [3] are directly relevant to secure configuration of system components, but evidence [4] (backups and patch management) and [5] (vulnerability patching timelines) are only tangentially related to configuration standards and dilute the relevance of the evidence set.
+    Score Consistency         0.800  A score of 2 is reasonable given that the policy demonstrates awareness of configuration requirements and references authoritative frameworks (NIST SP 800-53, ED guidance) but lacks specific standards, hardening baselines, and detailed implementation procedures — consistent with a developing/basic level of maturity.
+    Gap Completeness          0.820  The gaps are comprehensive and cover most key PCI-2.2 requirements absent from the evidence (hardening baselines, default account removal, deviations process, automated monitoring), though they could also note the absence of a formal inventory of system component types to which standards should apply and lack of vendor-specific default password change requirements.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly map to identified gaps — referencing CIS Benchmarks, DISA STIGs, automated compliance tools, and exception management processes — though they could be further strengthened by suggesting concrete timelines or ownership assignments for implementation.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Cardholder Data Protection  (5 controls)  Quality: 0.815  Good
+  --------------------------------------------------------------------------------
+  PCI-3.1  |  Stored Account Data is Kept to Minimum  |  Maturity: 0 (Not Implemented)  |  Quality: 0.970 (Excellent)
+    Faithfulness              1.000  With no evidence quotes cited, the rationale and gaps make no claims derived from misrepresented evidence; all assertions are appropriately grounded in the absence of relevant policy content, and nothing in the rationale contradicts any cited evidence.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is the correct and honest representation when the retrieved policy excerpts contain no content relevant to stored account data or PCI DSS requirements.
+    Score Consistency         1.000  A maturity score of 0 is entirely consistent with the complete absence of any relevant evidence, policy language, or documented mechanisms addressing the PCI-3.1 control requirement.
+    Gap Completeness          0.900  The gaps comprehensively cover the core PCI DSS Requirement 3 elements—data minimization, retention policy, data discovery, secure deletion, and PCI DSS alignment—though they could additionally mention the absence of protections for specific sensitive authentication data (SAD) elements like CVV/expiry beyond PAN, and truncation/masking requirements.
+    Recommendation Quality    0.920  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete references to PCI DSS 4.0 Requirement 3, automated purging, and integration with the existing FISMA/NIST framework, though they could further specify timelines or ownership responsibilities to enhance actionability.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  PCI-3.4  |  Access to Cardholder Data is Restricted  |  Maturity: 1 (Initial)  |  Quality: 0.833 (Good)
+    Faithfulness              0.950  The rationale accurately reflects what the evidence quotes state — general least-privilege and need-to-know principles — and correctly notes the absence of any PAN or cardholder-specific language; no claims are fabricated beyond what the evidence supports.
+    Evidence Relevance        0.550  The quoted excerpts address general access restriction principles (least privilege, need-to-know) that are tangentially relevant to the access control half of the control, but none of the quotes address cardholder data, PAN, or unreadability requirements, making them only partially relevant to this specific PCI-3.4 control.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only generic access-control language with no PAN-specific or unreadability requirements, representing minimal and indirect coverage of the control's core requirements.
+    Gap Completeness          0.800  The gaps comprehensively cover the major missing elements (PAN unreadability methods, CHD-specific access controls, cryptographic key management, RBAC for CDE, PCI DSS reference), though the gap about RBAC is somewhat inferential given the evidence does mention role-limited access, and the gaps could also note the absence of data retention/deletion requirements for stored PAN.
+    Recommendation Quality    0.850  Recommendations are specific and actionable — naming concrete rendering techniques (hashing, truncation, tokenization), cardholder data inventory, RBAC mapping, and monitoring mechanisms — and each ties directly to an identified gap, though the suggestion to integrate with NIST SP 800-53 assumes a framework reference not visible in the provided evidence quotes.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  PCI-3.5  |  Primary Account Number (PAN) Security  |  Maturity: 0 (Not Implemented)  |  Quality: 0.767 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the single evidence quote (FIPS 140-2 reference) does not connect cryptographic requirements to PAN protection, and all gap claims are consistent with the absence of relevant policy language rather than contradicting any evidence.
+    Evidence Relevance        0.150  The sole evidence quote is a bare citation of a cryptographic standard with no surrounding policy language tying it to PAN protection, making it only tangentially relevant to the specific control requirement of securing stored PANs.
+    Score Consistency         0.900  A score of 0 is well-justified given that the only evidence is an incidental standards reference with no policy language addressing PAN storage, encryption, or cardholder data protection.
+    Gap Completeness          0.850  The gaps comprehensively cover the major PCI DSS 3.5 requirements including encryption methods, system inventory, key management, masking, and data retention, though they could also note the absence of a requirement to prohibit PAN storage where not needed (minimization), which is a closely related PCI expectation.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly mapped to each identified gap, including concrete PCI DSS-aligned methods (truncation, tokenization, hashing) and key management lifecycle steps, though the suggestion to integrate into existing risk assessment processes is slightly generic without specifying how.
+    Evidence Groundedness     1.000  1/1 quotes located in PDF
+
+  PCI-4.1  |  Strong Cryptography During Transmission  |  Maturity: 0 (Not Implemented)  |  Quality: 0.770 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes are only bibliographic references and do not define processes, but the assertion that they reference 'FIPS 140-2 cryptographic standards in a reference list' is fair; no claims contradict the evidence, though the rationale slightly overstates what the references imply about organizational intent.
+    Evidence Relevance        0.300  The cited evidence consists solely of bibliographic references to external standards (FIPS 140-2, NIST SP 800-52, OMB M-15-13) rather than actual policy statements or documented mechanisms, making them minimally relevant to demonstrating compliance with the specific control requirement for protecting cardholder data during transmission.
+    Score Consistency         0.800  A score of 0 is broadly defensible given that the evidence provides no actual policy mechanisms or CHD-specific requirements, though a score of 1 might be arguable since the references to TLS guidelines and FIPS 140-2 suggest some foundational cryptographic awareness exists.
+    Gap Completeness          0.820  The gaps are comprehensive and well-aligned with PCI-DSS 4.1 requirements, covering CHD identification, cryptographic protocols, cipher suites, roles, personnel understanding, key/certificate inventory, and prohibition of insecure protocols, though none of the gaps are contradicted by the thin evidence provided.
+    Recommendation Quality    0.850  Recommendations are specific and actionable, directly addressing each identified gap with concrete actions such as specifying TLS 1.2+, defining roles, establishing key lifecycle management, and mapping to NIST SP 800-53 controls, though the NIST mapping suggestion is a bonus rather than strictly gap-driven.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  PCI-4.2  |  PAN Secured During Transmission  |  Maturity: 1 (Initial)  |  Quality: 0.736 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes are tangential and do not specifically address PAN protection, and the gaps are consistent with what the evidence shows; however, the claim that NIST SP 800-52 and FIPS 140-2 references are merely tangential is slightly overstated since these standards do cover TLS configuration and cryptographic module requirements relevant to the control, though the policy does not explicitly apply them to PAN transmission.
+    Evidence Relevance        0.400  The cited quotes reference secure protocols, FIPS 140-2, and NIST SP 800-52 which are peripherally related to cryptographic transmission requirements, but none directly address PAN protection, cardholder data environments, or PCI DSS-specific transmission controls, making them only marginally relevant to this specific control.
+    Score Consistency         0.800  A maturity score of 1 is reasonably consistent with the evidence — there are weak, indirect references to secure protocols and cryptographic standards but no PAN-specific or PCI DSS-aligned requirements, supporting a minimal but non-zero score.
+    Gap Completeness          0.820  The gaps comprehensively cover the main control requirements including PAN-specific cryptography, trusted key/certificate management, protocol version enforcement, and prohibition of insecure protocols; however, the gap regarding 'no requirement to ensure protocols support secure versions' is slightly contradicted by the NIST SP 800-52 reference which does address TLS version selection, even if not explicitly applied to PANs.
+    Recommendation Quality    0.880  The recommendations are specific, actionable, and directly tied to each identified gap — including mandating TLS 1.2+, defining certificate management procedures, explicitly prohibiting deprecated protocols, and integrating PCI DSS into the existing framework — though the monitoring/logging recommendation, while useful, is not directly derived from an explicitly stated gap.
+    Evidence Groundedness     0.667  2/3 quotes located in PDF  [WARNING: possible hallucinated citations]
+
+
+  Family: Vulnerability Management  (4 controls)  Quality: 0.912  Excellent
+  --------------------------------------------------------------------------------
+  PCI-5.1  |  Anti-malware Processes  |  Maturity: 0 (Not Implemented)  |  Quality: 0.983 (Excellent)
+    Faithfulness              1.000  The rationale and gaps are entirely consistent with the absence of evidence quotes — no claims are fabricated or contradicted, and the assessment accurately reflects that no relevant policy excerpts were retrieved.
+    Evidence Relevance        1.000  There are no evidence quotes provided, which is appropriate given that no relevant anti-malware policy content was found; the absence of evidence is accurately represented rather than filled with off-topic excerpts.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with zero evidence of any anti-malware policy, processes, or mechanisms being documented in the retrieved excerpts.
+    Gap Completeness          0.950  The gaps comprehensively cover the core PCI-5.1 requirements — deployment scope, exception documentation, detection/prevention/remediation, configuration, and updates — with no contradictions, though a minor gap around periodic anti-malware effectiveness reviews and logging/audit trails could have been noted.
+    Recommendation Quality    0.950  Recommendations are specific, actionable, and directly map to each identified gap, including exception processes, configuration standards, and role assignments, with only a slight opportunity missed to recommend integration with a vulnerability or incident management program.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  PCI-5.3  |  Anti-malware Mechanisms Active and Maintained  |  Maturity: 0 (Not Implemented)  |  Quality: 0.963 (Excellent)
+    Faithfulness              1.000  With no evidence quotes cited, the rationale and gaps make no claims that could be contradicted by evidence; all assertions are appropriately bounded to what is absent, and the rationale accurately reflects that no relevant policy excerpts were retrieved.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is consistent with the stated finding that no relevant anti-malware policy language was found; there are no irrelevant or off-topic excerpts to penalise.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with the complete absence of any evidence quotes and the rationale confirming no anti-malware policy language exists in the retrieved documents.
+    Gap Completeness          0.900  The gaps comprehensively cover the core PCI-5.3 requirements—deployment, signature updates, scanning, monitoring, and tamper prevention—though a gap around incident response procedures for detected malware and explicit coverage of removable media or email-borne malware vectors is not mentioned.
+    Recommendation Quality    0.880  Recommendations are specific and directly mapped to each identified gap (deployment policy, update frequency, scan types, monitoring, roles, metrics), though they could be further strengthened by referencing PCI DSS 5.3 sub-requirements explicitly and suggesting a rollout timeline or ownership assignment.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  PCI-6.2  |  Bespoke and Custom Software Developed Securely  |  Maturity: 1 (Initial)  |  Quality: 0.833 (Good)
+    Faithfulness              0.920  The rationale accurately characterizes the evidence quotes as only covering general security integration into design and development, and the gaps correctly identify what is absent without contradicting the quoted evidence, though the claim about 'purposeful security architecting' is fairly represented as insufficient for PCI-6.2 specificity.
+    Evidence Relevance        0.450  The two quoted excerpts address general security integration into IT systems and information security requirements broadly, but neither specifically addresses bespoke/custom software development, secure coding practices, or SDLC security—making them only tangentially relevant to PCI-6.2's specific requirements.
+    Score Consistency         0.850  A score of 1 out of 5 is appropriate given that the evidence shows only generic, high-level security language with no specific secure coding, OWASP, code review, or SDLC content required by PCI-6.2, reflecting minimal/ad-hoc compliance at best.
+    Gap Completeness          0.900  The gaps are comprehensive and accurately capture the key requirements of PCI-6.2 that are absent from the evidence, including OWASP Top 10, code reviews, SDLC practices, vulnerability testing, developer training, specific coding techniques, and remediation processes, with no gaps contradicted by the evidence.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to the identified gaps—particularly the SSDLC policy, OWASP mandate, developer training, code review requirements, and specific vulnerability categories—though the metrics/accountability recommendation is slightly generic compared to the others.
+    Evidence Groundedness     1.000  2/2 quotes located in PDF
+
+  PCI-6.3  |  Security Vulnerabilities Identified and Addressed  |  Maturity: 2 (Developing)  |  Quality: 0.870 (Good)
+    Faithfulness              0.880  The rationale and gaps are largely grounded in what the evidence quotes do and do not state; the claim that no 30-day critical patch window is specified is accurate (evidence only says 'timeframe identified by ED policy'), and the absence of scanning cadence and severity classification is not contradicted by any quote, though the characterisation that there is no 'formally defined vulnerability management process' is slightly overstated given evidence [2]–[4] imply some process exists.
+    Evidence Relevance        0.820  All five quotes relate to patch management, vulnerability response, or weakness tracking, which are directly relevant to PCI-6.3's vulnerability management and patching requirements, though none specifically addresses vulnerability identification scanning or software security assessments, leaving some control facets untouched by evidence.
+    Score Consistency         0.800  A score of 2 is reasonable given the evidence shows some patching responsibility and POA&M tracking (consistent with initial/developing practices) but lacks explicit timelines, scanning, and a defined lifecycle; a score of 2 aligns well with partial, informal coverage and multiple significant gaps.
+    Gap Completeness          0.850  The gaps comprehensively cover the major missing elements—explicit 30-day timeline, scanning cadence, severity classification, lifecycle definition, metrics, and third-party/custom software assessment—with no gaps directly contradicted by evidence, though the gap about third-party/custom software assessment goes somewhat beyond what the evidence addresses and slightly beyond the core PCI-6.3 requirement as stated.
+    Recommendation Quality    0.870  Each recommendation is specific, actionable, and maps directly to an identified gap (e.g., mandating 30-day SLA, CVSS-based classification, monthly/quarterly scanning), making them practically useful rather than generic boilerplate.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+
+  Family: Access Control  (4 controls)  Quality: 0.790  Acceptable
+  --------------------------------------------------------------------------------
+  PCI-7.1  |  Access Control Processes  |  Maturity: 3 (Defined)  |  Quality: 0.812 (Good)
+    Faithfulness              0.780  The rationale accurately reflects what the evidence quotes state regarding least privilege, separation of duties, and account reviews, but the claim about 'defined roles/responsibilities for privileged users' is only partially supported by the quotes, and evidence [7] references PII from ED systems — not access control processes — yet no unsupported factual assertions contradict the gaps directly.
+    Evidence Relevance        0.720  Quotes [1]–[6] are reasonably relevant to general access control mechanisms, but quote [7] about sharing minimum PII is tangential to the PCI-7.1 requirement of restricting access to cardholder data by business need to know, and none of the quotes explicitly address cardholder data or CDE scoping which is the core of this control.
+    Score Consistency         0.700  A score of 3 is somewhat generous given that none of the evidence quotes reference cardholder data or PCI-specific scoping — the central requirement of PCI-7.1 — meaning the policy addresses general access control principles but not the specific control requirement, which would typically warrant a score of 2.
+    Gap Completeness          0.820  The gaps comprehensively identify the absence of CHD/CDE scoping, formal documentation, business need-to-know linkage, and policy review cadence, but the gap about metrics/KPIs is somewhat beyond PCI-7.1's core requirement of processes being 'defined and understood,' making it a minor overreach while other critical gaps are well-articulated.
+    Recommendation Quality    0.850  Recommendations are specific and actionable, directly addressing the identified gaps with concrete deliverables such as an RBAC matrix, acknowledgment evidence, CDE-scoped policy, and measurable metrics, though the metrics recommendation goes slightly beyond what PCI-7.1 strictly requires.
+    Evidence Groundedness     1.000  7/7 quotes located in PDF
+
+  PCI-7.2  |  Access to System Components and Data  |  Maturity: 4 (Managed)  |  Quality: 0.838 (Good)
+    Faithfulness              0.820  The rationale accurately reflects what the evidence quotes state regarding least-privilege, RBAC, quarterly reviews, separation of duties, and privileged account restrictions; however, the gap claiming no mention of 'default-deny policies' and 'access control lists aligned with PCI DSS' is not directly contradicted by evidence but goes somewhat beyond what the evidence can confirm or deny, and the gap about cardholder data environments is a legitimate absence rather than a misreading of evidence.
+    Evidence Relevance        0.880  The majority of evidence quotes directly address least-privilege, authorized user access, privilege management, separation of duties, and access limitations, all of which are central to PCI-7.2's requirements, though none of the quotes explicitly reference PCI DSS cardholder data environments or payment system components, which slightly limits their specificity to the PCI context.
+    Score Consistency         0.750  A score of 4/5 implies near-full maturity, but the notable gap around cardholder data environment coverage—which is the core scope of PCI DSS 7.2—and the absence of formal approval workflows represent substantive deficiencies that would more logically support a score of 3 rather than 4.
+    Gap Completeness          0.780  The gaps correctly identify missing formal approval workflows, default-deny mechanisms, and PCI-specific cardholder data environment coverage, but miss other PCI-7.2 requirements such as explicit access control list documentation per system component and evidence of access being tied to defined job roles with documented role-to-access mappings, which are standard PCI DSS 7.2 expectations.
+    Recommendation Quality    0.800  Recommendations are largely specific and actionable—particularly the access request workflow, default-deny mechanism, and KPI tracking suggestions—though the final recommendation about integrating findings into a continuous improvement cycle is generic boilerplate not directly tied to a specific identified gap.
+    Evidence Groundedness     1.000  9/9 quotes located in PDF
+
+  PCI-8.2  |  User Identification and Authentication  |  Maturity: 1 (Initial)  |  Quality: 0.758 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence quotes focus on PIV card programs and personnel security rather than unique ID assignment or lifecycle management, and the gaps are not contradicted by the evidence; however, the rationale slightly overstates what the evidence shows by framing PIV-based authentication as partially addressing the control when the quotes are mostly about physical ID issuance infrastructure rather than logical user account management.
+    Evidence Relevance        0.250  The evidence quotes primarily address physical PIV card issuance, personnel security clearance validation, and HSPD-12 compliance, which are only tangentially related to the PCI-8.2 requirement for unique user ID assignment and account lifecycle management of system users and administrators.
+    Score Consistency         0.800  A maturity score of 1 is reasonable given that the evidence shows only peripheral relevance to the control (PIV infrastructure exists but no explicit unique ID assignment, lifecycle management, or account controls are documented), though a score of 0 could also be argued since none of the evidence directly addresses PCI-8.2 requirements.
+    Gap Completeness          0.850  The gaps comprehensively cover the core PCI-8.2 requirements missing from the evidence, including unique ID assignment, lifecycle management, shared account prohibition, inactive account removal, periodic reviews, and termination procedures, with no obvious omissions and no gaps contradicted by evidence; a minor deduction applies because the gap around multi-factor authentication requirements for administrators (a PCI-8.2 related concern) is not explicitly called out.
+    Recommendation Quality    0.800  The recommendations are specific and actionable, directly mapping to each identified gap with concrete details such as 90-day review cycles and defined timelines, though the suggestion to 'create measurable metrics' is somewhat generic and operational rather than a policy-level recommendation aligned with the control's scope.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  PCI-8.4  |  Multi-Factor Authentication (MFA)  |  Maturity: 1 (Initial)  |  Quality: 0.750 (Acceptable)
+    Faithfulness              0.850  The rationale accurately reflects that the evidence only shows general PIV/HSPD-12 references without CDE-specific MFA requirements, and the gaps do not assert things contradicted by the evidence, though the rationale slightly overstates the policy's MFA specificity by referencing 'hardware-based authenticators' which is only partially supported by evidence quote [3].
+    Evidence Relevance        0.250  The evidence quotes are largely about PIV card program administration, HSPD-12 personnel requirements, and OMB directives — these are tangentially related to authentication infrastructure but do not directly address MFA requirements for non-console administrative access or remote network access to a cardholder data environment as required by PCI-8.4.
+    Score Consistency         0.800  A score of 1/5 is reasonable given that the evidence shows only peripheral authentication-related content with no explicit MFA requirements for CDE or remote access, though a score of 0 could also be argued since none of the evidence directly addresses the control requirement.
+    Gap Completeness          0.780  The gaps comprehensively cover the major missing elements (CDE-specific MFA mandates, remote access coverage, acceptable factor definitions, enforcement procedures), but miss some PCI DSS 8.4 specifics such as MFA requirements for all users accessing the CDE (not just administrators) and requirements around MFA session management or replay attack prevention.
+    Recommendation Quality    0.820  Recommendations are specific and actionable, directly addressing identified gaps such as documenting CDE access points, specifying factor categories, and establishing monitoring, with the added practical suggestion to leverage existing PIV infrastructure — though guidance on timelines, ownership, or tooling specifics would strengthen them further.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Monitoring and Testing  (3 controls)  Quality: 0.867  Good
+  --------------------------------------------------------------------------------
+  PCI-10.2  |  Audit Logs Capture User Activities  |  Maturity: 1 (Initial)  |  Quality: 0.800 (Good)
+    Faithfulness              0.920  The rationale accurately characterizes the evidence quotes as only tangentially related to auditing (privileged function execution auditing) without asserting facts beyond what the quotes contain, and the gaps correctly identify absences not contradicted by the evidence.
+    Evidence Relevance        0.250  The three evidence quotes address access control and privilege management rather than audit logging of user activities or cardholder data access; only quote [1] has marginal relevance to audit logging, and none address the core PCI-10.2 requirement of capturing user access to cardholder data.
+    Score Consistency         0.850  A score of 1 is appropriate given that the evidence shows only a single passing reference to auditing privileged functions with no formal audit logging program, no cardholder data logging, and no forensic or anomaly detection requirements addressed.
+    Gap Completeness          0.900  The gaps are comprehensive and well-articulated, covering all major PCI DSS 10.2 sub-requirements including specific event types, log content, retention, monitoring, and CDE scope, with no obvious omissions and no gaps contradicted by the evidence.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to the identified gaps—covering event specification, log content fields, centralized management, retention policies, and integration with the existing access control framework—though they are largely standard PCI practice rather than tailored to any unique organizational context visible in the policy.
+    Evidence Groundedness     1.000  3/3 quotes located in PDF
+
+  PCI-10.6  |  Time Synchronization Mechanisms  |  Maturity: 0 (Not Implemented)  |  Quality: 0.983 (Excellent)
+    Faithfulness              1.000  With no evidence quotes provided, the rationale and gaps make no claims derived from evidence, and all statements accurately reflect the absence of relevant policy content without contradicting any cited material.
+    Evidence Relevance        1.000  No evidence quotes were cited, which is appropriate and honest given that no relevant policy content was retrieved; there are no off-topic or irrelevant excerpts to penalize.
+    Score Consistency         1.000  A maturity score of 0 is fully consistent with the complete absence of any evidence addressing time synchronization technology, authoritative time sources, or time data protection as required by PCI-10.6.
+    Gap Completeness          0.950  The gaps comprehensively cover all major requirements of PCI-10.6 including deployment of synchronization technology, authoritative sources, consistency, data protection, access restrictions, and monitoring, with only a minor omission around logging of time-source communications integrity (e.g., cryptographic authentication of NTP).
+    Recommendation Quality    0.950  Recommendations are specific, actionable, and directly mapped to each identified gap, referencing concrete technologies and standards (NTP, NIST, GPS, drift thresholds, hardening baselines), with only marginal room to improve by explicitly addressing NTP authentication mechanisms such as symmetric keys or NTS.
+    Evidence Groundedness     1.000  no evidence quotes to verify
+
+  PCI-10.7  |  Failures Detected and Reported  |  Maturity: 1 (Initial)  |  Quality: 0.817 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect what the evidence quotes do and do not state; the evidence shows general continuous monitoring and incident response language, and the rationale correctly characterizes these as not specifically addressing critical security control failure detection or log management tools, with no unsupported assertions.
+    Evidence Relevance        0.450  The quoted excerpts relate to general continuous monitoring, incident response, and performance assessment at a high level, but none specifically address failure detection of critical security controls or log management tools as required by PCI-10.7, making them only tangentially relevant to the control's core requirements.
+    Score Consistency         0.800  A score of 1/5 is reasonable given that the evidence shows only generic continuous monitoring and incident response language with no specific coverage of critical control failure detection, alerting, log management tools, or defined response timelines, though a score of 0–1 is arguably appropriate and the '1' reflects minimal partial credit for general monitoring references.
+    Gap Completeness          0.850  The gaps comprehensively cover the key missing elements required by PCI-10.7 — failure detection for specific control types, alerting/reporting processes, log management tools, response timelines, and logging anomaly monitoring — though they could additionally note the absence of a requirement to restore failed controls within defined timeframes, which PCI-10.7 also mandates.
+    Recommendation Quality    0.880  The recommendations are specific, actionable, and directly tied to each identified gap, including concrete examples (SIEM, firewalls, IDS/IPS) and practical steps such as defining timelines, automated alerting, and periodic testing, with minimal boilerplate language.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+  Family: Information Security Policy  (2 controls)  Quality: 0.833  Good
+  --------------------------------------------------------------------------------
+  PCI-12.1  |  Comprehensive Information Security Policy  |  Maturity: 2 (Developing)  |  Quality: 0.817 (Good)
+    Faithfulness              0.850  The rationale and gaps are largely grounded in the evidence quotes; the distinction between annual review of 'information system documentation' (quote 3) versus the overarching ISP is a fair and faithful reading, and the claims about missing explicit 12-month review requirements and responsible parties are consistent with what the evidence shows, though the assertion about no 'known' mechanism is an inference not directly contradicted but also not strongly supported by the quotes.
+    Evidence Relevance        0.620  Quotes 1, 2, and 4 establish the existence of a policy framework relevant to the control, but quotes 3 and 5 are only tangentially related — quote 3 addresses information system documentation review rather than the security policy review cycle, and quote 5 addresses responsibility sharing rather than policy currency or review frequency, making several quotes only loosely tied to the specific control requirement.
+    Score Consistency         0.780  A score of 2 is reasonably consistent with the evidence showing a structured policy framework exists (supporting some maturity) but lacking explicit 12-month review requirements, defined ownership, and dissemination mechanisms; however, the relatively strong framework evidence (quotes 1, 2, 4) could arguably support a 3, making the score slightly deflated.
+    Gap Completeness          0.800  The gaps accurately capture the missing 12-month review requirement, lack of defined ownership, and absence of a dissemination/awareness mechanism, but do not address whether the policy is currently known and current at the time of assessment, nor whether there is evidence of any prior review having occurred, which are direct elements of the control requirement.
+    Recommendation Quality    0.850  Recommendations are specific, actionable, and directly tied to the identified gaps — including explicit annual review requirements with ownership, documented processes with version control, acknowledgment mechanisms, and metrics — though they are somewhat standard GRC best practices and could be slightly more tailored to ED's specific existing framework structure.
+    Evidence Groundedness     1.000  5/5 quotes located in PDF
+
+  PCI-12.3  |  Risks Identified, Evaluated, and Managed  |  Maturity: 2 (Developing)  |  Quality: 0.848 (Good)
+    Faithfulness              0.920  The rationale and gaps accurately reflect what the evidence states — notably the three-year assessment cycle from quote [2] and the absence of CDE-specific language — with no fabricated claims contradicted by the evidence.
+    Evidence Relevance        0.620  Quote [2] is directly relevant to the risk assessment frequency gap, and quote [3] partially supports risk tracking, but quotes [1] and [4] are peripheral (residual risk justification and privacy lifecycle) and do not substantially address PCI 12.3's requirement for formal, periodic CDE risk assessments.
+    Score Consistency         0.820  A score of 2 is reasonable given that some risk-related activities exist (POA&M, periodic assessments) but the frequency is non-compliant, there is no CDE scope, and no formal methodology is evident — placing the policy well below a managed/defined state.
+    Gap Completeness          0.850  The gaps are thorough and cover frequency, CDE scope, methodology, risk register, and risk acceptance thresholds; however, they omit the PCI 12.3 requirement for documenting risk assessment results and communicating them to management/stakeholders, which is a notable omission.
+    Recommendation Quality    0.880  Recommendations are specific, actionable, and directly tied to each identified gap (e.g., annual frequency, CDE risk register, integration with CSAM), though the suggestion to assign roles could be slightly more concrete regarding which roles and governance structure should own the PCI risk assessment process.
+    Evidence Groundedness     1.000  4/4 quotes located in PDF
+
+
+================================================================================
+END OF REPORT
+================================================================================
