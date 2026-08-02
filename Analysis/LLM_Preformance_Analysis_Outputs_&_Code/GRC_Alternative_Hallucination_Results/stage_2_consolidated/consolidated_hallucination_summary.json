@@ -1,0 +1,53 @@
+{
+  "master_matrix": [
+    {
+      "run_id": "DeptEduc_Anthrop",
+      "overall_hallucination_pct": 0.19095477386934673,
+      "unfaithfulness_risk": 0.19848711264591598,
+      "direct_contradiction_prob": 0.13523485954183753,
+      "semantic_drift_risk": 0.43395629420352344,
+      "fabricated_entities_count": 85
+    },
+    {
+      "run_id": "DeptEduc_GPT_4.1",
+      "overall_hallucination_pct": 0.18592964824120603,
+      "unfaithfulness_risk": 0.19080750859546097,
+      "direct_contradiction_prob": 0.09817678490501168,
+      "semantic_drift_risk": 0.4593756845848045,
+      "fabricated_entities_count": 26
+    },
+    {
+      "run_id": "DeptEduc_Llama_4_Mav",
+      "overall_hallucination_pct": 0.1658291457286432,
+      "unfaithfulness_risk": 0.17898472365086673,
+      "direct_contradiction_prob": 0.10561386562760126,
+      "semantic_drift_risk": 0.44493867554257266,
+      "fabricated_entities_count": 26
+    },
+    {
+      "run_id": "Scott&Scott_Anthrop",
+      "overall_hallucination_pct": 0.19597989949748743,
+      "unfaithfulness_risk": 0.19156403896954885,
+      "direct_contradiction_prob": 0.13552378323825293,
+      "semantic_drift_risk": 0.4170008168448156,
+      "fabricated_entities_count": 53
+    },
+    {
+      "run_id": "Scott&Scott_GPT_4.1",
+      "overall_hallucination_pct": 0.20100502512562815,
+      "unfaithfulness_risk": 0.19899063161311054,
+      "direct_contradiction_prob": 0.1439721794667683,
+      "semantic_drift_risk": 0.43736185545298323,
+      "fabricated_entities_count": 17
+    },
+    {
+      "run_id": "Scott&Scott_Llama_4_Mav",
+      "overall_hallucination_pct": 0.1507537688442211,
+      "unfaithfulness_risk": 0.16394729335081878,
+      "direct_contradiction_prob": 0.1077727075637323,
+      "semantic_drift_risk": 0.4370606968450786,
+      "fabricated_entities_count": 20
+    }
+  ],
+  "total_controls_audited": 1194
+}
